@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<!-- saved from url=(0052)http://zhong.ronmei.com/index.php?ctl=user&act=login -->
+<html>
+<!-- head开始 -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<title>{:getConf('SEO_TITLE')}-登陆页面</title>
+<!-- 关键字部分 -->
+<meta name="keywords" content="">
+<!-- 网页描述部分 -->
+<meta name="description" content="">
+<!-- CSS样式部分 -->
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/css/nav.css">
+<link media="screen" rel="stylesheet" href="__PUBLIC__/css/demo.css"/>
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/css/style.css">
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/css/14c4c0d24fba6ed25d8b6758064ef7b8.css">
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/css/4f524199e137c62e16dddd92b3d1cb95.css">
+<!-- 引用js部分 -->
+<script type="text/javascript" async="" src="__PUBLIC__/js/dc.js"></script>
+<script type="text/javascript" async="" src="__PUBLIC__/js/ag.js"></script>
+<script type="text/javascript" src="__PUBLIC__/js/index.js"></script>
+<script type="text/javascript" src="__PUBLIC__/js/42d9a46911d50cafdc667075f2cff7ec.js"></script>
+<script async="" src="__PUBLIC__/js/ncfpb.1.1.min.js"></script>
+<script src="__PUBLIC__/js/jquery-1.7.1.min.js" type="text/javascript"></script>
+<script type="text/javascript" src="__PUBLIC__/js/2cc0475e1160ea574d0a9b5ebea60136.js"></script>
+<script type="text/javascript">
+var APP_ROOT = '';
+var LOADER_IMG = 'http://zhong.ronmei.com/app/Tpl/codec2i/images/lazy_loading.gif';
+var ERROR_IMG = 'http://zhong.ronmei.com/app/Tpl/codec2i/images/image_err.gif';
+</script>
+
+<script type="text/javascript">
+jQuery(document).ready(function(){
+	var qcloud={};
+	$('[_t_nav]').hover(function(){
+		var _nav = $(this).attr('_t_nav');
+		clearTimeout( qcloud[ _nav + '_timer' ] );
+		qcloud[ _nav + '_timer' ] = setTimeout(function(){
+		$('[_t_nav]').each(function(){
+		$(this)[ _nav == $(this).attr('_t_nav') ? 'addClass':'removeClass' ]('nav-up-selected');
+		});
+		$('#'+_nav).stop(true,true).slideDown(200);
+		}, 150);
+	},function(){
+		var _nav = $(this).attr('_t_nav');
+		clearTimeout( qcloud[ _nav + '_timer' ] );
+		qcloud[ _nav + '_timer' ] = setTimeout(function(){
+		$('[_t_nav]').removeClass('nav-up-selected');
+		$('#'+_nav).stop(true,true).slideUp(200);
+		}, 150);
+	});
+});
+</script>
+</head>
+<!-- head结束 -->
+
+<!-- body体 -->
+<body>
+    <include file="Public/header" /> 
+	
+	
+	<!-- 登录主体部分 -->
+	<div class="blank"></div>
+	<div class="shadow_bg">
+	<div class="white_box">
+		<script type="text/javascript" src="__PUBLIC__/js/e0a298804559acc5e1950c25390b5615.js"></script>
+	<div class="signlogin_box">
+			<div class="left">
+				
+				<div class="link_dash f25">
+					登录				</div>
+				<form method="post" name="user_login_form" action="{:U('User/do_login')}">
+					
+				<div class="form_row">
+					<div class="blank15"></div>
+					<label class="title"><font>*&nbsp;&nbsp;</font>会员:</label>
+					<input type="text" value="" class="textbox" name="user_name">
+					<div class="blank15"></div>
+				</div>
+				<div class="form_row">
+					<label class="title"><font>*&nbsp;&nbsp;</font>密码:</label>
+					<input type="password" name="user_pwd" class="textbox">
+					<!-- <span class="getpassword"><a href="http://zhong.ronmei.com/index.php?ctl=user&act=getpassword">忘记密码？</a></span> -->
+					<div class="blank15"></div>
+				</div>
+				<div class="form_row auto_login">
+					<!-- <input type="checkbox" value="1" name="auto_login" checked="checked"> 
+					<label class="auto_login_tip">下次自动登陆</label>-->
+					<div class="blank15"></div>
+				</div>
+				
+				<div class="button_row do_login">
+					<input type="submit" value="登录" name="submit_form" class="btn_do_login" id="btn_do_login">
+					<div class="blank15"></div>
+				</div>
+				
+				</form>
+			</div>
+			
+			<div class="right" style="float:left;margin-top:30px;">
+				<span>没有账号?</span>
+				<a href="{:U('User/reg')}" class="btn_go_register" title="注册" style="margin-top:10px;">注册</a>
+				
+			</div>
+			<div class="blank"></div>
+			
+		</div> 
+	</div>
+</div>
+<!-- 登录主体结束 -->
+
+<!-- 底部部分 -->
+<div class="blank"></div>
+<style>
+.footer a{display:inline-block; float:none;}
+</style>
+    	<include file="Public/footer" />
+    <!--footer结束-->
+</body>
+</html>

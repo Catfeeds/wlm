@@ -1,0 +1,599 @@
+[ 2015-11-06T06:06:42+08:00 ] 66.249.67.218 /zc/index.php?m=Deal&a=show&id=61
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000501s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000636s ]
+NOTIC: [2048] Declaration of DealAction::show() should be compatible with that of Action::show() /webHome/LFWZ000390/www/zc/Zc/Lib/Action/DealAction.class.php 第 13 行.
+SQL: SHOW COLUMNS FROM `fanwe_nav` [ RunTime:0.002428s ]
+SQL: SELECT * FROM `fanwe_nav` ORDER BY sort  [ RunTime:0.000913s ]
+SQL: SHOW COLUMNS FROM `fanwe_deal_cate` [ RunTime:0.001628s ]
+SQL: SELECT * FROM `fanwe_deal_cate` ORDER BY id  [ RunTime:0.000866s ]
+SQL: SHOW COLUMNS FROM `fanwe_deal_keyword` [ RunTime:0.001286s ]
+SQL: SELECT * FROM `fanwe_deal_keyword` LIMIT 1   [ RunTime:0.001097s ]
+NOTIC: [8] Undefined index: uid /webHome/LFWZ000390/www/zc/Zc/Lib/Action/DealAction.class.php 第 18 行.
+
+[ 2015-11-06T06:06:43+08:00 ] 66.249.67.210 /zc/index.php?m=User&a=login
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000598s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000804s ]
+SQL: SHOW COLUMNS FROM `fanwe_nav` [ RunTime:0.001733s ]
+SQL: SELECT * FROM `fanwe_nav` ORDER BY sort  [ RunTime:0.001347s ]
+SQL: SHOW COLUMNS FROM `fanwe_deal_cate` [ RunTime:0.001299s ]
+SQL: SELECT * FROM `fanwe_deal_cate` ORDER BY id  [ RunTime:0.001335s ]
+SQL: SHOW COLUMNS FROM `fanwe_deal_keyword` [ RunTime:0.001388s ]
+SQL: SELECT * FROM `fanwe_deal_keyword` LIMIT 1   [ RunTime:0.001250s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: uid /webHome/LFWZ000390/www/zc/Zc/Runtime/Cache/42b90be8e9c40e58e803cfb6a2f683e9.php 第 76 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.014444s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014554s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000529s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000440s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000336s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000547s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002222s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000371s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000459s ]
+
+[ 2015-11-06T07:23:36+08:00 ] 182.118.20.218 /zc/index.php?a=index&m=News
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000460s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000588s ]
+SQL: SHOW COLUMNS FROM `fanwe_nav` [ RunTime:0.001978s ]
+SQL: SELECT * FROM `fanwe_nav` ORDER BY sort  [ RunTime:0.001090s ]
+SQL: SHOW COLUMNS FROM `fanwe_deal_cate` [ RunTime:0.001614s ]
+SQL: SELECT * FROM `fanwe_deal_cate` ORDER BY id  [ RunTime:0.001081s ]
+SQL: SHOW COLUMNS FROM `fanwe_deal_keyword` [ RunTime:0.001678s ]
+SQL: SELECT * FROM `fanwe_deal_keyword` LIMIT 1   [ RunTime:0.000812s ]
+SQL: SHOW COLUMNS FROM `fanwe_news` [ RunTime:0.002243s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fanwe_news` WHERE ( `enable` = 1 ) LIMIT 1   [ RunTime:0.007460s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fanwe_news` WHERE ( `enable` = 1 ) LIMIT 1   [ RunTime:0.001086s ]
+SQL: SELECT * FROM `fanwe_news` ORDER BY addtime desc,rec desc LIMIT 0,10   [ RunTime:0.006208s ]
+INFO: [ view_parse ] --START--
+SQL: SHOW COLUMNS FROM `fanwe_conf` [ RunTime:0.001844s ]
+SQL: SELECT `value` FROM `fanwe_conf` WHERE ( `name` = 'SEO_TITLE' ) LIMIT 1   [ RunTime:0.000849s ]
+NOTIC: [8] Undefined index: uid /webHome/LFWZ000390/www/zc/Zc/Runtime/Cache/93be05964b36457006025cdbe2606e6a.php 第 107 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.025370s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025522s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000749s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000506s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000430s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000493s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002508s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000493s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000610s ]
+
+[ 2015-11-06T07:26:33+08:00 ] 182.118.22.209 /zc/index.php?a=index&m=News&p=1
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000587s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000743s ]
+SQL: SHOW COLUMNS FROM `fanwe_nav` [ RunTime:0.002423s ]
+SQL: SELECT * FROM `fanwe_nav` ORDER BY sort  [ RunTime:0.001020s ]
+SQL: SHOW COLUMNS FROM `fanwe_deal_cate` [ RunTime:0.001813s ]
+SQL: SELECT * FROM `fanwe_deal_cate` ORDER BY id  [ RunTime:0.001424s ]
+SQL: SHOW COLUMNS FROM `fanwe_deal_keyword` [ RunTime:0.002883s ]
+SQL: SELECT * FROM `fanwe_deal_keyword` LIMIT 1   [ RunTime:0.001511s ]
+SQL: SHOW COLUMNS FROM `fanwe_news` [ RunTime:0.001825s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fanwe_news` WHERE ( `enable` = 1 ) LIMIT 1   [ RunTime:0.001507s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fanwe_news` WHERE ( `enable` = 1 ) LIMIT 1   [ RunTime:0.001096s ]
+SQL: SELECT * FROM `fanwe_news` ORDER BY addtime desc,rec desc LIMIT 0,10   [ RunTime:0.008281s ]
+INFO: [ view_parse ] --START--
+SQL: SHOW COLUMNS FROM `fanwe_conf` [ RunTime:0.001936s ]
+SQL: SELECT `value` FROM `fanwe_conf` WHERE ( `name` = 'SEO_TITLE' ) LIMIT 1   [ RunTime:0.001192s ]
+NOTIC: [8] Undefined index: uid /webHome/LFWZ000390/www/zc/Zc/Runtime/Cache/93be05964b36457006025cdbe2606e6a.php 第 107 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.039567s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.039743s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001104s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000770s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000638s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000815s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003742s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000674s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000817s ]
+
+[ 2015-11-06T12:58:31+08:00 ] 180.153.236.185 /zc/index.php?a=html&id=1&m=News
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000534s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000663s ]
+SQL: SHOW COLUMNS FROM `fanwe_nav` [ RunTime:0.001930s ]
+SQL: SELECT * FROM `fanwe_nav` ORDER BY sort  [ RunTime:0.000975s ]
+SQL: SHOW COLUMNS FROM `fanwe_deal_cate` [ RunTime:0.011055s ]
+SQL: SELECT * FROM `fanwe_deal_cate` ORDER BY id  [ RunTime:0.000809s ]
+SQL: SHOW COLUMNS FROM `fanwe_deal_keyword` [ RunTime:0.001975s ]
+SQL: SELECT * FROM `fanwe_deal_keyword` LIMIT 1   [ RunTime:0.000993s ]
+SQL: SHOW COLUMNS FROM `fanwe_news` [ RunTime:0.002169s ]
+SQL: SELECT * FROM `fanwe_news` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.001366s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: uid /webHome/LFWZ000390/www/zc/Zc/Runtime/Cache/012cdf2fa3ba4152d6d6173485c32ca8.php 第 98 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/zc/Zc/Runtime/Cache/012cdf2fa3ba4152d6d6173485c32ca8.php 第 142 行.
+SQL: SELECT * FROM `fanwe_news` WHERE ( `id` < '1' ) LIMIT 1   [ RunTime:0.000797s ]
+SQL: SELECT * FROM `fanwe_news` WHERE ( `id` > '1' ) LIMIT 1   [ RunTime:0.000926s ]
+INFO: ParseTemplate Behavior ::run [ RunTime:0.018271s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018404s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000603s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000495s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000392s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000508s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002273s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000501s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000590s ]
+
+[ 2015-11-06T14:15:41+08:00 ] 91.121.112.142 /zc/index.php?m=Deals&a=index&tid=10
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000569s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000828s ]
+SQL: SHOW COLUMNS FROM `fanwe_nav` [ RunTime:0.001841s ]
+SQL: SELECT * FROM `fanwe_nav` ORDER BY sort  [ RunTime:0.001397s ]
+SQL: SHOW COLUMNS FROM `fanwe_deal_cate` [ RunTime:0.001959s ]
+SQL: SELECT * FROM `fanwe_deal_cate` ORDER BY id  [ RunTime:0.000874s ]
+SQL: SHOW COLUMNS FROM `fanwe_deal_keyword` [ RunTime:0.001933s ]
+SQL: SELECT * FROM `fanwe_deal_keyword` LIMIT 1   [ RunTime:0.001043s ]
+NOTIC: [8] Undefined index: uid /webHome/LFWZ000390/www/zc/Zc/Lib/Action/DealsAction.class.php 第 18 行.
+
+[ 2015-11-06T14:15:50+08:00 ] 91.121.112.142 /zc/index.php?m=User&a=login
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000499s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000608s ]
+SQL: SHOW COLUMNS FROM `fanwe_nav` [ RunTime:0.003299s ]
+SQL: SELECT * FROM `fanwe_nav` ORDER BY sort  [ RunTime:0.000777s ]
+SQL: SHOW COLUMNS FROM `fanwe_deal_cate` [ RunTime:0.001533s ]
+SQL: SELECT * FROM `fanwe_deal_cate` ORDER BY id  [ RunTime:0.000718s ]
+SQL: SHOW COLUMNS FROM `fanwe_deal_keyword` [ RunTime:0.001442s ]
+SQL: SELECT * FROM `fanwe_deal_keyword` LIMIT 1   [ RunTime:0.000654s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: uid /webHome/LFWZ000390/www/zc/Zc/Runtime/Cache/42b90be8e9c40e58e803cfb6a2f683e9.php 第 76 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.014432s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014685s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000518s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000525s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000412s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000593s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002427s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000524s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000612s ]
+
+[ 2015-11-06T14:15:52+08:00 ] 91.121.112.142 /zc/index.php?m=Deals&a=index&tid=12
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000475s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000601s ]
+SQL: SHOW COLUMNS FROM `fanwe_nav` [ RunTime:0.001958s ]
+SQL: SELECT * FROM `fanwe_nav` ORDER BY sort  [ RunTime:0.000645s ]
+SQL: SHOW COLUMNS FROM `fanwe_deal_cate` [ RunTime:0.001493s ]
+SQL: SELECT * FROM `fanwe_deal_cate` ORDER BY id  [ RunTime:0.001002s ]
+SQL: SHOW COLUMNS FROM `fanwe_deal_keyword` [ RunTime:0.001456s ]
+SQL: SELECT * FROM `fanwe_deal_keyword` LIMIT 1   [ RunTime:0.000608s ]
+NOTIC: [8] Undefined index: uid /webHome/LFWZ000390/www/zc/Zc/Lib/Action/DealsAction.class.php 第 18 行.
+
+[ 2015-11-06T14:15:54+08:00 ] 91.121.112.142 /zc/index.php?m=User&a=login
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000446s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000633s ]
+SQL: SHOW COLUMNS FROM `fanwe_nav` [ RunTime:0.003090s ]
+SQL: SELECT * FROM `fanwe_nav` ORDER BY sort  [ RunTime:0.000920s ]
+SQL: SHOW COLUMNS FROM `fanwe_deal_cate` [ RunTime:0.001654s ]
+SQL: SELECT * FROM `fanwe_deal_cate` ORDER BY id  [ RunTime:0.001012s ]
+SQL: SHOW COLUMNS FROM `fanwe_deal_keyword` [ RunTime:0.001604s ]
+SQL: SELECT * FROM `fanwe_deal_keyword` LIMIT 1   [ RunTime:0.000463s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: uid /webHome/LFWZ000390/www/zc/Zc/Runtime/Cache/42b90be8e9c40e58e803cfb6a2f683e9.php 第 76 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.015752s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015877s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000601s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000414s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000580s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000424s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002308s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000529s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000646s ]
+
+[ 2015-11-06T14:15:57+08:00 ] 91.121.112.142 /zc/index.php?m=Deals&a=index&tid=14
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000355s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000485s ]
+SQL: SHOW COLUMNS FROM `fanwe_nav` [ RunTime:0.001934s ]
+SQL: SELECT * FROM `fanwe_nav` ORDER BY sort  [ RunTime:0.001916s ]
+SQL: SHOW COLUMNS FROM `fanwe_deal_cate` [ RunTime:0.001797s ]
+SQL: SELECT * FROM `fanwe_deal_cate` ORDER BY id  [ RunTime:0.000721s ]
+SQL: SHOW COLUMNS FROM `fanwe_deal_keyword` [ RunTime:0.002186s ]
+SQL: SELECT * FROM `fanwe_deal_keyword` LIMIT 1   [ RunTime:0.000687s ]
+NOTIC: [8] Undefined index: uid /webHome/LFWZ000390/www/zc/Zc/Lib/Action/DealsAction.class.php 第 18 行.
+
+[ 2015-11-06T14:15:59+08:00 ] 91.121.112.142 /zc/index.php?m=User&a=login
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000461s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000613s ]
+SQL: SHOW COLUMNS FROM `fanwe_nav` [ RunTime:0.001750s ]
+SQL: SELECT * FROM `fanwe_nav` ORDER BY sort  [ RunTime:0.000768s ]
+SQL: SHOW COLUMNS FROM `fanwe_deal_cate` [ RunTime:0.001509s ]
+SQL: SELECT * FROM `fanwe_deal_cate` ORDER BY id  [ RunTime:0.000782s ]
+SQL: SHOW COLUMNS FROM `fanwe_deal_keyword` [ RunTime:0.001435s ]
+SQL: SELECT * FROM `fanwe_deal_keyword` LIMIT 1   [ RunTime:0.000736s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: uid /webHome/LFWZ000390/www/zc/Zc/Runtime/Cache/42b90be8e9c40e58e803cfb6a2f683e9.php 第 76 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.015904s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016027s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000595s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000491s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000378s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000578s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002418s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000408s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000499s ]
+
+[ 2015-11-06T14:16:01+08:00 ] 91.121.112.142 /zc/index.php?m=Deals&a=index&tid=4
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000508s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000639s ]
+SQL: SHOW COLUMNS FROM `fanwe_nav` [ RunTime:0.001994s ]
+SQL: SELECT * FROM `fanwe_nav` ORDER BY sort  [ RunTime:0.001025s ]
+SQL: SHOW COLUMNS FROM `fanwe_deal_cate` [ RunTime:0.003381s ]
+SQL: SELECT * FROM `fanwe_deal_cate` ORDER BY id  [ RunTime:0.000876s ]
+SQL: SHOW COLUMNS FROM `fanwe_deal_keyword` [ RunTime:0.001423s ]
+SQL: SELECT * FROM `fanwe_deal_keyword` LIMIT 1   [ RunTime:0.000500s ]
+NOTIC: [8] Undefined index: uid /webHome/LFWZ000390/www/zc/Zc/Lib/Action/DealsAction.class.php 第 18 行.
+
+[ 2015-11-06T14:16:03+08:00 ] 91.121.112.142 /zc/index.php?m=User&a=login
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000548s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000700s ]
+SQL: SHOW COLUMNS FROM `fanwe_nav` [ RunTime:0.004996s ]
+SQL: SELECT * FROM `fanwe_nav` ORDER BY sort  [ RunTime:0.001481s ]
+SQL: SHOW COLUMNS FROM `fanwe_deal_cate` [ RunTime:0.002437s ]
+SQL: SELECT * FROM `fanwe_deal_cate` ORDER BY id  [ RunTime:0.001074s ]
+SQL: SHOW COLUMNS FROM `fanwe_deal_keyword` [ RunTime:0.002752s ]
+SQL: SELECT * FROM `fanwe_deal_keyword` LIMIT 1   [ RunTime:0.002706s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: uid /webHome/LFWZ000390/www/zc/Zc/Runtime/Cache/42b90be8e9c40e58e803cfb6a2f683e9.php 第 76 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.015251s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015377s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000558s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000496s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000417s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000435s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002201s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000418s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000511s ]
+
+[ 2015-11-06T14:44:13+08:00 ] 46.4.89.35 /zc/index.php?m=Deals&a=rec
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000536s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000666s ]
+SQL: SHOW COLUMNS FROM `fanwe_nav` [ RunTime:0.001887s ]
+SQL: SELECT * FROM `fanwe_nav` ORDER BY sort  [ RunTime:0.000901s ]
+SQL: SHOW COLUMNS FROM `fanwe_deal_cate` [ RunTime:0.001626s ]
+SQL: SELECT * FROM `fanwe_deal_cate` ORDER BY id  [ RunTime:0.000754s ]
+SQL: SHOW COLUMNS FROM `fanwe_deal_keyword` [ RunTime:0.001677s ]
+SQL: SELECT * FROM `fanwe_deal_keyword` LIMIT 1   [ RunTime:0.000738s ]
+NOTIC: [8] Undefined index: uid /webHome/LFWZ000390/www/zc/Zc/Lib/Action/DealsAction.class.php 第 61 行.
+
+[ 2015-11-06T14:44:16+08:00 ] 46.4.89.35 /zc/index.php?m=User&a=login
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000430s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000581s ]
+SQL: SHOW COLUMNS FROM `fanwe_nav` [ RunTime:0.002059s ]
+SQL: SELECT * FROM `fanwe_nav` ORDER BY sort  [ RunTime:0.000973s ]
+SQL: SHOW COLUMNS FROM `fanwe_deal_cate` [ RunTime:0.001553s ]
+SQL: SELECT * FROM `fanwe_deal_cate` ORDER BY id  [ RunTime:0.001923s ]
+SQL: SHOW COLUMNS FROM `fanwe_deal_keyword` [ RunTime:0.001842s ]
+SQL: SELECT * FROM `fanwe_deal_keyword` LIMIT 1   [ RunTime:0.000702s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: uid /webHome/LFWZ000390/www/zc/Zc/Runtime/Cache/42b90be8e9c40e58e803cfb6a2f683e9.php 第 76 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.013821s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013959s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000474s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000491s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000345s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000513s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002099s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000381s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000483s ]
+
+[ 2015-11-06T14:44:20+08:00 ] 46.4.89.35 /zc/index.php?m=Index&a=index
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000426s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000585s ]
+SQL: SHOW COLUMNS FROM `fanwe_nav` [ RunTime:0.002131s ]
+SQL: SELECT * FROM `fanwe_nav` ORDER BY sort  [ RunTime:0.000901s ]
+SQL: SHOW COLUMNS FROM `fanwe_deal_cate` [ RunTime:0.001645s ]
+SQL: SELECT * FROM `fanwe_deal_cate` ORDER BY id  [ RunTime:0.000795s ]
+SQL: SHOW COLUMNS FROM `fanwe_deal_keyword` [ RunTime:0.001408s ]
+SQL: SELECT * FROM `fanwe_deal_keyword` LIMIT 1   [ RunTime:0.000627s ]
+SQL: SHOW COLUMNS FROM `fanwe_showindex` [ RunTime:0.001574s ]
+SQL: SELECT * FROM `fanwe_showindex`  [ RunTime:0.001405s ]
+SQL: SHOW COLUMNS FROM `fanwe_news` [ RunTime:0.001664s ]
+SQL: SELECT * FROM `fanwe_news` ORDER BY addtime desc,rec desc LIMIT 0,5   [ RunTime:0.003849s ]
+SQL: SHOW COLUMNS FROM `fanwe_company` [ RunTime:0.000914s ]
+ERR: 1146:Table 'my1006252.fanwe_company' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `fanwe_company`
+SQL: SELECT * FROM `fanwe_company` LIMIT 1   [ RunTime:0.000561s ]
+ERR: 1146:Table 'my1006252.fanwe_company' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `fanwe_company` LIMIT 1  
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.012989s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013099s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000571s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000487s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000404s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000539s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002319s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000393s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000500s ]
+
+[ 2015-11-06T14:44:24+08:00 ] 46.4.89.35 /zc/index.php?m=News&a=index
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000223s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000303s ]
+SQL: SHOW COLUMNS FROM `fanwe_nav` [ RunTime:0.001444s ]
+SQL: SELECT * FROM `fanwe_nav` ORDER BY sort  [ RunTime:0.000608s ]
+SQL: SHOW COLUMNS FROM `fanwe_deal_cate` [ RunTime:0.001508s ]
+SQL: SELECT * FROM `fanwe_deal_cate` ORDER BY id  [ RunTime:0.000843s ]
+SQL: SHOW COLUMNS FROM `fanwe_deal_keyword` [ RunTime:0.001118s ]
+SQL: SELECT * FROM `fanwe_deal_keyword` LIMIT 1   [ RunTime:0.000681s ]
+SQL: SHOW COLUMNS FROM `fanwe_news` [ RunTime:0.002271s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fanwe_news` WHERE ( `enable` = 1 ) LIMIT 1   [ RunTime:0.001333s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fanwe_news` WHERE ( `enable` = 1 ) LIMIT 1   [ RunTime:0.001135s ]
+SQL: SELECT * FROM `fanwe_news` ORDER BY addtime desc,rec desc LIMIT 0,10   [ RunTime:0.005014s ]
+INFO: [ view_parse ] --START--
+SQL: SHOW COLUMNS FROM `fanwe_conf` [ RunTime:0.002848s ]
+SQL: SELECT `value` FROM `fanwe_conf` WHERE ( `name` = 'SEO_TITLE' ) LIMIT 1   [ RunTime:0.001002s ]
+NOTIC: [8] Undefined index: uid /webHome/LFWZ000390/www/zc/Zc/Runtime/Cache/93be05964b36457006025cdbe2606e6a.php 第 107 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.024791s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024915s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000721s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000436s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000427s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000464s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002402s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000409s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000502s ]
+
+[ 2015-11-06T14:44:30+08:00 ] 46.4.89.35 /zc/index.php?m=User&a=login
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000517s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000648s ]
+SQL: SHOW COLUMNS FROM `fanwe_nav` [ RunTime:0.001689s ]
+SQL: SELECT * FROM `fanwe_nav` ORDER BY sort  [ RunTime:0.000806s ]
+SQL: SHOW COLUMNS FROM `fanwe_deal_cate` [ RunTime:0.001509s ]
+SQL: SELECT * FROM `fanwe_deal_cate` ORDER BY id  [ RunTime:0.000659s ]
+SQL: SHOW COLUMNS FROM `fanwe_deal_keyword` [ RunTime:0.002182s ]
+SQL: SELECT * FROM `fanwe_deal_keyword` LIMIT 1   [ RunTime:0.001092s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: uid /webHome/LFWZ000390/www/zc/Zc/Runtime/Cache/42b90be8e9c40e58e803cfb6a2f683e9.php 第 76 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.015382s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015535s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000594s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000556s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000419s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000607s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002460s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000463s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000553s ]
+
+[ 2015-11-06T16:33:38+08:00 ] 51.254.32.82 /zc/index.php?m=Deals&a=index&tid=12
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000440s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000760s ]
+SQL: SHOW COLUMNS FROM `fanwe_nav` [ RunTime:0.001886s ]
+SQL: SELECT * FROM `fanwe_nav` ORDER BY sort  [ RunTime:0.001615s ]
+SQL: SHOW COLUMNS FROM `fanwe_deal_cate` [ RunTime:0.001313s ]
+SQL: SELECT * FROM `fanwe_deal_cate` ORDER BY id  [ RunTime:0.000832s ]
+SQL: SHOW COLUMNS FROM `fanwe_deal_keyword` [ RunTime:0.001912s ]
+SQL: SELECT * FROM `fanwe_deal_keyword` LIMIT 1   [ RunTime:0.000673s ]
+NOTIC: [8] Undefined index: uid /webHome/LFWZ000390/www/zc/Zc/Lib/Action/DealsAction.class.php 第 18 行.
+
+[ 2015-11-06T16:33:40+08:00 ] 51.254.32.82 /zc/index.php?m=User&a=login
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000465s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000592s ]
+SQL: SHOW COLUMNS FROM `fanwe_nav` [ RunTime:0.001591s ]
+SQL: SELECT * FROM `fanwe_nav` ORDER BY sort  [ RunTime:0.000932s ]
+SQL: SHOW COLUMNS FROM `fanwe_deal_cate` [ RunTime:0.001235s ]
+SQL: SELECT * FROM `fanwe_deal_cate` ORDER BY id  [ RunTime:0.000893s ]
+SQL: SHOW COLUMNS FROM `fanwe_deal_keyword` [ RunTime:0.001867s ]
+SQL: SELECT * FROM `fanwe_deal_keyword` LIMIT 1   [ RunTime:0.000911s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: uid /webHome/LFWZ000390/www/zc/Zc/Runtime/Cache/42b90be8e9c40e58e803cfb6a2f683e9.php 第 76 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.014793s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014938s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000517s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000474s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000384s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000531s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002186s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000455s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000550s ]
+
+[ 2015-11-06T16:33:42+08:00 ] 51.254.32.82 /zc/index.php?m=Deals&a=index&tid=14
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000480s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000609s ]
+SQL: SHOW COLUMNS FROM `fanwe_nav` [ RunTime:0.001858s ]
+SQL: SELECT * FROM `fanwe_nav` ORDER BY sort  [ RunTime:0.000631s ]
+SQL: SHOW COLUMNS FROM `fanwe_deal_cate` [ RunTime:0.001206s ]
+SQL: SELECT * FROM `fanwe_deal_cate` ORDER BY id  [ RunTime:0.000969s ]
+SQL: SHOW COLUMNS FROM `fanwe_deal_keyword` [ RunTime:0.001320s ]
+SQL: SELECT * FROM `fanwe_deal_keyword` LIMIT 1   [ RunTime:0.000546s ]
+NOTIC: [8] Undefined index: uid /webHome/LFWZ000390/www/zc/Zc/Lib/Action/DealsAction.class.php 第 18 行.
+
+[ 2015-11-06T16:33:44+08:00 ] 51.254.32.82 /zc/index.php?m=User&a=login
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000474s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000648s ]
+SQL: SHOW COLUMNS FROM `fanwe_nav` [ RunTime:0.001726s ]
+SQL: SELECT * FROM `fanwe_nav` ORDER BY sort  [ RunTime:0.001056s ]
+SQL: SHOW COLUMNS FROM `fanwe_deal_cate` [ RunTime:0.001945s ]
+SQL: SELECT * FROM `fanwe_deal_cate` ORDER BY id  [ RunTime:0.001058s ]
+SQL: SHOW COLUMNS FROM `fanwe_deal_keyword` [ RunTime:0.001637s ]
+SQL: SELECT * FROM `fanwe_deal_keyword` LIMIT 1   [ RunTime:0.001275s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: uid /webHome/LFWZ000390/www/zc/Zc/Runtime/Cache/42b90be8e9c40e58e803cfb6a2f683e9.php 第 76 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.017381s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017503s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000599s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000429s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000543s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000459s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002357s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000612s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000719s ]
+
+[ 2015-11-06T16:33:46+08:00 ] 51.254.32.82 /zc/index.php?m=Deals&a=index&tid=4
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000447s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000627s ]
+SQL: SHOW COLUMNS FROM `fanwe_nav` [ RunTime:0.001895s ]
+SQL: SELECT * FROM `fanwe_nav` ORDER BY sort  [ RunTime:0.000705s ]
+SQL: SHOW COLUMNS FROM `fanwe_deal_cate` [ RunTime:0.002032s ]
+SQL: SELECT * FROM `fanwe_deal_cate` ORDER BY id  [ RunTime:0.000689s ]
+SQL: SHOW COLUMNS FROM `fanwe_deal_keyword` [ RunTime:0.001797s ]
+SQL: SELECT * FROM `fanwe_deal_keyword` LIMIT 1   [ RunTime:0.000660s ]
+NOTIC: [8] Undefined index: uid /webHome/LFWZ000390/www/zc/Zc/Lib/Action/DealsAction.class.php 第 18 行.
+
+[ 2015-11-06T16:33:53+08:00 ] 51.254.32.82 /zc/index.php?m=User&a=login
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000519s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000735s ]
+SQL: SHOW COLUMNS FROM `fanwe_nav` [ RunTime:0.002076s ]
+SQL: SELECT * FROM `fanwe_nav` ORDER BY sort  [ RunTime:0.000620s ]
+SQL: SHOW COLUMNS FROM `fanwe_deal_cate` [ RunTime:0.001468s ]
+SQL: SELECT * FROM `fanwe_deal_cate` ORDER BY id  [ RunTime:0.000704s ]
+SQL: SHOW COLUMNS FROM `fanwe_deal_keyword` [ RunTime:0.001775s ]
+SQL: SELECT * FROM `fanwe_deal_keyword` LIMIT 1   [ RunTime:0.000642s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: uid /webHome/LFWZ000390/www/zc/Zc/Runtime/Cache/42b90be8e9c40e58e803cfb6a2f683e9.php 第 76 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.014565s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014682s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000637s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000473s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000583s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000677s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002680s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000419s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000530s ]
+
+[ 2015-11-06T16:33:55+08:00 ] 51.254.32.82 /zc/index.php?m=Deals&a=index&tid=5
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000412s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000573s ]
+SQL: SHOW COLUMNS FROM `fanwe_nav` [ RunTime:0.001675s ]
+SQL: SELECT * FROM `fanwe_nav` ORDER BY sort  [ RunTime:0.000975s ]
+SQL: SHOW COLUMNS FROM `fanwe_deal_cate` [ RunTime:0.002311s ]
+SQL: SELECT * FROM `fanwe_deal_cate` ORDER BY id  [ RunTime:0.000766s ]
+SQL: SHOW COLUMNS FROM `fanwe_deal_keyword` [ RunTime:0.002180s ]
+SQL: SELECT * FROM `fanwe_deal_keyword` LIMIT 1   [ RunTime:0.001310s ]
+NOTIC: [8] Undefined index: uid /webHome/LFWZ000390/www/zc/Zc/Lib/Action/DealsAction.class.php 第 18 行.
+
+[ 2015-11-06T16:33:59+08:00 ] 51.254.32.82 /zc/index.php?m=User&a=login
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000559s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000694s ]
+SQL: SHOW COLUMNS FROM `fanwe_nav` [ RunTime:0.002278s ]
+SQL: SELECT * FROM `fanwe_nav` ORDER BY sort  [ RunTime:0.001236s ]
+SQL: SHOW COLUMNS FROM `fanwe_deal_cate` [ RunTime:0.001920s ]
+SQL: SELECT * FROM `fanwe_deal_cate` ORDER BY id  [ RunTime:0.001065s ]
+SQL: SHOW COLUMNS FROM `fanwe_deal_keyword` [ RunTime:0.002006s ]
+SQL: SELECT * FROM `fanwe_deal_keyword` LIMIT 1   [ RunTime:0.001067s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: uid /webHome/LFWZ000390/www/zc/Zc/Runtime/Cache/42b90be8e9c40e58e803cfb6a2f683e9.php 第 76 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.015690s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015855s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000530s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000456s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000399s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000546s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002206s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000503s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000598s ]
+
+[ 2015-11-06T17:35:30+08:00 ] 66.249.67.184 /zc/index.php?m=News&a=html&id=3
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000850s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001006s ]
+SQL: SHOW COLUMNS FROM `fanwe_nav` [ RunTime:0.002443s ]
+SQL: SELECT * FROM `fanwe_nav` ORDER BY sort  [ RunTime:0.002655s ]
+SQL: SHOW COLUMNS FROM `fanwe_deal_cate` [ RunTime:0.001668s ]
+SQL: SELECT * FROM `fanwe_deal_cate` ORDER BY id  [ RunTime:0.000836s ]
+SQL: SHOW COLUMNS FROM `fanwe_deal_keyword` [ RunTime:0.001921s ]
+SQL: SELECT * FROM `fanwe_deal_keyword` LIMIT 1   [ RunTime:0.001589s ]
+SQL: SHOW COLUMNS FROM `fanwe_news` [ RunTime:0.001896s ]
+SQL: SELECT * FROM `fanwe_news` WHERE ( `id` = 3 ) LIMIT 1   [ RunTime:0.001403s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: uid /webHome/LFWZ000390/www/zc/Zc/Runtime/Cache/012cdf2fa3ba4152d6d6173485c32ca8.php 第 98 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/zc/Zc/Runtime/Cache/012cdf2fa3ba4152d6d6173485c32ca8.php 第 142 行.
+SQL: SELECT * FROM `fanwe_news` WHERE ( `id` < '3' ) LIMIT 1   [ RunTime:0.001419s ]
+SQL: SELECT * FROM `fanwe_news` WHERE ( `id` > '3' ) LIMIT 1   [ RunTime:0.001674s ]
+INFO: ParseTemplate Behavior ::run [ RunTime:0.020825s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020954s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000609s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000474s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000398s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000484s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002241s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000426s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000552s ]
+
+[ 2015-11-06T19:19:23+08:00 ] 42.120.161.94 /zc/
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000684s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000988s ]
+SQL: SHOW COLUMNS FROM `fanwe_nav` [ RunTime:0.003653s ]
+SQL: SELECT * FROM `fanwe_nav` ORDER BY sort  [ RunTime:0.000740s ]
+SQL: SHOW COLUMNS FROM `fanwe_deal_cate` [ RunTime:0.002462s ]
+SQL: SELECT * FROM `fanwe_deal_cate` ORDER BY id  [ RunTime:0.001405s ]
+SQL: SHOW COLUMNS FROM `fanwe_deal_keyword` [ RunTime:0.001571s ]
+SQL: SELECT * FROM `fanwe_deal_keyword` LIMIT 1   [ RunTime:0.000980s ]
+SQL: SHOW COLUMNS FROM `fanwe_showindex` [ RunTime:0.001767s ]
+SQL: SELECT * FROM `fanwe_showindex`  [ RunTime:0.001697s ]
+SQL: SHOW COLUMNS FROM `fanwe_news` [ RunTime:0.002484s ]
+SQL: SELECT * FROM `fanwe_news` ORDER BY addtime desc,rec desc LIMIT 0,5   [ RunTime:0.005917s ]
+SQL: SHOW COLUMNS FROM `fanwe_company` [ RunTime:0.001216s ]
+ERR: 1146:Table 'my1006252.fanwe_company' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `fanwe_company`
+SQL: SELECT * FROM `fanwe_company` LIMIT 1   [ RunTime:0.000535s ]
+ERR: 1146:Table 'my1006252.fanwe_company' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `fanwe_company` LIMIT 1  
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.016589s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016708s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000726s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000712s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000430s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000552s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002732s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000593s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000683s ]
+

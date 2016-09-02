@@ -1,0 +1,205 @@
+[ 2015-06-08T09:16:52+08:00 ] 127.0.0.1 /zcw/mobile.php
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `fanwe_deal_cate` [ RunTime:0.005001s ]
+SQL: SELECT * FROM `fanwe_deal_cate` ORDER BY id  [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: wlm_mobile_type E:\workspaceszend\zcw\Mobile\Lib\Action\CommonAction.class.php 第 25 行.
+NOTIC: [8] Undefined index: wlm_mobile_type E:\workspaceszend\zcw\Mobile\Lib\Action\CommonAction.class.php 第 28 行.
+NOTIC: [8] Undefined index: wlm_mobile_type E:\workspaceszend\zcw\Mobile\Lib\Action\CommonAction.class.php 第 25 行.
+NOTIC: [8] Undefined index: wlm_mobile_type E:\workspaceszend\zcw\Mobile\Lib\Action\CommonAction.class.php 第 28 行.
+NOTIC: [8] Undefined index: wlm_mobile_type E:\workspaceszend\zcw\Mobile\Lib\Action\CommonAction.class.php 第 25 行.
+NOTIC: [8] Undefined index: wlm_mobile_type E:\workspaceszend\zcw\Mobile\Lib\Action\CommonAction.class.php 第 28 行.
+NOTIC: [8] Undefined index: wlm_mobile_type E:\workspaceszend\zcw\Mobile\Lib\Action\CommonAction.class.php 第 25 行.
+NOTIC: [8] Undefined index: wlm_mobile_type E:\workspaceszend\zcw\Mobile\Lib\Action\CommonAction.class.php 第 28 行.
+NOTIC: [8] Undefined index: wlm_mobile_type E:\workspaceszend\zcw\Mobile\Lib\Action\CommonAction.class.php 第 25 行.
+NOTIC: [8] Undefined index: wlm_mobile_type E:\workspaceszend\zcw\Mobile\Lib\Action\CommonAction.class.php 第 28 行.
+NOTIC: [8] Undefined index: wlm_mobile_type E:\workspaceszend\zcw\Mobile\Lib\Action\CommonAction.class.php 第 25 行.
+NOTIC: [8] Undefined index: wlm_mobile_type E:\workspaceszend\zcw\Mobile\Lib\Action\CommonAction.class.php 第 28 行.
+NOTIC: [8] Undefined index: wlm_mobile_type E:\workspaceszend\zcw\Mobile\Lib\Action\CommonAction.class.php 第 25 行.
+NOTIC: [8] Undefined index: wlm_mobile_type E:\workspaceszend\zcw\Mobile\Lib\Action\CommonAction.class.php 第 28 行.
+NOTIC: [8] Undefined index: wlm_mobile_type E:\workspaceszend\zcw\Mobile\Lib\Action\CommonAction.class.php 第 25 行.
+NOTIC: [8] Undefined index: wlm_mobile_type E:\workspaceszend\zcw\Mobile\Lib\Action\CommonAction.class.php 第 28 行.
+NOTIC: [8] Undefined index: wlm_mobile_type E:\workspaceszend\zcw\Mobile\Lib\Action\CommonAction.class.php 第 25 行.
+NOTIC: [8] Undefined index: wlm_mobile_type E:\workspaceszend\zcw\Mobile\Lib\Action\CommonAction.class.php 第 28 行.
+NOTIC: [8] Undefined index: wlm_mobile_type E:\workspaceszend\zcw\Mobile\Lib\Action\CommonAction.class.php 第 25 行.
+NOTIC: [8] Undefined index: wlm_mobile_type E:\workspaceszend\zcw\Mobile\Lib\Action\CommonAction.class.php 第 28 行.
+SQL: SHOW COLUMNS FROM `fanwe_deal` [ RunTime:0.008000s ]
+SQL: SELECT id,name,image,end_time,limit_price,brief,support_amount,user_name,user_id,province,city FROM `fanwe_deal` WHERE ( `is_effect` = 1 ) ORDER BY sort desc,id desc LIMIT 0,5   [ RunTime:0.002001s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: golist_url E:\workspaceszend\zcw\Mobile\Runtime\Cache\e324f3ed94e020837035f6928d7c067b.php 第 139 行.
+NOTIC: [8] Undefined index: golist_url E:\workspaceszend\zcw\Mobile\Runtime\Cache\e324f3ed94e020837035f6928d7c067b.php 第 139 行.
+NOTIC: [8] Undefined index: golist_url E:\workspaceszend\zcw\Mobile\Runtime\Cache\e324f3ed94e020837035f6928d7c067b.php 第 139 行.
+NOTIC: [8] Undefined index: golist_url E:\workspaceszend\zcw\Mobile\Runtime\Cache\e324f3ed94e020837035f6928d7c067b.php 第 139 行.
+NOTIC: [8] Undefined index: golist_url E:\workspaceszend\zcw\Mobile\Runtime\Cache\e324f3ed94e020837035f6928d7c067b.php 第 139 行.
+NOTIC: [8] Undefined index: golist_url E:\workspaceszend\zcw\Mobile\Runtime\Cache\e324f3ed94e020837035f6928d7c067b.php 第 139 行.
+NOTIC: [8] Undefined index: golist_url E:\workspaceszend\zcw\Mobile\Runtime\Cache\e324f3ed94e020837035f6928d7c067b.php 第 139 行.
+NOTIC: [8] Undefined index: golist_url E:\workspaceszend\zcw\Mobile\Runtime\Cache\e324f3ed94e020837035f6928d7c067b.php 第 139 行.
+NOTIC: [8] Undefined index: golist_url E:\workspaceszend\zcw\Mobile\Runtime\Cache\e324f3ed94e020837035f6928d7c067b.php 第 139 行.
+NOTIC: [8] Undefined index: golist_url E:\workspaceszend\zcw\Mobile\Runtime\Cache\e324f3ed94e020837035f6928d7c067b.php 第 139 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.021001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-06-08T10:03:53+08:00 ] 127.0.0.1 /zcw/mobile.php
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fanwe_deal_cate` [ RunTime:0.004000s ]
+SQL: SELECT * FROM `fanwe_deal_cate` ORDER BY id  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fanwe_deal` [ RunTime:0.007001s ]
+SQL: SELECT id,name,image,end_time,limit_price,brief,support_amount,user_name,user_id,province,city FROM `fanwe_deal` WHERE ( `is_effect` = 1 ) ORDER BY sort desc,id desc LIMIT 0,5   [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.020001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-06-08T10:30:46+08:00 ] 127.0.0.1 /zcw/mobile.php
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `fanwe_deal_cate` [ RunTime:0.006000s ]
+SQL: SELECT * FROM `fanwe_deal_cate` ORDER BY id  [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `fanwe_deal` [ RunTime:0.007001s ]
+SQL: SELECT id,name,image,end_time,limit_price,brief,support_amount,user_name,user_id,province,city FROM `fanwe_deal` WHERE ( `is_effect` = 1 ) ORDER BY sort desc,id desc LIMIT 0,5   [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.021001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-06-08T10:31:53+08:00 ] 127.0.0.1 /zcw/mobile.php
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fanwe_deal_cate` [ RunTime:0.006001s ]
+SQL: SELECT * FROM `fanwe_deal_cate` ORDER BY id  [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `fanwe_deal` [ RunTime:0.006000s ]
+SQL: SELECT id,name,image,end_time,limit_price,brief,support_amount,user_name,user_id,province,city FROM `fanwe_deal` WHERE ( `is_effect` = 1 ) ORDER BY sort desc,id desc LIMIT 0,5   [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.019001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-06-08T10:32:40+08:00 ] 127.0.0.1 /zcw/mobile.php
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fanwe_deal_cate` [ RunTime:0.005000s ]
+SQL: SELECT * FROM `fanwe_deal_cate` ORDER BY id  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fanwe_deal` [ RunTime:0.006000s ]
+SQL: SELECT id,name,image,end_time,limit_price,brief,support_amount,user_name,user_id,province,city FROM `fanwe_deal` WHERE ( `is_effect` = 1 ) ORDER BY sort desc,id desc LIMIT 0,5   [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.021001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-06-08T10:32:43+08:00 ] 127.0.0.1 /zcw/mobile.php?m=Index&a=rec
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `fanwe_deal_cate` [ RunTime:0.004000s ]
+SQL: SELECT * FROM `fanwe_deal_cate` ORDER BY id  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fanwe_deal` [ RunTime:0.007000s ]
+SQL: SELECT id,name,image,end_time,limit_price,brief,support_amount,user_name,user_id,province,city FROM `fanwe_deal` WHERE ( `is_effect` = 1 ) AND ( `is_recommend` = 1 ) ORDER BY sort desc,id desc LIMIT 0,5   [ RunTime:0.056004s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.048003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.048003s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-06-08T15:21:47+08:00 ] 127.0.0.1 /zcw/mobile.php
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fanwe_deal_cate` [ RunTime:0.006000s ]
+SQL: SELECT * FROM `fanwe_deal_cate` ORDER BY id  [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `fanwe_deal` [ RunTime:0.013000s ]
+SQL: SELECT id,name,image,end_time,limit_price,brief,support_amount,user_name,user_id,province,city FROM `fanwe_deal` WHERE ( `is_effect` = 1 ) ORDER BY sort desc,id desc LIMIT 0,5   [ RunTime:0.001001s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.023001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-06-08T15:21:49+08:00 ] 127.0.0.1 /zcw/mobile.php?m=Deal&a=show&id=63
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2048] Declaration of DealAction::show() should be compatible with that of Action::show() E:\workspaceszend\zcw\Mobile\Lib\Action\DealAction.class.php 第 13 行.
+SQL: SHOW COLUMNS FROM `fanwe_deal_cate` [ RunTime:0.006001s ]
+SQL: SELECT * FROM `fanwe_deal_cate` ORDER BY id  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fanwe_deal` [ RunTime:0.011001s ]
+SQL: SELECT * FROM `fanwe_deal` WHERE ( `id` = 63 ) AND ( `is_effect` = 1 ) LIMIT 1   [ RunTime:0.002000s ]
+NOTIC: [8] Use of undefined constant __AIMG__ - assumed '__AIMG__' E:\workspaceszend\zcw\Mobile\Lib\Action\DealAction.class.php 第 37 行.
+NOTIC: [8] Use of undefined constant needAmount - assumed 'needAmount' E:\workspaceszend\zcw\Mobile\Lib\Action\DealAction.class.php 第 48 行.
+SQL: SHOW COLUMNS FROM `fanwe_deal_focus_log` [ RunTime:0.006000s ]
+SQL: SELECT * FROM `fanwe_deal_focus_log` WHERE ( `user_id` = 25 ) AND ( `deal_id` = 63 ) LIMIT 1   [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `fanwe_dealmsg` [ RunTime:0.005001s ]
+SQL: SELECT `x` FROM `fanwe_dealmsg` WHERE ( deal_id=63 and isshow=1 ) LIMIT 1   [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.021001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022001s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+

@@ -1,0 +1,147 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>{:C('WEB_NAME')}-{$page_name}</title>
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/css/common.css"/>
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/css/main.css"/>
+<script type="text/javascript" src="__PUBLIC__/js/jquery.min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/layer/layer.min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/js/active.js"></script>
+<script type="text/javascript" src="__PUBLIC__/ueditor/ueditor.config.js"></script>
+<script type="text/javascript" src="__PUBLIC__/ueditor/ueditor.all.min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/js/uploadPreview.min.js"></script>
+<script>
+window.onload = function () { 
+	new uploadPreview({ UpBtn: "pic", DivShow: "imgdiv", ImgShow: "imgShow" });
+}
+</script>
+</head>
+<body>
+<!-- Head -->
+<include file="Public:head" />
+<!-- Head -->
+<div class="container clearfix">
+    <!-- sidebar -->
+    <include file="Public:sidebar" />
+    <!--/sidebar-->
+    <div class="main-wrap">
+
+        <div class="crumb-wrap">
+            <div class="crumb-list">
+	            <i class="icon-font"></i>
+	            <a href="{:C('ADMIN_URL')}">首页</a>
+	            <span class="crumb-step">&gt;</span>
+	            <a class="crumb-name" href="{:U('Active/index')}">{$page_name}</a>
+	            <span class="crumb-step">&gt;</span>
+	            <span>修改活动</span>
+            </div>
+        </div>
+        <div class="result-wrap">
+            <div class="result-content">
+                <form action="{:U('Active/modify')}" method="post" id="myform" name="myform"  enctype="multipart/form-data">
+                    <table class="insert-tab" width="100%">
+                        <tbody>
+	                        <tr>
+	                            <th width="120"><i class="require-red">*</i>发布者：</th>
+	                            <td>
+	                                <input class="common-text" name="pubname" id="pubname" size="50" value="{$vo['pubname']}" type="text">
+	                            </td>
+	                        </tr>
+                            <tr>
+                                <th><i class="require-red">*</i>活动标题：</th>
+                                <td>
+                                    <input class="common-text required" name="title" id="title" size="50" value="{$vo['title']}" type="text">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th><i class="require-red"></i>展示图片：</th>
+                                <td>
+									<div id="imgdiv"><img id="imgShow" width="100" height="100" /></div>
+                                    <input class="common-text required" name="pic" id="pic" size="50" type="file" value=""> 如果要修改图片，选择新的图片，如果不修改，则不用选择
+                                </td>
+                            </tr> 
+                            <tr>
+                                <th><i class="require-red"></i>活动时间：</th>
+                                <td>
+                                    <input class="common-text required" name="atime" id="atime" size="50" value="{$vo['atime']}" type="text">
+                                </td>
+                            </tr> 
+                            <tr>
+                                <th><i class="require-red"></i>活动地点：</th>
+                                <td>
+                                    <input class="common-text required" name="address" id="address" size="50" value="{$vo['address']}" type="text">
+                                </td>
+                            </tr> 
+                            <tr>
+                                <th><i class="require-red"></i>活动人数：</th>
+                                <td>
+                                    <input class="common-text required" name="pnum" id="pnum" size="50" value="{$vo['pnum']}" type="text">
+                                </td>
+                            </tr> 
+                            <tr>
+                                <th><i class="require-red"></i>费用：</th>
+                                <td>
+                                    <input class="common-text required" name="money" id="money" size="50" value="{$vo['money']}" type="text">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th><i class="require-red"></i>状态：</th>
+                                <td>
+                                    <select name="status">                                    
+                                    	<option value="1" <if condition="$vo['status'] eq 1">selected</if>>未开始</option>
+                                    	<option value="2" <if condition="$vo['status'] eq 2">selected</if>>进行中</option>
+                                    	<option value="3" <if condition="$vo['status'] eq 3">selected</if>>已结束</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th><i class="require-red"></i>活动内容：</th>
+                                <td>
+                                    <script id="editor" type="text/plain" style="width:1024px;height:500px;">{$vo['content']|htmlspecialchars_decode}</script>
+                                </td>
+                            </tr> 
+                            <tr>
+                                <th><i class="require-red"></i>是否显示：</th>
+                                <td>
+                                    <input name="isshow" value="1" type="radio" <if condition="$vo['isshow'] eq 1">checked</if>>显示
+                                    <input name="isshow" value="0" type="radio" <if condition="$vo['isshow'] eq 0">checked</if>>不显示
+                                </td>
+                            </tr>
+                            <tr>
+                                <th><i class="require-red"></i>是否推荐：</th>
+                                <td>
+                                    <input name="rec" value="1" type="radio" <if condition="$vo['rec'] eq 1">checked</if>>是
+                                    <input name="rec" value="0" type="radio" <if condition="$vo['rec'] eq 0">checked</if>>否
+                                </td>
+                            </tr>   
+                            <tr>
+                                <th><i class="require-red"></i>虚拟点击量：</th>
+                                <td>
+                                    <input class="common-text required" name="num_edit" id="num_edit" size="10" value="{$vo.num_edit}" type="text">
+                                </td>
+                            </tr>                        
+                            <tr>
+                                <th></th>
+                                <td>
+                                	<input type="hidden" name="id" value="{$vo['id']}">
+                                    <input class="btn btn-primary btn6 mr10" value="提交" type="submit">
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </form>
+            </div>
+        </div>
+
+    </div>
+    <!--/main-->
+</div>
+<script type="text/javascript">
+
+    //实例化编辑器
+    //建议使用工厂方法getEditor创建和引用编辑器实例，如果在某个闭包下引用该编辑器，直接调用UE.getEditor('editor')就能拿到相关的实例
+    var ue = UE.getEditor('editor');
+</script>
+</body>
+</html>

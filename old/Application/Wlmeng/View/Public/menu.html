@@ -1,0 +1,214 @@
+<script src="__JS__/L_slide.js"></script>
+ <script>
+    var mainLeft;
+    var clientWidth=document.documentElement.clientWidth;
+        $(function(){
+            var adWidth=$(".AdLeft").width();
+            var mainWidth=$(".page-wrapper").width();
+            var sidesmallWidth=$(".userHeadsmall").width();
+            var sideWidth=$(".userHead").width();
+                mainLeft=(clientWidth-mainWidth-adWidth-sidesmallWidth)/2+adWidth;
+            $(".page-wrapper").css("left",mainLeft);
+            $(".userHeadsmall").mouseenter(function(){
+                mainLeft=(clientWidth-mainWidth-sideWidth)/2;
+                $(this).css("right","-10000px");
+                $(".userHead").css("right","0");
+                $(".AdLeft").css("left","-10000px");
+                $(".page-wrapper").css("left",mainLeft);
+            });
+            $(".userHead").mouseleave(function(){
+                mainLeft=(clientWidth-mainWidth-adWidth-sidesmallWidth)/2+adWidth;
+                $(this).css("right","-10000px");
+                $(".userHeadsmall").css("right","0");
+                $(".AdLeft").css("left","0");
+                $(".page-wrapper").css("left",mainLeft);
+            });
+            $(".af3").slide({
+                affect:3,
+                time:3000,
+                speed:1000,
+                dot_text:false
+    });
+            
+        });
+    </script>
+<div class="AdLeft">
+                        <div class="wrap af3">
+                            <ul class="slidebox">
+                            	<volist name="adv" id="vo">
+                            		<li>
+                                    	<a href="{$vo.from_url}" target="_blank">
+                                        	<img src="{$vo.pic}"/>
+                                   		</a>
+                                	</li>
+                            	</volist>
+                            </ul>
+                        </div>
+                    </div>
+
+                        <div class="userHeadsmall">
+                            <div style="overflow:hidden;margin-bottom:20px;">
+                            <if condition="$Think.session.face == ''">
+                            	<div style="float:left;margin:10px 0 10px 10px;"><img src="__IMG__/default_user.png" alt="用户头像" width="32" height="32"></div>
+                            <else/>
+                            	<div style="float:left;margin:10px 0 10px 10px;"><img src="{$Think.session.face}" alt="用户头像" width="32" height="32"></div>
+                            </if>
+                                
+                            </div>
+                            <div id="page-data-nav" class="clearfix">
+                                <ul id="data-total-list" class=" clearfix data-total-list">
+                                    <li >
+                                        <a href=""> <i class="icon icon-top-person"></i>
+                                        </a>
+                                    </li>
+                                    <li  >
+                                        <a href=""> <i class="icon icon-top-investor"></i>
+                                        </a>
+                                    </li>
+                                    <li  >
+                                        <a href="">
+                                            <i class="icon icon-top-investfirm"></i>
+                                        </a>
+                                    </li>
+                                    <li  >
+                                        <a href="">
+                                            <i class="icon icon-top-investevents"></i>
+                                        </a>
+                                    </li>
+                                    <li >
+                                        <a href="">
+                                            <i class="icon icon-top-news"></i>
+                                        </a>
+                                    </li>
+                                    <li  >
+                                        <a href="">
+                                            <i class="icon icon-top-comment"></i>
+                                        </a>
+                                    </li>
+                                    <li  >
+                                        <a href="">
+                                            <i class="icon icon-top-company"></i>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="">
+                                            <i class="icon icon-top-company-foreign"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+
+                            </div>
+                        </div>
+                        <div class="userHead">
+                            <div style="overflow:hidden;margin-bottom:20px;">
+                            	<if condition="$Think.session.memberid != null">
+                            		<if condition="$Think.session.face != ''">
+                            			<div style="float:left;margin:10px 0 10px 30px;"><img src="{$Think.session.face}" alt="用户头像" width="32" height="32"></div>
+                            		<else/>
+                            			<div style="float:left;margin:10px 0 10px 30px;"><img src="__IMG__/default_user.png" alt="用户头像" width="32" height="32"></div>
+                            		</if>
+                            		
+                                	<div class="pull-left" id="userInfo">
+                                    	<p><a href="{:U('Wlmeng/Member/getOneMember')}">{$Think.session.membercode}</a></p>
+                                	</div>
+                            	<else/>
+                            		<div style="float:left;margin:10px 0 10px 30px;"><img src="__IMG__/default_user.png" alt="用户头像" width="32" height="32"></div>
+                                	<div class="pull-left" id="userInfo">
+                                    	<p id="user-top-login" class="pull-right top-has-login">
+                                        <a id="top_login" href="{:U('Wlmeng/Member/goLogin')}">登录</a> <strong>/</strong>
+                                        <a id="top_register" href="{:U('Wlmeng/Member/goRegister')}">注册</a>
+                                    </p>
+                                    	
+                                	</div>
+                            	</if>
+                                
+                                 <div class="userIntro">
+                                    <p><strong>介绍:</strong></p>
+                                    <p>
+                                    	{$Think.session.intro}
+                                    </p>
+                                </div> 
+                            </div>
+                            <div id="page-data-nav" class="clearfix">
+                                <ul id="data-total-list" class=" clearfix data-total-list">
+                                    <li >
+                                        <a href="{$category[0]['url']}"> <i class="icon icon-top-person"></i>
+                                        </a>
+                                        <a href="{$category[0]['url']}" class="marginLeft">
+                                            {$category[0]['cname']} <em>{$category[0]['num']}</em>
+                                        </a>
+                                    </li>
+                                    <li  >
+                                        <a href="{$category[1]['url']}"> <i class="icon icon-top-investor"></i>
+                                        </a>
+                                        <a href="{$category[1]['url']}" class="marginLeft">
+                                            {$category[1]['cname']} <em>{$category[1]['num']}</em>
+                                        </a>
+                                    </li>
+                                    <li  >
+                                        <a href="{$category[2]['url']}">
+                                            <i class="icon icon-top-investfirm"></i>
+                                        </a>
+                                        <a href="{$category[2]['url']}" class="marginLeft">
+                                            {$category[2]['cname']}
+                                            <em>{$category[2]['num']}</em>
+                                        </a>
+                                    </li>
+                                    <li  >
+                                        <a href="{$category[3]['url']}">
+                                            <i class="icon icon-top-investevents"></i>
+                                        </a>
+                                        <a href="{$category[3]['url']}" class="marginLeft">
+                                            {$category[3]['cname']}
+                                            <em>{$category[3]['num']}</em>
+                                        </a>
+                                    </li>
+                                    <li  >
+                                        <a href="{$category[4]['url']}">
+                                            <i class="icon icon-top-news"></i>
+                                        </a>
+                                        <a href="{$category[4]['url']}" class="marginLeft">
+                                            {$category[4]['cname']}
+                                            <em>{$category[4]['num']}</em>
+                                        </a>
+                                    </li>
+                                    <li  >
+                                        <a href="{$category[5]['url']}">
+                                            <i class="icon icon-top-comment"></i>
+                                        </a>
+                                        <a href="{$category[5]['url']}" class="marginLeft">
+                                            {$category[5]['cname']}
+                                            <em>{$category[5]['num']}</em>
+                                        </a>
+                                    </li>
+                                    <li  >
+                                        <a href="{$category[6]['url']}">
+                                            <i class="icon icon-top-company"></i>
+                                        </a>
+                                        <a href="{$category[6]['url']}" class="marginLeft">
+                                            {$category[6]['cname']}
+                                            <em>{$category[6]['num']}</em>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="{$category[7]['url']}">
+                                            <i class="icon icon-top-company-foreign"></i>
+                                        </a>
+                                        <a href="{$category[7]['url']}" class="marginLeft">
+                                           {$category[7]['cname']}
+                                            <em>{$category[7]['num']}</em>
+                                        </a>
+                                    </li>
+                                </ul>
+
+                                <div class="handle-tools">
+                                    <a class="btn btn-orange" href="{:U('Company/goAddCompany')}">
+                                        <i class="icon_plus"></i> <b>添加公司</b>
+                                    </a>
+                                    <a class="btn btn-orange" href="{:U('Company/goAddInvest')}">
+                                        <i class="icon_plus"></i> <b>添加机构</b>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    

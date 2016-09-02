@@ -1,0 +1,309 @@
+<!doctype html>
+<!--[if lt IE 7 ]> <html class="ie ie6 ie-lt10 ie-lt9 ie-lt8 ie-lt7 no-js" lang="en"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie ie7 ie-lt10 ie-lt9 ie-lt8 no-js" lang="en"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie ie8 ie-lt10 ie-lt9 no-js" lang="en"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie ie9 ie-lt10 no-js" lang="en"> <![endif]-->
+<!--[if gt IE 9]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<!-- the "no-js" class is for Modernizr. -->
+
+<head id="www-itjuzi-com" data-template-set="html5-reset">
+
+
+	<title>编辑用户资料 |{$system.webname}</title>
+<include file="./Application/Wlmeng/View/Public/meta.html" />
+	
+	<link rel="stylesheet" href="__CSS__/style.css" />
+
+	<script type="text/javascript" src="__JS__/m.js"></script>
+	
+	<script src="__PUBLIC__/js/wlm.js" type="text/javascript"></script>
+	<script type="text/javascript" src="__JS__/jquery-1.9.1.min.js"></script>
+	<script type="text/javascript" src="__LAYER__/layer.min.js"></script>
+	<script type="text/javascript">
+		function textCounter() { 
+			
+		   // 函数，3个参数，表单名字，表单域元素名，限制字符； 
+		   if ($('#des').val().length > 60) 
+		   //如果元素区字符数大于最大字符数，按照最大字符数截断； 
+		   $('#des').val($('#des').val().substring(0, 60)); 
+		   else 
+		   //在记数区文本框内显示剩余的字符数； 
+		   $('#remLen').text(60 - $('#des').val().length); 
+		}  
+	</script>
+</head>
+
+<body >
+<script>window.jQuery || document.write("<script src='__JS__/jquery-1.9.1.min.js'>\x3C/script>")</script>
+<include file="./Application/Wlmeng/View/Public/menu.html" />
+<div class="wrapper">
+<include file="./Application/Wlmeng/View/Public/header.html" />
+  <div class="page-wrapper" style="padding-top:170px;">
+  
+    <section id="page-content" class="user-login clearfix">
+      
+      <article class="two-col-big-right">
+
+        <div class="normal-box  follow-area">
+          <h2>编辑资料</h2>
+
+        
+        <form action="" method="post" id="editform" accept-charset="utf-8" class="form-horizontal">
+          <div class="control-group">
+          	<input type="hidden" id="cityURL" value="{:U('Wlmeng/Member/getCity')}"/>
+        	<input type="hidden" id="editURL" value="{:U('Wlmeng/Member/doEditor')}"/>
+        	<input type="hidden" id="infoURL" value="{:U('Wlmeng/Member/getOneMember',array('memberid'=>session('memberid')))}"/>
+            <label class="control-label" for="prov">地点</label>
+            <div class="controls" id="address">
+              <select class="prov" name="prov_select" id="prov_select" style="width:150px;" onchange="getCity()">
+              	<option value="0" <if condition="$memberinfo['province_id'] == null or $memberinfo['province_id'] == 0">selected</if>>请选择</option>
+              	<volist name="province" id="vo">
+              		<option value="{$vo.id}" <if condition="$memberinfo['province_id'] == $vo['id']">selected</if>>{$vo.name}</option>
+              	</volist>
+              </select> 
+              	<if condition="$memberinfo['province_id'] == null or $memberinfo['province_id'] == 0">
+              		<select class="city" name="city_select" id="city_select" disabled="disabled" style="width:150px;">
+                	</select>
+              	<else/>
+              		<select class="city" name="city_select" id="city_select" style="width:150px;">
+              			<volist name="city" id="vo">
+              				<option value="{$vo.id}" <if condition="$memberinfo['city_id'] == $vo['id']">selected</if>>{$vo.name}</option>
+              			</volist>
+                	</select>
+              	</if>
+                
+            </div>
+          </div>
+
+          <div class="control-group">
+            <label class="control-label" for="education">教育</label>
+            <div class="controls">
+              <input type="text" name="education" value="{$memberinfo.education}" id="education" class="input-xlarge"  />              <span class="help-inline"></span>
+            </div>
+          </div>
+
+          <div class="control-group">
+            <label class="control-label" for="everjob">工作</label>
+            <div class="controls">
+               <input type="text" name="everjob" value="{$memberinfo.work}" id="everjob" class="input-xlarge"  />              <span class="help-inline"></span>
+            </div>
+          </div>
+
+          <div class="control-group">
+            <label class="control-label" for="des">一句话介绍</label>
+            <div class="controls">
+              <textarea name="des" cols="40" rows="5" id="des" class="input-xlarge" placeholder="不超过60个字" onkeyDown="textCounter()" onKeyUp="textCounter();" >{$memberinfo.intro}</textarea>              <span class="help-block"></span>
+              <p>您还可以输入：<span id="remLen"></span>字</p>
+            </div>
+          </div>
+
+          <style>
+            #user_skill .checkbox  { float: left; padding-top: 0; width: 160px;}
+          </style>
+          <div class="control-group">
+            <label class="control-label" for="ront_user_skill_id">能力</label>
+            <div class="controls" id="user_skill">
+            	<volist name="ability" id="vo">
+            		<label class="checkbox">
+            			<input  name="front_user_skill_id[]" type="checkbox" value="{$vo.id}" <if condition="$vo['ischecked'] == 1">checked</if>>{$vo.aname}
+            		</label>
+            	</volist>
+            </div>  
+          </div>
+
+          <style>
+            #user_goal .checkbox  { float: left; padding-top: 0; width: 160px;}
+          </style>
+          <div class="control-group">
+            <label class="control-label" for="ront_user_goal_id">上未来门的目的</label>
+            <div class="controls" id="user_goal">
+    			<volist name="objective" id="vo">
+    				<label class="checkbox">
+    					<input  name="front_user_goal_id[]" type="checkbox" value="{$vo.id}" <if condition="$vo['ischecked'] == 1">checked</if>>{$vo.oname}
+    				</label>
+    			</volist>
+            </div>  
+          </div>
+
+          <style>
+            #scope .checkbox  { float: left; padding-top: 0; width: 160px;}
+          </style>
+          <div class="control-group">
+            <label class="control-label" for="ront_scope_id">有兴趣的领域</label>
+            <div class="controls" id="scope">
+    			<volist name="domain" id="vo">
+    				<label class="checkbox">
+    					<input  name="front_scope_id[]" type="checkbox" value="{$vo.id}" <if condition="$vo['ischecked'] == 1">checked</if>>{$vo.dname}
+    				</label>
+    			</volist>
+            </div>  
+          </div>
+
+          <h2>个人的联系资料</h2>
+
+          <div class="control-group">
+            <style>
+              #upload_image-queue { width:284px;} 
+            </style>
+            <label class="control-label" for="logo">上传头像</label>
+            <div class="controls" style="height:80px; position:relative">
+            	<input type="text" name="face_text" id="face_text" disabled><input type="button" style="height:30px;padding-top:4px ;padding-bottom:4px;background-color:#3d9eff;border:0;color:#ffffff" id="face_button" value="浏览" onclick="$('#face_hidden_image').click()">            
+              <p  style="">请先上传图片 </p>
+            </div>
+          </div>
+
+          <div class="control-group clearfix" id="s-jscrop" style="overflow:hidden;clear:both; ">
+            
+            <div class="controls" style="position:relative;">
+
+              <div id="avatar">
+              	<if condition="$memberinfo['face'] == null">
+              		<img width="300" height="300" src="__IMG__/default_user.png" id="face_image"  />
+              	<else/>
+              		<img width="300" height="300" src="{$memberinfo.face}" id="face_image"  />
+              	</if>
+                  
+              </div>
+              
+            </div>
+          </div>
+
+          <div class="control-group">
+            <label class="control-label" for="weibo">微博</label>
+            <div class="controls">
+              <input type="text" name="weibo" value="{$memberinfo.blogurl}" id="weibo" class="input-xlarge"  /> 
+            </div>
+          </div>
+
+          <div class="control-group">
+            <label class="control-label" for="mobile">电话</label>
+            <div class="controls">
+              <input type="text" name="mobile" value="{$memberinfo.tel}" id="mobile" class="input-xlarge"  /> 
+            </div>
+          </div>
+
+          <div class="control-group">
+            <label class="control-label" for="qq">QQ</label>
+            <div class="controls">
+              <input type="text" name="qq" value="{$memberinfo.qq}" id="qq" class="input-xlarge"  /> 
+            </div>
+          </div>
+
+          <input type="button" class="submit-btn" value="更新资料" onclick="doEdit()" />
+
+        </form>
+        <div style="display:none">
+        	<form action="{:U('Wlmeng/Member/uploadFace')}" method="post" id="image_hidden_upload" target="face_image_iframe" enctype="multipart/form-data">
+        		<input type="file" id="face_hidden_image" name="face" onchange="getImage()">
+        		<input type="submit" id="face_image_submit" value="提交">
+        	</form>
+        <iframe style="display:block" name='face_image_iframe' id="face_image_iframe" ></iframe>
+        </div>
+          
+        
+        </div>
+ 
+      
+      </article>  
+      <include file="./Application/Wlmeng/View/Public/myinfomenu.html" />     
+
+    </section> 
+
+    <include file="./Application/Wlmeng/View/Public/footer.html" />
+
+  </div>  
+
+</div>
+
+
+
+
+
+
+<script type="text/javascript">
+  $(function () {
+    
+    $('body').on('click','#top_login,.login',function (evt) {
+      open_dialog('login', evt);
+    });
+    
+    $('body').on('click','#top_register',function (evt) {
+      open_dialog('register', evt);
+    });
+
+    $('.btn').each(function () {
+      if($(this).attr('target') == '_blank'){
+        return true;
+      }
+      var href = $(this).attr('href');
+      if(href && /\/(add|claim|login)\/?/g.test(href)){
+        $(this).click(function (evt) {
+          if(!$.cookie('front_identity')){
+            open_dialog('login', evt);
+            return false;
+          }
+        });
+      }
+    });
+
+  });
+</script>
+
+<script src="__JS__/jquery.cookie.js"></script>
+<script src="__JS__/functions.js"></script>
+
+<script>
+  // add activity
+  $('.check-article-detail-des .check-more').show().each(function(){
+    $(this).appendTo($(this).siblings('p'));
+  });
+
+  $('.summary-article-detail-des .check-more').show().each(function(){
+    $(this).appendTo($(this).siblings('p'));
+  });
+
+</script>
+
+
+<!-- for affix -->
+<script>
+  
+  function show_new_affix(){
+    $('#old-affix').hide();
+    $('#new-affix').show();
+  }
+
+  function hide_new_affix(){
+    $('#old-affix').show();
+    $('#new-affix').hide();
+  }
+
+  function check_show_new () {
+    var s = $(window).scrollTop();
+     if (s>1) {
+      show_new_affix();
+     } else {
+      hide_new_affix();
+     }
+  }
+  
+  $(window).scroll(function(){
+    check_show_new();
+  });
+
+  $(window).resize(function(){
+    check_show_new();
+  });
+
+  check_show_new();
+
+  $('body').on('mouseover','#dropdownMenu',function(){
+    $('.dropdown-menu').show();
+  });
+  $('body').on('mouseout','#dropdownMenu',function(){
+   $('.dropdown-menu').hide();
+  });
+</script>
+
+</body>
+</html>

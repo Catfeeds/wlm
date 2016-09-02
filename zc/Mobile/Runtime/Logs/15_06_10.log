@@ -1,0 +1,21 @@
+[ 2015-06-10T17:28:28+08:00 ] 183.60.15.20 /zc/mobile.php
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000441s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000601s ]
+NOTIC: [2] mysql_connect(): Can't connect to local MySQL server through socket '/var/lib/mysql/mysql.sock' (2) /webHome/LFWZ000390/www/zc/Core/Lib/Driver/Db/DbMysql.class.php 第 55 行.
+ERR: Can't connect to local MySQL server through socket '/var/lib/mysql/mysql.sock' (2)
+
+[ 2015-06-10T17:28:29+08:00 ] 221.196.241.166 /zc/mobile.php
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000503s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000644s ]
+NOTIC: [2] mysql_connect(): Can't connect to local MySQL server through socket '/var/lib/mysql/mysql.sock' (2) /webHome/LFWZ000390/www/zc/Core/Lib/Driver/Db/DbMysql.class.php 第 55 行.
+ERR: Can't connect to local MySQL server through socket '/var/lib/mysql/mysql.sock' (2)
+
+[ 2015-06-10T17:41:54+08:00 ] 180.153.163.187 /zc/mobile.php
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000656s ]
+NOTIC: [2] mysql_connect(): Can't connect to local MySQL server through socket '/var/lib/mysql/mysql.sock' (2) /webHome/LFWZ000390/www/zc/Core/Lib/Driver/Db/DbMysql.class.php 第 55 行.
+ERR: Can't connect to local MySQL server through socket '/var/lib/mysql/mysql.sock' (2)
+

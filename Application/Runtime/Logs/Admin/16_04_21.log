@@ -1,0 +1,9 @@
+[ 2016-04-21T21:14:18+08:00 ] 151.80.18.236 /admin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000322s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000274s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000364s ]
+NOTIC: [8] Undefined index: hrfd_adminid /webHome/LFWZ000390/www/Application/Admin/Controller/ParentController.class.php 第 17 行.
+

@@ -1,0 +1,20 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>数据列表</title>
+</head>
+<body>
+<form method="post" action="{:U('Deal/msgshow')}">
+	<volist name="list" id="vo">
+		<div>
+			<input type="radio" name="id" <if condition="$vo['isshow'] == 1">checked</if> value="{$vo.id}" >{$vo.x}
+			
+		</div>
+	</volist>
+	<input type="hidden" name="deal_id" value="{$list[0]['deal_id']}"/>
+	<input type="submit" value="提交"/>
+</form>
+
+</body>
+</html>

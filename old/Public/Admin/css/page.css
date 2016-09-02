@@ -1,0 +1,26 @@
+@CHARSET "UTF-8";
+.prev,.next,.current,.num{
+	border:1px solid #ddd;
+	padding:5px 15px;
+	margin:0 2px;
+}
+.current{
+	border:1px solid #f60;
+}
+
+.myinput{
+	width:100px;
+}
+.myselect{
+	height:25px;
+}
+.mybutton{
+	border:none;
+	cursor:pointer;
+	font-size:12px;
+	color:#666;
+	width:60px;
+	border-radius:3px;
+	position:relative;
+	top:-2px;
+}

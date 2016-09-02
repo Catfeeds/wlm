@@ -1,0 +1,72 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<include file="Public:meta" />
+<title>登陆</title>
+<link rel="stylesheet" href="__CSS__/pintuer.css" />
+<link rel="stylesheet" href="__CSS__/wlmjy.css" />
+<link rel="stylesheet" type="text/css" href="__CSS__/component.css" />
+<script type="text/javascript" src="__JS__/jquery-1.7.min.js"></script>
+<script type="text/javascript" src="__JS__/pintuer.js"></script>
+<script type="text/javascript" src="__JS__/wlmjy.js"></script>
+<script src="__JS__/modernizr.custom.js"></script>
+<script type="text/javascript" src="__JS__/idangerous.swiper-2.0.min.js"></script>
+<script type="text/javascript">
+$(function(){
+	function setContentSize() {
+		$('.swiper-content').css({
+			height: $(window).height()-$('.swiper-nav').height()
+		})
+	}
+
+
+
+	//Nav
+	var navSwiper = $('.swiper-nav').swiper({
+		visibilityFullFit: true,
+		slidesPerView:'auto',
+		//Thumbnails Clicks
+		onSlideClick: function(){
+			contentSwiper.swipeTo( navSwiper.clickedSlideIndex )
+		}
+	})
+
+	
+})
+
+</script>
+</head>
+<body class="cbp-spmenu-push">
+<include file="Public:menu" />
+<script src="__JS__/classie.js"></script>
+
+<div class="main login_main">
+	<div class="center">
+		<div class="line-small login_list">
+			
+		</div>
+		<div class="login_from">
+			<form action="{:U('User/do_login')}" method="post">
+				<div class="from_group">
+					<div class="field field-icon-right">
+      					<span class="icon icon-user"></span>
+      					<input type="text" data-validate="required:用户名不可为空！" placeholder="用户名" size="30" name="user_name" id="login_login" class="input">
+    				</div>
+					<div class="field field-icon-right">
+      					<span class="icon icon-key"></span>
+      					<input type="password" data-validate="required:密码不可为空！" placeholder="密码" size="30" name="user_pwd" id="login_pass" class="input mag_top">
+    				</div>
+					<div class="form-button mag_top">
+						<button class="button button-block border-main margin-bottom main_color" type="greenmit">在线登录</button>
+					</div>
+				</div>
+			</form>
+			<div  class="text-center">
+				<a href="{:U('User/register')}" class="button border-main">注册用户</a>
+				<a href="{:U('User/goFindPass')}" class="button border-main">忘记密码</a>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>

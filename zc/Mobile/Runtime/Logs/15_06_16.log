@@ -1,0 +1,753 @@
+[ 2015-06-16T06:42:29+08:00 ] 124.237.65.63 /zc/mobile.php
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000355s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000472s ]
+SQL: SHOW COLUMNS FROM `fanwe_deal_cate` [ RunTime:0.003235s ]
+SQL: SELECT * FROM `fanwe_deal_cate` ORDER BY id  [ RunTime:0.001761s ]
+NOTIC: [8] Undefined index: wlm_mobile_type /webHome/LFWZ000390/www/zc/Mobile/Lib/Action/CommonAction.class.php 第 25 行.
+NOTIC: [8] Undefined index: wlm_mobile_type /webHome/LFWZ000390/www/zc/Mobile/Lib/Action/CommonAction.class.php 第 28 行.
+NOTIC: [8] Undefined index: wlm_mobile_type /webHome/LFWZ000390/www/zc/Mobile/Lib/Action/CommonAction.class.php 第 25 行.
+NOTIC: [8] Undefined index: wlm_mobile_type /webHome/LFWZ000390/www/zc/Mobile/Lib/Action/CommonAction.class.php 第 28 行.
+NOTIC: [8] Undefined index: wlm_mobile_type /webHome/LFWZ000390/www/zc/Mobile/Lib/Action/CommonAction.class.php 第 25 行.
+NOTIC: [8] Undefined index: wlm_mobile_type /webHome/LFWZ000390/www/zc/Mobile/Lib/Action/CommonAction.class.php 第 28 行.
+NOTIC: [8] Undefined index: wlm_mobile_type /webHome/LFWZ000390/www/zc/Mobile/Lib/Action/CommonAction.class.php 第 25 行.
+NOTIC: [8] Undefined index: wlm_mobile_type /webHome/LFWZ000390/www/zc/Mobile/Lib/Action/CommonAction.class.php 第 28 行.
+NOTIC: [8] Undefined index: wlm_mobile_type /webHome/LFWZ000390/www/zc/Mobile/Lib/Action/CommonAction.class.php 第 25 行.
+NOTIC: [8] Undefined index: wlm_mobile_type /webHome/LFWZ000390/www/zc/Mobile/Lib/Action/CommonAction.class.php 第 28 行.
+NOTIC: [8] Undefined index: wlm_mobile_type /webHome/LFWZ000390/www/zc/Mobile/Lib/Action/CommonAction.class.php 第 25 行.
+NOTIC: [8] Undefined index: wlm_mobile_type /webHome/LFWZ000390/www/zc/Mobile/Lib/Action/CommonAction.class.php 第 28 行.
+NOTIC: [8] Undefined index: wlm_mobile_type /webHome/LFWZ000390/www/zc/Mobile/Lib/Action/CommonAction.class.php 第 25 行.
+NOTIC: [8] Undefined index: wlm_mobile_type /webHome/LFWZ000390/www/zc/Mobile/Lib/Action/CommonAction.class.php 第 28 行.
+NOTIC: [8] Undefined index: wlm_mobile_type /webHome/LFWZ000390/www/zc/Mobile/Lib/Action/CommonAction.class.php 第 25 行.
+NOTIC: [8] Undefined index: wlm_mobile_type /webHome/LFWZ000390/www/zc/Mobile/Lib/Action/CommonAction.class.php 第 28 行.
+NOTIC: [8] Undefined index: wlm_mobile_type /webHome/LFWZ000390/www/zc/Mobile/Lib/Action/CommonAction.class.php 第 25 行.
+NOTIC: [8] Undefined index: wlm_mobile_type /webHome/LFWZ000390/www/zc/Mobile/Lib/Action/CommonAction.class.php 第 28 行.
+NOTIC: [8] Undefined index: wlm_mobile_type /webHome/LFWZ000390/www/zc/Mobile/Lib/Action/CommonAction.class.php 第 25 行.
+NOTIC: [8] Undefined index: wlm_mobile_type /webHome/LFWZ000390/www/zc/Mobile/Lib/Action/CommonAction.class.php 第 28 行.
+SQL: SHOW COLUMNS FROM `fanwe_deal` [ RunTime:0.005454s ]
+SQL: SELECT id,name,image,end_time,limit_price,brief,support_amount,user_name,user_id,province,city FROM `fanwe_deal` WHERE ( `is_effect` = 1 ) ORDER BY sort desc,id desc LIMIT 0,5   [ RunTime:0.010457s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: golist_url /webHome/LFWZ000390/www/zc/Mobile/Runtime/Cache/e324f3ed94e020837035f6928d7c067b.php 第 173 行.
+NOTIC: [8] Undefined index: golist_url /webHome/LFWZ000390/www/zc/Mobile/Runtime/Cache/e324f3ed94e020837035f6928d7c067b.php 第 173 行.
+NOTIC: [8] Undefined index: golist_url /webHome/LFWZ000390/www/zc/Mobile/Runtime/Cache/e324f3ed94e020837035f6928d7c067b.php 第 173 行.
+NOTIC: [8] Undefined index: golist_url /webHome/LFWZ000390/www/zc/Mobile/Runtime/Cache/e324f3ed94e020837035f6928d7c067b.php 第 173 行.
+NOTIC: [8] Undefined index: golist_url /webHome/LFWZ000390/www/zc/Mobile/Runtime/Cache/e324f3ed94e020837035f6928d7c067b.php 第 173 行.
+NOTIC: [8] Undefined index: golist_url /webHome/LFWZ000390/www/zc/Mobile/Runtime/Cache/e324f3ed94e020837035f6928d7c067b.php 第 173 行.
+NOTIC: [8] Undefined index: golist_url /webHome/LFWZ000390/www/zc/Mobile/Runtime/Cache/e324f3ed94e020837035f6928d7c067b.php 第 173 行.
+NOTIC: [8] Undefined index: golist_url /webHome/LFWZ000390/www/zc/Mobile/Runtime/Cache/e324f3ed94e020837035f6928d7c067b.php 第 173 行.
+NOTIC: [8] Undefined index: golist_url /webHome/LFWZ000390/www/zc/Mobile/Runtime/Cache/e324f3ed94e020837035f6928d7c067b.php 第 173 行.
+NOTIC: [8] Undefined index: golist_url /webHome/LFWZ000390/www/zc/Mobile/Runtime/Cache/e324f3ed94e020837035f6928d7c067b.php 第 173 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.026902s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027057s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001078s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000702s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000321s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000505s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003167s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000499s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000638s ]
+
+[ 2015-06-16T10:58:24+08:00 ] 58.18.211.72 /zc/mobile.php
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000533s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000662s ]
+SQL: SHOW COLUMNS FROM `fanwe_deal_cate` [ RunTime:0.004797s ]
+SQL: SELECT * FROM `fanwe_deal_cate` ORDER BY id  [ RunTime:0.002168s ]
+NOTIC: [8] Undefined index: wlm_mobile_type /webHome/LFWZ000390/www/zc/Mobile/Lib/Action/CommonAction.class.php 第 25 行.
+NOTIC: [8] Undefined index: wlm_mobile_type /webHome/LFWZ000390/www/zc/Mobile/Lib/Action/CommonAction.class.php 第 28 行.
+NOTIC: [8] Undefined index: wlm_mobile_type /webHome/LFWZ000390/www/zc/Mobile/Lib/Action/CommonAction.class.php 第 25 行.
+NOTIC: [8] Undefined index: wlm_mobile_type /webHome/LFWZ000390/www/zc/Mobile/Lib/Action/CommonAction.class.php 第 28 行.
+NOTIC: [8] Undefined index: wlm_mobile_type /webHome/LFWZ000390/www/zc/Mobile/Lib/Action/CommonAction.class.php 第 25 行.
+NOTIC: [8] Undefined index: wlm_mobile_type /webHome/LFWZ000390/www/zc/Mobile/Lib/Action/CommonAction.class.php 第 28 行.
+NOTIC: [8] Undefined index: wlm_mobile_type /webHome/LFWZ000390/www/zc/Mobile/Lib/Action/CommonAction.class.php 第 25 行.
+NOTIC: [8] Undefined index: wlm_mobile_type /webHome/LFWZ000390/www/zc/Mobile/Lib/Action/CommonAction.class.php 第 28 行.
+NOTIC: [8] Undefined index: wlm_mobile_type /webHome/LFWZ000390/www/zc/Mobile/Lib/Action/CommonAction.class.php 第 25 行.
+NOTIC: [8] Undefined index: wlm_mobile_type /webHome/LFWZ000390/www/zc/Mobile/Lib/Action/CommonAction.class.php 第 28 行.
+NOTIC: [8] Undefined index: wlm_mobile_type /webHome/LFWZ000390/www/zc/Mobile/Lib/Action/CommonAction.class.php 第 25 行.
+NOTIC: [8] Undefined index: wlm_mobile_type /webHome/LFWZ000390/www/zc/Mobile/Lib/Action/CommonAction.class.php 第 28 行.
+NOTIC: [8] Undefined index: wlm_mobile_type /webHome/LFWZ000390/www/zc/Mobile/Lib/Action/CommonAction.class.php 第 25 行.
+NOTIC: [8] Undefined index: wlm_mobile_type /webHome/LFWZ000390/www/zc/Mobile/Lib/Action/CommonAction.class.php 第 28 行.
+NOTIC: [8] Undefined index: wlm_mobile_type /webHome/LFWZ000390/www/zc/Mobile/Lib/Action/CommonAction.class.php 第 25 行.
+NOTIC: [8] Undefined index: wlm_mobile_type /webHome/LFWZ000390/www/zc/Mobile/Lib/Action/CommonAction.class.php 第 28 行.
+NOTIC: [8] Undefined index: wlm_mobile_type /webHome/LFWZ000390/www/zc/Mobile/Lib/Action/CommonAction.class.php 第 25 行.
+NOTIC: [8] Undefined index: wlm_mobile_type /webHome/LFWZ000390/www/zc/Mobile/Lib/Action/CommonAction.class.php 第 28 行.
+NOTIC: [8] Undefined index: wlm_mobile_type /webHome/LFWZ000390/www/zc/Mobile/Lib/Action/CommonAction.class.php 第 25 行.
+NOTIC: [8] Undefined index: wlm_mobile_type /webHome/LFWZ000390/www/zc/Mobile/Lib/Action/CommonAction.class.php 第 28 行.
+SQL: SHOW COLUMNS FROM `fanwe_deal` [ RunTime:0.009026s ]
+SQL: SELECT id,name,image,end_time,limit_price,brief,support_amount,user_name,user_id,province,city FROM `fanwe_deal` WHERE ( `is_effect` = 1 ) ORDER BY sort desc,id desc LIMIT 0,5   [ RunTime:0.006257s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: golist_url /webHome/LFWZ000390/www/zc/Mobile/Runtime/Cache/e324f3ed94e020837035f6928d7c067b.php 第 173 行.
+NOTIC: [8] Undefined index: golist_url /webHome/LFWZ000390/www/zc/Mobile/Runtime/Cache/e324f3ed94e020837035f6928d7c067b.php 第 173 行.
+NOTIC: [8] Undefined index: golist_url /webHome/LFWZ000390/www/zc/Mobile/Runtime/Cache/e324f3ed94e020837035f6928d7c067b.php 第 173 行.
+NOTIC: [8] Undefined index: golist_url /webHome/LFWZ000390/www/zc/Mobile/Runtime/Cache/e324f3ed94e020837035f6928d7c067b.php 第 173 行.
+NOTIC: [8] Undefined index: golist_url /webHome/LFWZ000390/www/zc/Mobile/Runtime/Cache/e324f3ed94e020837035f6928d7c067b.php 第 173 行.
+NOTIC: [8] Undefined index: golist_url /webHome/LFWZ000390/www/zc/Mobile/Runtime/Cache/e324f3ed94e020837035f6928d7c067b.php 第 173 行.
+NOTIC: [8] Undefined index: golist_url /webHome/LFWZ000390/www/zc/Mobile/Runtime/Cache/e324f3ed94e020837035f6928d7c067b.php 第 173 行.
+NOTIC: [8] Undefined index: golist_url /webHome/LFWZ000390/www/zc/Mobile/Runtime/Cache/e324f3ed94e020837035f6928d7c067b.php 第 173 行.
+NOTIC: [8] Undefined index: golist_url /webHome/LFWZ000390/www/zc/Mobile/Runtime/Cache/e324f3ed94e020837035f6928d7c067b.php 第 173 行.
+NOTIC: [8] Undefined index: golist_url /webHome/LFWZ000390/www/zc/Mobile/Runtime/Cache/e324f3ed94e020837035f6928d7c067b.php 第 173 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.069924s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.070065s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000688s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000435s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000498s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000438s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002352s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000699s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000818s ]
+
+[ 2015-06-16T11:46:54+08:00 ] 106.119.12.188 /zc/mobile.php
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000513s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000657s ]
+SQL: SHOW COLUMNS FROM `fanwe_deal_cate` [ RunTime:0.003812s ]
+SQL: SELECT * FROM `fanwe_deal_cate` ORDER BY id  [ RunTime:0.005135s ]
+NOTIC: [8] Undefined index: wlm_mobile_type /webHome/LFWZ000390/www/zc/Mobile/Lib/Action/CommonAction.class.php 第 25 行.
+NOTIC: [8] Undefined index: wlm_mobile_type /webHome/LFWZ000390/www/zc/Mobile/Lib/Action/CommonAction.class.php 第 28 行.
+NOTIC: [8] Undefined index: wlm_mobile_type /webHome/LFWZ000390/www/zc/Mobile/Lib/Action/CommonAction.class.php 第 25 行.
+NOTIC: [8] Undefined index: wlm_mobile_type /webHome/LFWZ000390/www/zc/Mobile/Lib/Action/CommonAction.class.php 第 28 行.
+NOTIC: [8] Undefined index: wlm_mobile_type /webHome/LFWZ000390/www/zc/Mobile/Lib/Action/CommonAction.class.php 第 25 行.
+NOTIC: [8] Undefined index: wlm_mobile_type /webHome/LFWZ000390/www/zc/Mobile/Lib/Action/CommonAction.class.php 第 28 行.
+NOTIC: [8] Undefined index: wlm_mobile_type /webHome/LFWZ000390/www/zc/Mobile/Lib/Action/CommonAction.class.php 第 25 行.
+NOTIC: [8] Undefined index: wlm_mobile_type /webHome/LFWZ000390/www/zc/Mobile/Lib/Action/CommonAction.class.php 第 28 行.
+NOTIC: [8] Undefined index: wlm_mobile_type /webHome/LFWZ000390/www/zc/Mobile/Lib/Action/CommonAction.class.php 第 25 行.
+NOTIC: [8] Undefined index: wlm_mobile_type /webHome/LFWZ000390/www/zc/Mobile/Lib/Action/CommonAction.class.php 第 28 行.
+NOTIC: [8] Undefined index: wlm_mobile_type /webHome/LFWZ000390/www/zc/Mobile/Lib/Action/CommonAction.class.php 第 25 行.
+NOTIC: [8] Undefined index: wlm_mobile_type /webHome/LFWZ000390/www/zc/Mobile/Lib/Action/CommonAction.class.php 第 28 行.
+NOTIC: [8] Undefined index: wlm_mobile_type /webHome/LFWZ000390/www/zc/Mobile/Lib/Action/CommonAction.class.php 第 25 行.
+NOTIC: [8] Undefined index: wlm_mobile_type /webHome/LFWZ000390/www/zc/Mobile/Lib/Action/CommonAction.class.php 第 28 行.
+NOTIC: [8] Undefined index: wlm_mobile_type /webHome/LFWZ000390/www/zc/Mobile/Lib/Action/CommonAction.class.php 第 25 行.
+NOTIC: [8] Undefined index: wlm_mobile_type /webHome/LFWZ000390/www/zc/Mobile/Lib/Action/CommonAction.class.php 第 28 行.
+NOTIC: [8] Undefined index: wlm_mobile_type /webHome/LFWZ000390/www/zc/Mobile/Lib/Action/CommonAction.class.php 第 25 行.
+NOTIC: [8] Undefined index: wlm_mobile_type /webHome/LFWZ000390/www/zc/Mobile/Lib/Action/CommonAction.class.php 第 28 行.
+NOTIC: [8] Undefined index: wlm_mobile_type /webHome/LFWZ000390/www/zc/Mobile/Lib/Action/CommonAction.class.php 第 25 行.
+NOTIC: [8] Undefined index: wlm_mobile_type /webHome/LFWZ000390/www/zc/Mobile/Lib/Action/CommonAction.class.php 第 28 行.
+SQL: SHOW COLUMNS FROM `fanwe_deal` [ RunTime:0.003589s ]
+SQL: SELECT id,name,image,end_time,limit_price,brief,support_amount,user_name,user_id,province,city FROM `fanwe_deal` WHERE ( `is_effect` = 1 ) ORDER BY sort desc,id desc LIMIT 0,5   [ RunTime:0.002585s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: golist_url /webHome/LFWZ000390/www/zc/Mobile/Runtime/Cache/e324f3ed94e020837035f6928d7c067b.php 第 173 行.
+NOTIC: [8] Undefined index: golist_url /webHome/LFWZ000390/www/zc/Mobile/Runtime/Cache/e324f3ed94e020837035f6928d7c067b.php 第 173 行.
+NOTIC: [8] Undefined index: golist_url /webHome/LFWZ000390/www/zc/Mobile/Runtime/Cache/e324f3ed94e020837035f6928d7c067b.php 第 173 行.
+NOTIC: [8] Undefined index: golist_url /webHome/LFWZ000390/www/zc/Mobile/Runtime/Cache/e324f3ed94e020837035f6928d7c067b.php 第 173 行.
+NOTIC: [8] Undefined index: golist_url /webHome/LFWZ000390/www/zc/Mobile/Runtime/Cache/e324f3ed94e020837035f6928d7c067b.php 第 173 行.
+NOTIC: [8] Undefined index: golist_url /webHome/LFWZ000390/www/zc/Mobile/Runtime/Cache/e324f3ed94e020837035f6928d7c067b.php 第 173 行.
+NOTIC: [8] Undefined index: golist_url /webHome/LFWZ000390/www/zc/Mobile/Runtime/Cache/e324f3ed94e020837035f6928d7c067b.php 第 173 行.
+NOTIC: [8] Undefined index: golist_url /webHome/LFWZ000390/www/zc/Mobile/Runtime/Cache/e324f3ed94e020837035f6928d7c067b.php 第 173 行.
+NOTIC: [8] Undefined index: golist_url /webHome/LFWZ000390/www/zc/Mobile/Runtime/Cache/e324f3ed94e020837035f6928d7c067b.php 第 173 行.
+NOTIC: [8] Undefined index: golist_url /webHome/LFWZ000390/www/zc/Mobile/Runtime/Cache/e324f3ed94e020837035f6928d7c067b.php 第 173 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.077113s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.077381s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000661s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000505s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000350s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000478s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002299s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001935s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002403s ]
+
+[ 2015-06-16T11:48:02+08:00 ] 106.119.12.188 /zc/mobile.php
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000422s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000546s ]
+SQL: SHOW COLUMNS FROM `fanwe_deal_cate` [ RunTime:0.004048s ]
+SQL: SELECT * FROM `fanwe_deal_cate` ORDER BY id  [ RunTime:0.011046s ]
+NOTIC: [8] Undefined index: wlm_mobile_type /webHome/LFWZ000390/www/zc/Mobile/Lib/Action/CommonAction.class.php 第 25 行.
+NOTIC: [8] Undefined index: wlm_mobile_type /webHome/LFWZ000390/www/zc/Mobile/Lib/Action/CommonAction.class.php 第 28 行.
+NOTIC: [8] Undefined index: wlm_mobile_type /webHome/LFWZ000390/www/zc/Mobile/Lib/Action/CommonAction.class.php 第 25 行.
+NOTIC: [8] Undefined index: wlm_mobile_type /webHome/LFWZ000390/www/zc/Mobile/Lib/Action/CommonAction.class.php 第 28 行.
+NOTIC: [8] Undefined index: wlm_mobile_type /webHome/LFWZ000390/www/zc/Mobile/Lib/Action/CommonAction.class.php 第 25 行.
+NOTIC: [8] Undefined index: wlm_mobile_type /webHome/LFWZ000390/www/zc/Mobile/Lib/Action/CommonAction.class.php 第 28 行.
+NOTIC: [8] Undefined index: wlm_mobile_type /webHome/LFWZ000390/www/zc/Mobile/Lib/Action/CommonAction.class.php 第 25 行.
+NOTIC: [8] Undefined index: wlm_mobile_type /webHome/LFWZ000390/www/zc/Mobile/Lib/Action/CommonAction.class.php 第 28 行.
+NOTIC: [8] Undefined index: wlm_mobile_type /webHome/LFWZ000390/www/zc/Mobile/Lib/Action/CommonAction.class.php 第 25 行.
+NOTIC: [8] Undefined index: wlm_mobile_type /webHome/LFWZ000390/www/zc/Mobile/Lib/Action/CommonAction.class.php 第 28 行.
+NOTIC: [8] Undefined index: wlm_mobile_type /webHome/LFWZ000390/www/zc/Mobile/Lib/Action/CommonAction.class.php 第 25 行.
+NOTIC: [8] Undefined index: wlm_mobile_type /webHome/LFWZ000390/www/zc/Mobile/Lib/Action/CommonAction.class.php 第 28 行.
+NOTIC: [8] Undefined index: wlm_mobile_type /webHome/LFWZ000390/www/zc/Mobile/Lib/Action/CommonAction.class.php 第 25 行.
+NOTIC: [8] Undefined index: wlm_mobile_type /webHome/LFWZ000390/www/zc/Mobile/Lib/Action/CommonAction.class.php 第 28 行.
+NOTIC: [8] Undefined index: wlm_mobile_type /webHome/LFWZ000390/www/zc/Mobile/Lib/Action/CommonAction.class.php 第 25 行.
+NOTIC: [8] Undefined index: wlm_mobile_type /webHome/LFWZ000390/www/zc/Mobile/Lib/Action/CommonAction.class.php 第 28 行.
+NOTIC: [8] Undefined index: wlm_mobile_type /webHome/LFWZ000390/www/zc/Mobile/Lib/Action/CommonAction.class.php 第 25 行.
+NOTIC: [8] Undefined index: wlm_mobile_type /webHome/LFWZ000390/www/zc/Mobile/Lib/Action/CommonAction.class.php 第 28 行.
+NOTIC: [8] Undefined index: wlm_mobile_type /webHome/LFWZ000390/www/zc/Mobile/Lib/Action/CommonAction.class.php 第 25 行.
+NOTIC: [8] Undefined index: wlm_mobile_type /webHome/LFWZ000390/www/zc/Mobile/Lib/Action/CommonAction.class.php 第 28 行.
+SQL: SHOW COLUMNS FROM `fanwe_deal` [ RunTime:0.010104s ]
+SQL: SELECT id,name,image,end_time,limit_price,brief,support_amount,user_name,user_id,province,city FROM `fanwe_deal` WHERE ( `is_effect` = 1 ) ORDER BY sort desc,id desc LIMIT 0,5   [ RunTime:0.004330s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: golist_url /webHome/LFWZ000390/www/zc/Mobile/Runtime/Cache/e324f3ed94e020837035f6928d7c067b.php 第 173 行.
+NOTIC: [8] Undefined index: golist_url /webHome/LFWZ000390/www/zc/Mobile/Runtime/Cache/e324f3ed94e020837035f6928d7c067b.php 第 173 行.
+NOTIC: [8] Undefined index: golist_url /webHome/LFWZ000390/www/zc/Mobile/Runtime/Cache/e324f3ed94e020837035f6928d7c067b.php 第 173 行.
+NOTIC: [8] Undefined index: golist_url /webHome/LFWZ000390/www/zc/Mobile/Runtime/Cache/e324f3ed94e020837035f6928d7c067b.php 第 173 行.
+NOTIC: [8] Undefined index: golist_url /webHome/LFWZ000390/www/zc/Mobile/Runtime/Cache/e324f3ed94e020837035f6928d7c067b.php 第 173 行.
+NOTIC: [8] Undefined index: golist_url /webHome/LFWZ000390/www/zc/Mobile/Runtime/Cache/e324f3ed94e020837035f6928d7c067b.php 第 173 行.
+NOTIC: [8] Undefined index: golist_url /webHome/LFWZ000390/www/zc/Mobile/Runtime/Cache/e324f3ed94e020837035f6928d7c067b.php 第 173 行.
+NOTIC: [8] Undefined index: golist_url /webHome/LFWZ000390/www/zc/Mobile/Runtime/Cache/e324f3ed94e020837035f6928d7c067b.php 第 173 行.
+NOTIC: [8] Undefined index: golist_url /webHome/LFWZ000390/www/zc/Mobile/Runtime/Cache/e324f3ed94e020837035f6928d7c067b.php 第 173 行.
+NOTIC: [8] Undefined index: golist_url /webHome/LFWZ000390/www/zc/Mobile/Runtime/Cache/e324f3ed94e020837035f6928d7c067b.php 第 173 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.052725s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.052860s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000578s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.006268s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000385s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000340s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007836s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000321s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000401s ]
+
+[ 2015-06-16T11:48:27+08:00 ] 106.119.12.188 /zc/mobile.php
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000463s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000757s ]
+SQL: SHOW COLUMNS FROM `fanwe_deal_cate` [ RunTime:0.002466s ]
+SQL: SELECT * FROM `fanwe_deal_cate` ORDER BY id  [ RunTime:0.001963s ]
+SQL: SHOW COLUMNS FROM `fanwe_deal` [ RunTime:0.015669s ]
+SQL: SELECT id,name,image,end_time,limit_price,brief,support_amount,user_name,user_id,province,city FROM `fanwe_deal` WHERE ( `is_effect` = 1 ) ORDER BY sort desc,id desc LIMIT 0,5   [ RunTime:0.003100s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.052288s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.062203s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000693s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000454s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001119s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002786s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.012496s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000483s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000582s ]
+
+[ 2015-06-16T17:46:01+08:00 ] 221.217.163.201 /zc/mobile.php
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000494s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000658s ]
+SQL: SHOW COLUMNS FROM `fanwe_deal_cate` [ RunTime:0.002882s ]
+SQL: SELECT * FROM `fanwe_deal_cate` ORDER BY id  [ RunTime:0.006385s ]
+NOTIC: [8] Undefined index: wlm_mobile_type /webHome/LFWZ000390/www/zc/Mobile/Lib/Action/CommonAction.class.php 第 25 行.
+NOTIC: [8] Undefined index: wlm_mobile_type /webHome/LFWZ000390/www/zc/Mobile/Lib/Action/CommonAction.class.php 第 28 行.
+NOTIC: [8] Undefined index: wlm_mobile_type /webHome/LFWZ000390/www/zc/Mobile/Lib/Action/CommonAction.class.php 第 25 行.
+NOTIC: [8] Undefined index: wlm_mobile_type /webHome/LFWZ000390/www/zc/Mobile/Lib/Action/CommonAction.class.php 第 28 行.
+NOTIC: [8] Undefined index: wlm_mobile_type /webHome/LFWZ000390/www/zc/Mobile/Lib/Action/CommonAction.class.php 第 25 行.
+NOTIC: [8] Undefined index: wlm_mobile_type /webHome/LFWZ000390/www/zc/Mobile/Lib/Action/CommonAction.class.php 第 28 行.
+NOTIC: [8] Undefined index: wlm_mobile_type /webHome/LFWZ000390/www/zc/Mobile/Lib/Action/CommonAction.class.php 第 25 行.
+NOTIC: [8] Undefined index: wlm_mobile_type /webHome/LFWZ000390/www/zc/Mobile/Lib/Action/CommonAction.class.php 第 28 行.
+NOTIC: [8] Undefined index: wlm_mobile_type /webHome/LFWZ000390/www/zc/Mobile/Lib/Action/CommonAction.class.php 第 25 行.
+NOTIC: [8] Undefined index: wlm_mobile_type /webHome/LFWZ000390/www/zc/Mobile/Lib/Action/CommonAction.class.php 第 28 行.
+NOTIC: [8] Undefined index: wlm_mobile_type /webHome/LFWZ000390/www/zc/Mobile/Lib/Action/CommonAction.class.php 第 25 行.
+NOTIC: [8] Undefined index: wlm_mobile_type /webHome/LFWZ000390/www/zc/Mobile/Lib/Action/CommonAction.class.php 第 28 行.
+NOTIC: [8] Undefined index: wlm_mobile_type /webHome/LFWZ000390/www/zc/Mobile/Lib/Action/CommonAction.class.php 第 25 行.
+NOTIC: [8] Undefined index: wlm_mobile_type /webHome/LFWZ000390/www/zc/Mobile/Lib/Action/CommonAction.class.php 第 28 行.
+NOTIC: [8] Undefined index: wlm_mobile_type /webHome/LFWZ000390/www/zc/Mobile/Lib/Action/CommonAction.class.php 第 25 行.
+NOTIC: [8] Undefined index: wlm_mobile_type /webHome/LFWZ000390/www/zc/Mobile/Lib/Action/CommonAction.class.php 第 28 行.
+NOTIC: [8] Undefined index: wlm_mobile_type /webHome/LFWZ000390/www/zc/Mobile/Lib/Action/CommonAction.class.php 第 25 行.
+NOTIC: [8] Undefined index: wlm_mobile_type /webHome/LFWZ000390/www/zc/Mobile/Lib/Action/CommonAction.class.php 第 28 行.
+NOTIC: [8] Undefined index: wlm_mobile_type /webHome/LFWZ000390/www/zc/Mobile/Lib/Action/CommonAction.class.php 第 25 行.
+NOTIC: [8] Undefined index: wlm_mobile_type /webHome/LFWZ000390/www/zc/Mobile/Lib/Action/CommonAction.class.php 第 28 行.
+SQL: SHOW COLUMNS FROM `fanwe_deal` [ RunTime:0.003387s ]
+SQL: SELECT id,name,image,end_time,limit_price,brief,support_amount,user_name,user_id,province,city FROM `fanwe_deal` WHERE ( `is_effect` = 1 ) ORDER BY sort desc,id desc LIMIT 0,5   [ RunTime:0.004737s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: golist_url /webHome/LFWZ000390/www/zc/Mobile/Runtime/Cache/e324f3ed94e020837035f6928d7c067b.php 第 173 行.
+NOTIC: [8] Undefined index: golist_url /webHome/LFWZ000390/www/zc/Mobile/Runtime/Cache/e324f3ed94e020837035f6928d7c067b.php 第 173 行.
+NOTIC: [8] Undefined index: golist_url /webHome/LFWZ000390/www/zc/Mobile/Runtime/Cache/e324f3ed94e020837035f6928d7c067b.php 第 173 行.
+NOTIC: [8] Undefined index: golist_url /webHome/LFWZ000390/www/zc/Mobile/Runtime/Cache/e324f3ed94e020837035f6928d7c067b.php 第 173 行.
+NOTIC: [8] Undefined index: golist_url /webHome/LFWZ000390/www/zc/Mobile/Runtime/Cache/e324f3ed94e020837035f6928d7c067b.php 第 173 行.
+NOTIC: [8] Undefined index: golist_url /webHome/LFWZ000390/www/zc/Mobile/Runtime/Cache/e324f3ed94e020837035f6928d7c067b.php 第 173 行.
+NOTIC: [8] Undefined index: golist_url /webHome/LFWZ000390/www/zc/Mobile/Runtime/Cache/e324f3ed94e020837035f6928d7c067b.php 第 173 行.
+NOTIC: [8] Undefined index: golist_url /webHome/LFWZ000390/www/zc/Mobile/Runtime/Cache/e324f3ed94e020837035f6928d7c067b.php 第 173 行.
+NOTIC: [8] Undefined index: golist_url /webHome/LFWZ000390/www/zc/Mobile/Runtime/Cache/e324f3ed94e020837035f6928d7c067b.php 第 173 行.
+NOTIC: [8] Undefined index: golist_url /webHome/LFWZ000390/www/zc/Mobile/Runtime/Cache/e324f3ed94e020837035f6928d7c067b.php 第 173 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.046847s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046958s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000938s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001781s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000333s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000468s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003804s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000368s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000461s ]
+
+[ 2015-06-16T17:46:13+08:00 ] 221.217.163.201 /zc/mobile.php?m=User&a=login
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000433s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000559s ]
+SQL: SHOW COLUMNS FROM `fanwe_deal_cate` [ RunTime:0.005557s ]
+SQL: SELECT * FROM `fanwe_deal_cate` ORDER BY id  [ RunTime:0.001697s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.059548s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.059766s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000638s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000405s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000331s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000394s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.014398s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000526s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000636s ]
+
+[ 2015-06-16T17:46:26+08:00 ] 221.217.163.201 /zc/mobile.php?m=User&a=register
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000643s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000774s ]
+SQL: SHOW COLUMNS FROM `fanwe_deal_cate` [ RunTime:0.002870s ]
+SQL: SELECT * FROM `fanwe_deal_cate` ORDER BY id  [ RunTime:0.007070s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.045268s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.045499s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000654s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000553s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000372s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000522s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.013422s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000599s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000713s ]
+
+[ 2015-06-16T18:49:41+08:00 ] 218.202.130.169 /zc/mobile.php
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000581s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000711s ]
+SQL: SHOW COLUMNS FROM `fanwe_deal_cate` [ RunTime:0.002394s ]
+SQL: SELECT * FROM `fanwe_deal_cate` ORDER BY id  [ RunTime:0.002711s ]
+NOTIC: [8] Undefined index: wlm_mobile_type /webHome/LFWZ000390/www/zc/Mobile/Lib/Action/CommonAction.class.php 第 25 行.
+NOTIC: [8] Undefined index: wlm_mobile_type /webHome/LFWZ000390/www/zc/Mobile/Lib/Action/CommonAction.class.php 第 28 行.
+NOTIC: [8] Undefined index: wlm_mobile_type /webHome/LFWZ000390/www/zc/Mobile/Lib/Action/CommonAction.class.php 第 25 行.
+NOTIC: [8] Undefined index: wlm_mobile_type /webHome/LFWZ000390/www/zc/Mobile/Lib/Action/CommonAction.class.php 第 28 行.
+NOTIC: [8] Undefined index: wlm_mobile_type /webHome/LFWZ000390/www/zc/Mobile/Lib/Action/CommonAction.class.php 第 25 行.
+NOTIC: [8] Undefined index: wlm_mobile_type /webHome/LFWZ000390/www/zc/Mobile/Lib/Action/CommonAction.class.php 第 28 行.
+NOTIC: [8] Undefined index: wlm_mobile_type /webHome/LFWZ000390/www/zc/Mobile/Lib/Action/CommonAction.class.php 第 25 行.
+NOTIC: [8] Undefined index: wlm_mobile_type /webHome/LFWZ000390/www/zc/Mobile/Lib/Action/CommonAction.class.php 第 28 行.
+NOTIC: [8] Undefined index: wlm_mobile_type /webHome/LFWZ000390/www/zc/Mobile/Lib/Action/CommonAction.class.php 第 25 行.
+NOTIC: [8] Undefined index: wlm_mobile_type /webHome/LFWZ000390/www/zc/Mobile/Lib/Action/CommonAction.class.php 第 28 行.
+NOTIC: [8] Undefined index: wlm_mobile_type /webHome/LFWZ000390/www/zc/Mobile/Lib/Action/CommonAction.class.php 第 25 行.
+NOTIC: [8] Undefined index: wlm_mobile_type /webHome/LFWZ000390/www/zc/Mobile/Lib/Action/CommonAction.class.php 第 28 行.
+NOTIC: [8] Undefined index: wlm_mobile_type /webHome/LFWZ000390/www/zc/Mobile/Lib/Action/CommonAction.class.php 第 25 行.
+NOTIC: [8] Undefined index: wlm_mobile_type /webHome/LFWZ000390/www/zc/Mobile/Lib/Action/CommonAction.class.php 第 28 行.
+NOTIC: [8] Undefined index: wlm_mobile_type /webHome/LFWZ000390/www/zc/Mobile/Lib/Action/CommonAction.class.php 第 25 行.
+NOTIC: [8] Undefined index: wlm_mobile_type /webHome/LFWZ000390/www/zc/Mobile/Lib/Action/CommonAction.class.php 第 28 行.
+NOTIC: [8] Undefined index: wlm_mobile_type /webHome/LFWZ000390/www/zc/Mobile/Lib/Action/CommonAction.class.php 第 25 行.
+NOTIC: [8] Undefined index: wlm_mobile_type /webHome/LFWZ000390/www/zc/Mobile/Lib/Action/CommonAction.class.php 第 28 行.
+NOTIC: [8] Undefined index: wlm_mobile_type /webHome/LFWZ000390/www/zc/Mobile/Lib/Action/CommonAction.class.php 第 25 行.
+NOTIC: [8] Undefined index: wlm_mobile_type /webHome/LFWZ000390/www/zc/Mobile/Lib/Action/CommonAction.class.php 第 28 行.
+SQL: SHOW COLUMNS FROM `fanwe_deal` [ RunTime:0.005907s ]
+SQL: SELECT id,name,image,end_time,limit_price,brief,support_amount,user_name,user_id,province,city FROM `fanwe_deal` WHERE ( `is_effect` = 1 ) ORDER BY sort desc,id desc LIMIT 0,5   [ RunTime:0.002420s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: golist_url /webHome/LFWZ000390/www/zc/Mobile/Runtime/Cache/e324f3ed94e020837035f6928d7c067b.php 第 173 行.
+NOTIC: [8] Undefined index: golist_url /webHome/LFWZ000390/www/zc/Mobile/Runtime/Cache/e324f3ed94e020837035f6928d7c067b.php 第 173 行.
+NOTIC: [8] Undefined index: golist_url /webHome/LFWZ000390/www/zc/Mobile/Runtime/Cache/e324f3ed94e020837035f6928d7c067b.php 第 173 行.
+NOTIC: [8] Undefined index: golist_url /webHome/LFWZ000390/www/zc/Mobile/Runtime/Cache/e324f3ed94e020837035f6928d7c067b.php 第 173 行.
+NOTIC: [8] Undefined index: golist_url /webHome/LFWZ000390/www/zc/Mobile/Runtime/Cache/e324f3ed94e020837035f6928d7c067b.php 第 173 行.
+NOTIC: [8] Undefined index: golist_url /webHome/LFWZ000390/www/zc/Mobile/Runtime/Cache/e324f3ed94e020837035f6928d7c067b.php 第 173 行.
+NOTIC: [8] Undefined index: golist_url /webHome/LFWZ000390/www/zc/Mobile/Runtime/Cache/e324f3ed94e020837035f6928d7c067b.php 第 173 行.
+NOTIC: [8] Undefined index: golist_url /webHome/LFWZ000390/www/zc/Mobile/Runtime/Cache/e324f3ed94e020837035f6928d7c067b.php 第 173 行.
+NOTIC: [8] Undefined index: golist_url /webHome/LFWZ000390/www/zc/Mobile/Runtime/Cache/e324f3ed94e020837035f6928d7c067b.php 第 173 行.
+NOTIC: [8] Undefined index: golist_url /webHome/LFWZ000390/www/zc/Mobile/Runtime/Cache/e324f3ed94e020837035f6928d7c067b.php 第 173 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.030600s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030756s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.003026s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000511s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000392s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000461s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004956s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000417s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000566s ]
+
+[ 2015-06-16T19:44:03+08:00 ] 106.119.12.179 /zc/mobile.php
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000524s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000692s ]
+SQL: SHOW COLUMNS FROM `fanwe_deal_cate` [ RunTime:0.002655s ]
+SQL: SELECT * FROM `fanwe_deal_cate` ORDER BY id  [ RunTime:0.002544s ]
+NOTIC: [8] Undefined index: wlm_mobile_type /webHome/LFWZ000390/www/zc/Mobile/Lib/Action/CommonAction.class.php 第 25 行.
+NOTIC: [8] Undefined index: wlm_mobile_type /webHome/LFWZ000390/www/zc/Mobile/Lib/Action/CommonAction.class.php 第 28 行.
+NOTIC: [8] Undefined index: wlm_mobile_type /webHome/LFWZ000390/www/zc/Mobile/Lib/Action/CommonAction.class.php 第 25 行.
+NOTIC: [8] Undefined index: wlm_mobile_type /webHome/LFWZ000390/www/zc/Mobile/Lib/Action/CommonAction.class.php 第 28 行.
+NOTIC: [8] Undefined index: wlm_mobile_type /webHome/LFWZ000390/www/zc/Mobile/Lib/Action/CommonAction.class.php 第 25 行.
+NOTIC: [8] Undefined index: wlm_mobile_type /webHome/LFWZ000390/www/zc/Mobile/Lib/Action/CommonAction.class.php 第 28 行.
+NOTIC: [8] Undefined index: wlm_mobile_type /webHome/LFWZ000390/www/zc/Mobile/Lib/Action/CommonAction.class.php 第 25 行.
+NOTIC: [8] Undefined index: wlm_mobile_type /webHome/LFWZ000390/www/zc/Mobile/Lib/Action/CommonAction.class.php 第 28 行.
+NOTIC: [8] Undefined index: wlm_mobile_type /webHome/LFWZ000390/www/zc/Mobile/Lib/Action/CommonAction.class.php 第 25 行.
+NOTIC: [8] Undefined index: wlm_mobile_type /webHome/LFWZ000390/www/zc/Mobile/Lib/Action/CommonAction.class.php 第 28 行.
+NOTIC: [8] Undefined index: wlm_mobile_type /webHome/LFWZ000390/www/zc/Mobile/Lib/Action/CommonAction.class.php 第 25 行.
+NOTIC: [8] Undefined index: wlm_mobile_type /webHome/LFWZ000390/www/zc/Mobile/Lib/Action/CommonAction.class.php 第 28 行.
+NOTIC: [8] Undefined index: wlm_mobile_type /webHome/LFWZ000390/www/zc/Mobile/Lib/Action/CommonAction.class.php 第 25 行.
+NOTIC: [8] Undefined index: wlm_mobile_type /webHome/LFWZ000390/www/zc/Mobile/Lib/Action/CommonAction.class.php 第 28 行.
+NOTIC: [8] Undefined index: wlm_mobile_type /webHome/LFWZ000390/www/zc/Mobile/Lib/Action/CommonAction.class.php 第 25 行.
+NOTIC: [8] Undefined index: wlm_mobile_type /webHome/LFWZ000390/www/zc/Mobile/Lib/Action/CommonAction.class.php 第 28 行.
+NOTIC: [8] Undefined index: wlm_mobile_type /webHome/LFWZ000390/www/zc/Mobile/Lib/Action/CommonAction.class.php 第 25 行.
+NOTIC: [8] Undefined index: wlm_mobile_type /webHome/LFWZ000390/www/zc/Mobile/Lib/Action/CommonAction.class.php 第 28 行.
+NOTIC: [8] Undefined index: wlm_mobile_type /webHome/LFWZ000390/www/zc/Mobile/Lib/Action/CommonAction.class.php 第 25 行.
+NOTIC: [8] Undefined index: wlm_mobile_type /webHome/LFWZ000390/www/zc/Mobile/Lib/Action/CommonAction.class.php 第 28 行.
+SQL: SHOW COLUMNS FROM `fanwe_deal` [ RunTime:0.003508s ]
+SQL: SELECT id,name,image,end_time,limit_price,brief,support_amount,user_name,user_id,province,city FROM `fanwe_deal` WHERE ( `is_effect` = 1 ) ORDER BY sort desc,id desc LIMIT 0,5   [ RunTime:0.002281s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: golist_url /webHome/LFWZ000390/www/zc/Mobile/Runtime/Cache/e324f3ed94e020837035f6928d7c067b.php 第 173 行.
+NOTIC: [8] Undefined index: golist_url /webHome/LFWZ000390/www/zc/Mobile/Runtime/Cache/e324f3ed94e020837035f6928d7c067b.php 第 173 行.
+NOTIC: [8] Undefined index: golist_url /webHome/LFWZ000390/www/zc/Mobile/Runtime/Cache/e324f3ed94e020837035f6928d7c067b.php 第 173 行.
+NOTIC: [8] Undefined index: golist_url /webHome/LFWZ000390/www/zc/Mobile/Runtime/Cache/e324f3ed94e020837035f6928d7c067b.php 第 173 行.
+NOTIC: [8] Undefined index: golist_url /webHome/LFWZ000390/www/zc/Mobile/Runtime/Cache/e324f3ed94e020837035f6928d7c067b.php 第 173 行.
+NOTIC: [8] Undefined index: golist_url /webHome/LFWZ000390/www/zc/Mobile/Runtime/Cache/e324f3ed94e020837035f6928d7c067b.php 第 173 行.
+NOTIC: [8] Undefined index: golist_url /webHome/LFWZ000390/www/zc/Mobile/Runtime/Cache/e324f3ed94e020837035f6928d7c067b.php 第 173 行.
+NOTIC: [8] Undefined index: golist_url /webHome/LFWZ000390/www/zc/Mobile/Runtime/Cache/e324f3ed94e020837035f6928d7c067b.php 第 173 行.
+NOTIC: [8] Undefined index: golist_url /webHome/LFWZ000390/www/zc/Mobile/Runtime/Cache/e324f3ed94e020837035f6928d7c067b.php 第 173 行.
+NOTIC: [8] Undefined index: golist_url /webHome/LFWZ000390/www/zc/Mobile/Runtime/Cache/e324f3ed94e020837035f6928d7c067b.php 第 173 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.049114s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.049371s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000567s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000477s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000383s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000448s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002430s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000426s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000517s ]
+
+[ 2015-06-16T19:47:41+08:00 ] 101.226.66.175 /zc/mobile.php
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000431s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000573s ]
+SQL: SHOW COLUMNS FROM `fanwe_deal_cate` [ RunTime:0.002130s ]
+SQL: SELECT * FROM `fanwe_deal_cate` ORDER BY id  [ RunTime:0.003174s ]
+NOTIC: [8] Undefined index: wlm_mobile_type /webHome/LFWZ000390/www/zc/Mobile/Lib/Action/CommonAction.class.php 第 25 行.
+NOTIC: [8] Undefined index: wlm_mobile_type /webHome/LFWZ000390/www/zc/Mobile/Lib/Action/CommonAction.class.php 第 28 行.
+NOTIC: [8] Undefined index: wlm_mobile_type /webHome/LFWZ000390/www/zc/Mobile/Lib/Action/CommonAction.class.php 第 25 行.
+NOTIC: [8] Undefined index: wlm_mobile_type /webHome/LFWZ000390/www/zc/Mobile/Lib/Action/CommonAction.class.php 第 28 行.
+NOTIC: [8] Undefined index: wlm_mobile_type /webHome/LFWZ000390/www/zc/Mobile/Lib/Action/CommonAction.class.php 第 25 行.
+NOTIC: [8] Undefined index: wlm_mobile_type /webHome/LFWZ000390/www/zc/Mobile/Lib/Action/CommonAction.class.php 第 28 行.
+NOTIC: [8] Undefined index: wlm_mobile_type /webHome/LFWZ000390/www/zc/Mobile/Lib/Action/CommonAction.class.php 第 25 行.
+NOTIC: [8] Undefined index: wlm_mobile_type /webHome/LFWZ000390/www/zc/Mobile/Lib/Action/CommonAction.class.php 第 28 行.
+NOTIC: [8] Undefined index: wlm_mobile_type /webHome/LFWZ000390/www/zc/Mobile/Lib/Action/CommonAction.class.php 第 25 行.
+NOTIC: [8] Undefined index: wlm_mobile_type /webHome/LFWZ000390/www/zc/Mobile/Lib/Action/CommonAction.class.php 第 28 行.
+NOTIC: [8] Undefined index: wlm_mobile_type /webHome/LFWZ000390/www/zc/Mobile/Lib/Action/CommonAction.class.php 第 25 行.
+NOTIC: [8] Undefined index: wlm_mobile_type /webHome/LFWZ000390/www/zc/Mobile/Lib/Action/CommonAction.class.php 第 28 行.
+NOTIC: [8] Undefined index: wlm_mobile_type /webHome/LFWZ000390/www/zc/Mobile/Lib/Action/CommonAction.class.php 第 25 行.
+NOTIC: [8] Undefined index: wlm_mobile_type /webHome/LFWZ000390/www/zc/Mobile/Lib/Action/CommonAction.class.php 第 28 行.
+NOTIC: [8] Undefined index: wlm_mobile_type /webHome/LFWZ000390/www/zc/Mobile/Lib/Action/CommonAction.class.php 第 25 行.
+NOTIC: [8] Undefined index: wlm_mobile_type /webHome/LFWZ000390/www/zc/Mobile/Lib/Action/CommonAction.class.php 第 28 行.
+NOTIC: [8] Undefined index: wlm_mobile_type /webHome/LFWZ000390/www/zc/Mobile/Lib/Action/CommonAction.class.php 第 25 行.
+NOTIC: [8] Undefined index: wlm_mobile_type /webHome/LFWZ000390/www/zc/Mobile/Lib/Action/CommonAction.class.php 第 28 行.
+NOTIC: [8] Undefined index: wlm_mobile_type /webHome/LFWZ000390/www/zc/Mobile/Lib/Action/CommonAction.class.php 第 25 行.
+NOTIC: [8] Undefined index: wlm_mobile_type /webHome/LFWZ000390/www/zc/Mobile/Lib/Action/CommonAction.class.php 第 28 行.
+SQL: SHOW COLUMNS FROM `fanwe_deal` [ RunTime:0.014662s ]
+SQL: SELECT id,name,image,end_time,limit_price,brief,support_amount,user_name,user_id,province,city FROM `fanwe_deal` WHERE ( `is_effect` = 1 ) ORDER BY sort desc,id desc LIMIT 0,5   [ RunTime:0.002886s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: golist_url /webHome/LFWZ000390/www/zc/Mobile/Runtime/Cache/e324f3ed94e020837035f6928d7c067b.php 第 173 行.
+NOTIC: [8] Undefined index: golist_url /webHome/LFWZ000390/www/zc/Mobile/Runtime/Cache/e324f3ed94e020837035f6928d7c067b.php 第 173 行.
+NOTIC: [8] Undefined index: golist_url /webHome/LFWZ000390/www/zc/Mobile/Runtime/Cache/e324f3ed94e020837035f6928d7c067b.php 第 173 行.
+NOTIC: [8] Undefined index: golist_url /webHome/LFWZ000390/www/zc/Mobile/Runtime/Cache/e324f3ed94e020837035f6928d7c067b.php 第 173 行.
+NOTIC: [8] Undefined index: golist_url /webHome/LFWZ000390/www/zc/Mobile/Runtime/Cache/e324f3ed94e020837035f6928d7c067b.php 第 173 行.
+NOTIC: [8] Undefined index: golist_url /webHome/LFWZ000390/www/zc/Mobile/Runtime/Cache/e324f3ed94e020837035f6928d7c067b.php 第 173 行.
+NOTIC: [8] Undefined index: golist_url /webHome/LFWZ000390/www/zc/Mobile/Runtime/Cache/e324f3ed94e020837035f6928d7c067b.php 第 173 行.
+NOTIC: [8] Undefined index: golist_url /webHome/LFWZ000390/www/zc/Mobile/Runtime/Cache/e324f3ed94e020837035f6928d7c067b.php 第 173 行.
+NOTIC: [8] Undefined index: golist_url /webHome/LFWZ000390/www/zc/Mobile/Runtime/Cache/e324f3ed94e020837035f6928d7c067b.php 第 173 行.
+NOTIC: [8] Undefined index: golist_url /webHome/LFWZ000390/www/zc/Mobile/Runtime/Cache/e324f3ed94e020837035f6928d7c067b.php 第 173 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.028353s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028520s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000745s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000401s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000431s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001497s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003844s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001512s ]
+INFO: [ view_end ] --END-- [ RunTime:0.004546s ]
+
+[ 2015-06-16T19:50:49+08:00 ] 114.245.206.102 /zc/mobile.php
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000529s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000662s ]
+SQL: SHOW COLUMNS FROM `fanwe_deal_cate` [ RunTime:0.006661s ]
+SQL: SELECT * FROM `fanwe_deal_cate` ORDER BY id  [ RunTime:0.002738s ]
+NOTIC: [8] Undefined index: wlm_mobile_type /webHome/LFWZ000390/www/zc/Mobile/Lib/Action/CommonAction.class.php 第 25 行.
+NOTIC: [8] Undefined index: wlm_mobile_type /webHome/LFWZ000390/www/zc/Mobile/Lib/Action/CommonAction.class.php 第 28 行.
+NOTIC: [8] Undefined index: wlm_mobile_type /webHome/LFWZ000390/www/zc/Mobile/Lib/Action/CommonAction.class.php 第 25 行.
+NOTIC: [8] Undefined index: wlm_mobile_type /webHome/LFWZ000390/www/zc/Mobile/Lib/Action/CommonAction.class.php 第 28 行.
+NOTIC: [8] Undefined index: wlm_mobile_type /webHome/LFWZ000390/www/zc/Mobile/Lib/Action/CommonAction.class.php 第 25 行.
+NOTIC: [8] Undefined index: wlm_mobile_type /webHome/LFWZ000390/www/zc/Mobile/Lib/Action/CommonAction.class.php 第 28 行.
+NOTIC: [8] Undefined index: wlm_mobile_type /webHome/LFWZ000390/www/zc/Mobile/Lib/Action/CommonAction.class.php 第 25 行.
+NOTIC: [8] Undefined index: wlm_mobile_type /webHome/LFWZ000390/www/zc/Mobile/Lib/Action/CommonAction.class.php 第 28 行.
+NOTIC: [8] Undefined index: wlm_mobile_type /webHome/LFWZ000390/www/zc/Mobile/Lib/Action/CommonAction.class.php 第 25 行.
+NOTIC: [8] Undefined index: wlm_mobile_type /webHome/LFWZ000390/www/zc/Mobile/Lib/Action/CommonAction.class.php 第 28 行.
+NOTIC: [8] Undefined index: wlm_mobile_type /webHome/LFWZ000390/www/zc/Mobile/Lib/Action/CommonAction.class.php 第 25 行.
+NOTIC: [8] Undefined index: wlm_mobile_type /webHome/LFWZ000390/www/zc/Mobile/Lib/Action/CommonAction.class.php 第 28 行.
+NOTIC: [8] Undefined index: wlm_mobile_type /webHome/LFWZ000390/www/zc/Mobile/Lib/Action/CommonAction.class.php 第 25 行.
+NOTIC: [8] Undefined index: wlm_mobile_type /webHome/LFWZ000390/www/zc/Mobile/Lib/Action/CommonAction.class.php 第 28 行.
+NOTIC: [8] Undefined index: wlm_mobile_type /webHome/LFWZ000390/www/zc/Mobile/Lib/Action/CommonAction.class.php 第 25 行.
+NOTIC: [8] Undefined index: wlm_mobile_type /webHome/LFWZ000390/www/zc/Mobile/Lib/Action/CommonAction.class.php 第 28 行.
+NOTIC: [8] Undefined index: wlm_mobile_type /webHome/LFWZ000390/www/zc/Mobile/Lib/Action/CommonAction.class.php 第 25 行.
+NOTIC: [8] Undefined index: wlm_mobile_type /webHome/LFWZ000390/www/zc/Mobile/Lib/Action/CommonAction.class.php 第 28 行.
+NOTIC: [8] Undefined index: wlm_mobile_type /webHome/LFWZ000390/www/zc/Mobile/Lib/Action/CommonAction.class.php 第 25 行.
+NOTIC: [8] Undefined index: wlm_mobile_type /webHome/LFWZ000390/www/zc/Mobile/Lib/Action/CommonAction.class.php 第 28 行.
+SQL: SHOW COLUMNS FROM `fanwe_deal` [ RunTime:0.010051s ]
+SQL: SELECT id,name,image,end_time,limit_price,brief,support_amount,user_name,user_id,province,city FROM `fanwe_deal` WHERE ( `is_effect` = 1 ) ORDER BY sort desc,id desc LIMIT 0,5   [ RunTime:0.005966s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: golist_url /webHome/LFWZ000390/www/zc/Mobile/Runtime/Cache/e324f3ed94e020837035f6928d7c067b.php 第 173 行.
+NOTIC: [8] Undefined index: golist_url /webHome/LFWZ000390/www/zc/Mobile/Runtime/Cache/e324f3ed94e020837035f6928d7c067b.php 第 173 行.
+NOTIC: [8] Undefined index: golist_url /webHome/LFWZ000390/www/zc/Mobile/Runtime/Cache/e324f3ed94e020837035f6928d7c067b.php 第 173 行.
+NOTIC: [8] Undefined index: golist_url /webHome/LFWZ000390/www/zc/Mobile/Runtime/Cache/e324f3ed94e020837035f6928d7c067b.php 第 173 行.
+NOTIC: [8] Undefined index: golist_url /webHome/LFWZ000390/www/zc/Mobile/Runtime/Cache/e324f3ed94e020837035f6928d7c067b.php 第 173 行.
+NOTIC: [8] Undefined index: golist_url /webHome/LFWZ000390/www/zc/Mobile/Runtime/Cache/e324f3ed94e020837035f6928d7c067b.php 第 173 行.
+NOTIC: [8] Undefined index: golist_url /webHome/LFWZ000390/www/zc/Mobile/Runtime/Cache/e324f3ed94e020837035f6928d7c067b.php 第 173 行.
+NOTIC: [8] Undefined index: golist_url /webHome/LFWZ000390/www/zc/Mobile/Runtime/Cache/e324f3ed94e020837035f6928d7c067b.php 第 173 行.
+NOTIC: [8] Undefined index: golist_url /webHome/LFWZ000390/www/zc/Mobile/Runtime/Cache/e324f3ed94e020837035f6928d7c067b.php 第 173 行.
+NOTIC: [8] Undefined index: golist_url /webHome/LFWZ000390/www/zc/Mobile/Runtime/Cache/e324f3ed94e020837035f6928d7c067b.php 第 173 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.034821s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.035017s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001544s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000528s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000430s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000452s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003248s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000392s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000480s ]
+
+[ 2015-06-16T19:51:01+08:00 ] 114.245.206.102 /zc/mobile.php?m=Index&a=index
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000477s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000617s ]
+SQL: SHOW COLUMNS FROM `fanwe_deal_cate` [ RunTime:0.002360s ]
+SQL: SELECT * FROM `fanwe_deal_cate` ORDER BY id  [ RunTime:0.003031s ]
+SQL: SHOW COLUMNS FROM `fanwe_deal` [ RunTime:0.004078s ]
+SQL: SELECT id,name,image,end_time,limit_price,brief,support_amount,user_name,user_id,province,city FROM `fanwe_deal` WHERE ( `is_effect` = 1 ) ORDER BY sort desc,id desc LIMIT 0,5   [ RunTime:0.002728s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.068960s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.069157s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000882s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000671s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000384s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000460s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002856s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.010600s ]
+INFO: [ view_end ] --END-- [ RunTime:0.010725s ]
+
+[ 2015-06-16T23:02:58+08:00 ] 202.43.158.66 /zc/mobile.php
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000723s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000857s ]
+SQL: SHOW COLUMNS FROM `fanwe_deal_cate` [ RunTime:0.003276s ]
+SQL: SELECT * FROM `fanwe_deal_cate` ORDER BY id  [ RunTime:0.004161s ]
+NOTIC: [8] Undefined index: wlm_mobile_type /webHome/LFWZ000390/www/zc/Mobile/Lib/Action/CommonAction.class.php 第 25 行.
+NOTIC: [8] Undefined index: wlm_mobile_type /webHome/LFWZ000390/www/zc/Mobile/Lib/Action/CommonAction.class.php 第 28 行.
+NOTIC: [8] Undefined index: wlm_mobile_type /webHome/LFWZ000390/www/zc/Mobile/Lib/Action/CommonAction.class.php 第 25 行.
+NOTIC: [8] Undefined index: wlm_mobile_type /webHome/LFWZ000390/www/zc/Mobile/Lib/Action/CommonAction.class.php 第 28 行.
+NOTIC: [8] Undefined index: wlm_mobile_type /webHome/LFWZ000390/www/zc/Mobile/Lib/Action/CommonAction.class.php 第 25 行.
+NOTIC: [8] Undefined index: wlm_mobile_type /webHome/LFWZ000390/www/zc/Mobile/Lib/Action/CommonAction.class.php 第 28 行.
+NOTIC: [8] Undefined index: wlm_mobile_type /webHome/LFWZ000390/www/zc/Mobile/Lib/Action/CommonAction.class.php 第 25 行.
+NOTIC: [8] Undefined index: wlm_mobile_type /webHome/LFWZ000390/www/zc/Mobile/Lib/Action/CommonAction.class.php 第 28 行.
+NOTIC: [8] Undefined index: wlm_mobile_type /webHome/LFWZ000390/www/zc/Mobile/Lib/Action/CommonAction.class.php 第 25 行.
+NOTIC: [8] Undefined index: wlm_mobile_type /webHome/LFWZ000390/www/zc/Mobile/Lib/Action/CommonAction.class.php 第 28 行.
+NOTIC: [8] Undefined index: wlm_mobile_type /webHome/LFWZ000390/www/zc/Mobile/Lib/Action/CommonAction.class.php 第 25 行.
+NOTIC: [8] Undefined index: wlm_mobile_type /webHome/LFWZ000390/www/zc/Mobile/Lib/Action/CommonAction.class.php 第 28 行.
+NOTIC: [8] Undefined index: wlm_mobile_type /webHome/LFWZ000390/www/zc/Mobile/Lib/Action/CommonAction.class.php 第 25 行.
+NOTIC: [8] Undefined index: wlm_mobile_type /webHome/LFWZ000390/www/zc/Mobile/Lib/Action/CommonAction.class.php 第 28 行.
+NOTIC: [8] Undefined index: wlm_mobile_type /webHome/LFWZ000390/www/zc/Mobile/Lib/Action/CommonAction.class.php 第 25 行.
+NOTIC: [8] Undefined index: wlm_mobile_type /webHome/LFWZ000390/www/zc/Mobile/Lib/Action/CommonAction.class.php 第 28 行.
+NOTIC: [8] Undefined index: wlm_mobile_type /webHome/LFWZ000390/www/zc/Mobile/Lib/Action/CommonAction.class.php 第 25 行.
+NOTIC: [8] Undefined index: wlm_mobile_type /webHome/LFWZ000390/www/zc/Mobile/Lib/Action/CommonAction.class.php 第 28 行.
+NOTIC: [8] Undefined index: wlm_mobile_type /webHome/LFWZ000390/www/zc/Mobile/Lib/Action/CommonAction.class.php 第 25 行.
+NOTIC: [8] Undefined index: wlm_mobile_type /webHome/LFWZ000390/www/zc/Mobile/Lib/Action/CommonAction.class.php 第 28 行.
+SQL: SHOW COLUMNS FROM `fanwe_deal` [ RunTime:0.007727s ]
+SQL: SELECT id,name,image,end_time,limit_price,brief,support_amount,user_name,user_id,province,city FROM `fanwe_deal` WHERE ( `is_effect` = 1 ) ORDER BY sort desc,id desc LIMIT 0,5   [ RunTime:0.002010s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: golist_url /webHome/LFWZ000390/www/zc/Mobile/Runtime/Cache/e324f3ed94e020837035f6928d7c067b.php 第 173 行.
+NOTIC: [8] Undefined index: golist_url /webHome/LFWZ000390/www/zc/Mobile/Runtime/Cache/e324f3ed94e020837035f6928d7c067b.php 第 173 行.
+NOTIC: [8] Undefined index: golist_url /webHome/LFWZ000390/www/zc/Mobile/Runtime/Cache/e324f3ed94e020837035f6928d7c067b.php 第 173 行.
+NOTIC: [8] Undefined index: golist_url /webHome/LFWZ000390/www/zc/Mobile/Runtime/Cache/e324f3ed94e020837035f6928d7c067b.php 第 173 行.
+NOTIC: [8] Undefined index: golist_url /webHome/LFWZ000390/www/zc/Mobile/Runtime/Cache/e324f3ed94e020837035f6928d7c067b.php 第 173 行.
+NOTIC: [8] Undefined index: golist_url /webHome/LFWZ000390/www/zc/Mobile/Runtime/Cache/e324f3ed94e020837035f6928d7c067b.php 第 173 行.
+NOTIC: [8] Undefined index: golist_url /webHome/LFWZ000390/www/zc/Mobile/Runtime/Cache/e324f3ed94e020837035f6928d7c067b.php 第 173 行.
+NOTIC: [8] Undefined index: golist_url /webHome/LFWZ000390/www/zc/Mobile/Runtime/Cache/e324f3ed94e020837035f6928d7c067b.php 第 173 行.
+NOTIC: [8] Undefined index: golist_url /webHome/LFWZ000390/www/zc/Mobile/Runtime/Cache/e324f3ed94e020837035f6928d7c067b.php 第 173 行.
+NOTIC: [8] Undefined index: golist_url /webHome/LFWZ000390/www/zc/Mobile/Runtime/Cache/e324f3ed94e020837035f6928d7c067b.php 第 173 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.030798s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031058s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000785s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000488s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000404s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000516s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002738s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000812s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001123s ]
+
+[ 2015-06-16T23:03:00+08:00 ] 202.43.158.66 /zc/mobile.php
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.007975s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008129s ]
+SQL: SHOW COLUMNS FROM `fanwe_deal_cate` [ RunTime:0.002175s ]
+SQL: SELECT * FROM `fanwe_deal_cate` ORDER BY id  [ RunTime:0.002023s ]
+NOTIC: [8] Undefined index: wlm_mobile_type /webHome/LFWZ000390/www/zc/Mobile/Lib/Action/CommonAction.class.php 第 25 行.
+NOTIC: [8] Undefined index: wlm_mobile_type /webHome/LFWZ000390/www/zc/Mobile/Lib/Action/CommonAction.class.php 第 28 行.
+NOTIC: [8] Undefined index: wlm_mobile_type /webHome/LFWZ000390/www/zc/Mobile/Lib/Action/CommonAction.class.php 第 25 行.
+NOTIC: [8] Undefined index: wlm_mobile_type /webHome/LFWZ000390/www/zc/Mobile/Lib/Action/CommonAction.class.php 第 28 行.
+NOTIC: [8] Undefined index: wlm_mobile_type /webHome/LFWZ000390/www/zc/Mobile/Lib/Action/CommonAction.class.php 第 25 行.
+NOTIC: [8] Undefined index: wlm_mobile_type /webHome/LFWZ000390/www/zc/Mobile/Lib/Action/CommonAction.class.php 第 28 行.
+NOTIC: [8] Undefined index: wlm_mobile_type /webHome/LFWZ000390/www/zc/Mobile/Lib/Action/CommonAction.class.php 第 25 行.
+NOTIC: [8] Undefined index: wlm_mobile_type /webHome/LFWZ000390/www/zc/Mobile/Lib/Action/CommonAction.class.php 第 28 行.
+NOTIC: [8] Undefined index: wlm_mobile_type /webHome/LFWZ000390/www/zc/Mobile/Lib/Action/CommonAction.class.php 第 25 行.
+NOTIC: [8] Undefined index: wlm_mobile_type /webHome/LFWZ000390/www/zc/Mobile/Lib/Action/CommonAction.class.php 第 28 行.
+NOTIC: [8] Undefined index: wlm_mobile_type /webHome/LFWZ000390/www/zc/Mobile/Lib/Action/CommonAction.class.php 第 25 行.
+NOTIC: [8] Undefined index: wlm_mobile_type /webHome/LFWZ000390/www/zc/Mobile/Lib/Action/CommonAction.class.php 第 28 行.
+NOTIC: [8] Undefined index: wlm_mobile_type /webHome/LFWZ000390/www/zc/Mobile/Lib/Action/CommonAction.class.php 第 25 行.
+NOTIC: [8] Undefined index: wlm_mobile_type /webHome/LFWZ000390/www/zc/Mobile/Lib/Action/CommonAction.class.php 第 28 行.
+NOTIC: [8] Undefined index: wlm_mobile_type /webHome/LFWZ000390/www/zc/Mobile/Lib/Action/CommonAction.class.php 第 25 行.
+NOTIC: [8] Undefined index: wlm_mobile_type /webHome/LFWZ000390/www/zc/Mobile/Lib/Action/CommonAction.class.php 第 28 行.
+NOTIC: [8] Undefined index: wlm_mobile_type /webHome/LFWZ000390/www/zc/Mobile/Lib/Action/CommonAction.class.php 第 25 行.
+NOTIC: [8] Undefined index: wlm_mobile_type /webHome/LFWZ000390/www/zc/Mobile/Lib/Action/CommonAction.class.php 第 28 行.
+NOTIC: [8] Undefined index: wlm_mobile_type /webHome/LFWZ000390/www/zc/Mobile/Lib/Action/CommonAction.class.php 第 25 行.
+NOTIC: [8] Undefined index: wlm_mobile_type /webHome/LFWZ000390/www/zc/Mobile/Lib/Action/CommonAction.class.php 第 28 行.
+SQL: SHOW COLUMNS FROM `fanwe_deal` [ RunTime:0.003703s ]
+SQL: SELECT id,name,image,end_time,limit_price,brief,support_amount,user_name,user_id,province,city FROM `fanwe_deal` WHERE ( `is_effect` = 1 ) ORDER BY sort desc,id desc LIMIT 0,5   [ RunTime:0.002214s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: golist_url /webHome/LFWZ000390/www/zc/Mobile/Runtime/Cache/e324f3ed94e020837035f6928d7c067b.php 第 173 行.
+NOTIC: [8] Undefined index: golist_url /webHome/LFWZ000390/www/zc/Mobile/Runtime/Cache/e324f3ed94e020837035f6928d7c067b.php 第 173 行.
+NOTIC: [8] Undefined index: golist_url /webHome/LFWZ000390/www/zc/Mobile/Runtime/Cache/e324f3ed94e020837035f6928d7c067b.php 第 173 行.
+NOTIC: [8] Undefined index: golist_url /webHome/LFWZ000390/www/zc/Mobile/Runtime/Cache/e324f3ed94e020837035f6928d7c067b.php 第 173 行.
+NOTIC: [8] Undefined index: golist_url /webHome/LFWZ000390/www/zc/Mobile/Runtime/Cache/e324f3ed94e020837035f6928d7c067b.php 第 173 行.
+NOTIC: [8] Undefined index: golist_url /webHome/LFWZ000390/www/zc/Mobile/Runtime/Cache/e324f3ed94e020837035f6928d7c067b.php 第 173 行.
+NOTIC: [8] Undefined index: golist_url /webHome/LFWZ000390/www/zc/Mobile/Runtime/Cache/e324f3ed94e020837035f6928d7c067b.php 第 173 行.
+NOTIC: [8] Undefined index: golist_url /webHome/LFWZ000390/www/zc/Mobile/Runtime/Cache/e324f3ed94e020837035f6928d7c067b.php 第 173 行.
+NOTIC: [8] Undefined index: golist_url /webHome/LFWZ000390/www/zc/Mobile/Runtime/Cache/e324f3ed94e020837035f6928d7c067b.php 第 173 行.
+NOTIC: [8] Undefined index: golist_url /webHome/LFWZ000390/www/zc/Mobile/Runtime/Cache/e324f3ed94e020837035f6928d7c067b.php 第 173 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.031787s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031906s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000617s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000526s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000406s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000511s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002327s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000408s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000563s ]
+
+[ 2015-06-16T23:03:35+08:00 ] 202.43.158.66 /zc/mobile.php
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000492s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000674s ]
+SQL: SHOW COLUMNS FROM `fanwe_deal_cate` [ RunTime:0.003327s ]
+SQL: SELECT * FROM `fanwe_deal_cate` ORDER BY id  [ RunTime:0.003588s ]
+SQL: SHOW COLUMNS FROM `fanwe_deal` [ RunTime:0.019326s ]
+SQL: SELECT id,name,image,end_time,limit_price,brief,support_amount,user_name,user_id,province,city FROM `fanwe_deal` WHERE ( `is_effect` = 1 ) ORDER BY sort desc,id desc LIMIT 0,5   [ RunTime:0.001794s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.043590s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.043738s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000678s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000410s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000478s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000432s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002270s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000392s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000472s ]
+
+[ 2015-06-16T23:03:48+08:00 ] 202.43.158.66 /zc/mobile.php?m=Index&a=rec
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.015443s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015953s ]
+SQL: SHOW COLUMNS FROM `fanwe_deal_cate` [ RunTime:0.008302s ]
+SQL: SELECT * FROM `fanwe_deal_cate` ORDER BY id  [ RunTime:0.007542s ]
+SQL: SHOW COLUMNS FROM `fanwe_deal` [ RunTime:0.008917s ]
+SQL: SELECT id,name,image,end_time,limit_price,brief,support_amount,user_name,user_id,province,city FROM `fanwe_deal` WHERE ( `is_effect` = 1 ) AND ( `is_recommend` = 1 ) ORDER BY sort desc,id desc LIMIT 0,5   [ RunTime:0.002064s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.033175s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033427s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000703s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000460s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000363s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000425s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002414s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000395s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000481s ]
+
+[ 2015-06-16T23:04:26+08:00 ] 202.43.158.66 /zc/mobile.php
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000435s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000615s ]
+SQL: SHOW COLUMNS FROM `fanwe_deal_cate` [ RunTime:0.002785s ]
+SQL: SELECT * FROM `fanwe_deal_cate` ORDER BY id  [ RunTime:0.001112s ]
+SQL: SHOW COLUMNS FROM `fanwe_deal` [ RunTime:0.006614s ]
+SQL: SELECT id,name,image,end_time,limit_price,brief,support_amount,user_name,user_id,province,city FROM `fanwe_deal` WHERE ( `is_effect` = 1 ) ORDER BY sort desc,id desc LIMIT 0,5   [ RunTime:0.009892s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.041551s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.041725s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000757s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000431s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000371s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000569s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002461s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000560s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000841s ]
+
+[ 2015-06-16T23:04:34+08:00 ] 202.43.158.66 /zc/mobile.php?m=Deal&a=show&id=65
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000506s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000679s ]
+NOTIC: [2048] Declaration of DealAction::show() should be compatible with that of Action::show() /webHome/LFWZ000390/www/zc/Mobile/Lib/Action/DealAction.class.php 第 13 行.
+SQL: SHOW COLUMNS FROM `fanwe_deal_cate` [ RunTime:0.001496s ]
+SQL: SELECT * FROM `fanwe_deal_cate` ORDER BY id  [ RunTime:0.002928s ]
+NOTIC: [8] Undefined index: uid /webHome/LFWZ000390/www/zc/Mobile/Lib/Action/DealAction.class.php 第 18 行.
+
+[ 2015-06-16T23:04:39+08:00 ] 202.43.158.66 /zc/mobile.php?m=User&a=login
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000427s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000555s ]
+SQL: SHOW COLUMNS FROM `fanwe_deal_cate` [ RunTime:0.003050s ]
+SQL: SELECT * FROM `fanwe_deal_cate` ORDER BY id  [ RunTime:0.002180s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.040314s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.040463s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000570s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000398s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000319s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.016925s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.018565s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000495s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000786s ]
+
+[ 2015-06-16T23:05:53+08:00 ] 202.43.158.66 /zc/mobile.php
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000493s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000638s ]
+SQL: SHOW COLUMNS FROM `fanwe_deal_cate` [ RunTime:0.002431s ]
+SQL: SELECT * FROM `fanwe_deal_cate` ORDER BY id  [ RunTime:0.001551s ]
+SQL: SHOW COLUMNS FROM `fanwe_deal` [ RunTime:0.004078s ]
+SQL: SELECT id,name,image,end_time,limit_price,brief,support_amount,user_name,user_id,province,city FROM `fanwe_deal` WHERE ( `is_effect` = 1 ) ORDER BY sort desc,id desc LIMIT 0,5   [ RunTime:0.001664s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.046833s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046995s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000694s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000436s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000388s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000434s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002220s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002715s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002850s ]
+

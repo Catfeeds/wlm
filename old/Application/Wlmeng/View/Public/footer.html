@@ -1,0 +1,36 @@
+<footer id="page-footer" class="dark clearfix">
+ <div class="footer-list-info clearfix">
+        <div class="footer-list-iterm pull-left">
+          <ul>
+          	<volist name="atr1" id="vo">
+          		<li><a href="{:U('Common/getArt',array('id'=>$vo['id']))}">{$vo.title}</a></li>
+          	</volist>
+            
+          </ul>
+        </div>
+        <div class="footer-list-iterm pull-left">
+          <ul> 
+          	<volist name="atr2" id="vo">
+          		<li><a href="{:U('Common/getArt',array('id'=>$vo['id']))}">{$vo.title}</a></li>
+          	</volist> 
+          </ul>
+        </div>
+        <div class="footer-list-iterm pull-left" style="margin-left:30px;">
+              <img src="__IMG__/weixin.png" alt="">
+              <strong>未来门微信订阅号</strong>
+        </div>
+        <div class="footer-list-iterm pull-left" style="margin-left:30px;">
+              <img src="__IMG__/xinlang.png" alt="">
+              <strong>未来门新浪微博</strong>
+        </div>  
+      </div>
+      
+        <p class="text-right" id="footer-right" style="line-height:21px;">
+            {$system.intro} <br>
+      Copyright &copy; {$system.icp}<br>
+      	地址：{$system.address}<br>
+      	邮箱:{$system.email}<br>
+      	客服热线：4000911222
+      <!-- 京公网安备11010802016279号 -->
+        </p>
+    </footer>

@@ -1,0 +1,214 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0024)http://z.jd.com/new.html -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="" />
+    <meta name="Keywords" content="" />
+    <title>未来门精英-introduce</title>
+    <link rel="stylesheet" href="__PUBLIC__/css/pintuer.css"/>
+	<link rel="stylesheet" href="__PUBLIC__/css/index.css"/>
+	<link rel="stylesheet" href="__PUBLIC__/css/base.css"/>
+	<link rel="stylesheet" type="text/css" href="__PUBLIC__/css/css.css"/>
+	<!-- 引用jquery -->
+	<script src="__PUBLIC__/umeditor/third-party/jquery.min.js"></script>
+	<script type="text/javascript" src="__PUBLIC__/js/pintuer.js"></script>
+	<script type="text/javascript" src="__PUBLIC__/js/jquery.js"></script>
+	<!-- 样式文件 -->
+	<link rel="stylesheet" href="__PUBLIC__/umeditor/themes/default/css/umeditor.css"/>
+	
+	<!-- 配置文件 -->
+	<script type="text/javascript" src="__PUBLIC__/umeditor/umeditor.config.js"></script>
+	<!-- 编辑器源码文件 -->
+	<script type="text/javascript" src="__PUBLIC__/umeditor/umeditor.min.js"></script>
+	<!-- 语言包文件 -->
+	<script type="text/javascript" src="__PUBLIC__/umeditor/lang/zh-cn/zh-cn.js"></script>
+	<!-- 实例化编辑器代码 -->
+	<script type="text/javascript">
+		 //var um = UM.getEditor('myEditor');
+		$(function(){
+			window.um = UM.getEditor('myEditor', {
+				/* 传入配置参数,可配参数列表看umeditor.config.js */
+				toolbar: ['source | undo redo | bold italic underline strikethrough | superscript subscript | forecolor backcolor | removeformat |',
+            'insertorderedlist insertunorderedlist | selectall cleardoc paragraph | fontfamily fontsize' ,
+            '| justifyleft justifycenter justifyright justifyjustify |',
+            'link unlink | emotion image video  | map',
+            '| horizontal print preview fullscreen', 'drafts', 'formula']
+			});
+		});
+	</script>
+
+	
+	
+	<style>
+	.share {
+    clear: none;
+    float: left;
+	margin-top:10px;
+	text-align:center;
+	}
+	</style>
+</head>
+<body style="background-color:#f3f3f3">
+<!--header-->
+
+	<!-- header start -->
+	
+     <!--导航-->
+    <include file="Public/header" />
+
+    <!--header end-->
+	
+	
+   <!-- 主体部分start -->
+   <div class="container" style="background-color:#fff;padding-top:20px;padding-bottom:20px; margin-top:120px">
+   
+   
+	<form>
+   <!-- introduce页面-->
+		<div class="float-left" style="width:100%;margin:60px 0 100px 0;text-align:center;">
+		
+		<div class="step">
+			<div class="step-bar active" style="width:25%;"><span class="step-point icon-check"></span><span class="step-text">第一步</span></span></div>
+			<div class="step-bar complete" style="width:25%;"><span class="step-point">2</span><span class="step-text">第二步</span></div>
+			<div class="step-bar complete" style="width:25%;"><span class="step-point">3</span><span class="step-text">第三步</span></div>
+			<div class="step-bar complete" style="width:25%;"><span class="step-point">4</span><span class="step-text">第四步</span></div>
+		</div>
+		
+			<div style="text-align:left; margin-top:50px">
+				<button class="button bg-main button-big button-block">发起项目</button>
+			</div>
+			
+			<div style="text-align:left;margin-top:50px;">
+				<font class="bg-main" style="font-size:14px;font-weight:bold;color:#000;background-color:#fff;margin-left:30px;">项目分类：</font>
+				<div class="form-group" style="margin-left:50px;">
+					<div class="field">
+						<div class="button-group radio">
+							<volist name="cate" id="vo">
+								<label class="button">
+								<input type="radio" data-validate="radio:请选择" value="{$vo.id}" name="cate_id" />{$vo.name}
+							</label>
+							</volist>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+			
+			
+			<div style="text-align:left;margin:15px 0 0 50px;">
+				<font style="font-size:14px;font-weight:bold;">项目名称:</font>
+				<input type="text" class="input" placeholder="文本框" /><!-- 对应css中287行 -->
+			</div>
+			
+			<div style="text-align:left;margin:15px 0 0 50px;">
+				<font style="font-size:14px;font-weight:bold;">项目说明:</font>
+				<input type="text" class="input" placeholder="文本框" /><!-- 对应css中287行 -->
+			</div>
+			
+			<div style="text-align:left;margin:15px 0 0 50px;">
+				<font style="font-size:14px;font-weight:bold;">筹资金额:</font>
+				<input type="text" class="input" style="width:49%;" placeholder="文本框" />元<!-- 对应css中287行 -->
+			</div>
+			
+			<div style="text-align:left;margin:15px 0 0 50px;">
+				<font style="font-size:14px;font-weight:bold;">筹资上限:</font>
+				<input type="text" class="input" style="width:49%;" placeholder="文本框" />%<!-- 对应css中287行 -->
+			</div>
+			
+			<div style="text-align:left;margin:15px 0 0 50px;">
+				<font style="font-size:14px;font-weight:bold;">筹资天数:</font>
+				<input type="text" class="input" style="width:49%;" placeholder="文本框" />天<!-- 对应css中287行 -->
+			</div>
+			
+			<div style="text-align:left;margin:15px 0 0 50px;">
+				<font style="font-size:12px;font-weight:bold;">首屏图片:</font>
+				<!-- 对应css中1068行 -->
+				<button class="button bg-dot" style="height:30px;line-height:10px;">上传首屏图片</button><font style="font-size:12px;margin-left:10px;color:#666666;">拼图，是国内一款开源的专业响应式网页前端框架。</font>
+			</div>
+			<div style="text-align:left;margin:15px 0 0 110px;">
+				<div class="media">
+					<a href="#">
+					<img src="./images/sl226_170.png" class="radius" alt="...">
+					</a>
+				</div>
+			</div>
+			
+			<!-- <div style="text-align:left;margin:15px 0 0 50px;">
+				<font style="font-size:12px;font-weight:bold;">预热图片:</font>
+				<!-- 对应css中1068行 --
+				<button class="button bg-dot" style="height:30px;line-height:10px;">上传预热图片</button><font style="font-size:12px;margin-left:10px;color:#666666;">拼图，是国内一款开源的专业响应式网页前端框架。</font>
+			</div>
+			<div style="text-align:left;margin:15px 0 0 110px;">
+				<div class="media">
+					<a href="#">
+					<img src="./images/sl226_170.png" class="radius" alt="...">
+					</a>
+				</div>
+			</div> -->
+			
+			<!-- <div style="text-align:left;margin:15px 0 0 50px;">
+				<font style="font-size:12px;font-weight:bold;">项目图片:</font>
+				<!-- 对应css中1068行 --
+				<button class="button bg-dot" style="height:30px;line-height:10px;">上传项目图片</button><font style="font-size:12px;margin-left:10px;color:#666666;">拼图，是国内一款开源的专业响应式网页前端框架。</font>
+			</div>
+			<div style="text-align:left;margin:15px 0 0 110px;">
+				<div class="media">
+					<a href="#">
+					<img src="./images/sl495_170.png" class="radius" alt="...">
+					</a>
+				</div>
+			</div> -->
+			
+			<!-- <div style="text-align:left;margin:15px 0 0 50px;">
+				<font style="font-size:12px;font-weight:bold;">移动端图片:</font>
+				<!-- 对应css中1068行 --
+				<button class="button bg-dot" style="height:30px;line-height:10px;">上传移动端图片</button><font style="font-size:12px;margin-left:10px;color:#666666;">拼图，是国内一款开源的专业响应式网页前端框架。</font>
+			</div>
+			<div style="text-align:left;margin:15px 0 0 110px;">
+				<div class="media">
+					<a href="#">
+					<img src="./images/sl495_170.png" class="radius" alt="...">
+					</a>
+				</div>
+			</div> -->
+			
+			<div style="text-align:left;margin:15px 0 0 50px;">
+				<font style="font-size:12px;font-weight:bold;">视频介绍:</font>
+				<input type="text" class="input" placeholder="请输入乐视视频播放的地址" /><!-- 对应css中287行 -->
+			</div>
+			
+			<div style="text-align:left;margin:15px 0 0 50px;">
+				<font style="font-size:12px;font-weight:bold;">项目简介:</font>
+				<textarea rows="5" class="input" placeholder="多行文本框"></textarea>
+				<br>
+				<!-- <font style="font-size:12px;font-weight:bold;">项目简介是会显示在未来门众筹首页的~</font> --><!-- 对应css中287行 -->
+			</div>
+			
+			<div style="text-align:left;margin:15px 0 0 50px;">
+				<font style="font-size:12px;font-weight:bold;">项目详情:</font>
+				<!-- 加载编辑器的容器 -->
+				<!--style给定宽度可以影响编辑器的最终宽度-->
+				<script type="text/plain" id="myEditor" style="width:1000px;height:240px;">
+				<p>这里我可以写一些输入提示</p>
+				</script>
+			</div>
+			
+			
+		</div>
+   		</form>
+   </div>
+   <!-- 主体部分end -->
+
+
+<!-- 页尾信息start -->
+
+<!--footer-->
+<include file="Public/footer" />
+<!--footer end-->
+<!-- 页尾信息end -->
+
+
+</body>
+</html>

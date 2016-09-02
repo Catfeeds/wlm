@@ -1,0 +1,86 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>{:C('WEB_NAME')}-{$page_name}</title>
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/css/common.css"/>
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/css/main.css"/>
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/css/page.css"/>
+<script type="text/javascript" src="__PUBLIC__/js/jquery.min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/layer/layer.min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/js/company.js"></script>
+<script type="text/javascript">
+var url = "{:U('Company/info')}";
+</script>
+</head>
+<body>
+<!-- Head -->
+<include file="Public:head" />
+<!-- Head -->
+<div class="container clearfix">
+    <!-- sidebar -->
+    <include file="Public:sidebar" />
+    <!--/sidebar-->
+    <div class="main-wrap">
+
+        <div class="crumb-wrap">
+            <div class="crumb-list">
+            <i class="icon-font"></i>
+            <a href="{:C('ADMIN_URL')}">首页</a>
+            <span class="crumb-step">&gt;</span>
+            <span class="crumb-name">{$page_name}</span></div>
+        </div>
+        
+        <div class="result-wrap">
+            <div class="result-title">
+            	<form name="search" action="{:U('Comment/search')}" method="post">
+                <div class="result-list">                    
+                    <a id="updateOrd" href="{:U('Comment/index')}"><i class="icon-font"></i>刷新页面</a>
+                    	评论者：<input class="myinput" type="text" name="member_name" value="{$rember['member_name']}">
+                    	机构名称：<input class="myinput" type="text" name="company" value="{$rember['company']}">
+                    	前台显示：<select class="myinput myselect" name="isshow">
+                     		<option value="1" <if condition="$rember['isshow'] eq 1">selected</if> >显示</option>
+                     		<option value="0" <if condition="$rember['isshow'] eq 0">selected</if> >不显示</option>
+			   </select>
+                    	<input class="mybutton" type="submit" value="查找">
+                </div>
+                </form>
+            </div>
+            <div class="result-content">
+                <table class="result-tab" width="100%">
+                    <tr>
+                        <!-- <th class="tc" width="5%"><input class="allChoose" name="" type="checkbox"></th> -->
+                        <th>评论者</th>
+                        <th>评论机构</th>
+                        <th>一语双关</th>
+                        <th>评论内容</th>
+                        <th>评论时间</th>
+                        <th>是否显示</th>
+                        <th>操作</th>
+                    </tr>
+                    <foreach name="list" item="vo">
+                    <tr>
+                        <!-- <td class="tc"><input name="id[]" value="{$vo.id}" type="checkbox"></td> -->
+                        <td>{$vo.member_name}</td>
+                        <td>{$vo.company}</td>
+                        <td>{$vo.nav_article_id|getTitle=###}</td>
+                        <td>{$vo.content}</td>
+                        <td>{$vo.addtime|date='Y-m-d H:i:s',###}</td>
+                        <td>{$vo.isshow|is_show=###}</td>
+                        <td>	                               
+                           	<a class="link-update" href="{:U('Comment/lock',array('id'=>$vo[id],'isshow'=>$vo[isshow]))}">{$vo.isshow|nav_action=###}</a>
+                           	<a class="link-update del" href="{:U('Comment/del',array('id'=>$vo[id]))}">删除</a>
+                        </td>
+                    </tr>
+                    </foreach>
+                    <tr>
+                    	<td colspan="7" align="right">{$page}</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <!--/main-->
+</div>
+</body>
+</html>

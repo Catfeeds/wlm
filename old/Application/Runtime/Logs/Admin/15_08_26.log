@@ -1,0 +1,1468 @@
+[ 2015-08-26T11:03:20+08:00 ] 123.121.4.218 /old/index.php?m=Admin&c=News&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.008462s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000482s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000861s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000154s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000366s ]
+NOTIC: [8] Undefined variable: message /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/afd3fa6e47af5507e6549188b8ae1f85.php 第 23 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007556s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007723s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000466s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000619s ]
+
+[ 2015-08-26T11:03:23+08:00 ] 123.121.4.218 /old/index.php?m=Admin&c=Login&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000057s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000720s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000547s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000680s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000101s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000287s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006648s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006808s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000439s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000542s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000367s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000499s ]
+
+[ 2015-08-26T11:03:25+08:00 ] 123.121.4.218 /old/index.php?m=Admin&c=Login&a=check
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000101s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001840s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000466s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000611s ]
+SQL: SHOW COLUMNS FROM `th_admin` [ RunTime:0.0023s ]
+SQL: SELECT * FROM `th_admin` WHERE `name` = 'admin' AND `pwd` = 'c3284d0f94606de1fd2af172aba15bf3' LIMIT 1   [ RunTime:0.0062s ]
+SQL: UPDATE `th_admin` SET `logintime`='1440558205',`loginip`='123.121.4.218' WHERE `id` = 1 [ RunTime:0.0017s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000095s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000253s ]
+NOTIC: [8] Undefined variable: error /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/afd3fa6e47af5507e6549188b8ae1f85.php 第 23 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008248s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008418s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000368s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000477s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000383s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000486s ]
+
+[ 2015-08-26T11:03:27+08:00 ] 123.121.4.218 /old/index.php?m=Admin&c=Index&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000371s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000465s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000591s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.011385s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.011585s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031124s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031306s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000492s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000602s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000397s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000501s ]
+
+[ 2015-08-26T11:03:32+08:00 ] 123.121.4.218 /old/index.php?m=Admin&c=News&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000507s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000464s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000676s ]
+SQL: SHOW COLUMNS FROM `th_news` [ RunTime:0.0034s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `th_news` LIMIT 1   [ RunTime:0.0027s ]
+SQL: SELECT * FROM `th_news` ORDER BY addtime desc LIMIT 0,10   [ RunTime:0.0089s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000118s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000267s ]
+SQL: SHOW COLUMNS FROM `th_company` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `th_company` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `th_news_type` [ RunTime:0.0023s ]
+SQL: SELECT * FROM `th_news_type` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0029s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 122 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 123 行.
+NOTIC: [8] Use of undefined constant isshow - assumed 'isshow' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 123 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 124 行.
+SQL: SELECT * FROM `th_company` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0049s ]
+SQL: SELECT * FROM `th_news_type` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0026s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 122 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 123 行.
+NOTIC: [8] Use of undefined constant isshow - assumed 'isshow' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 123 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 124 行.
+SQL: SELECT * FROM `th_company` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0035s ]
+SQL: SELECT * FROM `th_news_type` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0058s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 122 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 123 行.
+NOTIC: [8] Use of undefined constant isshow - assumed 'isshow' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 123 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 124 行.
+SQL: SELECT * FROM `th_company` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0034s ]
+SQL: SELECT * FROM `th_news_type` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0027s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 122 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 123 行.
+NOTIC: [8] Use of undefined constant isshow - assumed 'isshow' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 123 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 124 行.
+SQL: SELECT * FROM `th_company` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0018s ]
+SQL: SELECT * FROM `th_news_type` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0032s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 122 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 123 行.
+NOTIC: [8] Use of undefined constant isshow - assumed 'isshow' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 123 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 124 行.
+SQL: SELECT * FROM `th_company` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0252s ]
+SQL: SELECT * FROM `th_news_type` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0015s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 122 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 123 行.
+NOTIC: [8] Use of undefined constant isshow - assumed 'isshow' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 123 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 124 行.
+SQL: SELECT * FROM `th_company` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0021s ]
+SQL: SELECT * FROM `th_news_type` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0017s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 122 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 123 行.
+NOTIC: [8] Use of undefined constant isshow - assumed 'isshow' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 123 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 124 行.
+SQL: SELECT * FROM `th_company` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0022s ]
+SQL: SELECT * FROM `th_news_type` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0058s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 122 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 123 行.
+NOTIC: [8] Use of undefined constant isshow - assumed 'isshow' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 123 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 124 行.
+SQL: SELECT * FROM `th_company` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0034s ]
+SQL: SELECT * FROM `th_news_type` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0012s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 122 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 123 行.
+NOTIC: [8] Use of undefined constant isshow - assumed 'isshow' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 123 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 124 行.
+SQL: SELECT * FROM `th_company` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0023s ]
+SQL: SELECT * FROM `th_news_type` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0024s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 122 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 123 行.
+NOTIC: [8] Use of undefined constant isshow - assumed 'isshow' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 123 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 124 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.158343s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.158686s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.008735s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.008890s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000513s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000620s ]
+
+[ 2015-08-26T11:03:34+08:00 ] 123.121.4.218 /old/index.php?m=Admin&c=News&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000070s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000856s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000861s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001912s ]
+SQL: SHOW COLUMNS FROM `th_news` [ RunTime:0.0027s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `th_news` LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT * FROM `th_news` ORDER BY addtime desc LIMIT 0,10   [ RunTime:0.0074s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000147s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000326s ]
+SQL: SHOW COLUMNS FROM `th_company` [ RunTime:0.0032s ]
+SQL: SELECT * FROM `th_company` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0042s ]
+SQL: SHOW COLUMNS FROM `th_news_type` [ RunTime:0.0066s ]
+SQL: SELECT * FROM `th_news_type` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0020s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 122 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 123 行.
+NOTIC: [8] Use of undefined constant isshow - assumed 'isshow' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 123 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 124 行.
+SQL: SELECT * FROM `th_company` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0027s ]
+SQL: SELECT * FROM `th_news_type` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0016s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 122 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 123 行.
+NOTIC: [8] Use of undefined constant isshow - assumed 'isshow' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 123 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 124 行.
+SQL: SELECT * FROM `th_company` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0045s ]
+SQL: SELECT * FROM `th_news_type` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0014s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 122 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 123 行.
+NOTIC: [8] Use of undefined constant isshow - assumed 'isshow' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 123 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 124 行.
+SQL: SELECT * FROM `th_company` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0021s ]
+SQL: SELECT * FROM `th_news_type` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0168s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 122 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 123 行.
+NOTIC: [8] Use of undefined constant isshow - assumed 'isshow' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 123 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 124 行.
+SQL: SELECT * FROM `th_company` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0032s ]
+SQL: SELECT * FROM `th_news_type` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0047s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 122 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 123 行.
+NOTIC: [8] Use of undefined constant isshow - assumed 'isshow' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 123 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 124 行.
+SQL: SELECT * FROM `th_company` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0024s ]
+SQL: SELECT * FROM `th_news_type` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0017s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 122 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 123 行.
+NOTIC: [8] Use of undefined constant isshow - assumed 'isshow' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 123 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 124 行.
+SQL: SELECT * FROM `th_company` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0029s ]
+SQL: SELECT * FROM `th_news_type` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0020s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 122 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 123 行.
+NOTIC: [8] Use of undefined constant isshow - assumed 'isshow' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 123 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 124 行.
+SQL: SELECT * FROM `th_company` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0031s ]
+SQL: SELECT * FROM `th_news_type` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0081s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 122 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 123 行.
+NOTIC: [8] Use of undefined constant isshow - assumed 'isshow' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 123 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 124 行.
+SQL: SELECT * FROM `th_company` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0021s ]
+SQL: SELECT * FROM `th_news_type` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0053s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 122 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 123 行.
+NOTIC: [8] Use of undefined constant isshow - assumed 'isshow' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 123 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 124 行.
+SQL: SELECT * FROM `th_company` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0018s ]
+SQL: SELECT * FROM `th_news_type` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0040s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 122 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 123 行.
+NOTIC: [8] Use of undefined constant isshow - assumed 'isshow' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 123 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 124 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.158638s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.158759s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.006826s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006976s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000409s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000565s ]
+
+[ 2015-08-26T11:03:39+08:00 ] 123.121.4.218 /old/index.php?m=Admin&c=News&a=edit&id=30
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000509s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001127s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001506s ]
+SQL: SHOW COLUMNS FROM `th_news` [ RunTime:0.0024s ]
+SQL: SELECT * FROM `th_news` WHERE `id` = 30 LIMIT 1   [ RunTime:0.0052s ]
+SQL: SHOW COLUMNS FROM `th_news_type` [ RunTime:0.0033s ]
+SQL: SELECT * FROM `th_news_type`  [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `th_domain` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `th_domain`  [ RunTime:0.0104s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000124s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000284s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 143 行.
+NOTIC: [8] Use of undefined constant domain - assumed 'domain' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 143 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 143 行.
+NOTIC: [8] Use of undefined constant domain - assumed 'domain' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 143 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 143 行.
+NOTIC: [8] Use of undefined constant domain - assumed 'domain' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 143 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 143 行.
+NOTIC: [8] Use of undefined constant domain - assumed 'domain' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 143 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 143 行.
+NOTIC: [8] Use of undefined constant domain - assumed 'domain' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 143 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 143 行.
+NOTIC: [8] Use of undefined constant domain - assumed 'domain' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 143 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 143 行.
+NOTIC: [8] Use of undefined constant domain - assumed 'domain' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 143 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 143 行.
+NOTIC: [8] Use of undefined constant domain - assumed 'domain' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 143 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 143 行.
+NOTIC: [8] Use of undefined constant domain - assumed 'domain' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 143 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 143 行.
+NOTIC: [8] Use of undefined constant domain - assumed 'domain' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 143 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 143 行.
+NOTIC: [8] Use of undefined constant domain - assumed 'domain' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 143 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 143 行.
+NOTIC: [8] Use of undefined constant domain - assumed 'domain' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 143 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 143 行.
+NOTIC: [8] Use of undefined constant domain - assumed 'domain' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 143 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 143 行.
+NOTIC: [8] Use of undefined constant domain - assumed 'domain' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 143 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 143 行.
+NOTIC: [8] Use of undefined constant domain - assumed 'domain' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 143 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 143 行.
+NOTIC: [8] Use of undefined constant domain - assumed 'domain' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 143 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 143 行.
+NOTIC: [8] Use of undefined constant domain - assumed 'domain' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 143 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 143 行.
+NOTIC: [8] Use of undefined constant domain - assumed 'domain' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 143 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 143 行.
+NOTIC: [8] Use of undefined constant domain - assumed 'domain' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 143 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 143 行.
+NOTIC: [8] Use of undefined constant domain - assumed 'domain' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 143 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 143 行.
+NOTIC: [8] Use of undefined constant domain - assumed 'domain' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 143 行.
+NOTIC: [8] Use of undefined constant news_type_id - assumed 'news_type_id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 150 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 150 行.
+NOTIC: [8] Use of undefined constant news_type_id - assumed 'news_type_id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 150 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 150 行.
+NOTIC: [8] Use of undefined constant news_type_id - assumed 'news_type_id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 150 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 150 行.
+NOTIC: [8] Use of undefined constant news_type_id - assumed 'news_type_id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 150 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 150 行.
+NOTIC: [8] Use of undefined constant news_type_id - assumed 'news_type_id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 150 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 150 行.
+NOTIC: [8] Use of undefined constant news_type_id - assumed 'news_type_id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 150 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 150 行.
+NOTIC: [8] Use of undefined constant news_type_id - assumed 'news_type_id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 150 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 150 行.
+NOTIC: [8] Use of undefined constant news_type_id - assumed 'news_type_id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 150 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 150 行.
+NOTIC: [8] Use of undefined constant news_type_id - assumed 'news_type_id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 150 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 150 行.
+NOTIC: [8] Use of undefined constant news_type_id - assumed 'news_type_id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 150 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 150 行.
+NOTIC: [8] Use of undefined constant news_type_id - assumed 'news_type_id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 150 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 150 行.
+NOTIC: [8] Use of undefined constant news_type_id - assumed 'news_type_id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 150 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 150 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.084417s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.084605s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000489s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000649s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000387s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000483s ]
+
+[ 2015-08-26T11:03:48+08:00 ] 123.121.4.218 /old/index.php?m=Admin&c=News&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000374s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000356s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000482s ]
+SQL: SHOW COLUMNS FROM `th_news` [ RunTime:0.0080s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `th_news` LIMIT 1   [ RunTime:0.0013s ]
+SQL: SELECT * FROM `th_news` ORDER BY addtime desc LIMIT 0,10   [ RunTime:0.0247s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000121s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000271s ]
+SQL: SHOW COLUMNS FROM `th_company` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `th_company` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0043s ]
+SQL: SHOW COLUMNS FROM `th_news_type` [ RunTime:0.0057s ]
+SQL: SELECT * FROM `th_news_type` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0038s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 122 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 123 行.
+NOTIC: [8] Use of undefined constant isshow - assumed 'isshow' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 123 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 124 行.
+SQL: SELECT * FROM `th_company` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0017s ]
+SQL: SELECT * FROM `th_news_type` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0026s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 122 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 123 行.
+NOTIC: [8] Use of undefined constant isshow - assumed 'isshow' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 123 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 124 行.
+SQL: SELECT * FROM `th_company` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0037s ]
+SQL: SELECT * FROM `th_news_type` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0133s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 122 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 123 行.
+NOTIC: [8] Use of undefined constant isshow - assumed 'isshow' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 123 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 124 行.
+SQL: SELECT * FROM `th_company` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0057s ]
+SQL: SELECT * FROM `th_news_type` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0106s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 122 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 123 行.
+NOTIC: [8] Use of undefined constant isshow - assumed 'isshow' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 123 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 124 行.
+SQL: SELECT * FROM `th_company` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0045s ]
+SQL: SELECT * FROM `th_news_type` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0017s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 122 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 123 行.
+NOTIC: [8] Use of undefined constant isshow - assumed 'isshow' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 123 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 124 行.
+SQL: SELECT * FROM `th_company` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0019s ]
+SQL: SELECT * FROM `th_news_type` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0014s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 122 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 123 行.
+NOTIC: [8] Use of undefined constant isshow - assumed 'isshow' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 123 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 124 行.
+SQL: SELECT * FROM `th_company` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0016s ]
+SQL: SELECT * FROM `th_news_type` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0011s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 122 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 123 行.
+NOTIC: [8] Use of undefined constant isshow - assumed 'isshow' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 123 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 124 行.
+SQL: SELECT * FROM `th_company` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0021s ]
+SQL: SELECT * FROM `th_news_type` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0020s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 122 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 123 行.
+NOTIC: [8] Use of undefined constant isshow - assumed 'isshow' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 123 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 124 行.
+SQL: SELECT * FROM `th_company` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0035s ]
+SQL: SELECT * FROM `th_news_type` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0018s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 122 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 123 行.
+NOTIC: [8] Use of undefined constant isshow - assumed 'isshow' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 123 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 124 行.
+SQL: SELECT * FROM `th_company` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0017s ]
+SQL: SELECT * FROM `th_news_type` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0023s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 122 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 123 行.
+NOTIC: [8] Use of undefined constant isshow - assumed 'isshow' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 123 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 124 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.200086s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.203749s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000774s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000876s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000470s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000570s ]
+
+[ 2015-08-26T11:03:51+08:00 ] 123.121.4.218 /old/index.php?m=Admin&c=News&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000443s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000542s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000734s ]
+SQL: SHOW COLUMNS FROM `th_news` [ RunTime:0.0025s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `th_news` LIMIT 1   [ RunTime:0.0019s ]
+SQL: SELECT * FROM `th_news` ORDER BY addtime desc LIMIT 0,10   [ RunTime:0.0194s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000109s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000242s ]
+SQL: SHOW COLUMNS FROM `th_company` [ RunTime:0.0057s ]
+SQL: SELECT * FROM `th_company` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0023s ]
+SQL: SHOW COLUMNS FROM `th_news_type` [ RunTime:0.0031s ]
+SQL: SELECT * FROM `th_news_type` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0123s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 122 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 123 行.
+NOTIC: [8] Use of undefined constant isshow - assumed 'isshow' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 123 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 124 行.
+SQL: SELECT * FROM `th_company` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0053s ]
+SQL: SELECT * FROM `th_news_type` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0055s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 122 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 123 行.
+NOTIC: [8] Use of undefined constant isshow - assumed 'isshow' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 123 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 124 行.
+SQL: SELECT * FROM `th_company` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0028s ]
+SQL: SELECT * FROM `th_news_type` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0018s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 122 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 123 行.
+NOTIC: [8] Use of undefined constant isshow - assumed 'isshow' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 123 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 124 行.
+SQL: SELECT * FROM `th_company` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0012s ]
+SQL: SELECT * FROM `th_news_type` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0028s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 122 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 123 行.
+NOTIC: [8] Use of undefined constant isshow - assumed 'isshow' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 123 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 124 行.
+SQL: SELECT * FROM `th_company` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0016s ]
+SQL: SELECT * FROM `th_news_type` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0023s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 122 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 123 行.
+NOTIC: [8] Use of undefined constant isshow - assumed 'isshow' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 123 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 124 行.
+SQL: SELECT * FROM `th_company` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `th_news_type` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0014s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 122 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 123 行.
+NOTIC: [8] Use of undefined constant isshow - assumed 'isshow' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 123 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 124 行.
+SQL: SELECT * FROM `th_company` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0018s ]
+SQL: SELECT * FROM `th_news_type` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0068s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 122 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 123 行.
+NOTIC: [8] Use of undefined constant isshow - assumed 'isshow' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 123 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 124 行.
+SQL: SELECT * FROM `th_company` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0153s ]
+SQL: SELECT * FROM `th_news_type` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0028s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 122 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 123 行.
+NOTIC: [8] Use of undefined constant isshow - assumed 'isshow' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 123 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 124 行.
+SQL: SELECT * FROM `th_company` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0033s ]
+SQL: SELECT * FROM `th_news_type` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0040s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 122 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 123 行.
+NOTIC: [8] Use of undefined constant isshow - assumed 'isshow' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 123 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 124 行.
+SQL: SELECT * FROM `th_company` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `th_news_type` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0017s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 122 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 123 行.
+NOTIC: [8] Use of undefined constant isshow - assumed 'isshow' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 123 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 124 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.187173s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.187315s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000437s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000535s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000358s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000452s ]
+
+[ 2015-08-26T11:04:06+08:00 ] 123.121.4.218 /old/index.php?m=Admin&c=News&a=edit&id=29
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000044s ]
+INFO: [ app_init ] --END-- [ RunTime:0.006483s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000528s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000667s ]
+SQL: SHOW COLUMNS FROM `th_news` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `th_news` WHERE `id` = 29 LIMIT 1   [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `th_news_type` [ RunTime:0.0042s ]
+SQL: SELECT * FROM `th_news_type`  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `th_domain` [ RunTime:0.0043s ]
+SQL: SELECT * FROM `th_domain`  [ RunTime:0.0013s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000127s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000280s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 143 行.
+NOTIC: [8] Use of undefined constant domain - assumed 'domain' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 143 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 143 行.
+NOTIC: [8] Use of undefined constant domain - assumed 'domain' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 143 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 143 行.
+NOTIC: [8] Use of undefined constant domain - assumed 'domain' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 143 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 143 行.
+NOTIC: [8] Use of undefined constant domain - assumed 'domain' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 143 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 143 行.
+NOTIC: [8] Use of undefined constant domain - assumed 'domain' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 143 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 143 行.
+NOTIC: [8] Use of undefined constant domain - assumed 'domain' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 143 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 143 行.
+NOTIC: [8] Use of undefined constant domain - assumed 'domain' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 143 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 143 行.
+NOTIC: [8] Use of undefined constant domain - assumed 'domain' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 143 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 143 行.
+NOTIC: [8] Use of undefined constant domain - assumed 'domain' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 143 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 143 行.
+NOTIC: [8] Use of undefined constant domain - assumed 'domain' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 143 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 143 行.
+NOTIC: [8] Use of undefined constant domain - assumed 'domain' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 143 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 143 行.
+NOTIC: [8] Use of undefined constant domain - assumed 'domain' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 143 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 143 行.
+NOTIC: [8] Use of undefined constant domain - assumed 'domain' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 143 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 143 行.
+NOTIC: [8] Use of undefined constant domain - assumed 'domain' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 143 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 143 行.
+NOTIC: [8] Use of undefined constant domain - assumed 'domain' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 143 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 143 行.
+NOTIC: [8] Use of undefined constant domain - assumed 'domain' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 143 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 143 行.
+NOTIC: [8] Use of undefined constant domain - assumed 'domain' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 143 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 143 行.
+NOTIC: [8] Use of undefined constant domain - assumed 'domain' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 143 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 143 行.
+NOTIC: [8] Use of undefined constant domain - assumed 'domain' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 143 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 143 行.
+NOTIC: [8] Use of undefined constant domain - assumed 'domain' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 143 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 143 行.
+NOTIC: [8] Use of undefined constant domain - assumed 'domain' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 143 行.
+NOTIC: [8] Use of undefined constant news_type_id - assumed 'news_type_id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 150 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 150 行.
+NOTIC: [8] Use of undefined constant news_type_id - assumed 'news_type_id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 150 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 150 行.
+NOTIC: [8] Use of undefined constant news_type_id - assumed 'news_type_id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 150 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 150 行.
+NOTIC: [8] Use of undefined constant news_type_id - assumed 'news_type_id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 150 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 150 行.
+NOTIC: [8] Use of undefined constant news_type_id - assumed 'news_type_id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 150 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 150 行.
+NOTIC: [8] Use of undefined constant news_type_id - assumed 'news_type_id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 150 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 150 行.
+NOTIC: [8] Use of undefined constant news_type_id - assumed 'news_type_id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 150 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 150 行.
+NOTIC: [8] Use of undefined constant news_type_id - assumed 'news_type_id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 150 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 150 行.
+NOTIC: [8] Use of undefined constant news_type_id - assumed 'news_type_id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 150 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 150 行.
+NOTIC: [8] Use of undefined constant news_type_id - assumed 'news_type_id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 150 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 150 行.
+NOTIC: [8] Use of undefined constant news_type_id - assumed 'news_type_id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 150 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 150 行.
+NOTIC: [8] Use of undefined constant news_type_id - assumed 'news_type_id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 150 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 150 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.060468s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.060689s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000516s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000624s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000657s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000826s ]
+
+[ 2015-08-26T11:04:26+08:00 ] 123.121.4.218 /old/index.php?m=Admin&c=News&a=edit&id=29
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000492s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000530s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000693s ]
+SQL: SHOW COLUMNS FROM `th_news` [ RunTime:0.0106s ]
+SQL: SELECT * FROM `th_news` WHERE `id` = 29 LIMIT 1   [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `th_news_type` [ RunTime:0.0098s ]
+SQL: SELECT * FROM `th_news_type`  [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `th_domain` [ RunTime:0.0024s ]
+SQL: SELECT * FROM `th_domain`  [ RunTime:0.0025s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000129s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000277s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 143 行.
+NOTIC: [8] Use of undefined constant domain - assumed 'domain' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 143 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 143 行.
+NOTIC: [8] Use of undefined constant domain - assumed 'domain' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 143 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 143 行.
+NOTIC: [8] Use of undefined constant domain - assumed 'domain' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 143 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 143 行.
+NOTIC: [8] Use of undefined constant domain - assumed 'domain' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 143 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 143 行.
+NOTIC: [8] Use of undefined constant domain - assumed 'domain' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 143 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 143 行.
+NOTIC: [8] Use of undefined constant domain - assumed 'domain' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 143 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 143 行.
+NOTIC: [8] Use of undefined constant domain - assumed 'domain' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 143 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 143 行.
+NOTIC: [8] Use of undefined constant domain - assumed 'domain' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 143 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 143 行.
+NOTIC: [8] Use of undefined constant domain - assumed 'domain' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 143 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 143 行.
+NOTIC: [8] Use of undefined constant domain - assumed 'domain' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 143 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 143 行.
+NOTIC: [8] Use of undefined constant domain - assumed 'domain' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 143 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 143 行.
+NOTIC: [8] Use of undefined constant domain - assumed 'domain' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 143 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 143 行.
+NOTIC: [8] Use of undefined constant domain - assumed 'domain' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 143 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 143 行.
+NOTIC: [8] Use of undefined constant domain - assumed 'domain' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 143 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 143 行.
+NOTIC: [8] Use of undefined constant domain - assumed 'domain' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 143 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 143 行.
+NOTIC: [8] Use of undefined constant domain - assumed 'domain' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 143 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 143 行.
+NOTIC: [8] Use of undefined constant domain - assumed 'domain' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 143 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 143 行.
+NOTIC: [8] Use of undefined constant domain - assumed 'domain' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 143 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 143 行.
+NOTIC: [8] Use of undefined constant domain - assumed 'domain' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 143 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 143 行.
+NOTIC: [8] Use of undefined constant domain - assumed 'domain' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 143 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 143 行.
+NOTIC: [8] Use of undefined constant domain - assumed 'domain' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 143 行.
+NOTIC: [8] Use of undefined constant news_type_id - assumed 'news_type_id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 150 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 150 行.
+NOTIC: [8] Use of undefined constant news_type_id - assumed 'news_type_id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 150 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 150 行.
+NOTIC: [8] Use of undefined constant news_type_id - assumed 'news_type_id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 150 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 150 行.
+NOTIC: [8] Use of undefined constant news_type_id - assumed 'news_type_id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 150 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 150 行.
+NOTIC: [8] Use of undefined constant news_type_id - assumed 'news_type_id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 150 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 150 行.
+NOTIC: [8] Use of undefined constant news_type_id - assumed 'news_type_id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 150 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 150 行.
+NOTIC: [8] Use of undefined constant news_type_id - assumed 'news_type_id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 150 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 150 行.
+NOTIC: [8] Use of undefined constant news_type_id - assumed 'news_type_id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 150 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 150 行.
+NOTIC: [8] Use of undefined constant news_type_id - assumed 'news_type_id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 150 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 150 行.
+NOTIC: [8] Use of undefined constant news_type_id - assumed 'news_type_id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 150 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 150 行.
+NOTIC: [8] Use of undefined constant news_type_id - assumed 'news_type_id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 150 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 150 行.
+NOTIC: [8] Use of undefined constant news_type_id - assumed 'news_type_id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 150 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 150 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.055208s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.055341s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000453s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000541s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000382s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000476s ]
+
+[ 2015-08-26T11:05:44+08:00 ] 123.121.4.218 /old/index.php?m=Admin&c=News&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000522s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000381s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000516s ]
+SQL: SHOW COLUMNS FROM `th_news` [ RunTime:0.0026s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `th_news` LIMIT 1   [ RunTime:0.0065s ]
+SQL: SELECT * FROM `th_news` ORDER BY addtime desc LIMIT 0,10   [ RunTime:0.0099s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000174s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000338s ]
+SQL: SHOW COLUMNS FROM `th_company` [ RunTime:0.0046s ]
+SQL: SELECT * FROM `th_company` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0069s ]
+SQL: SHOW COLUMNS FROM `th_news_type` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `th_news_type` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0021s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 122 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 123 行.
+NOTIC: [8] Use of undefined constant isshow - assumed 'isshow' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 123 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 124 行.
+SQL: SELECT * FROM `th_company` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0021s ]
+SQL: SELECT * FROM `th_news_type` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0035s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 122 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 123 行.
+NOTIC: [8] Use of undefined constant isshow - assumed 'isshow' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 123 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 124 行.
+SQL: SELECT * FROM `th_company` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0133s ]
+SQL: SELECT * FROM `th_news_type` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0014s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 122 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 123 行.
+NOTIC: [8] Use of undefined constant isshow - assumed 'isshow' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 123 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 124 行.
+SQL: SELECT * FROM `th_company` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0015s ]
+SQL: SELECT * FROM `th_news_type` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0017s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 122 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 123 行.
+NOTIC: [8] Use of undefined constant isshow - assumed 'isshow' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 123 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 124 行.
+SQL: SELECT * FROM `th_company` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0051s ]
+SQL: SELECT * FROM `th_news_type` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0023s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 122 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 123 行.
+NOTIC: [8] Use of undefined constant isshow - assumed 'isshow' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 123 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 124 行.
+SQL: SELECT * FROM `th_company` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0033s ]
+SQL: SELECT * FROM `th_news_type` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0015s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 122 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 123 行.
+NOTIC: [8] Use of undefined constant isshow - assumed 'isshow' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 123 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 124 行.
+SQL: SELECT * FROM `th_company` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0060s ]
+SQL: SELECT * FROM `th_news_type` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0070s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 122 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 123 行.
+NOTIC: [8] Use of undefined constant isshow - assumed 'isshow' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 123 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 124 行.
+SQL: SELECT * FROM `th_company` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0016s ]
+SQL: SELECT * FROM `th_news_type` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0015s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 122 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 123 行.
+NOTIC: [8] Use of undefined constant isshow - assumed 'isshow' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 123 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 124 行.
+SQL: SELECT * FROM `th_company` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0047s ]
+SQL: SELECT * FROM `th_news_type` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0031s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 122 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 123 行.
+NOTIC: [8] Use of undefined constant isshow - assumed 'isshow' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 123 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 124 行.
+SQL: SELECT * FROM `th_company` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0048s ]
+SQL: SELECT * FROM `th_news_type` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0033s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 122 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 123 行.
+NOTIC: [8] Use of undefined constant isshow - assumed 'isshow' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 123 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 124 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.159271s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.159433s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000511s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000645s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000440s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000558s ]
+
+[ 2015-08-26T11:05:46+08:00 ] 123.121.4.218 /old/index.php?m=Admin&c=News&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000399s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000402s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000526s ]
+SQL: SHOW COLUMNS FROM `th_news` [ RunTime:0.0048s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `th_news` LIMIT 1   [ RunTime:0.0082s ]
+SQL: SELECT * FROM `th_news` ORDER BY addtime desc LIMIT 0,10   [ RunTime:0.0213s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000137s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000538s ]
+SQL: SHOW COLUMNS FROM `th_company` [ RunTime:0.0032s ]
+SQL: SELECT * FROM `th_company` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0054s ]
+SQL: SHOW COLUMNS FROM `th_news_type` [ RunTime:0.0064s ]
+SQL: SELECT * FROM `th_news_type` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0079s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 122 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 123 行.
+NOTIC: [8] Use of undefined constant isshow - assumed 'isshow' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 123 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 124 行.
+SQL: SELECT * FROM `th_company` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0060s ]
+SQL: SELECT * FROM `th_news_type` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0047s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 122 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 123 行.
+NOTIC: [8] Use of undefined constant isshow - assumed 'isshow' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 123 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 124 行.
+SQL: SELECT * FROM `th_company` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0075s ]
+SQL: SELECT * FROM `th_news_type` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0017s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 122 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 123 行.
+NOTIC: [8] Use of undefined constant isshow - assumed 'isshow' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 123 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 124 行.
+SQL: SELECT * FROM `th_company` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0023s ]
+SQL: SELECT * FROM `th_news_type` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0015s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 122 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 123 行.
+NOTIC: [8] Use of undefined constant isshow - assumed 'isshow' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 123 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 124 行.
+SQL: SELECT * FROM `th_company` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0038s ]
+SQL: SELECT * FROM `th_news_type` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0017s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 122 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 123 行.
+NOTIC: [8] Use of undefined constant isshow - assumed 'isshow' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 123 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 124 行.
+SQL: SELECT * FROM `th_company` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0048s ]
+SQL: SELECT * FROM `th_news_type` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0022s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 122 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 123 行.
+NOTIC: [8] Use of undefined constant isshow - assumed 'isshow' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 123 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 124 行.
+SQL: SELECT * FROM `th_company` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `th_news_type` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0018s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 122 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 123 行.
+NOTIC: [8] Use of undefined constant isshow - assumed 'isshow' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 123 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 124 行.
+SQL: SELECT * FROM `th_company` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0012s ]
+SQL: SELECT * FROM `th_news_type` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0023s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 122 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 123 行.
+NOTIC: [8] Use of undefined constant isshow - assumed 'isshow' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 123 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 124 行.
+SQL: SELECT * FROM `th_company` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0046s ]
+SQL: SELECT * FROM `th_news_type` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0051s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 122 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 123 行.
+NOTIC: [8] Use of undefined constant isshow - assumed 'isshow' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 123 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 124 行.
+SQL: SELECT * FROM `th_company` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `th_news_type` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0037s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 122 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 123 行.
+NOTIC: [8] Use of undefined constant isshow - assumed 'isshow' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 123 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 124 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.161409s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.161712s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002142s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002302s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000408s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000516s ]
+
+[ 2015-08-26T11:05:49+08:00 ] 123.121.4.218 /old/index.php?m=Admin&c=News&a=edit&id=28
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000437s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000374s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000551s ]
+SQL: SHOW COLUMNS FROM `th_news` [ RunTime:0.0061s ]
+SQL: SELECT * FROM `th_news` WHERE `id` = 28 LIMIT 1   [ RunTime:0.0036s ]
+SQL: SHOW COLUMNS FROM `th_news_type` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `th_news_type`  [ RunTime:0.0023s ]
+SQL: SHOW COLUMNS FROM `th_domain` [ RunTime:0.0066s ]
+SQL: SELECT * FROM `th_domain`  [ RunTime:0.0024s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000138s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000406s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 143 行.
+NOTIC: [8] Use of undefined constant domain - assumed 'domain' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 143 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 143 行.
+NOTIC: [8] Use of undefined constant domain - assumed 'domain' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 143 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 143 行.
+NOTIC: [8] Use of undefined constant domain - assumed 'domain' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 143 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 143 行.
+NOTIC: [8] Use of undefined constant domain - assumed 'domain' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 143 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 143 行.
+NOTIC: [8] Use of undefined constant domain - assumed 'domain' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 143 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 143 行.
+NOTIC: [8] Use of undefined constant domain - assumed 'domain' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 143 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 143 行.
+NOTIC: [8] Use of undefined constant domain - assumed 'domain' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 143 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 143 行.
+NOTIC: [8] Use of undefined constant domain - assumed 'domain' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 143 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 143 行.
+NOTIC: [8] Use of undefined constant domain - assumed 'domain' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 143 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 143 行.
+NOTIC: [8] Use of undefined constant domain - assumed 'domain' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 143 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 143 行.
+NOTIC: [8] Use of undefined constant domain - assumed 'domain' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 143 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 143 行.
+NOTIC: [8] Use of undefined constant domain - assumed 'domain' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 143 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 143 行.
+NOTIC: [8] Use of undefined constant domain - assumed 'domain' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 143 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 143 行.
+NOTIC: [8] Use of undefined constant domain - assumed 'domain' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 143 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 143 行.
+NOTIC: [8] Use of undefined constant domain - assumed 'domain' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 143 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 143 行.
+NOTIC: [8] Use of undefined constant domain - assumed 'domain' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 143 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 143 行.
+NOTIC: [8] Use of undefined constant domain - assumed 'domain' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 143 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 143 行.
+NOTIC: [8] Use of undefined constant domain - assumed 'domain' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 143 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 143 行.
+NOTIC: [8] Use of undefined constant domain - assumed 'domain' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 143 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 143 行.
+NOTIC: [8] Use of undefined constant domain - assumed 'domain' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 143 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 143 行.
+NOTIC: [8] Use of undefined constant domain - assumed 'domain' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 143 行.
+NOTIC: [8] Use of undefined constant news_type_id - assumed 'news_type_id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 150 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 150 行.
+NOTIC: [8] Use of undefined constant news_type_id - assumed 'news_type_id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 150 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 150 行.
+NOTIC: [8] Use of undefined constant news_type_id - assumed 'news_type_id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 150 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 150 行.
+NOTIC: [8] Use of undefined constant news_type_id - assumed 'news_type_id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 150 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 150 行.
+NOTIC: [8] Use of undefined constant news_type_id - assumed 'news_type_id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 150 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 150 行.
+NOTIC: [8] Use of undefined constant news_type_id - assumed 'news_type_id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 150 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 150 行.
+NOTIC: [8] Use of undefined constant news_type_id - assumed 'news_type_id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 150 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 150 行.
+NOTIC: [8] Use of undefined constant news_type_id - assumed 'news_type_id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 150 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 150 行.
+NOTIC: [8] Use of undefined constant news_type_id - assumed 'news_type_id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 150 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 150 行.
+NOTIC: [8] Use of undefined constant news_type_id - assumed 'news_type_id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 150 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 150 行.
+NOTIC: [8] Use of undefined constant news_type_id - assumed 'news_type_id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 150 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 150 行.
+NOTIC: [8] Use of undefined constant news_type_id - assumed 'news_type_id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 150 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 150 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.070196s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.070371s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000541s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000643s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000372s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000469s ]
+
+[ 2015-08-26T11:16:50+08:00 ] 180.153.214.180 /old/index.php?m=Admin&c=News&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000073s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002833s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000416s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000547s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000106s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000299s ]
+NOTIC: [8] Undefined variable: message /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/afd3fa6e47af5507e6549188b8ae1f85.php 第 23 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005389s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005524s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000432s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000545s ]
+
+[ 2015-08-26T11:16:52+08:00 ] 180.153.214.199 /old/index.php?m=Admin&c=Login&a=check
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000478s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000603s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000848s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000087s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000312s ]
+NOTIC: [8] Undefined variable: message /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/afd3fa6e47af5507e6549188b8ae1f85.php 第 23 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015604s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015777s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001023s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001156s ]
+
+[ 2015-08-26T11:16:53+08:00 ] 101.226.66.187 /old/index.php?m=Admin&c=Index&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000537s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000371s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000663s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000220s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000384s ]
+NOTIC: [8] Undefined variable: message /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/afd3fa6e47af5507e6549188b8ae1f85.php 第 23 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005205s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005360s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000525s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000625s ]
+
+[ 2015-08-26T11:17:06+08:00 ] 180.153.214.152 /old/index.php?m=Admin&c=News&a=edit&id=30
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000424s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004344s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004514s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000138s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000320s ]
+NOTIC: [8] Undefined variable: message /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/afd3fa6e47af5507e6549188b8ae1f85.php 第 23 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015413s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015545s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000380s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000479s ]
+
+[ 2015-08-26T11:17:34+08:00 ] 101.226.66.187 /old/index.php?m=Admin&c=News&a=edit&id=29
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000426s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000477s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000604s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000111s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000267s ]
+NOTIC: [8] Undefined variable: message /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/afd3fa6e47af5507e6549188b8ae1f85.php 第 23 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005093s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005254s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000342s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000459s ]
+
+[ 2015-08-26T11:19:20+08:00 ] 101.226.65.106 /old/index.php?m=Admin&c=News&a=edit&id=28
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000401s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000541s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000682s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000087s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000365s ]
+NOTIC: [8] Undefined variable: message /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/afd3fa6e47af5507e6549188b8ae1f85.php 第 23 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011486s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011691s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000369s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000468s ]
+
+[ 2015-08-26T12:03:33+08:00 ] 180.153.214.152 /old/index.php?m=Admin&c=Login&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000041s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001340s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000414s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000553s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000696s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000867s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026704s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026868s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000381s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000485s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000368s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000470s ]
+
+[ 2015-08-26T12:05:52+08:00 ] 101.226.66.187 /old/index.php?m=Admin&c=Login&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000089s ]
+INFO: [ app_init ] --END-- [ RunTime:0.005330s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000921s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001067s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000091s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000249s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005221s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005357s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000381s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000476s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000364s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000461s ]
+
+[ 2015-08-26T12:07:49+08:00 ] 180.153.214.180 /old/index.php?m=Admin&c=Login&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000444s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000372s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000627s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000210s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000389s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013656s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013777s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000438s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000568s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000398s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000531s ]
+
+[ 2015-08-26T12:08:29+08:00 ] 101.226.66.187 /old/index.php?m=Admin&c=Login&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000379s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000400s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000537s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000096s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000258s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008932s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000423s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000565s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000402s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000541s ]
+
+[ 2015-08-26T12:09:34+08:00 ] 101.226.65.106 /old/index.php?m=Admin&c=Login&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000427s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000461s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000627s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000096s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000252s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011405s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024067s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003474s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003844s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000397s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000505s ]
+
+[ 2015-08-26T15:09:05+08:00 ] 123.121.4.218 /old/index.php?m=Admin&c=News&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000381s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.004014s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004172s ]
+SQL: SHOW COLUMNS FROM `th_news` [ RunTime:0.0038s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `th_news` LIMIT 1   [ RunTime:0.0067s ]
+SQL: SELECT * FROM `th_news` ORDER BY addtime desc LIMIT 0,10   [ RunTime:0.0442s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000291s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000465s ]
+SQL: SHOW COLUMNS FROM `th_company` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `th_company` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0034s ]
+SQL: SHOW COLUMNS FROM `th_news_type` [ RunTime:0.0036s ]
+SQL: SELECT * FROM `th_news_type` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0019s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 122 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 123 行.
+NOTIC: [8] Use of undefined constant isshow - assumed 'isshow' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 123 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 124 行.
+SQL: SELECT * FROM `th_company` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0025s ]
+SQL: SELECT * FROM `th_news_type` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0038s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 122 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 123 行.
+NOTIC: [8] Use of undefined constant isshow - assumed 'isshow' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 123 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 124 行.
+SQL: SELECT * FROM `th_company` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `th_news_type` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0028s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 122 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 123 行.
+NOTIC: [8] Use of undefined constant isshow - assumed 'isshow' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 123 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 124 行.
+SQL: SELECT * FROM `th_company` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0032s ]
+SQL: SELECT * FROM `th_news_type` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0021s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 122 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 123 行.
+NOTIC: [8] Use of undefined constant isshow - assumed 'isshow' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 123 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 124 行.
+SQL: SELECT * FROM `th_company` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0043s ]
+SQL: SELECT * FROM `th_news_type` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0022s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 122 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 123 行.
+NOTIC: [8] Use of undefined constant isshow - assumed 'isshow' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 123 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 124 行.
+SQL: SELECT * FROM `th_company` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0038s ]
+SQL: SELECT * FROM `th_news_type` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0028s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 122 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 123 行.
+NOTIC: [8] Use of undefined constant isshow - assumed 'isshow' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 123 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 124 行.
+SQL: SELECT * FROM `th_company` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0015s ]
+SQL: SELECT * FROM `th_news_type` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0064s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 122 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 123 行.
+NOTIC: [8] Use of undefined constant isshow - assumed 'isshow' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 123 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 124 行.
+SQL: SELECT * FROM `th_company` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0024s ]
+SQL: SELECT * FROM `th_news_type` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0022s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 122 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 123 行.
+NOTIC: [8] Use of undefined constant isshow - assumed 'isshow' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 123 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 124 行.
+SQL: SELECT * FROM `th_company` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0032s ]
+SQL: SELECT * FROM `th_news_type` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0098s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 122 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 123 行.
+NOTIC: [8] Use of undefined constant isshow - assumed 'isshow' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 123 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 124 行.
+SQL: SELECT * FROM `th_company` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0033s ]
+SQL: SELECT * FROM `th_news_type` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0019s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 122 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 123 行.
+NOTIC: [8] Use of undefined constant isshow - assumed 'isshow' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 123 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 124 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.169935s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.170039s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000371s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000454s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000319s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000409s ]
+
+[ 2015-08-26T15:09:13+08:00 ] 123.121.4.218 /old/index.php?m=Admin&c=News&a=edit&id=31
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000425s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.006081s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.006253s ]
+SQL: SHOW COLUMNS FROM `th_news` [ RunTime:0.0049s ]
+SQL: SELECT * FROM `th_news` WHERE `id` = 31 LIMIT 1   [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `th_news_type` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `th_news_type`  [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `th_domain` [ RunTime:0.0035s ]
+SQL: SELECT * FROM `th_domain`  [ RunTime:0.0028s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.001844s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002058s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 143 行.
+NOTIC: [8] Use of undefined constant domain - assumed 'domain' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 143 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 143 行.
+NOTIC: [8] Use of undefined constant domain - assumed 'domain' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 143 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 143 行.
+NOTIC: [8] Use of undefined constant domain - assumed 'domain' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 143 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 143 行.
+NOTIC: [8] Use of undefined constant domain - assumed 'domain' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 143 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 143 行.
+NOTIC: [8] Use of undefined constant domain - assumed 'domain' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 143 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 143 行.
+NOTIC: [8] Use of undefined constant domain - assumed 'domain' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 143 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 143 行.
+NOTIC: [8] Use of undefined constant domain - assumed 'domain' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 143 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 143 行.
+NOTIC: [8] Use of undefined constant domain - assumed 'domain' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 143 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 143 行.
+NOTIC: [8] Use of undefined constant domain - assumed 'domain' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 143 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 143 行.
+NOTIC: [8] Use of undefined constant domain - assumed 'domain' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 143 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 143 行.
+NOTIC: [8] Use of undefined constant domain - assumed 'domain' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 143 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 143 行.
+NOTIC: [8] Use of undefined constant domain - assumed 'domain' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 143 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 143 行.
+NOTIC: [8] Use of undefined constant domain - assumed 'domain' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 143 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 143 行.
+NOTIC: [8] Use of undefined constant domain - assumed 'domain' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 143 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 143 行.
+NOTIC: [8] Use of undefined constant domain - assumed 'domain' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 143 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 143 行.
+NOTIC: [8] Use of undefined constant domain - assumed 'domain' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 143 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 143 行.
+NOTIC: [8] Use of undefined constant domain - assumed 'domain' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 143 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 143 行.
+NOTIC: [8] Use of undefined constant domain - assumed 'domain' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 143 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 143 行.
+NOTIC: [8] Use of undefined constant domain - assumed 'domain' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 143 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 143 行.
+NOTIC: [8] Use of undefined constant domain - assumed 'domain' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 143 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 143 行.
+NOTIC: [8] Use of undefined constant domain - assumed 'domain' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 143 行.
+NOTIC: [8] Use of undefined constant news_type_id - assumed 'news_type_id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 150 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 150 行.
+NOTIC: [8] Use of undefined constant news_type_id - assumed 'news_type_id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 150 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 150 行.
+NOTIC: [8] Use of undefined constant news_type_id - assumed 'news_type_id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 150 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 150 行.
+NOTIC: [8] Use of undefined constant news_type_id - assumed 'news_type_id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 150 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 150 行.
+NOTIC: [8] Use of undefined constant news_type_id - assumed 'news_type_id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 150 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 150 行.
+NOTIC: [8] Use of undefined constant news_type_id - assumed 'news_type_id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 150 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 150 行.
+NOTIC: [8] Use of undefined constant news_type_id - assumed 'news_type_id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 150 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 150 行.
+NOTIC: [8] Use of undefined constant news_type_id - assumed 'news_type_id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 150 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 150 行.
+NOTIC: [8] Use of undefined constant news_type_id - assumed 'news_type_id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 150 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 150 行.
+NOTIC: [8] Use of undefined constant news_type_id - assumed 'news_type_id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 150 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 150 行.
+NOTIC: [8] Use of undefined constant news_type_id - assumed 'news_type_id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 150 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 150 行.
+NOTIC: [8] Use of undefined constant news_type_id - assumed 'news_type_id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 150 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/c6b563eb3db7e185c095986d75e59a9c.php 第 150 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.065036s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.065561s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000512s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000618s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000391s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000515s ]
+
+[ 2015-08-26T15:23:28+08:00 ] 123.121.4.218 /old/index.php?m=Admin&c=News&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000075s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000481s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000868s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001241s ]
+SQL: SHOW COLUMNS FROM `th_news` [ RunTime:0.0037s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `th_news` LIMIT 1   [ RunTime:0.0026s ]
+SQL: SELECT * FROM `th_news` ORDER BY addtime desc LIMIT 0,10   [ RunTime:0.0132s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000147s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000287s ]
+SQL: SHOW COLUMNS FROM `th_company` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `th_company` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `th_news_type` [ RunTime:0.0028s ]
+SQL: SELECT * FROM `th_news_type` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0081s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 122 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 123 行.
+NOTIC: [8] Use of undefined constant isshow - assumed 'isshow' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 123 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 124 行.
+SQL: SELECT * FROM `th_company` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0060s ]
+SQL: SELECT * FROM `th_news_type` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0028s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 122 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 123 行.
+NOTIC: [8] Use of undefined constant isshow - assumed 'isshow' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 123 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 124 行.
+SQL: SELECT * FROM `th_company` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0025s ]
+SQL: SELECT * FROM `th_news_type` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0019s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 122 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 123 行.
+NOTIC: [8] Use of undefined constant isshow - assumed 'isshow' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 123 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 124 行.
+SQL: SELECT * FROM `th_company` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0016s ]
+SQL: SELECT * FROM `th_news_type` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0011s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 122 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 123 行.
+NOTIC: [8] Use of undefined constant isshow - assumed 'isshow' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 123 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 124 行.
+SQL: SELECT * FROM `th_company` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0031s ]
+SQL: SELECT * FROM `th_news_type` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0028s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 122 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 123 行.
+NOTIC: [8] Use of undefined constant isshow - assumed 'isshow' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 123 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 124 行.
+SQL: SELECT * FROM `th_company` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0021s ]
+SQL: SELECT * FROM `th_news_type` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0024s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 122 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 123 行.
+NOTIC: [8] Use of undefined constant isshow - assumed 'isshow' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 123 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 124 行.
+SQL: SELECT * FROM `th_company` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0017s ]
+SQL: SELECT * FROM `th_news_type` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0133s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 122 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 123 行.
+NOTIC: [8] Use of undefined constant isshow - assumed 'isshow' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 123 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 124 行.
+SQL: SELECT * FROM `th_company` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0043s ]
+SQL: SELECT * FROM `th_news_type` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0068s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 122 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 123 行.
+NOTIC: [8] Use of undefined constant isshow - assumed 'isshow' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 123 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 124 行.
+SQL: SELECT * FROM `th_company` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0008s ]
+SQL: SELECT * FROM `th_news_type` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0015s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 122 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 123 行.
+NOTIC: [8] Use of undefined constant isshow - assumed 'isshow' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 123 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 124 行.
+SQL: SELECT * FROM `th_company` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0023s ]
+SQL: SELECT * FROM `th_news_type` WHERE `id` = 0 LIMIT 1   [ RunTime:0.0018s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 122 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 123 行.
+NOTIC: [8] Use of undefined constant isshow - assumed 'isshow' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 123 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/36087655c6ab8580337cdc45b35a926d.php 第 124 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.149838s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.149961s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000583s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000694s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000372s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000472s ]
+
+[ 2015-08-26T15:23:38+08:00 ] 123.121.4.218 /old/index.php?m=Admin&c=News&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000409s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000589s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005646s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000096s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000262s ]
+NOTIC: [8] Undefined variable: message /webHome/LFWZ000390/www/old/Application/Runtime/Cache/Admin/afd3fa6e47af5507e6549188b8ae1f85.php 第 23 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005350s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005465s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003410s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003879s ]
+
+[ 2015-08-26T15:23:42+08:00 ] 123.121.4.218 /old/index.php?m=Admin&c=Login&a=index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000879s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000413s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000579s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.017989s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.018226s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.047665s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.047837s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000487s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000620s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000403s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000527s ]
+

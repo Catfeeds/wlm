@@ -1,0 +1,104 @@
+<!doctype html>
+<!--[if lt IE 7 ]> <html class="ie ie6 ie-lt10 ie-lt9 ie-lt8 ie-lt7 no-js" lang="en"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie ie7 ie-lt10 ie-lt9 ie-lt8 no-js" lang="en"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie ie8 ie-lt10 ie-lt9 no-js" lang="en"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie ie9 ie-lt10 no-js" lang="en"> <![endif]-->
+<!--[if gt IE 9]><!-->
+<html class="no-js" lang="en"><!--<![endif]-->
+
+<!--忠心人物详情页-->
+
+<head data-template-set="html5-reset">
+
+
+	<title>观点详情页    | {$system.webname}</title>
+
+	<include file="./Application/Wlmeng/View/Public/meta.html" />
+
+	<link rel="stylesheet" href="__CSS__/style.css" />
+
+	<link rel="stylesheet" href="__CSS__/jquery.Jcrop.min.css" type="text/css" />
+<link href="__CSS__/all_2014120104.css" rel="stylesheet" type="text/css">
+
+  <link href="__CSS__/txt_20141201.css" rel="stylesheet" type="text/css">
+	<!-- Uploadify -->
+    <link rel='stylesheet' type='text/css' href='__CSS__/uploadify.css'>
+
+
+
+	<script src="__JS__/modernizr-2.6.2.dev.js"></script>
+	<script type="text/javascript" src="__JS__/m.js"></script>
+	</head>
+
+<body >
+<script>window.jQuery || document.write("<script src='__JS__/jquery-1.9.1.min.js'>\x3C/script>")</script>
+<include file="./Application/Wlmeng/View/Public/menu.html" />
+<div class="wrapper">
+<include file="./Application/Wlmeng/View/Public/header.html" />
+<div class="page-wrapper" style="padding-top:170px;">
+	
+    <!--640W-->
+	    <div class="chief">
+      <div class="l_txt">
+        <div class="hd">
+          <h1>{$point.title}</h1>
+          <p class="list_au"><span class="meta-prep meta-prep-author">发表于</span> <a href="" rel="bookmark"><span class="entry-date">{$point.year}/{$point.month}/{$point.day}</span></a>
+          <p class="list_au"><span class="meta-prep meta-prep-author">关注人数：{$point.num}</span>  </p>
+        </div>
+        <div class="bd">
+			<div class="post_thumbnail"><img height="320" src="{$point.pic}" class="attachment-medium wp-post-image" /></div>
+          {$point.content|htmlspecialchars_decode}
+	
+	
+       
+      <!-- 评论 -->
+
+    </div>
+  </div>
+</div>
+<!--310W-->
+
+    
+	<include file="./Application/Wlmeng/View/Public/footer.html" />
+	</div>
+</div>
+</div>
+</div>
+
+<script>
+      //function to fix height of iframe!
+      var calcHeight = function() {
+        // var headerDimensions = $('#header-bar').height();
+        var headerDimensions = 87;
+        $('#preview-frame').height($(window).height() - headerDimensions);
+      }
+
+      $(document).ready(function() {
+        calcHeight();
+        $('#header-bar a.close').mouseover(function() {
+          $('#header-bar a.close').addClass('activated');
+        }).mouseout(function() {
+          $('#header-bar a.close').removeClass('activated');
+        });
+      });
+
+      $(window).resize(function() {
+        calcHeight();
+      }).load(function() {
+        calcHeight();
+      });
+    </script>
+
+   
+
+<script src="__JS__/jquery.uploadify.min.js"></script>
+<script src="__JS__/jquery.Jcrop.min.js"></script>
+<script src="__JS__/jquery-scrollto.js"></script>
+<script src="__JS__/jquery.cookie.js"></script>
+<script src="__JS__/functions.js"></script>
+
+
+</body>
+</html>
+
+

@@ -1,0 +1,95 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>{:C('WEB_NAME')}-{$page_name}</title>
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/css/common.css"/>
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/css/main.css"/>
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/css/page.css"/>
+<script type="text/javascript" src="__PUBLIC__/js/jquery.min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/layer/layer.min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/js/company.js"></script>
+<script type="text/javascript">
+var url = "{:U('Company/info')}";
+</script>
+</head>
+<body>
+<!-- Head -->
+<include file="Public:head" />
+<!-- Head -->
+<div class="container clearfix">
+    <!-- sidebar -->
+    <include file="Public:sidebar" />
+    <!--/sidebar-->
+    <div class="main-wrap">
+
+        <div class="crumb-wrap">
+            <div class="crumb-list">
+            <i class="icon-font"></i>
+            <a href="{:C('ADMIN_URL')}">首页</a>
+            <span class="crumb-step">&gt;</span>
+            <span class="crumb-name">{$page_name}</span></div>
+        </div>
+        
+        <div class="result-wrap">
+            <div class="result-title">
+            	<form name="search" action="{:U('Invest/search')}" method="post">
+                <div class="result-list">   
+                	<a href="{:U('Invest/add')}"><i class="icon-font"></i>添加数据</a>                 
+                    <a id="updateOrd" href="{:U('Invest/index')}"><i class="icon-font"></i>刷新页面</a>
+                    	投资者：<input class="myinput" type="text" name="investor" value="{$rember.investor}">
+                    	投资对象：<input class="myinput" type="text" name="company" value="{$rember.company}">
+                   	 	轮次：<input class="myinput" type="text" name="round" value="{$rember.round}">
+                    	投资领域：<select class="myinput myselect" name="domain_id">
+                     		<foreach name="domain" item="vo">
+                     			<option value="{$vo.id}" <if condition="$rember['isshow'] eq $vo['id']">selected</if>>{$vo.dname}</option>
+                     		</foreach>
+			   				</select>
+                    	<input class="mybutton" type="submit" value="查找">
+                    	数据统计：前台发布[<font color="red">{$static[0]}</font>]条 后台发布[<font color="red">{$static[1]}</font>]条
+                </div>
+                </form>
+            </div>
+            <div class="result-content">
+                <table class="result-tab" width="100%">
+                    <tr>
+                        <!-- <th class="tc" width="5%"><input class="allChoose" name="" type="checkbox"></th> -->
+                        <th>投资者</th>
+                        <th>投资对象</th>
+                        <th>添加时间</th>
+                        <th>轮次</th>
+                        <th>金额</th>
+                        <th>领域</th>
+                        <th>国家</th>
+                        <th>显示</th>
+                        <th>操作</th>
+                    </tr>
+                    <foreach name="list" item="vo">
+                    <tr>
+                        <!-- <td class="tc"><input name="id[]" value="{$vo.id}" type="checkbox"></td> -->
+                        <td>{$vo.investor}</td>
+                        <td>{$vo.company}</td>
+                        <td>{$vo.addtime}</td>
+                        <td>{$vo.round}</td>
+                        <td>{$vo.money}</td>
+                        <td>{$vo.domain_id|getDomainName=###}</td>
+                        <td>{$vo.country|country=###}</td>
+                        <td>{$vo.isshow|is_show=###}</td>
+                        <td>	                               
+                           	<a class="link-update" href="{:U('Invest/edit',array('id'=>$vo[id]))}">修改</a>
+                           	<a class="link-update" href="{:U('Invest/lock',array('id'=>$vo[id],'isshow'=>$vo[isshow]))}">{$vo.isshow|nav_action=###}</a>
+                           	<a class="link-update del" href="{:U('Invest/del',array('id'=>$vo[id]))}">删除</a>
+                        </td>
+                    </tr>
+                    </foreach>
+                    <tr>
+                    	<td colspan="10" align="right">{$page}</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <!--/main-->
+</div>
+</body>
+</html>

@@ -1,0 +1,3344 @@
+
+﻿@charset utf-8;
+
+body
+{
+	font-family:"Microsoft YaHei";
+	font-weight:400;
+}
+
+.comWidth
+{
+/*	position:relative;
+*/	z-index:2;
+	width:1000px;
+	margin:0 auto;
+}
+
+.fr
+{
+	float:right;
+}
+
+.clear:before,.clear:after
+{
+	content:"";
+	display:table;
+}
+
+* html
+{
+	background-image:url(about:blank);
+	background-attachment:fixed;
+}
+
+.gonggao
+{
+	height:32px;
+	line-height:32px;
+	text-align:left;
+	margin-top:10px;
+	_margin-top:14px;
+	overflow:hidden;
+}
+
+.gonggao strong
+{
+	height:32px;
+	display:inline-block;
+	font-size:18px;
+	text-indent:15px;
+	_margin-right:5px;
+	background:url(/s/images/investor/con_notic_line.png) no-repeat left center;
+}
+
+.gonggao strong a:link,.gonggao strong a:visited
+{
+	font-family:微软雅黑;
+	font-size:18px;
+	vertical-align:top;
+}
+
+.gonggao .title
+{
+	width:500px;
+	height:29px;
+	display:inline-block;
+	margin-left:10px;
+	line-height:29px;
+	font-size:12px;
+	text-indent:43px;
+	cursor:pointer;
+	background:url(/s/images/investor/con_notice.png) no-repeat 0 0;
+}
+
+.touzi
+{
+	width:1000px;
+	height:151px;
+	margin-top:10px;
+	padding-top:5px;
+	background:#F9F9F9;
+}
+
+.touzi_box
+{
+	width:998px;
+	height:148px;
+	border:1px solid #ccc;
+	background:#FFF;
+	position:relative;
+}
+
+.touzi_box .touzi_l
+{
+	width:256px;
+	height:132px;
+	_display:inline;
+	position:relative;
+	margin:5px 0 0 7px;
+}
+
+.touzi_box .touzi_l .touzi_piaofu
+{
+	width:101px;
+	height:102px;
+	position:absolute;
+	left:-13px;
+	top:-12px;
+	z-index:9999;
+}
+
+.touzi_box .touzi_l .touzi_piaofu2
+{
+	display:block;
+	cursor:pointer;
+	width:67px;
+	height:22px;
+	font-size:11.5px;
+	text-indent:28px;
+	line-height:22px;
+	background:url(/s/images/investor/rrt_btn_05_a.png) no-repeat 0 0;
+	position:absolute;
+	top:7px;
+	right:7px;
+	z-index:9999;
+}
+
+.touzi_box .touzi_l .touzi_show
+{
+	display:none;
+	filter:Alpha(opacity="80");
+	width:256px;
+	height:127px;
+	padding-top:5px;
+	overflow:hidden;
+	background:#000;
+	opacity:.8;
+	position:absolute;
+	left:0;
+	top:0;
+}
+
+.touzi_box .touzi_l .touzi_show p
+{
+	color:#FFF;
+	font-size:13px;
+	line-height:25px;
+}
+
+.touzi_box .touzi_l .touzi_show p.tile
+{
+	width:175px;
+	height:25px;
+	text-align:right;
+}
+
+.touzi_box .touzi_l .touzi_show p.cont
+{
+	width:203px;
+	margin-left:43px;
+	text-align:right;
+}
+
+.touzi_img_mask
+{
+	width:100%;
+	text-align:center;
+	bottom:0;
+	left:0;
+	height:32px;
+	line-height:32px;
+	background:#000;
+	opacity:.7;
+	fitler:alpha(opacity:70);
+}
+
+.touzi_img_mask a
+{
+	vertical-align:middle;
+}
+
+.icontouzm
+{
+	width:18px;
+	height:16px;
+	left:60px;
+	top:7px;
+	background-position:-176px -1438px;
+}
+
+.touzi_show p.link
+{
+	width:256px;
+	text-align:center;
+	vertical-align:middle;
+}
+
+.touzi_box .touzi_r
+{
+	width:720px;
+	height:142px;
+	margin-top:5px;
+}
+
+.touzi_box .touzi_r h2
+{
+	height:32px;
+	line-height:32px;
+	text-indent:23px;
+	background:#F3F3F3;
+}
+
+.touzi_box .touzi_r h2 a
+{
+	color:#000;
+	font-size:14px;
+}
+
+.touzi_box .touzi_r p
+{
+	line-height:26px;
+	font-size:14px;
+	margin:26px 0 0 23px;
+}
+
+.touzi_box .touzi_r .hangye img
+{
+	margin:0 15px;
+}
+
+.touzi_box .touzi_r .hangye span
+{
+	display:inline-block;
+	width:48px;
+	height:19px;
+	color:#E1900D;
+	font-weight:700;
+	text-align:center;
+	text-indent:10px;
+	line-height:19px;
+	background:url(/s/images/investor/icon_5.gif) no-repeat 15px 0;
+}
+
+.touzi_box .touzi_r .dizhi img
+{
+	vertical-align:middle;
+	margin:0 5px 0 10px;
+}
+
+.touzi_box .touzi_r .dizhi a
+{
+	text-decoration:underline;
+}
+
+.touzi_box .share
+{
+	height:25px;
+	position:absolute;
+	right:63px;
+	top:68px;
+	z-index:9999;
+}
+
+.touzi_box .share ul li
+{
+	float:left;
+	position:relative;
+}
+
+.share #mesg,.share #favorite,.share #shar
+{
+	width:25px;
+	height:25px;
+	display:inline-block;
+	cursor:pointer;
+	margin-right:19px;
+}
+
+.share #mesg
+{
+	background:url(/s/images/investor/icon__r1_c1.gif) no-repeat 0 0;
+	position:relative;
+}
+
+.share #favorite
+{
+	background:url(/s/images/investor/icon__r1_c3.gif) no-repeat 0 0;
+	position:relative;
+}
+
+.share #shar
+{
+	background:url(/s/images/investor/icon__r3_c6.gif) no-repeat 0 0;
+	position:relative;
+}
+
+.touzi_box .share ul li.active #mesg
+{
+	background:url(/s/images/investor/rr3_c2.gif) no-repeat 0 0;
+}
+
+.touzi_box .share ul li.active #shar
+{
+	background:url(/s/images/investor/r6_c3.gif) no-repeat 0 0;
+}
+
+.touzi_box .share ul li a#favorite.active
+{
+	background:url(/s/images/investor/tips.png) no-repeat -252px 190px;
+}
+
+.rengou
+{
+	height:119px;
+	margin-top:14px;
+	background:#FFF;
+}
+
+.money
+{
+	width:388px;
+	padding-top:12px;
+}
+
+.money .plan
+{
+	_margin:4px 0 0 28px;
+	position:relative;
+	margin:4px 0 0 35px;
+}
+
+.money .plan .progress
+{
+	_margin:10px 0 0 10px;
+}
+
+.money .plan .progress .preogress_bg
+{
+	display:inline-block;
+	width:231px;
+	height:15px;
+	background:url(/s/images/investor/rrt_11.png) no-repeat 0 0;
+	position:relative;
+}
+
+.money .plan .progress .ico_l
+{
+	position:absolute;
+	left:-3px;
+	top:0;
+	z-index:9999;
+}
+
+.money .plan .progress .ico_r
+{
+	position:absolute;
+	left:225px;
+	top:0;
+	z-index:9999;
+}
+
+.money .plan .progress .preogress_bg .progress_info
+{
+	width:65px;
+	height:9px;
+	background:#DB4F33;
+	position:absolute;
+	left:0;
+	top:3px;
+	z-index:10px;
+}
+
+.money .plan .progress .percent2
+{
+	width:39px;
+	height:20px;
+	background:url(/s/images/investor/rrt_icon_24.png) no-repeat 0 0;
+	position:absolute;
+	right:-47px;
+	top:-2px;
+	font-size:12px;
+	text-indent:11px;
+	line-height:20px;
+}
+
+.money .plan .jiage
+{
+	margin-top:15px;
+}
+
+.jiage_l,.jiage_m,.jiage_r
+{
+	font-size:13px;
+	margin-right:20px;
+}
+
+.money .plan .jiage p
+{
+	color:#878787;
+	text-align:center;
+}
+
+.date
+{
+	width:252px;
+	height:105px;
+	background:url(/s/images/investor/cont_line2.gif) repeat-y left center;
+	margin-top:7px;
+}
+
+.date .surplus
+{
+	margin-top:40px;
+	_margin-top:36px;
+	font-size:18px;
+	text-align:center;
+}
+
+.date .surplus span
+{
+	font-size:34px;
+	font-weight:700;
+	font-family:Arial,Helvetica,sans-serif;
+	color:#F29B11;
+}
+
+.buy
+{
+	width:350px;
+	_width:325px;
+	height:105px;
+	text-align:center;
+	margin-top:7px;
+	background:url(/s/images/investor/cont_line2.gif) repeat-y left center;
+}
+
+.buy span
+{
+	display:inline-block;
+	float:left;
+	margin:43px 10px 0;
+}
+
+.buy button,.buy input
+{
+	display:inline-block;
+	border-radius:3px;
+	background:#F39C11;
+	color:#FFF;
+	cursor:pointer;
+	font-size:16px;
+	margin:38px 0 0 7px;
+	padding:5px 20px;
+}
+
+.buy button.btngrey
+{
+	display:inline-block;
+	border-radius:3px;
+	background:#a4a4a4;
+	color:#FFF;
+	cursor:pointer;
+	padding:5px 20px;
+}
+
+.nav
+{
+	width:1000px;
+	height:61px;
+	margin-top:15px;
+	overflow:hidden;
+	position:relative;
+}
+
+.nav ul li a
+{
+	display:block;
+	width:142px;
+	height:53px;
+	line-height:53px;
+	border:1px solid #ccc;
+	font-size:18px;
+	position:absolute;
+	left:0;
+	top:0;
+}
+
+.nav .weibo
+{
+	width:283px;
+	height:53px;
+	border:1px solid #ccc;
+}
+
+.fix
+{
+	position:fixed;
+	top:0;
+	left:50%;
+	margin-left:-500px;
+	margin-top:0;
+	overflow:hidden;
+	_position:absolute;
+	_top:expression(eval(document.documentElement.scrollTop+0));
+	_background:url(about:black) no-repeat fixed;
+}
+
+.weibo img
+{
+	float:left;
+	display:inline-block;
+	padding:0 20px;
+}
+
+.weibo a
+{
+	float:left;
+	display:inline-block;
+}
+
+.weibo_info
+{
+	margin-top:13px;
+}
+
+.nav .weibo .yuyue
+{
+	width:147px;
+	display:none;
+}
+
+.fix ul li.active a
+{
+	color:#FFF;
+	border:none;
+	background:none;
+	position:relative;
+	z-index:6;
+}
+
+.fix ul li a
+{
+	display:block;
+	width:142px;
+	height:53px;
+	line-height:53px;
+	background:#F3F3F3;
+	border:1px solid #ccc;
+	font-size:18px;
+	position:absolute;
+	left:0;
+	top:0;
+	z-index:3;
+}
+
+.fix ul li.press a
+{
+	color:#FFF;
+	border:none;
+	background:none;
+}
+
+.fix .weibo
+{
+	width:283px;
+	height:53px;
+	border:1px solid #ccc;
+	_padding-right:10px;
+	_width:154px;
+	text-indent:67px;
+	background:#F3F3F3 url(/s/images/investor/pic_04.png) no-repeat 20px center;
+}
+
+.fix .weibo .yuyue
+{
+	border:none;
+	border-radius:3px;
+	background:#F39C11;
+	color:#FFF;
+	cursor:pointer;
+	font-size:18px;
+	padding:8px 20px;
+}
+
+.fix .weibo .yybtngrey
+{
+	border-radius:3px;
+	background:#a4a4a4;
+	color:#FFF;
+	cursor:pointer;
+	font-size:18px;
+	margin:-9px 0 0 62px;
+	padding:8px 20px;
+}
+
+input.yuyue
+{
+	margin:5px auto!important;
+}
+
+.main
+{
+	margin-top:18px;
+/*	position:relative;*/
+	z-index:1;
+	margin-bottom:20px;
+}
+
+.main_left
+{
+	width:650px;
+	height:auto;
+}
+
+.main_left_top
+{
+	width:647px;
+	border:1px solid #cbd2d6;
+	background:#FFF;
+	border-bottom:none;
+	position:relative;
+	border-top-left-radius:3px;
+	border-top-right-radius:3px;
+}
+
+.main_left_top h3
+{
+	width:605px;
+	height:30px;
+	font-weight:700;
+	font-size:16px;
+	border-bottom:1px dashed #888989;
+	margin:20px 11px 0;
+}
+
+.main_left_top .video
+{
+	width:600px;
+	height:410px;
+	overflow:hidden;
+	margin:30px auto 0;
+}
+
+.main_left_bottom
+{
+	width:647px;
+	border:1px solid #cbd2d6;
+	background:#FFF;
+	border-top:none;
+	padding:35px 0 15px;
+}
+
+/*.main_left_bottom h2
+{
+	width:629px;
+	color:#FFF;
+	height:50px;
+	text-indent:51px;
+	margin-left:-12px;
+	_position:relative;
+	_left:0;
+	line-height:35px;
+	font-weight:700;
+	font-size:16px;
+	background:url(/s/images/investor/con_main1.gif) no-repeat 0 0;
+}
+*/
+.main_left_bottom .articl_content
+{
+	padding:8px 11px 20px;
+}
+
+.main_left_bottom .articl_content p
+{
+	color:#333;
+	font-size:14px;
+	text-indent:25px;
+	margin-top:27px;
+	line-height:22px;
+}
+
+.main_left_bottom .articl_content p.first
+{
+	margin-top:0;
+	text-indent:0;
+}
+
+.videoTab
+{
+	width:612px;
+	padding-top:10px;
+	padding-bottom:15px;
+	margin:0 auto;
+}
+
+.videoTab dl dt
+{
+	width:65px;
+	height:28px;
+	border-radius:3px;
+	background:url(/s/images/index/sicon02.gif) no-repeat;
+	float:left;
+	display:inline;
+	line-height:26px;
+	text-align:center;
+	margin:0 3px;
+}
+
+
+/*.videoTab dl dt:nth-child(2),.videoTab dl dt:nth-child(3),.videoTab dl dt:nth-child(4){
+	background:url(/s/images/index/sicon03.gif) no-repeat;
+}*/
+
+.videoTab .current
+{
+	background:url(/s/images/index/sicon01.gif) no-repeat;
+}
+
+.videoTab .hover
+{
+	background:url(/s/images/index/sicon03.gif) no-repeat;
+}
+
+.videoTab dl dt a:link,.videoTab dl dt a:visited
+{
+	color:#fff;
+}
+
+.operate
+{
+	width:647px;
+	border:1px solid #cbd2d6;
+	border-bottom:none;
+	margin-top:18px;
+	height:auto;
+	background:#FFF;
+	padding:15px 0 20px;
+}
+
+.operate h4
+{
+	width:606px;
+	height:30px;
+	margin-left:11px;
+	font-weight:700;
+	font-size:16px;
+	border-bottom:1px solid #bbb;
+}
+
+.operate .oprate_info
+{
+	padding-left:25px;
+}
+
+.operate .oprate_info p
+{
+	line-height:25px;
+	font-size:14px;
+	margin-top:13px;
+}
+
+.operate .oprate_info p span.xiaofei
+{
+	margin-left:180px;
+}
+
+.operate .oprate_info p span.keliu em
+{
+	display:inline-block;
+	color:#FFF;
+	text-align:center;
+	width:113px;
+	height:24px;
+	background:url(/s/images/investor/con_operate3.gif) no-repeat 0 0;
+}
+
+.operate h5
+{
+	width:606px;
+	height:30px;
+	font-weight:700;
+	font-size:16px;
+	border-bottom:1px solid #bbb;
+	margin:28px 0 0 11px;
+}
+
+.banners .cl:after
+{
+	content:".";
+	display:block;
+	height:0;
+	clear:both;
+	visibility:hidden;
+}
+
+.banners .frame
+{
+	background:none;
+	border:0 solid #fff;
+	margin-bottom:0;
+}
+
+.banners .title
+{
+	height:32px;
+	font-size:14px;
+	font-weight:700;
+	line-height:32px;
+	overflow:hidden;
+	padding:0 10px;
+}
+
+.banners .block
+{
+	position:relative;
+	margin:0;
+}
+
+.banners .temp
+{
+	margin:0;
+}
+
+.banners .slideshow li
+{
+	position:relative;
+	overflow:hidden;
+}
+
+.banners .slideshow span.title
+{
+	position:absolute;
+	bottom:0;
+	left:0;
+	margin-bottom:0;
+	width:100%;
+	height:32px;
+	line-height:32px;
+	font-size:14px;
+	text-indent:10px;
+}
+
+.banners .slideshow span.title,.slidebar li
+{
+	background:rgba(0,0,0,0.3);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#90000000,endColorstr=#90000000);
+	color:#FFF;
+	overflow:hidden;
+}
+
+.banners .slidebar li
+{
+	float:left;
+	margin-right:3px;
+	width:25px;
+	background:#444;
+	height:25px;
+	line-height:25px;
+	border-radius:50%;
+	text-align:center;
+	font-size:10px;
+	cursor:pointer;
+}
+
+.banners .slidebar li.on
+{
+	background:#F70;
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#90000000,endColorstr=#90000000);
+	color:#fff;
+	font-weight:700;
+}
+
+.banners ul,li
+{
+	list-style:none;
+}
+
+.banners a:hover
+{
+	text-decoration:underline;
+	color:#a50001;
+}
+
+.banners .slidebar
+{
+	position:absolute;
+	bottom:14px;
+	left:185px;
+}
+
+.banners .slideshow SPAN.title
+{
+	text-indent:0;
+}
+
+.banners #frameHlicAe
+{
+	border:0!important;
+	margin:0!important;
+}
+
+.banners .comiis_wrap960,.comiis_wrapad
+{
+	width:607px;
+	margin:0 auto;
+}
+
+.banners .comiis_wrapad
+{
+	margin-top:10px;
+	overflow:hidden;
+}
+
+.banners .comiis_wrapad img
+{
+	float:left;
+	margin-top:0;
+}
+
+.banners #slidesImgs li
+{
+	width:590px;
+	height:360px;
+	display:none;
+}
+
+.tuandui
+{
+	width:647px;
+	border:1px solid #bbb;
+	margin-top:0;
+	border-top:none;
+	height:auto;
+	background:#FFF;
+	padding:5px 0 13px;
+}
+
+.tuandui h5
+{
+	width:627px;
+	color:#FFF;
+	height:50px;
+	text-indent:36px;
+	margin-left:-12px;
+	line-height:39px;
+	font-weight:700;
+	font-size:16px;
+	background:url(/s/images/investor/con_team_bg.gif) no-repeat 0 0;
+	_position:relative;
+	_left:0;
+}
+
+.tuandui .tuandui_info
+{
+	width:627px;
+	height:auto;
+	overflow:hidden;
+}
+
+.tuandui_info ul li
+{
+	width:30%;
+	height:96px;
+	float:left;
+	_display:inline;
+	margin:15px 0 0 19px;
+}
+
+.tuandui_info ul li .pic
+{
+	width:68px;
+	height:68px;
+	float:left;
+}
+
+.tuandui_info ul li .renwu
+{
+	float:left;
+	margin-left:15px;
+	padding-top:7px;
+	_display:inline;
+	overflow:hidden;
+}
+
+.tuandui_info ul li .renwu strong
+{
+	width:100%;
+	overflow:hidden;
+	font-size:14px;
+	font-weight:700;
+}
+
+.tuandui_info ul li .renwu p
+{
+	color:#656565;
+	font-size:12px;
+	margin-top:10px;
+}
+
+.tuandui .td_message
+{
+	line-height:25px;
+	font-size:14px;
+	color:#333;
+	padding:0 11px;
+}
+
+.tuandui .jiyu
+{
+	background:url(/s/images/investor/cont_line3.gif) repeat-x 0 0;
+	padding:8px 11px 5px 16px;
+}
+
+.tuandui .td_jianjie
+{
+	background:url(/s/images/investor/cont_line3.gif) repeat-x 0 0;
+	margin:15px 0 0 7px;
+	padding:10px 9px 5px;
+}
+
+.youshi
+{
+	width:647px;
+	border:1px solid #cbd2d6;
+	padding-top:13px;
+	margin-top:18px;
+	height:auto;
+	background:#FFF;
+}
+
+.youshi h1
+{
+	width:647px;
+	color:#FFF;
+	height:50px;
+	text-indent:21px;
+	margin-left:-12px;
+	line-height:35px;
+	font-weight:700;
+	font-size:16px;
+	background:url(/s/images/investor/con_operate4.gif) no-repeat 0 0;
+	_position:relative;
+	_left:0;
+}
+
+.youshi p.youshi_info
+{
+	margin-top:10px;
+	font-size:14px;
+	color:#333;
+	padding:0 11px;
+}
+
+.youshi .baodao h5
+{
+	height:30px;
+	line-height:30px;
+	border-bottom:1px solid #bbb;
+	font-size:16px;
+	font-weight:700;
+	margin:15px 0 0 7px;
+	padding:10px 9px 7px;
+}
+
+.youshi .baodao .news
+{
+	padding:0 16px;
+}
+
+.youshi .baodao .news ul li
+{
+	margin-top:12px;
+	height:69px;
+	background:url(/s/images/investor/cont_line3.gif) repeat-x left bottom;
+}
+
+.youshi .baodao .news ul li h3
+{
+	color:#DB4F33;
+	font-weight:700;
+	font-size:14px;
+}
+
+.youshi .baodao .news ul li p
+{
+	margin-top:10px;
+	font-size:12px;
+	color:#333;
+}
+
+.youshi .baodao .news ul li p span.meiti
+{
+	margin-right:107px;
+}
+
+.pinglun
+{
+	width:647px;
+	border:1px solid #cbd2d6;
+	margin-top:18px;
+	height:auto;
+	background:#FFF;
+}
+
+.pinglun .pinglun_box
+{
+	width:647px;
+	height:auto;
+	margin-bottom:15px;
+	background:#F0F0F0;
+	padding-bottom:175px;
+	_padding-bottom:80px;
+}
+
+.pinglun_box h2
+{
+	width:647px;
+	font-size:16px;
+	font-weight:700;
+	padding-top:13px;
+	height:50px;
+	margin-left:23px;
+	line-height:35px;
+}
+
+.pinglun_box .pinglu_user
+{
+	width:627px;
+	height:auto;
+	_position:relative;
+}
+
+.pinglu_user .pinglun_l .pl_cover
+{
+	font-size:14px;
+	color:#333;
+	height:25px;
+	position:absolute;
+	left:78px;
+	top:40px;
+	_top:30px;
+}
+
+.pinglu_user .pinglun_l .pl_cover a.denglu,.pinglu_user .pinglun_l .pl_cover a.zhuce
+{
+	color:#DB4F33;
+	vertical-align:top;
+}
+
+.pinglu_user .pinglun_l textarea
+{
+	resize:none;
+	width:479px;
+	height:81px;
+	line-height:20px;
+	margin-left:16px;
+	_display:inline;
+	border:none;
+	background:url(/s/images/investor/cont_pinglun.png) no-repeat 0 0;
+	float:left;
+	_padding:10px;
+	padding:10px;
+}
+
+.pinglu_user .pinglun_r
+{
+	width:65px;
+	height:65px;
+	margin-right:25px;
+	_display:inline;
+	border:3px solid #FFF;
+	box-shadow:0 5px 5px #E4E4E4;
+	border-radius:50%;
+	overflow:hidden;
+	float:right;
+	_position:absolute;
+	_left:540px;
+	_top:5px;
+}
+
+.pinglu_user .pinglun_r img
+{
+	width:65px;
+	height:65px;
+}
+
+.pinglu_user button
+{
+	width:96px;
+	color:#FFF;
+	font-size:14px;
+	display:block;
+	font-weight:700;
+	height:34px;
+	background:url(/s/images/investor/dsds23_r6_c4.gif) no-repeat 0 0;
+	position:absolute;
+	left:404px;
+	top:113px;
+	_top:120px;
+	_left:395px;
+}
+
+.pinglu_user button.active
+{
+	background:url(/s/images/investor/dsds23_r4_c4.gif) no-repeat 0 0;
+}
+
+.pinglun .pinglun_list
+{
+	width:627px;
+	height:auto;
+	padding-top:10px;
+	overflow:hidden;
+	padding-bottom:15px;
+}
+
+.pinglun_list ul li
+{
+	width:604px;
+	_width:650px;
+	height:auto;
+	_margin-left:16px;
+	padding-top:22px;
+	padding-bottom:161px;
+	_padding-bottom:15px;
+	background:url(/s/images/investor/cont_line3.gif) repeat-x left bottom;
+	margin:0 11px;
+}
+
+.pinglun_list ul li .pl_pic
+{
+	width:68px;
+	height:68px;
+	margin-top:-5px;
+	_display:inline;
+	float:left;
+}
+
+.pinglun_list ul li .pl_info
+{
+	width:520px;
+	height:auto;
+	float:left;
+	margin-left:15px;
+	_display:inline;
+}
+
+.pinglun_list ul li .pl_info p
+{
+	line-height:25px;
+	word-break:break-all;
+	word-wrap:break-word;
+}
+
+.pinglun_list ul li .pl_info p.mingzi strong
+{
+	color:#F29B11;
+	font-size:14px;
+	font-weight:600;
+	margin-right:5px;
+}
+
+.pinglun_list ul li .pl_info p.lunshu
+{
+	font-size:14px;
+	padding-right:12px;
+	color:#333;
+}
+
+.main_right
+{
+	width:325px;
+	padding-bottom:20px;
+	height:auto;
+}
+
+.papers
+{
+	width:323px;
+	height:auto;
+	padding-bottom:10px;
+	background:#FFF;
+	border:1px solid #cbd2d6;
+	border-radius:3px;
+	position:relative;
+	margin-top:5px;
+}
+
+.papers p
+{
+	width:300px;
+	line-height:24px;
+	font-size:14px;
+	color:#DB4F33;
+	margin:0 auto;
+}
+
+.papers .shenhe
+{
+	width:303px;
+	height:45px;
+	background:#dbdbdb;
+	margin:19px auto 0;
+}
+
+.papers .shenhe a
+{
+	display:block;
+	line-height:45px;
+	font-size:14px;
+	font-weight:700;
+	text-align:center;
+	height:45px;
+	float:left;
+	color:#666;
+}
+
+.papers .shenhe a.xiangmu
+{
+	width:184px;
+	border-right:2px solid #fff;
+	color:#666;
+	font-size:16px;
+}
+
+.papers .shenhe a.zhuangtai
+{
+	width:116px;
+	color:#666;
+	font-size:16px;
+}
+
+.papers .shenhe a.xiangmu:hover,.papers .shenhe a.zhuangtai:hover
+{
+	color:#666;
+}
+
+.papers .shenhe_info
+{
+	width:322px;
+	margin-bottom:20px;
+	padding-top:20px;
+}
+
+.papers ul
+{
+	width:253px;
+	margin:0 auto;
+}
+
+.papers .shenhe_info li
+{
+	width:253px;
+	height:20px;
+	_height:24px;
+	font-size:14px;
+	margin-bottom:15px;
+	background:url(/s/images/investor/u2_c2.gif) no-repeat right center;
+	overflow:hidden;
+}
+
+.papers .shenhe_info li.no
+{
+	background:url(/s/images/investor/dsr2_c2.gif) no-repeat right center;
+}
+
+.papers .jieshao
+{
+	width:300px;
+	height:auto;
+	line-height:24px;
+	font-size:14px;
+	padding-top:18px;
+	color:#DB4F33;
+	background:url(/s/images/investor/cont_line3.gif) repeat-x center 0;
+	margin:0 auto;
+}
+
+.help
+{
+	width:323px;
+	height:auto;
+	margin-top:20px;
+	padding-bottom:10px;
+	overflow:hidden;
+	background:#FFF;
+	border:1px solid #cbd2d6;
+	border-radius:3px;
+}
+
+.help .jieshao
+{
+	width:300px;
+	line-height:24px;
+	font-size:14px;
+	margin:0 auto;
+}
+
+.help .jieshao li
+{
+	margin-top:10px;
+	padding-bottom:5px;
+	border-bottom:1px dashed #D7D7D7;
+}
+
+.help .jieshao li a
+{
+	cursor:pointer;
+}
+
+.help .jieshao li a:hover
+{
+	color:#000;
+}
+
+.help .jieshao li p
+{
+	color:#656565;
+	line-height:22px;
+	margin-bottom:10px;
+	display:none;
+}
+
+.help .jieshao li.active p
+{
+	display:block;
+}
+
+.dianpu_list_a
+{
+	width:647px;
+	border:1px solid #bbb;
+	background:#FFF;
+	height:auto;
+	padding:16px 0;
+}
+
+.dianpu_list_a ul li
+{
+	width:622px;
+	height:124px;
+	margin-top:15px;
+	border:1px solid #DDD;
+	padding:6px 0 0 6px;
+}
+
+.dianpu_list_a ul li .dianpu_l
+{
+	width:217px;
+	height:113px;
+	_display:inline;
+	position:relative;
+}
+
+.dianpu_l .dianpu_piaofu
+{
+	position:absolute;
+	left:-16px;
+	top:-7px;
+	_left:-12px;
+	z-index:9999;
+}
+
+.dianpu_l .dianpu_piaofu2
+{
+	text-indent:24px;
+	cursor:pointer;
+	font-size:10px;
+	color:#656565;
+	width:67px;
+	height:22px;
+	display:inline-block;
+	background:url(/s/images/investor/rrt_btn_05_a.png) no-repeat 0 0;
+	position:absolute;
+	right:12px;
+	top:15px;
+	z-index:9999;
+}
+
+.dianpu_l .dianpu_show
+{
+	width:217px;
+	height:113px;
+	display:none;
+	filter:Alpha(opacity="80");
+	overflow:hidden;
+	background:#000;
+	opacity:.8;
+	position:absolute;
+	left:0;
+	top:0;
+}
+
+.dianpu_l .dianpu_show p
+{
+	color:#FFF;
+	font-size:13px;
+	height:25px;
+	line-height:25px;
+	text-align:center;
+	clear:both;
+}
+
+.dianpu_list_a ul li .dianpu_r
+{
+	width:377px;
+	height:113px;
+	position:relative;
+}
+
+.dianpu_r h2
+{
+	font-size:15px;
+	font-weight:700;
+	margin-left:10px;
+	_margin-top:3px;
+}
+
+.dianpu_r p.address a
+{
+	color:#FFF;
+	display:inline-block;
+	font-size:13px;
+	background:#FEB34B;
+	height:24px;
+	line-height:24px;
+	margin:15px 0 0 10px;
+	padding:0 11px;
+}
+
+.dianpu_r p.shares
+{
+	width:377px;
+	background:#F3F3F3;
+	padding-left:17px;
+	margin-top:16px;
+	height:32px;
+	line-height:32px;
+}
+
+.dianpu_r p.shares span
+{
+	font-size:11px;
+	color:#656565;
+	margin-right:5px;
+}
+
+.dianpu_r p.shares_info
+{
+	font-size:13px;
+	color:#E54F4D;
+}
+
+.dianpu_r a.chakan
+{
+	display:inline-block;
+	text-indent:40px;
+	line-height:30px;
+	color:#FFF;
+	font-size:12px;
+	position:absolute;
+	top:38px;
+	right:11px;
+	width:104px;
+	height:29px;
+	background:url(/s/images/investor/icon__r1_c11.gif) no-repeat 0 0;
+}
+
+.dianpu_list_b
+{
+	width:647px;
+	border:1px solid #bbb;
+	margin-top:15px;
+	background:#FFF;
+	height:auto;
+	padding:16px 0;
+}
+
+.dianpu_list_b span
+{
+	font-size:14px;
+	font-weight:400;
+	float:right;
+	cursor:pointer;
+}
+
+.dianpu_list_b p.address
+{
+	font-size:13px;
+	color:#333;
+	margin:38px 0 0 10px;
+}
+
+.dianpu_list_b p.shares
+{
+	font-size:13px;
+	text-indent:-6px;
+	margin-top:5px;
+	color:#333;
+	background:none;
+}
+
+.fendian
+{
+	width:647px;
+	border:1px solid #bbb;
+	padding-top:16px;
+	background:#FFF;
+	height:auto;
+}
+
+.fendian p.info
+{
+	margin-top:18px;
+	line-height:27px;
+	padding-right:11px;
+	font-size:14px;
+	color:#333;
+	margin-left:11px;
+}
+
+.fendian .xuqiu
+{
+	width:647px;
+	margin-top:36px;
+	height:auto;
+}
+
+.xuqiu h4
+{
+	height:51px;
+	line-height:39px;
+	color:#FFF;
+	font-size:16px;
+	margin-left:-12px;
+	font-weight:700;
+	text-indent:40px;
+	background:url(/s/images/investor/con_main1.gif) no-repeat 0 0;
+	_position:relative;
+	_left:0;
+}
+
+.xuqiu .jine
+{
+	height:273px;
+	overflow:hidden;
+	margin-top:20px;
+}
+
+.jine .xiangmufang .xmfang
+{
+	width:283px;
+	height:70px;
+	border-right:1px solid #eee;
+	padding:20px 0 0 40px;
+}
+
+.jine .xiangmufang .touzifang
+{
+	width:283px;
+	height:70px;
+	padding:20px 0 0 40px;
+}
+
+.jine p.em
+{
+	vertical-align:middle;
+	font-size:18px;
+}
+
+.yuyue
+{
+	width:647px;
+	border:1px solid #bbb;
+	background:#FFF;
+	height:auto;
+	padding:16px 0 20px;
+}
+
+.yuyue .touziren ul li
+{
+	width:311px;
+	height:92px;
+	float:left;
+	_display:inline;
+	margin:25px 0 0 10px;
+}
+
+.yuyue .touziren ul li .touziren_info
+{
+	width:223px;
+	height:92px;
+	margin-left:3px;
+	float:left;
+	_display:inline;
+	background:url(/s/images/investor/icon__r1_c25.gif) no-repeat 0 0;
+}
+
+.yuyue .touziren ul li .touziren_info p
+{
+	text-indent:17px;
+	line-height:28px;
+	font-size:14px;
+}
+
+.yuyue .touziren ul li .touziren_info p.gongsi
+{
+	color:#636363;
+}
+
+.yuyue .touziren ul li .touziren_info p span
+{
+	font-size:18px;
+	color:#F29B11;
+}
+
+.yuyue .touziren ul li .touziren_info p img
+{
+	margin-left:5px;
+}
+
+.wenti
+{
+	width:647px;
+	border:1px solid #bbb;
+	margin-top:15px;
+	padding-top:16px;
+	background:#FFF;
+	height:auto;
+}
+
+.wenti h2
+{
+	height:51px;
+	line-height:39px;
+	color:#FFF;
+	font-size:16px;
+	margin-left:-12px;
+	font-weight:700;
+	text-indent:40px;
+	background:url(/s/images/investor/con_main2.gif) no-repeat 0 0;
+	_position:relative;
+	_left:0;
+}
+
+.wenti .wenti_box ul li
+{
+	padding-bottom:18px;
+	margin-top:11px;
+	background:url(/s/images/investor/cont_line3.gif) repeat-x left bottom;
+}
+
+.wenti .wenti_box ul li h3
+{
+	font-weight:700;
+	font-size:14px;
+}
+
+.wenti .wenti_box ul li p
+{
+	font-size:14px;
+	color:#333;
+	line-height:27px;
+}
+
+.fujian
+{
+	width:647px;
+	border:1px solid #bbb;
+	margin-top:15px;
+	background:#FFF;
+	height:auto;
+	padding:16px 0 20px;
+}
+
+.fujian .fujian_box ul
+{
+	margin-left:40px;
+}
+
+.fujian .fujian_box ul li
+{
+	width:100px;
+	margin-top:20px;
+	height:auto;
+	margin-right:51px;
+	_display:inline;
+	float:left;
+	position:relative;
+}
+
+.fujian .fujian_box ul li .img img
+{
+	width:100px;
+	height:130px;
+	overflow:hidden;
+}
+
+.fujian .fujian_box ul li .down_cover
+{
+	display:none;
+}
+
+.fujian .fujian_box ul li .down_cover a
+{
+	display:inline-block;
+	width:100px;
+	height:130px;
+	background:url(/s/images/investor/download.gif) no-repeat center center;
+	position:absolute;
+	top:0;
+	left:0;
+}
+
+.touzi_fensi
+{
+	width:626px;
+	border:1px solid #bbb;
+	background:#FFF;
+	height:auto;
+	padding:10px 11px 20px;
+}
+
+.touzi_fensi ul.fensi_box li
+{
+	width:626px;
+	height:103px;
+	overflow:hidden;
+	background:url(/s/images/investor/cont_line3.gif) repeat-x 0 bottom;
+	position:relative;
+}
+
+.touzi_fensi ul.fensi_box li .xingming strong
+{
+	font-size:14px;
+	font-weight:600;
+	margin-right:8px;
+	color:#F29B11;
+}
+
+.touzi_fensi ul.fensi_box li .xingming p
+{
+	margin-top:6px;
+	line-height:20px;
+	font-size:14px;
+}
+
+.touzi_fensi ul.fensi_box li .xingming p em
+{
+	font-size:12px;
+	margin-left:8px;
+	color:#878787;
+}
+
+.touzi_fensi ul.fensi_box li .xingming p.fensi_share i
+{
+	font-size:11px;
+	color:#656565;
+	margin-right:8px;
+}
+
+.touzi_fensi ul.fensi_box li a.guanzhu
+{
+	display:inline-block;
+	width:95px;
+	height:33px;
+	line-height:33px;
+	background:#F3B611;
+	font-weight:700;
+	border-radius:3px;
+	text-align:center;
+	color:#FFF;
+	font-size:14px;
+	position:absolute;
+	top:37px;
+	right:14px;
+}
+
+.touzi_fensi ul.fensi_box li a.xianghu,.touzi_fensi ul.fensi_box li a.quxiaos,.touzi_fensi ul.fensi_box li a.yigauanzhu
+{
+	background:#A4A4A4;
+	border-radius:3px;
+	color:#FFF;
+	display:inline-block;
+	font-size:14px;
+	font-weight:700;
+	height:33px;
+	line-height:33px;
+	position:absolute;
+	right:14px;
+	text-align:center;
+	top:37px;
+	width:95px;
+}
+
+.touzi_dongtai
+{
+	width:626px;
+	border:1px solid #bbb;
+	background:#FFF;
+	height:auto;
+	padding:16px 11px 20px;
+}
+
+.touzi_dongtai .dongtai_tabs
+{
+	width:627px;
+	height:41px;
+	padding-left:23px;
+	margin-left:-11px;
+	border-bottom:1px solid #ddd;
+}
+
+.touzi_dongtai .dongtai_tabs a
+{
+	width:90px;
+	height:40px;
+	display:inline-block;
+	line-height:39px;
+	cursor:pointer;
+	text-align:center;
+	font-size:16px;
+	font-weight:700;
+}
+
+.touzi_dongtai .dongtai_tabs a.active
+{
+	color:#DB4F33;
+	background:#FFF;
+	border:1px solid #DDD;
+	border-bottom:1px solid #FFF;
+	border-top-left-radius:5px;
+	border-top-right-radius:5px;
+}
+
+.touzi_dongtai ul.dongtai_box li
+{
+	width:626px;
+	overflow:hidden;
+	background:url(/s/images/investor/cont_line3.gif) repeat-x 0 bottom;
+	position:relative;
+}
+
+.gong_gao .dongtai_box p
+{
+	font-size:14px;
+	margin-top:18px;
+}
+
+.gong_gao .dongtai_box p.dongtai_date
+{
+	font-size:12px;
+	font-weight:400;
+	margin-top:10px;
+	color:#878787;
+}
+
+.touzi_dongtai .dongtai_info p
+{
+	font-size:14px;
+	margin-top:15px;
+}
+
+.touzi_dongtai .dongtai_info p span
+{
+	color:#F29B11;
+	font-size:14px;
+}
+
+.touzi_dongtai .dongtai_info p img
+{
+	vertical-align:middle;
+	margin:0 5px;
+}
+
+.touzi_dongtai .dongtai_info p.dongtai_date
+{
+	color:#878787;
+	font-size:12px;
+}
+
+.touzi_loginshow
+{
+	height:857px;
+	_height:905px;
+	background:#FFF;
+}
+
+.touzi_loginshow p.message
+{
+	margin-top:-4px;
+	padding-left:13px;
+	text-align:left;
+	font-size:14px;
+}
+
+.touzi_loginshow .loginshow
+{
+	width:618px;
+	height:auto;
+	margin-top:40px;
+}
+
+.touzi_loginshow .login_box
+{
+	width:342px;
+	height:auto;
+	border-right:1px solid #E5E5E5;
+}
+
+.touzi_loginshow .login_box .user_box,.login_box .pwd_box
+{
+	width:288px;
+	overflow:hidden;
+	position:relative;
+}
+
+.touzi_loginshow .login_box .check_box
+{
+	width:295px;
+	overflow:hidden;
+	position:relative;
+}
+
+.touzi_loginshow input#username,.touzi_loginshow input#keyname
+{
+	width:237px;
+	height:42px;
+	line-height:24px;
+	_line-height:42px;
+	padding-left:47px;
+	border:1px solid #D1D1D1;
+	border-radius:3px;
+}
+
+.touzi_loginshow .login_box .user_info,.touzi_loginshow .pwd_info,.touzi_loginshow .check_info
+{
+	color:#BBB;
+}
+
+.touzi_loginshow .login_box .user_info
+{
+	position:absolute;
+	left:52px;
+	top:12px;
+}
+
+.touzi_loginshow .login_box .pwd_info
+{
+	position:absolute;
+	left:50px;
+	top:34px;
+}
+
+.touzi_loginshow .login_box .check_info
+{
+	position:absolute;
+	left:17px;
+	top:31px;
+}
+
+.touzi_loginshow .user_box input#username
+{
+	background:url(/s/images/investor/pic_06.png) no-repeat 14px center;
+}
+
+.touzi_loginshow .pwd_box input#keyname
+{
+	margin-top:23px;
+	background:url(/s/images/investor/rrt_icon_02.png) no-repeat 19px center;
+}
+
+.touzi_loginshow .check_box input#check
+{
+	width:105px;
+	height:40px;
+	_line-height:38px;
+	margin-top:23px;
+	border:1px solid #D1D1D1;
+	padding-left:17px;
+	border-radius:3px;
+}
+
+.touzi_loginshow .check_box img
+{
+	width:89px;
+	height:40px;
+	margin:22px 15px 0 10px;
+}
+
+.touzi_loginshow .logining
+{
+	margin-top:20px;
+}
+
+.touzi_loginshow .logining button
+{
+	width:285px;
+	height:51px;
+	background:url(/s/images/investor/longin.gif) no-repeat 0 0;
+}
+
+.touzi_loginshow .login_box .forget
+{
+	padding-left:209px;
+	margin-top:10px;
+	font-size:14px;
+	color:#bbb;
+}
+
+.touzi_loginshow .login_box .refresh
+{
+	display:inline-block;
+	padding-top:22px;
+	font-size:14px;
+}
+
+.touzi_loginshow .touzi_loginshow .regster
+{
+	width:230px;
+	height:235px;
+	_display:inline;
+	overflow:hidden;
+}
+
+.touzi_loginshow .regster p.zhanghao
+{
+	width:230px;
+	padding-left:0;
+	margin-top:30px;
+	text-align:left;
+	font-size:14px;
+}
+
+.touzi_loginshow .regster .btn_rg
+{
+	display:block;
+	width:143px;
+	height:36px;
+	margin-top:20px;
+	background:url(/s/images/investor/rester.gif) no-repeat 0 0;
+}
+
+.touzi_loginshow .regster .hezuo_box
+{
+	width:191px;
+	height:63px;
+	background:#F5F5F5;
+	margin-top:34px;
+	padding:12px 0 10px 14px;
+}
+
+.touzi_loginshow .regster .hezuo_box p
+{
+	font-size:14px;
+	margin-bottom:10px;
+}
+
+.touzi_loginshow .regster .hezuo_box a
+{
+	margin:0 10px 10px 0;
+}
+
+.touzi_loginshow .user_erro,.pass_erro,.check_erro
+{
+	color:#DB4F33;
+	line-height:20px;
+	font-size:14px;
+}
+
+.touzi_renzheng
+{
+	height:857px;
+	_height:905px;
+	background:#FFF;
+	text-align:center;
+}
+
+.touzi_renzheng p
+{
+	text-align:center;
+	margin-top:80px;
+	font-size:18px;
+	font-weight:700;
+}
+
+.touzi_renzheng .renzheng_btn
+{
+	display:inline-block;
+	color:#FFF;
+	width:153px;
+	line-height:39px;
+	height:39px;
+	font-size:18px;
+	font-weight:700;
+	background:url(/s/images/investor/renzheng_bg1.gif) no-repeat 0 0;
+	margin:90px auto;
+}
+
+.touzi_renzheng .renzheng_btn:hover
+{
+	background:url(/s/images/investor/renzheng_bg2.gif) no-repeat 0 0;
+}
+
+#mask
+{
+	background:none repeat scroll 0 0 #000;
+	left:0;
+	opacity:.3;
+	position:absolute;
+	top:0;
+	z-index:1;
+}
+
+.mtck
+{
+	position:fixed;
+	z-index:1000000;
+	top:0;
+	left:0;
+	height:100%;
+	width:100%;
+	_width:98%;
+	display:none;
+}
+
+.mtck .mtck_bg
+{
+	position:absolute;
+	z-index:100;
+	width:100%;
+	height:100%;
+	background:#000;
+	_background:none;
+	filter:alpha(opacity=50%);
+	opacity:.5;
+	left:1px;
+	top:2px;
+}
+
+.mtck .mtck_cont
+{
+	position:absolute;
+	z-index:1000;
+	left:50%;
+	margin-left:-180px;
+	_margin-left:-280px;
+	top:50%;
+	margin-top:-200px;
+}
+
+.mtck .mtck_conts
+{
+	position:relative;
+	z-index:1001;
+	width:420px;
+	height:400px;
+}
+
+
+
+.mtck .mtck_conter
+{
+	position:relative;
+	z-index:1001;
+	width:300px;
+	height:300px;
+	background: red;
+}
+
+.tk1
+{
+	width:410px;
+	border:5px solid #666;
+	font-size:14px;
+	background:#e4e4e4;
+	position:relative;
+	padding-bottom:20px;
+	margin:0 auto;
+}
+
+.tk1 h4
+{
+	height:47px;
+	line-height:47px;
+	background:#000;
+	color:#fff;
+	padding:20px 10px 0;
+}
+
+.tk1 h4 b
+{
+	float:left;
+	font-size:20px;
+	color:#fff;
+}
+
+.tk1 h4 a
+{
+	float:right;
+	color:#fff;
+	font-size:20px;
+}
+
+.tk1 .tk_cont
+{
+	overflow:auto;
+	background:#e4e4e4;
+	padding:10px;
+}
+
+.tk1 .btnss3
+{
+	width:93px;
+	height:29px;
+	background:url(../images/bg_btn_07.png) no-repeat;
+	border:none;
+	text-align:center;
+	font-size:14px;
+	color:#fff;
+	margin:10px 0 0 150px;
+}
+
+.btn_tk1:hover
+{
+	background:#EA593C;
+}
+
+.btn_tk2:hover
+{
+	background:#AdAdAd;
+}
+
+.btn_tk3
+{
+	height:29px;
+	background:url(../images/btn_bg_003.png) repeat-x;
+	border:1px solid #d6d6d6;
+	font-weight:700;
+	font-size:14px;
+	border-radius:3px;
+	cursor:pointer;
+	padding:0 20px;
+}
+
+.tk_cont_hih
+{
+	height:225px;
+	background:#e4e4e4;
+}
+
+.btn_tk2_hih
+{
+	width:50px;
+	height:30px;
+}
+
+.btn_tk1_box1
+{
+	width:60px;
+	height:35px;
+	padding-top:10px;
+	padding-left:10px;
+	float:left;
+}
+
+.btn_tk1_box2
+{
+	width:60px;
+	height:40px;
+	padding-left:10px;
+	float:left;
+}
+
+.tk1 .tk_cont .tk-tac
+{
+	width:auto;
+	height:39px;
+	margin-left:130px;
+	margin-top:20px;
+	float:left;
+}
+
+.tk-tac1
+{
+	width:auto;
+	height:39px;
+	margin-left:100px;
+	_margin-left:100px;
+	margin-top:20px;
+	float:left;
+}
+
+.rongzi-font-cor1
+{
+	color:red;
+}
+
+.tk_cont dl dd.bianji-rz-wid1
+{
+	width:320px;
+}
+
+.tk_cont dl dd .yunying-tianjia
+{
+	width:143px;
+	height:26px;
+	line-height:26px;
+	text-align:center;
+	margin-left:80px;
+	_margin-left:80px;
+	background:url(../images/yunying-bianji-btn1.jpg) no-repeat;
+	font-weight:100;
+}
+
+.tk_cont dl dd .yunying-tianjia a
+{
+	color:#fff;
+	font-size:12px;
+	font-weight:100;
+}
+
+.fux3 select
+{
+	width:100px;
+	padding:5px 0 5px 8px;
+}
+
+.news-page-Tit
+{
+	margin-bottom:20px;
+	padding:19px 0 0 19px;
+}
+
+.news-page-Tit h2
+{
+	font-family:微软雅黑;
+	font-size:18px;
+	color:#000;
+}
+
+.maskBox
+{
+	background:url(../images/nologin-mask.png) no-repeat;
+	width:1900px;
+	height:200px;
+	position:absolute;
+	left:50%;
+	top:304px;
+	margin-left:-950px;
+}
+
+.author
+{
+	padding:10px;
+}
+
+.author a:link,.author a:visited
+{
+	color:#333;
+	vertical-align:middle;
+	font-size:16px;
+	font-family:黑体;
+	margin-left:5px;
+}
+
+.author-lay
+{
+	color:#FFF;
+	text-align:center;
+	border-radius:3px;
+	background:#ec4911;
+	font-size:12px;
+	padding:1px 5px;
+}
+
+.author .gray
+{
+	padding-left:5px;
+	color:#797979;
+}
+
+.tab-content
+{
+	border-bottom:3px solid #000;
+	float:left;
+	width:627px;
+	padding-left:20px;
+	margin-top:25px;
+}
+
+.tab-content ul li
+{
+	float:left;
+	width:110px;
+	height:40px;
+	background:#e5e5e5;
+	margin-right:3px;
+	font-size:16px;
+	text-align:center;
+/*	padding-top:7px;
+*/	cursor:pointer;
+	color:#666;
+}
+.pinglun_l{ float:left}
+.tab-content ul li a:link,.tab-content ul li a:visited{font-size:16px;	color:#666; width:110px; height:33px; display:block; padding-top:7px;}
+
+.tab-content .current
+{
+	background:#db4f33;
+}
+.tab-content .current a:link,.tab-content .current a:visited{	color:#fff;	font-size:16px;
+}
+.srocllPercent
+{
+	width:280px;
+	padding-top:20px;
+	margin:0 auto;
+}
+
+.srocllPercent i
+{
+	font-size:16px;
+	color:#666;
+}
+
+.srocllPercent h3
+{
+	font-size:30px;
+	font-family:微软雅黑;
+	font-weight:700;
+	padding-top:19px;
+}
+
+.data-money
+{
+	line-height:20px;
+	color:#333;
+	padding-top:21px;
+}
+
+.data-money em
+{
+	font-style:normal;
+	color:#db4f33;
+	font-weight:700;
+}
+
+.jindu_show
+{
+	height:60px;
+	border-bottom:1px dashed #c3c4c4;
+	border-top:1px dashed #c3c4c4;
+	margin-top:12px;
+}
+
+.list-perc
+{
+	width:282px;
+	margin:20px auto 0;
+}
+
+.rrt_rzdp_yure_box_two_jdt_02
+{
+	width:238px;
+	height:16px;
+	background:#dbdbdb;
+	float:left;
+	margin-right:5px;
+	display:inline;
+}
+
+.rrt_rzdp_yure_box_two_jdt_color_02
+{
+	height:16px;
+	background:#DB4F33;
+	top:0;
+	position:relative;
+	width:100%;
+}
+
+.rrt_rzdp_yure_box_two_jdt_l_02,.rrt_rzdp_yure_box_two_jdt_r_02
+{
+	margin-top:-16px;
+}
+
+.z-index9
+{
+	z-index:9;
+}
+
+.percentBg
+{
+	line-height:16px;
+}
+
+.zhuzi_percent
+{
+	height:69px;
+	border-bottom:1px dashed #c3c4c4;
+}
+
+.zhuzi_percent .art01
+{
+	width:90px;
+	text-align:center;
+	float:left;
+	font-family:微软雅黑;
+	border-right:1px solid #ccc;
+	height:50px;
+	margin-top:10px;
+}
+
+.zhuzi_percent .t-arr
+{
+	font-size:13px;
+	font-weight:700;
+	color:#666;
+}
+
+.zhuzi_percent .art02
+{
+	width:80px;
+	text-align:center;
+	float:left;
+	font-family:微软雅黑;
+	border-right:1px solid #ccc;
+	height:50px;
+	margin-top:10px;
+}
+
+.zhuzi_percent .art03
+{
+	width:48px;
+	text-align:center;
+	float:left;
+	font-family:微软雅黑;
+	border-right:1px solid #ccc;
+	height:50px;
+	margin-top:10px;
+}
+
+.zhuzi_percent .art04
+{
+	width:59px;
+	text-align:center;
+	float:left;
+	font-family:微软雅黑;
+	border-right:1px solid #ccc;
+	height:50px;
+	margin-top:10px;
+}
+
+.hd
+{
+	border-bottom:1px dashed #E4E4E4;
+	padding:20px 15px 15px;
+}
+
+.hd h5
+{
+	font-size:16px;
+	float:left;
+	font-weight:700;
+}
+
+.hd .fr
+{
+	float:right;
+	color:#333;
+}
+
+.hd .fr .red
+{
+	color:#db4f33;
+	font-weight:700;
+}
+
+.return-person
+{
+	width:290px;
+	padding-top:15px;
+	margin:0 auto;
+}
+
+
+.demo_font a:link,.demo_font a:visited
+{
+	float:left;
+	width:150px;
+	height:40px;
+	background:url(../images/button/spriteBtn150.gif) no-repeat;
+	display:inline-block;
+	font-size:18px;
+	color:#fff;
+	text-align:center;
+	padding-top:10px;
+	margin-bottom:10px;
+	margin-left: 8px;
+
+}
+
+
+.Calculator a:link,.Calculator a:visited
+{
+	float:right;
+	width:150px;
+	height:40px;
+	background:url(../images/button/spriteBtn150.gif) no-repeat;
+	display:inline-block;
+	font-size:18px;
+	color:#fff;
+	text-align:center;
+	padding-top:10px;
+	margin-bottom:10px;
+	margin-right: 8px;
+}
+
+.demo_font02 a:link,.demo_font02 a:visited
+{
+	width:160px;
+	height:40px;
+	background:url(../images/button/spriteBtn02.jpg) no-repeat;
+	display:inline-block;
+	font-size:20px;
+	color:#fff;
+	text-align:center;
+	padding-top:10px;
+	margin-bottom:10px;
+}
+
+.detal-btn
+{
+	position:absolute;
+	top:-5px;
+	right:-7px;
+	z-index:999;
+}
+
+.yuetan-Btn
+{
+	width:296px;
+	border:1px solid #CBD2D6;
+	border-radius:3px;
+	background:#fff;
+	height:58px;
+	padding-top:15px;
+	padding-left:27px;
+	margin-bottom:25px;
+}
+
+a.yuetan-01
+{
+	width:75px;
+	height:36px;
+	background:#db4f33 url(../images/button/yuetan-btn01.png) no-repeat 15px 10px;
+	border-radius:3px;
+	display:inline-block;
+	padding-top:8px;
+	font-size:18px;
+	color:#fff;
+	padding-left:50px;
+	margin-right:20px;
+}
+
+.yuetan-01:hover
+{
+	background:#ed5f43 url(../images/button/yuetan-btn01.png) no-repeat 15px 10px;
+}
+
+a.yuetan-02
+{
+	width:75px;
+	height:36px;
+	background:#db4f33 url(../images/button/yuetan-btn02.png) no-repeat 15px 10px;
+	border-radius:3px;
+	display:inline-block;
+	padding-top:8px;
+	font-size:18px;
+	color:#fff;
+	padding-left:50px;
+}
+
+.yuetan-02:hover
+{
+	background:#ed5f43 url(../images/button/yuetan-btn02.png) no-repeat 15px 10px;
+}
+
+.yuqi-topText
+{
+	border:1px solid #cbd2d6;
+	background:#fff;
+	width:647px;
+	border-top:none;
+	border-bottom-left-radius:3px;
+	border-bottom-right-radius:3px;
+	position:relative;
+}
+
+.xuqiuBtn
+{
+	position:absolute;
+	background:url(../images/button/xuqiuBtn.png) no-repeat;
+	width:160px;
+	height:64px;
+	left:-12px;
+	top:250px;
+}
+
+.yuqi-topText p
+{
+	width:600px;
+	text-indent:2em;
+	color:#333;
+	padding-top:20px;
+	/**height:165px;**/
+	margin:0 auto;
+	word-break: break-all;
+}
+
+.sub-question
+{
+	width:647px;
+	border:1px solid #cbd2d6;
+	border-radius:3px;
+	background:#fff;
+	margin-top:20px;
+	position:relative;
+	padding:105px 0 30px;
+}
+
+.biliBox
+{
+	padding-top:95px;
+}
+
+.biliBox tr
+{
+	border-bottom:1px solid #ccc;
+	height:78px;
+}
+
+.biliBox tr td
+{
+	padding-left:48px;
+}
+
+.biliBox tr td:hover
+{
+	background:#f3f2f2;
+}
+
+.position-ques
+{
+	position:absolute;
+	background:url(../images/button/quesBtn.png) no-repeat;
+	width:160px;
+	height:64px;
+	left:-12px;
+	top:32px;
+}
+
+.ques-Item
+{
+	width:600px;
+	margin:0 auto;
+}
+
+.ques-Item dl
+{
+	padding:10px 0;
+}
+
+.box-fujian
+{
+	width:647px;
+	border:1px solid #cbd2d6;
+	border-radius:3px;
+	background:#fff;
+	margin-top:20px;
+	padding-top:20px;
+	padding-bottom:20px;
+}
+
+.box-fujian h5
+{
+	width:626px;
+	height:30px;
+	font-weight:700;
+	font-size:16px;
+	border-bottom:1px solid #BBB;
+	margin:0 11px;
+}
+
+.fujian_box ul li
+{
+	width:100px;
+	margin-top:20px;
+	height:auto;
+	margin-right:51px;
+	float:left;
+	position:relative;
+}
+
+.fujian_box ul li .down_cover a
+{
+	display:inline-block;
+	width:100px;
+	height:130px;
+	background:url(/s/images/investor/download.gif) no-repeat scroll center center transparent;
+	position:absolute;
+	top:0;
+	left:0;
+}
+
+.new-video
+{
+	width:500px;
+	padding-bottom:25px;
+	margin:20px auto 0;
+}
+
+.dongtaiTR
+{
+	margin-top:20px;
+	padding-top:20px;
+	border:1px solid #cbd2d6;
+	border-radius:3px;
+	background:#fff;
+}
+
+.messageDongtai
+{
+	background:#fff url(/s/images/button/dtnewsBg.jpg) no-repeat;
+	width:595px;
+	height:65px;
+	padding-bottom:15px;
+	margin:25px auto 0;
+}
+
+.messageDongtai dl
+{
+	float:left;
+	width:100px;
+	font-size:16px;
+}
+
+.messageDongtai dl dd
+{
+	font-size:18px;
+}
+
+.messageDongtai dl i
+{
+	color:#ef6765;
+	font-weight:700;
+	font-size:16px;
+}
+
+.messageDongtai .dongtai-02
+{
+	padding-left:60px;
+}
+
+.messageDongtai .dongtai-03
+{
+	padding-left:55px;
+}
+
+.messageDongtai .dongtai-04
+{
+	padding-left:0;
+	float:right;
+	width:87px;
+}
+
+.content-shipin
+{
+	border:1px solid #cbd2d6;
+	background:#fff;
+	border-top:none;
+	border-bottom:none;
+	width:647px;
+}
+
+.content-shipin h3
+{
+	width:605px;
+	height:30px;
+	font-weight:700;
+	font-size:16px;
+	border-bottom:1px dashed #BBB;
+	margin:0 auto 20px;
+}
+
+.help .hd .font13
+{
+	font-size:13px;
+}
+
+.jiashare
+{
+	float:right;
+	margin-top:3px;
+}
+
+.fl,.buy input
+{
+	float:left;
+}
+
+.clear:after,.banners .slideshow
+{
+	clear:both;
+}
+
+.clear,.banners .cl
+{
+	zoom:1;
+}
+
+.touzi_box .touzi_l .touzi_piaofu2_hover,.dianpu_l .touzi_piaofu2_hover
+{
+	color:#DB4F33;
+	background:url(/s/images/investor/rrt_btn_05_b.png) no-repeat 0 0;
+}
+
+.touzi_show p.cont,.touzi_show p.link a,.dianpu_l .dianpu_show p.link a,.touzi_fensi ul.fensi_box li a.guanzhu:hover
+{
+	color:#FFF;
+}
+
+.touzi_show p.cont,.touzi_show p.link a:hover,.touzi_box .touzi_r h2 a:hover,.tuandui_info ul li .renwu p.ceo,.help .jieshao li.active a,.dianpu_l .dianpu_piaofu2:hover,.dianpu_l .dianpu_show p.link a:hover,.dianpu_r a.chaka:hover,.touzi_loginshow .login_box .forget:hover
+{
+	color:#DB4F33;
+}
+
+.share ul li .share_show,.share ul li .share_show2
+{
+	width:54px;
+	height:27px;
+	display:none;
+	position:absolute;
+	left:-13px;
+	top:26px;
+}
+
+.touzi_box .share ul li.active #favorite,.touzi_box .share ul li.active #favorite.actives,.touzi_box .share a.caise
+{
+	background:url(/s/images/investor/r_r2_c2.gif) no-repeat 0 0;
+}
+
+.buy em,.ques-Item dl dd
+{
+	font-weight:700;
+}
+
+.buy button:hover,.buy input:hover,.fix .weibo .yuyue:hover
+{
+	background:#fcbf17;
+}
+
+.buy button.btngrey:hover,.fix .weibo .yybtngrey:hover
+{
+	background:#adadad;
+}
+
+.nav ul li,.fix ul li
+{
+	width:143px;
+	height:61px;
+	text-align:center;
+	float:left;
+	position:relative;
+}
+
+.nav ul li.active,.nav ul li.press,.fix ul li.active,.fix ul li.press
+{
+	background:url(/s/images/investor/cont_nav_bg.gif) no-repeat 0 0;
+}
+
+.nav ul li.active a,.nav ul li.press a
+{
+	color:#FFF;
+	border-bottom:none;
+}
+
+.operate .oprate_info p span,.return-person p
+{
+	color:#333;
+}
+
+.operate .oprate_info p span.mianji em,.operate .oprate_info p span.xiaofei em
+{
+	display:inline-block;
+	color:#FFF;
+	text-align:center;
+	width:106px;
+	height:24px;
+	background:url(/s/images/investor/con_operate2.gif) no-repeat 0 0;
+}
+
+.tuandui_info ul li .pic img,.pinglun_list ul li .pl_pic img,.yuyue .touziren ul li .imge img,.touzi_fensi ul.fensi_box li .pic img,.touzi_dongtai ul.dongtai_box li .pic img
+{
+	width:68px;
+	height:68px;
+	border:3px solid #FFF;
+	box-shadow:0 5px 5px #E4E4E4;
+	border-radius:50%;
+}
+
+.tuandui .jiyu h4,.tuandui .td_jianjie h4
+{
+	font-size:14px;
+	font-weight:700;
+}
+
+.tuandui .jiyu p,.tuandui .td_jianjie p
+{
+	font-size:14px;
+	color:#333;
+	margin-top:5px;
+}
+
+.youshi .baodao .news ul li.last,.wenti .wenti_box ul li.last
+{
+	background:none;
+}
+
+.pinglu_user .pinglun_l,.content-hsl
+{
+	/*position:relative;*/
+}
+
+.pinglun_list ul li.active,.touzi_fensi ul.fensi_box li.active,.touzi_dongtai ul.dongtai_box li.active
+{
+	background:#F5F5F5;
+}
+
+.pinglun_list ul li .pl_info p.xinji,.fujian .fujian_box ul li p a
+{
+	font-size:14px;
+}
+
+.pinglun_list ul li .pl_info p.pl_date,.zhuzi_percent .t-arr02
+{
+	font-size:12px;
+	color:#666;
+}
+
+.pinglun .yema,.touzi_fensi .yema,.touzi_dongtai .yema
+{
+	text-align:center;
+	padding:38px 0 68px 44px;
+}
+
+.pinglun .yema .yema_box li,.touzi_fensi .yema .yema_box li,.touzi_dongtai .yema .yema_box li
+{
+	float:left;
+	_display:inline;
+	margin:0 8px;
+}
+
+.pinglun .yema .yema_box li a,.touzi_fensi .yema .yema_box li a,.touzi_dongtai .yema .yema_box li a
+{
+	display:inline-block;
+	color:#656565;
+	font-size:14px;
+	width:27px;
+	height:27px;
+	border:1px solid #ccc;
+	line-height:27px;
+	text-align:center;
+	border-radius:2px;
+}
+
+.pinglun .yema .yema_box li a.prev,.pinglun .yema .yema_box li a.next,.touzi_fensi .yema .yema_box li a.prev,.touzi_fensi .yema .yema_box li a.next,.touzi_dongtai .yema .yema_box li a.prev,.touzi_dongtai .yema .yema_box li a.next
+{
+	width:69px;
+}
+
+.pinglun .yema .yema_box li a:hover,.touzi_fensi .yema .yema_box li a:hover,.touzi_dongtai .yema .yema_box li a:hover
+{
+	color:#FFF;
+	background:#666;
+}
+
+.pinglun .yema .yema_box li a.more:hover,.touzi_fensi .yema .yema_box li a.more:hover,.touzi_dongtai .yema .yema_box li a.more:hover
+{
+	color:#000;
+	background:none;
+}
+
+.papers h2,.help h3
+{
+	width:300px;
+	height:30px;
+	font-weight:700;
+	font-size:16px;
+	border-bottom:1px solid #bbb;
+	margin:20px auto 16px;
+}
+
+.touzi_dianpu,.touzi_fendian
+{
+	border:0;
+}
+
+.dianpu_list_a h5,.fendian h3,.yuyue h5,.fujian h5
+{
+	width:626px;
+	height:30px;
+	font-weight:700;
+	font-size:16px;
+	border-bottom:1px solid #bbb;
+	margin:0 11px;
+}
+
+.dianpu_list_a ul,.wenti .wenti_box ul
+{
+	margin-left:11px;
+}
+
+.dianpu_l .dianpu_show p.link,.jine p.baifenbi
+{
+	margin-top:8px;
+}
+
+.jine .kaidian,.xuqiu .jine .zonge,.jine .xiangmufang
+{
+	width:647px;
+	height:90px;
+	border-bottom:1px solid #eee;
+}
+
+.jine .kaidian .kdzonge,.jine .zonge .zongjine
+{
+	width:283px;
+	height:58px;
+	border-right:1px solid #eee;
+	padding:32px 0 0 40px;
+}
+
+.jine .kaidian .zuidi,.jine .zonge .zuiditouzi
+{
+	width:283px;
+	height:58px;
+	padding:32px 0 0 40px;
+}
+
+.yuyue .touziren,.wenti .wenti_box
+{
+	width:647px;
+	height:auto;
+	overflow:hidden;
+}
+
+.yuyue .touziren ul li .imge,.touzi_fensi ul.fensi_box li .pic,.touzi_dongtai ul.dongtai_box li .pic
+{
+	float:left;
+	margin-top:5px;
+	_display:inline;
+}
+
+.fujian .fujian_box,.fujian_box
+{
+	width:647px;
+	overflow:hidden;
+	height:auto;
+}
+
+.fujian .fujian_box ul li p,.fujian_box ul li p
+{
+	text-align:center;
+	line-height:20px;
+}
+
+.touzi_fensi ul.fensi_box li .xingming,.touzi_dongtai ul.dongtai_box li .dongtai_info
+{
+	width:445px;
+	height:87px;
+	float:left;
+	margin-left:12px;
+	_display:inline;
+}
+
+.btn_tk1,.btn_tk2
+{
+	display:inline-block;
+	border-radius:3px;
+	background:#DA4F32;
+	color:#FFF;
+	cursor:pointer;
+	padding:5px 30px;
+}
+
+.tk1 .tk_contp p,.ques-Item dl dt
+{
+	text-indent:2em;
+}
+
+.demo_font,.demo_font02
+{
+	width:318px;
+	padding-top:20px;
+	color:#333;
+	margin:0 auto;
+}
+
+.yuqi-topText h3,.dongtaiTR h3
+{
+	font-weight:700;
+	font-size:18px;
+	border-bottom:1px dashed #888989;
+	width:600px;
+	padding-bottom:3px;
+	margin:0 auto;
+}
+
+.fujian_box ul,.messageDongtai .dongtai-01
+{
+	padding-left:40px;
+}
+
+.main_left_bottom strong{
+	padding-left:25px;
+	font-size:16px;
+	line-height:60px;
+}
+
+.main_left_bottom p{
+	padding-left:25px;
+}
+
+.main_left_bottom img{
+	padding-left:20px;
+	padding-top: 30px;
+}
+
+
+#self_Calculator{ width:596px; height:647px; background:#fff; border:#dfdcdc 5px solid; position:absolute; left:50%; margin-left:-298px; top:50%; margin-top:-323px;}
+.Calculator_header{ height:68px; background:#000;}
+.Calculator_header_p{ line-height:68px; color:#fff; font-weight:bold; font-size:18px; float:left; margin-left:30px;}
+.Calculator_header_span{ line-height:68px; color:#fff; font-weight:bold; font-size:18px; float:right; margin-right:30px;}

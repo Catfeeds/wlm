@@ -1,0 +1,139 @@
+<!doctype html>
+<!--[if lt IE 7 ]> <html class="ie ie6 ie-lt10 ie-lt9 ie-lt8 ie-lt7 no-js" lang="en"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie ie7 ie-lt10 ie-lt9 ie-lt8 no-js" lang="en"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie ie8 ie-lt10 ie-lt9 no-js" lang="en"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie ie9 ie-lt10 no-js" lang="en"> <![endif]-->
+<!--[if gt IE 9]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<!-- 一语双关列表页-->
+
+<head data-template-set="html5-reset">
+
+
+	<title>一语双关列表页 | {$system.webname}</title>
+	<include file="./Application/Wlmeng/View/Public/meta.html" />
+
+	<link rel="stylesheet" href="__CSS__/style.css" />
+
+	<link rel="stylesheet" href="__CSS__/jquery.Jcrop.min.css" type="text/css" />
+
+	<!-- Uploadify -->
+    <link rel='stylesheet' type='text/css' href='__CSS__/uploadify.css'>
+
+	<script type="text/javascript" src="__JS__/m.js"></script>
+	</head>
+
+<body >
+<script>window.jQuery || document.write("<script src='__JS__/jquery-1.9.1.min.js'>\x3C/script>")</script>
+<include file="./Application/Wlmeng/View/Public/menu.html" />
+<div class="wrapper">
+    <include file="./Application/Wlmeng/View/Public/header.html" />
+  <div class="page-wrapper" style="padding-top:170px;>
+    <section id="page-content">
+      
+      <article class="two-col-big-left">
+        <div class="normal-box-no-pad">
+			
+              <ul id="company-new-list" class="media-list search-list" style="margin-left:100px">
+              	<volist name="yysg" id="vo">
+                                <li class="company-new-list media clearfix">
+                     <if condition="$vo['alt'] == 0">
+                  		<a class="pull-left" href="{:U('Wlmeng/Yysg/getOneYysg',array('id'=>$vo['id']))}" >
+                             <img width="120" height="90" class="media-object" src="{$vo.pic}" />  
+                  		</a>
+                  	 <else/>
+                  	 	<a class="pull-left" href="{$vo.from_url}" target="_blank" >
+                             <img width="120" height="90" class="media-object" src="{$vo.pic}" />  
+                  		</a>
+                  	 </if>
+                  <div class="media-body">
+                  	<if condition="$vo['alt'] == 0">
+                  		<p class="company-new-list-tit"><a class="media-tit" style="color:#314751" href="{:U('Wlmeng/Yysg/getOneYysg',array('id'=>$vo['id']))}">{$vo.title}</a> </p>
+                  	<else/>
+                  		<p class="company-new-list-tit"><a class="media-tit" style="color:#314751" href="{$vo.from_url}" target="_blank">{$vo.title}</a> </p>
+                  	</if>
+                    
+                    <p><b class="dark">来源: {$vo.come}</b> <b class="dark">{$vo.year}-{$vo.month}-{$vo.day}</b></p>
+                    <p>{$vo.intro}</p>
+					<p>阅读量：{$vo.num}</p>                    
+                  </div>    
+                </li>
+                </volist>   
+              </ul>
+              <div class="pagination pagination-right">
+				<ul>
+					<volist name="page_show" id="vo">
+						<if condition="$vo['page'] == $page_this">
+							<li class="active"><a href="{:U('Yysg/goYysg',array('page'=>$vo['page']))}">{$vo.page}</a></li>
+						<else/>
+							<li class="page"><a class="follow_link" href="{:U('Yysg/goYysg',array('page'=>$vo['page']))}">{$vo.page}</a></li>
+						</if>
+					</volist>
+					<li class="next page"><a class="follow_link" href="{:U('Yysg/goYysg',array('page'=>$page_next))}">下一页 &rarr;</a></li>
+					<li class="next page"><a class="follow_link" href="{:U('Yysg/goYysg',array('page'=>$page_last))}">尾页 &raquo</a></li>
+					</ul></div><!--pagination-->
+              
+
+        </div>  
+      
+      </article>
+
+    </section>  
+    <include file="./Application/Wlmeng/View/Public/footer.html" />
+
+  </div>  
+
+</div>
+
+<script src="__JS__/jquery.uploadify.min.js"></script>
+<script src="__JS__/jquery.Jcrop.min.js"></script>
+<script src="__JS__/jquery-scrollto.js"></script>
+<script src="__JS__/jquery.cookie.js"></script>
+<script src="__JS__/functions.js"></script>
+
+
+<!-- for affix -->
+<script>
+  
+  function show_new_affix(){
+    $('#old-affix').hide();
+    $('#new-affix').show();
+  }
+
+  function hide_new_affix(){
+    $('#old-affix').show();
+    $('#new-affix').hide();
+  }
+
+  function check_show_new () {
+    var s = $(window).scrollTop();
+     if (s>1) {
+      show_new_affix();
+     } else {
+      hide_new_affix();
+     }
+  }
+  
+  $(window).scroll(function(){
+    check_show_new();
+  });
+
+  $(window).resize(function(){
+    check_show_new();
+  });
+
+  check_show_new();
+
+  $('body').on('mouseover','#dropdownMenu',function(){
+    $('.dropdown-menu').show();
+  });
+  $('body').on('mouseout','#dropdownMenu',function(){
+   $('.dropdown-menu').hide();
+  });
+</script>
+<script src="__JS__/jquery-ui-1.9.2.datapicker.min.js"></script>
+<script src="__JS__/jquery-ui-1.9.2.datepicker-zh-CN.js"></script>
+</div>
+</body>
+</html>
+            
+

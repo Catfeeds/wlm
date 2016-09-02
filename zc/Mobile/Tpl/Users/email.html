@@ -1,0 +1,51 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>修改用户信息</title>
+<link rel="stylesheet" href="__CSS__/pintuer.css" />
+<link rel="stylesheet" href="__CSS__/wlmjy.css" />
+<link rel="stylesheet" type="text/css" href="__CSS__/component.css" />
+<script type="text/javascript" src="__JS__/jquery-1.7.min.js"></script>
+<script type="text/javascript" src="__JS__/pintuer.js"></script>
+<script type="text/javascript" src="__JS__/wlmjy.js"></script>
+<script src="__JS__/modernizr.custom.js"></script>
+<script type="text/javascript" src="__JS__/idangerous.swiper-2.0.min.js"></script>
+<script type="text/javascript">
+$(function(){
+	function setContentSize() {
+		$('.swiper-content').css({
+			height: $(window).height()-$('.swiper-nav').height()
+		})
+	}
+
+
+
+	//Nav
+	var navSwiper = $('.swiper-nav').swiper({
+		visibilityFullFit: true,
+		slidesPerView:'auto',
+		//Thumbnails Clicks
+		onSlideClick: function(){
+			contentSwiper.swipeTo( navSwiper.clickedSlideIndex )
+		}
+	})
+
+	
+})
+
+</script>
+</head>
+<body class="cbp-spmenu-push">
+<include file="Public:menu" />
+<div class="main" style="padding-left:10px;padding-right:10px">
+	<form action="{:U('User/updateemail')}" method="post" class="form form-block">
+		<input type="text" class="input" placeholder="请输入新的邮箱" style="margin-top:70px" onblur="$('#sub').click()" />
+		<div class="hidden">
+			 <div class="form-button"><button class="button" type="submit">提交</button></div>
+		</div>
+	</form>
+	<target></target>
+</div>
+</body>
+</html>

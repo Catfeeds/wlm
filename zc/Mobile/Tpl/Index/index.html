@@ -1,0 +1,103 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<include file="Public:meta" />
+<title>首页</title>
+<link rel="stylesheet" href="__CSS__/pintuer.css" />
+<link rel="stylesheet" href="__CSS__/wlmjy.css" />
+<link rel="stylesheet" type="text/css" href="__CSS__/component.css" />
+<script type="text/javascript" src="__JS__/jquery-1.7.min.js"></script>
+<script type="text/javascript" src="__JS__/pintuer.js"></script>
+<script type="text/javascript" src="__JS__/wlmjy.js"></script>
+<script src="__JS__/modernizr.custom.js"></script>
+<script type="text/javascript" src="__JS__/idangerous.swiper-2.0.min.js"></script>
+<script type="text/javascript" src="__JS__/ichart.1.2.js"></script> 
+<script type="text/javascript">
+$(function(){
+	function setContentSize() {
+		$('.swiper-content').css({
+			height: $(window).height()-$('.swiper-nav').height()
+		})
+	}
+
+
+
+	//Nav
+	var navSwiper = $('.swiper-nav').swiper({
+		visibilityFullFit: true,
+		slidesPerView:'auto',
+		//Thumbnails Clicks
+		onSlideClick: function(){
+			contentSwiper.swipeTo( navSwiper.clickedSlideIndex )
+		}
+	})
+
+	
+})
+
+$(function(){
+	var width = $('#leftmunt_item').width();
+	var height = width;
+	$(".leftmunt_item_h").height(height);
+	$(".leftmunt_item_h").css('line-height',5);
+});
+
+</script>
+</head>
+
+<body class="cbp-spmenu-push">
+
+<include file="Public:menu" />
+
+
+<div class="main">
+<!--资讯 end-->
+<div class="container hot">
+	<div class="">
+		<volist name="clist" id="vo">
+				<div class="media" >
+					<div class="detail">
+						<p align="center"><a href="{:U('Deal/show',array('id'=>$vo['id']))}"><img src="{$vo.image}" style="width:100%" class="img-responsive"/></a></p>
+						
+					</div>
+					
+					<div class="media-body">
+						<a href="{:U('Deal/show',array('id'=>$vo['id']))}">{$vo.name}</a>
+						<p><strong>{$vo.brief}</strong></p>
+						<div class="progress progress-small inv_progress">
+  							<div class="progress-bar bg-blue" style="width:{$vo.jindu};"></div>
+						</div>
+						<!-- <p class="center">{$vo.user_name}({$vo.province},{$vo.city})</p> -->
+						<div class="line" style="margin-top:15px; ">
+							<div class="x4 border-right" style="padding-left:40px;">
+								<p><strong>{$vo.jindu}</strong></p>
+								<p>已达</p>
+							</div>
+							<div class="x4 border-right" style="padding-left:40px;">
+								<p><strong>{$vo.support_amount}</strong></p>
+								<p>已筹</p>
+							</div>
+							<div class="x4 border-right" style="padding-left:40px;">
+								<p><strong>{$vo.time}</strong></p>
+								<p>剩余时间</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<hr/>
+		</volist>
+		
+	</div>
+</div>
+<!--推荐项目 end-->
+<!-- <div class="banner">
+  <div class="carousel">
+    <div class="item"><img src="__IMG__/12bOOOPIC8f.jpg" /></div>
+    <div class="item"><img src="__IMG__/psds27988.jpg" /></div>
+    <div class="item"><img src="__IMG__/55U58PICrdX.jpg" /></div>
+  </div>
+</div> -->
+<!--推荐项目 end-->
+</div>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>{:C('WEB_NAME')}-{$page_name}</title>
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/css/common.css"/>
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/css/main.css"/>
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/css/page.css"/>
+<script type="text/javascript" src="__PUBLIC__/js/jquery.min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/layer/layer.min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/js/company.js"></script>
+<script type="text/javascript">
+var url = "{:U('Company/info')}";
+</script>
+</head>
+<body>
+<!-- Head -->
+<include file="Public:head" />
+<!-- Head -->
+<div class="container clearfix">
+    <!-- sidebar -->
+    <include file="Public:sidebar" />
+    <!--/sidebar-->
+    <div class="main-wrap">
+
+        <div class="crumb-wrap">
+            <div class="crumb-list">
+            <i class="icon-font"></i>
+            <a href="{:C('ADMIN_URL')}">首页</a>
+            <span class="crumb-step">&gt;</span>
+            <span class="crumb-name">{$page_name}</span></div>
+        </div>
+        
+        <div class="result-wrap">
+            <div class="result-content">
+                <table class="result-tab" width="100%">
+                    <tr>
+                        <th>ID</th>
+                        <th>IP</th>
+                        <th>操作</th>
+                    </tr>
+                    <foreach name="list" item="vo">
+                    <tr>
+                        <td>{$vo.id}</td>
+                        <td>{$vo.ip}</td>
+                        <td><a href="{:U('System/ipdel',array('id'=>$vo[id]))}">解封</a></td>
+                    </tr>
+                    </foreach>
+                    <tr>
+                    	<td colspan="10" align="right">{$page}</td>
+                    </tr>
+                </table>
+                <form action="{:U('System/ipinsert')}" method="post">
+		        	<input type="text" name="ip" value="">
+		        	<input type="submit" value="封锁" class="btn btn-primary">
+		        </form>  
+            </div>
+        </div>
+          
+</div>
+</body>
+</html>

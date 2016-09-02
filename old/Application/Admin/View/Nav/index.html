@@ -1,0 +1,72 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>{:C('WEB_NAME')}-{$page_name}</title>
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/css/common.css"/>
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/css/main.css"/>
+<script type="text/javascript" src="__PUBLIC__/js/jquery.min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/layer/layer.min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/js/Nav.js"></script>
+</head>
+<body>
+<!-- Head -->
+<include file="Public:head" />
+<!-- Head -->
+<div class="container clearfix">
+    <!-- sidebar -->
+    <include file="Public:sidebar" />
+    <!--/sidebar-->
+    <div class="main-wrap">
+
+        <div class="crumb-wrap">
+            <div class="crumb-list">
+            <i class="icon-font"></i>
+            <a href="{:C('ADMIN_URL')}">首页</a>
+            <span class="crumb-step">&gt;</span>
+            <span class="crumb-name">{$page_name}</span></div>
+        </div>
+        
+        <div class="result-wrap">
+            <form name="myform" id="myform" method="post">
+                <div class="result-title">
+                    <div class="result-list">
+                        <a href="{:U('Nav/add')}"><i class="icon-font"></i>添加导航</a>
+                        <a id="updateOrd" href="{:U('Nav/index')}"><i class="icon-font"></i>刷新页面</a>
+                    </div>
+                </div>
+                <div class="result-content">
+                    <table class="result-tab" width="100%">
+                        <tr>
+                            <!-- <th class="tc" width="5%"><input class="allChoose" name="" type="checkbox"></th> -->
+                            <th>ID</th>
+                            <th>导航名</th>
+                            <th>导航地址</th>
+                            <th>排序</th>
+                            <th>前台显示</th>
+                            <th>操作</th>
+                        </tr>
+                        <foreach name="list" item="vo">
+                        <tr>
+                            <!-- <td class="tc"><input name="id[]" value="59" type="checkbox"></td> -->
+                            <td>{$vo.id}</td>
+                            <td><a href="{:U('NavArticle/index',array('id'=>$vo[id]))}">{$vo.name}</a></td>
+                            <td>{$vo.url}</td>
+                            <td>{$vo.sort}</td>
+                            <td>{$vo.isshow|nav_status=###}</td>
+                            <td>                            	
+                               	<a class="link-update" href="{:U('Nav/edit',array('id'=>$vo[id]))}">修改</a>                               
+                               	<a class="link-update" href="{:U('Nav/lock',array('id'=>$vo[id],'isshow'=>$vo[isshow]))}">{$vo.isshow|nav_action=###}</a>
+                               	<!-- <a class="link-update del" href="{:U('Nav/del',array('id'=>$vo[id]))}">删除</a> -->
+                            </td>
+                        </tr>
+                        </foreach>
+                    </table>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!--/main-->
+</div>
+</body>
+</html>

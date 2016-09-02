@@ -1,0 +1,192 @@
+<!doctype html>
+<!--[if lt IE 7 ]> <html class="ie ie6 ie-lt10 ie-lt9 ie-lt8 ie-lt7 no-js" lang="en"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie ie7 ie-lt10 ie-lt9 ie-lt8 no-js" lang="en"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie ie8 ie-lt10 ie-lt9 no-js" lang="en"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie ie9 ie-lt10 no-js" lang="en"> <![endif]-->
+<!--[if gt IE 9]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<!-- the "no-js" class is for Modernizr. -->
+<!--微时代列表页-->
+
+<head id="www-itjuzi-com" data-template-set="html5-reset">
+
+	<title>微时代列表页 | {$system.webname}</title>
+<include file="./Application/Wlmeng/View/Public/meta.html" />
+	
+	<link rel="stylesheet" href="__CSS__/style.css" />
+
+	<link rel="stylesheet" href="__CSS__/jquery.Jcrop.min.css" type="text/css" />
+
+	<!-- Uploadify -->
+    <link rel='stylesheet' type='text/css' href='__CSS__/uploadify.css'>
+
+	<script type="text/javascript" src="__JS__/m.js"></script>
+	</head>
+
+<body >
+<script>window.jQuery || document.write("<script src='__JS__/jquery-1.9.1.min.js'>\x3C/script>")</script>
+<include file="./Application/Wlmeng/View/Public/menu.html" />
+<div class="wrapper">
+<include file="./Application/Wlmeng/View/Public/header.html" />
+  <div class="page-wrapper" style="padding-top:170px;">
+  
+    <section id="page-content">
+      
+      <article class="two-col-big-left">
+        <div class="normal-box-no-pad follow-area">
+
+          <div id="com_select">
+          
+          <div style="margin:10px 30px; border-bottom:1px solid #DFDFDF;"></div>
+          </div>
+
+          <div class="company-list clearfix childen-hover">
+				<volist name="wsd" id="vo">
+					<div class="company-list-item ">
+              <div class="company-list-tit" style="height:50px">
+                <p class="pull-right"> {$vo.title} </p>
+              </div>  
+              		<if condition="$vo['alt'] == 0">
+                                <a href="{:U('Wlmeng/WShiDai/getWsd',array('id'=>$vo['id']))}"><img width="160" height="120" class="media-object" src="{$vo.pic}" ></a>
+                    <else/>
+                    	<a href="{$vo.from_url}" target="_blank"><img width="160" height="120" class="media-object" src="{$vo.pic}" ></a>
+                    </if> 
+                          </div>
+				</volist>
+                        
+
+            
+          </div>  
+          <div style="margin-top:20px;">
+			<div class="pagination pagination-right">
+				<ul>
+					<volist name="page_show" id="vo">
+						<if condition="$vo['page'] == $page_this">
+							<li class="active"><a href="{:U('WShiDai/goWeiShiDai',array('page'=>$vo['page']))}">{$vo.page}</a></li>
+						<else/>
+							<li class="page"><a class="follow_link" href="{:U('WShiDai/goWeiShiDai',array('page'=>$vo['page']))}">{$vo.page}</a></li>
+						</if>
+					</volist>
+					<li class="next page"><a class="follow_link" href="{:U('WShiDai/goWeiShiDai',array('page'=>$page_next))}">下一页 &rarr;</a></li>
+					<li class="next page"><a class="follow_link" href="{:U('WShiDai/goWeiShiDai',array('page'=>$page_last))}">尾页 &raquo</a></li>
+					</ul></div><!--pagination--></div>
+
+        </div>  
+
+        <div style="margin-top:20px;">
+        <script type="text/javascript">BAIDU_CLB_fillSlot("939666");</script></div>
+      
+      </article>
+    </section>  
+    
+
+    <include file="./Application/Wlmeng/View/Public/footer.html" />
+
+  </div>  
+
+</div>
+
+<!-- Prompt IE 6 users to install Chrome Frame. Remove this if you support IE 6.
+     http://chromium.org/developers/how-tos/chrome-frame-getting-started -->
+<!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
+
+
+
+<script type="text/javascript">
+  $(function () {
+    
+    $('body').on('click','#top_login,.login',function (evt) {
+      open_dialog('login', evt);
+    });
+    
+    $('body').on('click','#top_register',function (evt) {
+      open_dialog('register', evt);
+    });
+
+    $('.btn').each(function () {
+      if($(this).attr('target') == '_blank'){
+        return true;
+      }
+      var href = $(this).attr('href');
+      if(href && /\/(add|claim|login)\/?/g.test(href)){
+        $(this).click(function (evt) {
+          if(!$.cookie('front_identity')){
+            open_dialog('login', evt);
+            return false;
+          }
+        });
+      }
+    });
+
+  });
+</script>
+<script src="__JS__/jquery.cookie.js"></script>
+<script src="__JS__/functions.js"></script>
+
+<script>
+  // add activity
+  $('.check-article-detail-des .check-more').show().each(function(){
+    $(this).appendTo($(this).siblings('p'));
+  });
+
+  $('.summary-article-detail-des .check-more').show().each(function(){
+    $(this).appendTo($(this).siblings('p'));
+  });
+
+</script>
+
+
+<!-- for affix -->
+<script>
+  
+  function show_new_affix(){
+    $('#old-affix').hide();
+    $('#new-affix').show();
+  }
+
+  function hide_new_affix(){
+    $('#old-affix').show();
+    $('#new-affix').hide();
+  }
+
+  function check_show_new () {
+    var s = $(window).scrollTop();
+     if (s>1) {
+      show_new_affix();
+     } else {
+      hide_new_affix();
+     }
+  }
+  
+  $(window).scroll(function(){
+    check_show_new();
+  });
+
+  $(window).resize(function(){
+    check_show_new();
+  });
+
+  check_show_new();
+
+  $('body').on('mouseover','#dropdownMenu',function(){
+    $('.dropdown-menu').show();
+  });
+  $('body').on('mouseout','#dropdownMenu',function(){
+   $('.dropdown-menu').hide();
+  });
+</script>
+
+</div>
+</body>
+</html>
+
+
+ <script type="text/javascript">
+ $(function () {
+   $('.select_bar h4').hover(function () {
+     var obj = $(this), pos = obj.position();
+     $('#'+obj.attr('show')).show().css({top:pos.top+obj.height()+8, left:pos.left-9});
+   },function () {
+     $('#'+$(this).attr('show')).hide();
+   });
+ });
+ </script>

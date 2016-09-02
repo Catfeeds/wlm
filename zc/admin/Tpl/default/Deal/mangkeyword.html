@@ -1,0 +1,23 @@
+{// 引入标签库 }
+<tagLib name="html" />
+<include file="Public:header" />
+<load href='__TMPL__Common/js/jquery.bgiframe.js' />
+<load href='__TMPL__Common/js/jquery.weebox.js' />
+<load href='__TMPL__Common/js/deal.js' />
+<load href='__TMPL__Common/style/weebox.css' />
+<div class="main">
+<div class="main_title">关键字管理</div>
+<div class="blank5"></div>
+
+<div class="blank5"></div>
+<form action="{:U('Deal/addkeyword')}" method="post">
+	关键字：<input name="key" type="text" value="{$key_list.keyword}"/>
+	<div class="button_row">
+	<input type="submit" class="button" value="提交"  />
+	</div>
+</form>
+
+<div class="blank5"></div>
+<div class="page">{$page}</div>
+</div>
+<include file="Public:footer" />

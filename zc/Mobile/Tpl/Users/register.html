@@ -1,0 +1,89 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<include file="Public:meta" />
+<title>注册</title>
+<link rel="stylesheet" href="__CSS__/pintuer.css" />
+<link rel="stylesheet" href="__CSS__/wlmjy.css" />
+<link rel="stylesheet" type="text/css" href="__CSS__/component.css" />
+<script type="text/javascript" src="__JS__/jquery-1.7.min.js"></script>
+<script type="text/javascript" src="__JS__/pintuer.js"></script>
+<script type="text/javascript" src="__JS__/wlmjy.js"></script>
+<script type="text/javascript" src="__JS__/layer/layer.min.js"></script>
+<script src="__JS__/modernizr.custom.js"></script>
+<script type="text/javascript" src="__JS__/idangerous.swiper-2.0.min.js"></script>
+<script type="text/javascript">
+$(function(){
+	function setContentSize() {
+		$('.swiper-content').css({
+			height: $(window).height()-$('.swiper-nav').height()
+		})
+	}
+
+
+
+	//Nav
+	var navSwiper = $('.swiper-nav').swiper({
+		visibilityFullFit: true,
+		slidesPerView:'auto',
+		//Thumbnails Clicks
+		onSlideClick: function(){
+			contentSwiper.swipeTo( navSwiper.clickedSlideIndex )
+		}
+	})
+
+	
+})
+
+</script>
+</head>
+<body class="cbp-spmenu-push">
+<include file="Public:menu" />
+<script src="__JS__/classie.js"></script>
+
+<div class="main login_main">
+	<div class="center">
+		<div class="line-small login_list">
+			
+		</div>
+		<div class="login_from" >
+			<form id="register_form">
+				<div class="group">
+					<div class="field field-icon-right">
+      					<span class="icon icon-user"></span>
+      					<input type="text" data-validate="required:用户名不可为空！" onblur="sendCode()" placeholder="手机号" size="30" name="user_name" id="user_name" class="input">
+    				</div>
+    				<div class="field mag_top">
+    					<div class="input-group">
+    						<input class="input" type="text" data-validate="required:验证码不可为空！" placeholder="验证码" size="30" name="code" id="code" />
+    						<span class="addbtn"><button class="button main_color" id="button_code" onclick="sendCode()" disabled="disabled" type="button">重新发送验证码</button></span>
+    					</div>
+    				</div>
+					<div class="field field-icon-right">
+      					<span class="icon icon-key"></span>
+      					<input type="password" data-validate="required:密码不可为空！" placeholder="密码" size="30" name="password" id="user_pwd" class="input mag_top">
+    				</div>
+					<div class="field field-icon-right">
+      					<span class="icon icon-key"></span>
+      					<input type="password" data-validate="repeat#password:两次密码输入不一致！" placeholder="重复密码" size="30" name="repassword" id="login_pass" class="input mag_top">
+    				</div>
+					<div class="form-button mag_top">
+						<button class="button button-block border-main margin-bottom main_color" onclick="register()" type="button">注册用户</button>
+					</div>
+				</div>
+			</form>
+			<input type="hidden" id="registerURL" value="{:U('User/register')}"/>
+			<input type="hidden" id="indexURL" value="{:U('Index/index')}"/>
+			<input type="hidden" id="regURL" value="{:U('User/doRegister')}"/>
+			<div  class="text-center">
+				<a href="{:U('User/login')}" class="button border-main">在线登陆</a>
+				<a href="{:U('User/goFindPass')}" class="button border-main">忘记密码</a>
+			</div>
+			<input type="hidden" value="{:U('User/sendCode')}" id="codeURL" />
+			<input type="hidden" value="{:U('User/checkCode')}" id="codeURL" />
+			<input type="hidden" value="{:U('Index/index')}" id="indexURL" />
+		</div>
+	</div>
+</div>
+</body>
+</html>

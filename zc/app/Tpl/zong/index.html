@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html>
+<!-- head开始 -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta charset="utf-8"/>
+<title>{if $page_title neq ''}{$page_title} - {/if}{$site_name} - {$seo_title}</title>
+<!-- 关键字部分 -->
+<meta name="keywords" content="{$seo_keyword}"/>
+<!-- 网页描述部分 -->
+<meta name="description" content="{$seo_description}"/>
+<!-- CSS样式部分 -->
+
+<!-- CSS样式部分 -->
+<link media="screen" rel="stylesheet" href="./app/Tpl/zong/css/demo.css"/>
+<link rel="stylesheet" type="text/css" href="./app/Tpl/zong/css/style.css">
+<link rel="stylesheet" type="text/css" href="./app/Tpl/zong/css/banner.css">
+<link rel="stylesheet" type="text/css" href="./app/Tpl/zong/css/nav.css">
+<link rel="stylesheet" type="text/css" href="./app/Tpl/zong/css/14c4c0d24fba6ed25d8b6758064ef7b8.css">
+<link rel="stylesheet" type="text/css" href="./app/Tpl/zong/css/4f524199e137c62e16dddd92b3d1cb95.css">
+
+<!-- 引用js部分 -->
+<script type="text/javascript" src="./app/Tpl/zong/js/dc.js"></script>
+<script type="text/javascript" src="./app/Tpl/zong/js/ag.js"></script>
+<script type="text/javascript" src="./app/Tpl/zong/js/index.js"></script>
+<script type="text/javascript" src="./app/Tpl/zong/js/42d9a46911d50cafdc667075f2cff7ec.js"></script>
+<script src="./app/Tpl/zong/js/ncfpb.1.1.min.js"></script>
+<script src="./app/Tpl/zong/js/jquery-1.7.1.min.js" type="text/javascript"></script>
+<script type="text/javascript" src="./app/Tpl/zong/js/2cc0475e1160ea574d0a9b5ebea60136.js"></script>
+
+<script type="text/javascript">
+var APP_ROOT = '';
+var LOADER_IMG = 'http://zhong.ronmei.com/app/Tpl/codec2i/images/lazy_loading.gif';
+var ERROR_IMG = 'http://zhong.ronmei.com/app/Tpl/codec2i/images/image_err.gif';
+</script>
+
+<script type="text/javascript">
+jQuery(document).ready(function(){
+	var qcloud={};
+	$('[_t_nav]').hover(function(){
+		var _nav = $(this).attr('_t_nav');
+		clearTimeout( qcloud[ _nav + '_timer' ] );
+		qcloud[ _nav + '_timer' ] = setTimeout(function(){
+		$('[_t_nav]').each(function(){
+		$(this)[ _nav == $(this).attr('_t_nav') ? 'addClass':'removeClass' ]('nav-up-selected');
+		});
+		$('#'+_nav).stop(true,true).slideDown(200);
+		}, 150);
+	},function(){
+		var _nav = $(this).attr('_t_nav');
+		clearTimeout( qcloud[ _nav + '_timer' ] );
+		qcloud[ _nav + '_timer' ] = setTimeout(function(){
+		$('[_t_nav]').removeClass('nav-up-selected');
+		$('#'+_nav).stop(true,true).slideUp(200);
+		}, 150);
+	$("#pageviews-visitors-chart").data("dxChart").render();
+	});
+});
+
+var i = 0,
+						line_chart_data_source = [
+						{ id: ++i, part1: 4, part2: 2 },
+						{ id: ++i, part1: 5, part2: 3 },
+						{ id: ++i, part1: 5, part2: 3 },
+						{ id: ++i, part1: 4, part2: 2 },
+						{ id: ++i, part1: 3, part2: 1 },
+						{ id: ++i, part1: 3, part2: 2 },
+						{ id: ++i, part1: 5, part2: 3 },
+						{ id: ++i, part1: 7, part2: 4 },
+						{ id: ++i, part1: 9, part2: 5 },
+						{ id: ++i, part1: 7, part2: 4 },
+						{ id: ++i, part1: 7, part2: 3 },
+						{ id: ++i, part1: 11, part2: 6 },
+						{ id: ++i, part1: 10, part2: 8 },
+						{ id: ++i, part1: 9, part2: 7 },
+						{ id: ++i, part1: 8, part2: 7 },
+						{ id: ++i, part1: 8, part2: 7 },
+						{ id: ++i, part1: 8, part2: 7 },
+						{ id: ++i, part1: 8, part2: 6 },
+						{ id: ++i, part1: 15, part2: 5 },
+						{ id: ++i, part1: 10, part2: 5 },
+						{ id: ++i, part1: 9, part2: 6 },
+						{ id: ++i, part1: 9, part2: 3 },
+						{ id: ++i, part1: 8, part2: 5 },
+						{ id: ++i, part1: 8, part2: 4 },
+						{ id: ++i, part1: 9, part2: 5 },
+						{ id: ++i, part1: 8, part2: 6 },
+						{ id: ++i, part1: 8, part2: 5 },
+						{ id: ++i, part1: 7, part2: 6 },
+						{ id: ++i, part1: 7, part2: 5 },
+						{ id: ++i, part1: 6, part2: 5 },
+						{ id: ++i, part1: 7, part2: 6 },
+						{ id: ++i, part1: 7, part2: 5 },
+						{ id: ++i, part1: 8, part2: 5 },
+						{ id: ++i, part1: 6, part2: 5 },
+						{ id: ++i, part1: 5, part2: 4 },
+						{ id: ++i, part1: 5, part2: 3 },
+						{ id: ++i, part1: 6, part2: 3 },
+					];
+
+$("#pageviews-visitors-chart").dxChart({
+						dataSource: line_chart_data_source,
+						commonSeriesSettings: {
+							argumentField: "id",
+							point: { visible: true, size: 5, hoverStyle: {size: 7, border: 0, color: 'inherit'} },
+							line: {width: 1, hoverStyle: {width: 1}}
+						},
+						series: [
+							{ valueField: "part1", name: "Pageviews", color: "#68b828" },
+							{ valueField: "part2", name: "Visitors", color: "#eeeeee" },
+						],
+						legend: {
+							position: 'inside',
+							paddingLeftRight: 5
+						},
+						commonAxisSettings: {
+							label: {
+								visible: false
+							},
+							grid: {
+								visible: true,
+								color: '#f9f9f9'
+							}
+						},
+						valueAxis: {
+							max: 25
+						},
+						argumentAxis: {
+					        valueMarginsEnabled: false
+					    },
+					});
+					
+					
+</script>
+<style>
+@media (min-width: 768px) {
+  .col-sm-6{
+    padding-top:50px;padding-left:30%;width:100%;
+	text-align:center;
+  }
+ .chart-item-bg {
+  padding-left:5%;
+  position: relative;
+  background: #fff;
+  width: 100%;
+  margin-bottom: 30px;
+  text-align:center;
+}
+.chart-item-bg .chart-label {
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding: 30px;
+  font-size: 15px;
+}
+.chart-item-bg .chart-label .h3,{
+  margin: 0;
+  padding: 0;
+}
+.text-bold {
+  font-weight: bold;
+}
+.text-secondary {
+  color: #68b828;
+}
+.text-medium {
+  font-size: 12px;
+}
+.text-muted {
+  color: #9d9d9d;
+}
+
+</style>
+</head>
+<!-- head结束 -->
+
+<!-- body体 -->
+<body>
+    <div class="header" style="width:1920px;" >
+        <div class="wrap clearfix">     
+		
+          <!--导航栏开始-->   
+<div class="head-v3">
+	<div class="navigation-up">
+		<div class="navigation-inner">
+			<div class="navigation-v3">
+				<ul>
+					{foreach from=$nav_list item=nav_item}
+					<li {if $nav_item.current eq 1}class="nav-up-selected"{/if}>
+						<h2>
+							<a href="{$nav_item.url}"  target="{if $nav_item.blank eq 1}_blank{/if}" title="{$nav_item.name}">{$nav_item.name}</a>
+						</h2>
+					</li>
+					{/foreach}					
+				</ul>
+			</div>
+		</div>
+	</div>
+
+</div>
+			<!--导航栏结束-->
+			
+			<!--登录注册部分开始-->
+            <div class="m-right clearfix">
+				<span class="z-Login" style="padding:5px 0 0 0;">
+					<a href="" title="注册" class="z-register">注册</a>
+					|
+					<a href="" title="登录" class="z-register">登录</a>
+				</span>        
+				<form action="{url r="deals"}" method="post" id="header_search_form" wx-validator="" autocomplete="off">
+					<span>
+						<input name="k" style="border:1px solid #ccc;" id="header_keyword" value="{if $p_k neq ''}{$p_k}{else}搜索你想要的...{/if}" wx-validator-placeholder="搜索项目" wx-validator-rule="required" type="text" wx-validator-notip="" placeholder="搜索项目">  
+						<a href="" style="border:1px solid #ccc;padding:5px 15px;" type="submit">搜索</a>
+					</span>
+				</form>
+            </div>
+			<!-- 登录注册部分结束 -->
+			
+        </div>
+        <input type="hidden" value="64624432" id="csrf_token">      
+    </div>    
+	<link rel="stylesheet" type="text/css" href="./app/Tpl/zong/css/banner.css">
+	
+	<!-- 替换相对应区域为表格 -->
+		<div class="col-sm-6">
+			<div class="chart-item-bg">
+				<div class="chart-label">
+					<div class="h3 text-secondary text-bold" data-count="this" data-from="0.00" data-to="14.85" data-suffix="%" data-duration="1">14.85%</div>
+					<span class="text-medium text-muted">More visitors</span>
+				</div>
+				<div id="pageviews-visitors-chart" style="height: 298px; -webkit-user-select: none;" class="dx-visibility-change-handler">
+				<svg width="439" height="298" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" stroke="none" stroke-width="0" fill="none" class="dxc dxc-chart" direction="ltr" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); display: block; overflow: hidden;"><defs><clipPath id="DevExpress_1"><rect x="0" y="0" width="439" height="298" rx="0" ry="0" fill="none" stroke="none" stroke-width="0"></rect></clipPath><clipPath id="DevExpress_2"><rect x="0" y="0" width="439" height="298" rx="0" ry="0" fill="none" stroke="none" stroke-width="0"></rect></clipPath><pattern id="DevExpress_38" width="5" height="5" patternUnits="userSpaceOnUse"><rect x="0" y="0" width="5" height="5" rx="0" ry="0" fill="#68b828" opacity="0.75"></rect><path stroke-width="2" stroke="#68b828" d="M 2.5 -2.5 L -2.5 2.5M 0 5 L 5 0 M 7.5 2.5 L 2.5 7.5"></path></pattern><pattern id="DevExpress_39" width="5" height="5" patternUnits="userSpaceOnUse"><rect x="0" y="0" width="5" height="5" rx="0" ry="0" fill="#68b828" opacity="0.5"></rect><path stroke-width="2" stroke="#68b828" d="M 2.5 -2.5 L -2.5 2.5M 0 5 L 5 0 M 7.5 2.5 L 2.5 7.5"></path></pattern><pattern id="DevExpress_40" width="5" height="5" patternUnits="userSpaceOnUse"><rect x="0" y="0" width="5" height="5" rx="0" ry="0" fill="#eeeeee" opacity="0.75"></rect><path stroke-width="2" stroke="#eeeeee" d="M 2.5 -2.5 L -2.5 2.5M 0 5 L 5 0 M 7.5 2.5 L 2.5 7.5"></path></pattern><pattern id="DevExpress_41" width="5" height="5" patternUnits="userSpaceOnUse"><rect x="0" y="0" width="5" height="5" rx="0" ry="0" fill="#eeeeee" opacity="0.5"></rect><path stroke-width="2" stroke="#eeeeee" d="M 2.5 -2.5 L -2.5 2.5M 0 5 L 5 0 M 7.5 2.5 L 2.5 7.5"></path></pattern><filter id="DevExpress_42" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur in="SourceGraphic" result="gaussianBlurResult" stdDeviation="2"></feGaussianBlur><feOffset in="gaussianBlurResult" result="offsetResult" dx="0" dy="4"></feOffset><feFlood result="floodResult" flood-color="#000000" flood-opacity="0.4"></feFlood><feComposite in="floodResult" in2="offsetResult" operator="in" result="compositeResult"></feComposite><feComposite in="SourceGraphic" in2="compositeResult" operator="over"></feComposite></filter></defs><g class="dxc-background"></g><g class="dxc-strips-group"><g class="dxc-h-strips" clip-path="url(#DevExpress_2)"></g><g class="dxc-v-strips" clip-path="url(#DevExpress_2)"></g></g><g class="dxc-axes-group"><g class="dxc-h-axis" clip-path="url(#DevExpress_1)"><g class="dxc-grid"><path stroke-width="1" stroke="#f9f9f9" d="M 49.5 0 L 49.5 298"></path><path stroke-width="1" stroke="#f9f9f9" d="M 110.5 0 L 110.5 298"></path><path stroke-width="1" stroke="#f9f9f9" d="M 171.5 0 L 171.5 298"></path><path stroke-width="1" stroke="#f9f9f9" d="M 232.5 0 L 232.5 298"></path><path stroke-width="1" stroke="#f9f9f9" d="M 293.5 0 L 293.5 298"></path><path stroke-width="1" stroke="#f9f9f9" d="M 354.5 0 L 354.5 298"></path><path stroke-width="1" stroke="#f9f9f9" d="M 415.5 0 L 415.5 298"></path></g><g class="dxc-elements"></g><g class="dxc-line"></g><g class="dxc-title"></g></g><g class="dxc-v-axis" clip-path="url(#DevExpress_1)"><g class="dxc-grid"><path stroke-width="1" stroke="#f9f9f9" d="M 0 298.5 L 439 298.5"></path><path stroke-width="1" stroke="#f9f9f9" d="M 0 265.5 L 439 265.5"></path><path stroke-width="1" stroke="#f9f9f9" d="M 0 233.5 L 439 233.5"></path><path stroke-width="1" stroke="#f9f9f9" d="M 0 200.5 L 439 200.5"></path><path stroke-width="1" stroke="#f9f9f9" d="M 0 167.5 L 439 167.5"></path><path stroke-width="1" stroke="#f9f9f9" d="M 0 135.5 L 439 135.5"></path><path stroke-width="1" stroke="#f9f9f9" d="M 0 102.5 L 439 102.5"></path><path stroke-width="1" stroke="#f9f9f9" d="M 0 70.5 L 439 70.5"></path><path stroke-width="1" stroke="#f9f9f9" d="M 0 37.5 L 439 37.5"></path><path stroke-width="1" stroke="#f9f9f9" d="M 0 4.5 L 439 4.5"></path></g><g class="dxc-elements"></g><g class="dxc-line"></g><g class="dxc-title"></g></g></g><g class="dxc-constant-lines-group"><g class="dxc-h-constant-lines"></g><g class="dxc-v-constant-lines"></g></g><g class="dxc-strips-labels-group"><g class="dxc-axis-labels"></g><g class="dxc-axis-labels"></g></g><g class="dxc-border"></g><g class="dxc-series-group"><g class="dxc-series"><g class="dxc-elements" stroke="#68b828" stroke-width="1" clip-path="url(#DevExpress_2)"><path stroke-width="1" d="M 0 254 L 12 244.5 L 24 244.5 L 37 254 L 49 265.5 L 61 265.5 L 73 244 L 85 222 L 98 200 L 110 222.5 L 122 222.5 L 134 178 L 146 189 L 159 200 L 171 211.5 L 183 211.5 L 195 211.5 L 207 211.5 L 220 135 L 232 189 L 244 200.5 L 256 200.5 L 268 211.5 L 280 211.5 L 293 200 L 305 211.5 L 317 211.5 L 329 222.5 L 341 222.5 L 354 233 L 366 222.5 L 378 222.5 L 390 211 L 402 233 L 415 244.5 L 427 244.5 L 439 233"></path></g><g fill="#68b828" stroke="#68b828" stroke-width="0" r="2.5" visibility="visible" class="dxc-markers" opacity="1"><circle cx="0" cy="0" r="2.5" stroke-width="0" transform="translate(220,135)"></circle><circle cx="0" cy="0" r="2.5" stroke-width="0" transform="translate(12,244)"></circle><circle cx="0" cy="0" r="2.5" stroke-width="0" transform="translate(0,254)"></circle><circle cx="0" cy="0" r="2.5" stroke-width="0" transform="translate(24,244)"></circle><circle cx="0" cy="0" r="2.5" stroke-width="0" transform="translate(37,254)"></circle><circle cx="0" cy="0" r="2.5" stroke-width="0" transform="translate(49,265)"></circle><circle cx="0" cy="0" r="2.5" stroke-width="0" transform="translate(61,265)"></circle><circle cx="0" cy="0" r="2.5" stroke-width="0" transform="translate(73,244)"></circle><circle cx="0" cy="0" r="2.5" stroke-width="0" transform="translate(85,222)"></circle><circle cx="0" cy="0" r="2.5" stroke-width="0" transform="translate(98,200)"></circle><circle cx="0" cy="0" r="2.5" stroke-width="0" transform="translate(110,222)"></circle><circle cx="0" cy="0" r="2.5" stroke-width="0" transform="translate(122,222)"></circle><circle cx="0" cy="0" r="2.5" stroke-width="0" transform="translate(134,178)"></circle><circle cx="0" cy="0" r="2.5" stroke-width="0" transform="translate(146,189)"></circle><circle cx="0" cy="0" r="2.5" stroke-width="0" transform="translate(159,200)"></circle><circle cx="0" cy="0" r="2.5" stroke-width="0" transform="translate(171,211)"></circle><circle cx="0" cy="0" r="2.5" stroke-width="0" transform="translate(183,211)"></circle><circle cx="0" cy="0" r="2.5" stroke-width="0" transform="translate(195,211)"></circle><circle cx="0" cy="0" r="2.5" stroke-width="0" transform="translate(207,211)"></circle><circle cx="0" cy="0" r="2.5" stroke-width="0" transform="translate(232,189)"></circle><circle cx="0" cy="0" r="2.5" stroke-width="0" transform="translate(244,200)"></circle><circle cx="0" cy="0" r="2.5" stroke-width="0" transform="translate(256,200)"></circle><circle cx="0" cy="0" r="2.5" stroke-width="0" transform="translate(268,211)"></circle><circle cx="0" cy="0" r="2.5" stroke-width="0" transform="translate(280,211)"></circle><circle cx="0" cy="0" r="2.5" stroke-width="0" transform="translate(293,200)"></circle><circle cx="0" cy="0" r="2.5" stroke-width="0" transform="translate(305,211)"></circle><circle cx="0" cy="0" r="2.5" stroke-width="0" transform="translate(317,211)"></circle><circle cx="0" cy="0" r="2.5" stroke-width="0" transform="translate(329,222)"></circle><circle cx="0" cy="0" r="2.5" stroke-width="0" transform="translate(341,222)"></circle><circle cx="0" cy="0" r="2.5" stroke-width="0" transform="translate(354,233)"></circle><circle cx="0" cy="0" r="2.5" stroke-width="0" transform="translate(366,222)"></circle><circle cx="0" cy="0" r="2.5" stroke-width="0" transform="translate(378,222)"></circle><circle cx="0" cy="0" r="2.5" stroke-width="0" transform="translate(390,211)"></circle><circle cx="0" cy="0" r="2.5" stroke-width="0" transform="translate(402,233)"></circle><circle cx="0" cy="0" r="2.5" stroke-width="0" transform="translate(415,244)"></circle><circle cx="0" cy="0" r="2.5" stroke-width="0" transform="translate(427,244)"></circle><circle cx="0" cy="0" r="2.5" stroke-width="0" transform="translate(439,233)"></circle></g></g><g class="dxc-series"><g class="dxc-elements" stroke="#eeeeee" stroke-width="1" clip-path="url(#DevExpress_2)"><path stroke-width="1" d="M 0 276 L 12 265.5 L 24 265.5 L 37 276 L 49 287 L 61 276 L 73 265 L 85 254 L 98 244 L 110 254 L 122 265 L 134 233 L 146 211 L 159 222.5 L 171 222.5 L 183 222.5 L 195 222.5 L 207 233 L 220 244.5 L 232 244.5 L 244 233 L 256 265 L 268 244 L 280 254 L 293 244 L 305 233 L 317 244 L 329 233 L 341 244.5 L 354 244.5 L 366 233 L 378 244.5 L 390 244.5 L 402 244.5 L 415 254 L 427 265.5 L 439 265.5"></path></g><g fill="#eeeeee" stroke="#eeeeee" stroke-width="0" r="2.5" visibility="visible" class="dxc-markers" opacity="1"><circle cx="0" cy="0" r="2.5" stroke-width="0" transform="translate(0,276)"></circle><circle cx="0" cy="0" r="2.5" stroke-width="0" transform="translate(12,265)"></circle><circle cx="0" cy="0" r="2.5" stroke-width="0" transform="translate(24,265)"></circle><circle cx="0" cy="0" r="2.5" stroke-width="0" transform="translate(37,276)"></circle><circle cx="0" cy="0" r="2.5" stroke-width="0" transform="translate(49,287)"></circle><circle cx="0" cy="0" r="2.5" stroke-width="0" transform="translate(61,276)"></circle><circle cx="0" cy="0" r="2.5" stroke-width="0" transform="translate(73,265)"></circle><circle cx="0" cy="0" r="2.5" stroke-width="0" transform="translate(85,254)"></circle><circle cx="0" cy="0" r="2.5" stroke-width="0" transform="translate(98,244)"></circle><circle cx="0" cy="0" r="2.5" stroke-width="0" transform="translate(110,254)"></circle><circle cx="0" cy="0" r="2.5" stroke-width="0" transform="translate(122,265)"></circle><circle cx="0" cy="0" r="2.5" stroke-width="0" transform="translate(134,233)"></circle><circle cx="0" cy="0" r="2.5" stroke-width="0" transform="translate(146,211)"></circle><circle cx="0" cy="0" r="2.5" stroke-width="0" transform="translate(159,222)"></circle><circle cx="0" cy="0" r="2.5" stroke-width="0" transform="translate(171,222)"></circle><circle cx="0" cy="0" r="2.5" stroke-width="0" transform="translate(183,222)"></circle><circle cx="0" cy="0" r="2.5" stroke-width="0" transform="translate(195,222)"></circle><circle cx="0" cy="0" r="2.5" stroke-width="0" transform="translate(207,233)"></circle><circle cx="0" cy="0" r="2.5" stroke-width="0" transform="translate(220,244)"></circle><circle cx="0" cy="0" r="2.5" stroke-width="0" transform="translate(232,244)"></circle><circle cx="0" cy="0" r="2.5" stroke-width="0" transform="translate(244,233)"></circle><circle cx="0" cy="0" r="2.5" stroke-width="0" transform="translate(256,265)"></circle><circle cx="0" cy="0" r="2.5" stroke-width="0" transform="translate(268,244)"></circle><circle cx="0" cy="0" r="2.5" stroke-width="0" transform="translate(280,254)"></circle><circle cx="0" cy="0" r="2.5" stroke-width="0" transform="translate(293,244)"></circle><circle cx="0" cy="0" r="2.5" stroke-width="0" transform="translate(305,233)"></circle><circle cx="0" cy="0" r="2.5" stroke-width="0" transform="translate(317,244)"></circle><circle cx="0" cy="0" r="2.5" stroke-width="0" transform="translate(329,233)"></circle><circle cx="0" cy="0" r="2.5" stroke-width="0" transform="translate(341,244)"></circle><circle cx="0" cy="0" r="2.5" stroke-width="0" transform="translate(354,244)"></circle><circle cx="0" cy="0" r="2.5" stroke-width="0" transform="translate(366,233)"></circle><circle cx="0" cy="0" r="2.5" stroke-width="0" transform="translate(378,244)"></circle><circle cx="0" cy="0" r="2.5" stroke-width="0" transform="translate(390,244)"></circle><circle cx="0" cy="0" r="2.5" stroke-width="0" transform="translate(402,244)"></circle><circle cx="0" cy="0" r="2.5" stroke-width="0" transform="translate(415,254)"></circle><circle cx="0" cy="0" r="2.5" stroke-width="0" transform="translate(427,265)"></circle><circle cx="0" cy="0" r="2.5" stroke-width="0" transform="translate(439,265)"></circle></g></g></g><g class="dxc-labels-group"><g class="dxc-labels" visibility="hidden" clip-path="url(#DevExpress_2)" opacity="1"></g><g class="dxc-labels" visibility="hidden" clip-path="url(#DevExpress_2)" opacity="1"></g></g><g class="dxc-crosshair-cursor"></g><g class="dxc-trackers" opacity="0.0001" stroke="gray" fill="gray"><g class="dxc-crosshair-trackers" stroke="none" fill="grey"></g><g class="dxc-series-trackers"><g class="dxc-pane-tracker"><g clip-path="url(#DevExpress_2)"><path stroke-width="20" fill="none" d="M 0 254 L 12 244 L 24 244 L 37 254 L 49 265 L 61 265 L 73 244 L 85 222 L 98 200 L 110 222 L 122 222 L 134 178 L 146 189 L 159 200 L 171 211 L 183 211 L 195 211 L 207 211 L 220 135 L 232 189 L 244 200 L 256 200 L 268 211 L 280 211 L 293 200 L 305 211 L 317 211 L 329 222 L 341 222 L 354 233 L 366 222 L 378 222 L 390 211 L 402 233 L 415 244 L 427 244 L 439 233"></path></g><g clip-path="url(#DevExpress_2)"><path stroke-width="20" fill="none" d="M 0 276 L 12 265 L 24 265 L 37 276 L 49 287 L 61 276 L 73 265 L 85 254 L 98 244 L 110 254 L 122 265 L 134 233 L 146 211 L 159 222 L 171 222 L 183 222 L 195 222 L 207 233 L 220 244 L 232 244 L 244 233 L 256 265 L 268 244 L 280 254 L 293 244 L 305 233 L 317 244 L 329 233 L 341 244 L 354 244 L 366 233 L 378 244 L 390 244 L 402 244 L 415 254 L 427 265 L 439 265"></path></g></g></g><g class="dxc-markers-trackers" stroke="none" fill="grey"><g class="dxc-pane-tracker"><g><circle cx="0" cy="254" r="6"></circle><circle cx="12" cy="244" r="6"></circle><circle cx="24" cy="244" r="6"></circle><circle cx="37" cy="254" r="6"></circle><circle cx="49" cy="265" r="6"></circle><circle cx="61" cy="265" r="6"></circle><circle cx="73" cy="244" r="6"></circle><circle cx="85" cy="222" r="6"></circle><circle cx="98" cy="200" r="6"></circle><circle cx="110" cy="222" r="6"></circle><circle cx="122" cy="222" r="6"></circle><circle cx="134" cy="178" r="6"></circle><circle cx="146" cy="189" r="6"></circle><circle cx="159" cy="200" r="6"></circle><circle cx="171" cy="211" r="6"></circle><circle cx="183" cy="211" r="6"></circle><circle cx="195" cy="211" r="6"></circle><circle cx="207" cy="211" r="6"></circle><circle cx="220" cy="135" r="6"></circle><circle cx="232" cy="189" r="6"></circle><circle cx="244" cy="200" r="6"></circle><circle cx="256" cy="200" r="6"></circle><circle cx="268" cy="211" r="6"></circle><circle cx="280" cy="211" r="6"></circle><circle cx="293" cy="200" r="6"></circle><circle cx="305" cy="211" r="6"></circle><circle cx="317" cy="211" r="6"></circle><circle cx="329" cy="222" r="6"></circle><circle cx="341" cy="222" r="6"></circle><circle cx="354" cy="233" r="6"></circle><circle cx="366" cy="222" r="6"></circle><circle cx="378" cy="222" r="6"></circle><circle cx="390" cy="211" r="6"></circle><circle cx="402" cy="233" r="6"></circle><circle cx="415" cy="244" r="6"></circle><circle cx="427" cy="244" r="6"></circle><circle cx="439" cy="233" r="6"></circle></g><g><circle cx="0" cy="276" r="6"></circle><circle cx="12" cy="265" r="6"></circle><circle cx="24" cy="265" r="6"></circle><circle cx="37" cy="276" r="6"></circle><circle cx="49" cy="287" r="6"></circle><circle cx="61" cy="276" r="6"></circle><circle cx="73" cy="265" r="6"></circle><circle cx="85" cy="254" r="6"></circle><circle cx="98" cy="244" r="6"></circle><circle cx="110" cy="254" r="6"></circle><circle cx="122" cy="265" r="6"></circle><circle cx="134" cy="233" r="6"></circle><circle cx="146" cy="211" r="6"></circle><circle cx="159" cy="222" r="6"></circle><circle cx="171" cy="222" r="6"></circle><circle cx="183" cy="222" r="6"></circle><circle cx="195" cy="222" r="6"></circle><circle cx="207" cy="233" r="6"></circle><circle cx="220" cy="244" r="6"></circle><circle cx="232" cy="244" r="6"></circle><circle cx="244" cy="233" r="6"></circle><circle cx="256" cy="265" r="6"></circle><circle cx="268" cy="244" r="6"></circle><circle cx="280" cy="254" r="6"></circle><circle cx="293" cy="244" r="6"></circle><circle cx="305" cy="233" r="6"></circle><circle cx="317" cy="244" r="6"></circle><circle cx="329" cy="233" r="6"></circle><circle cx="341" cy="244" r="6"></circle><circle cx="354" cy="244" r="6"></circle><circle cx="366" cy="233" r="6"></circle><circle cx="378" cy="244" r="6"></circle><circle cx="390" cy="244" r="6"></circle><circle cx="402" cy="244" r="6"></circle><circle cx="415" cy="254" r="6"></circle><circle cx="427" cy="265" r="6"></circle><circle cx="439" cy="265" r="6"></circle></g></g></g></g><g class="dxc-legend" clip-path="url(#DevExpress_1)" transform="translate(0,0)"><g transform="translate(350,26)"><rect x="-5" y="-16" width="84" height="68" rx="0" ry="0" fill="#ffffff" class="dxc-border"></rect><g class="dxc-item" transform="translate(0,0)"><rect x="0" y="0" width="12" height="12" rx="0" ry="0" fill="#68b828"></rect><text x="19" y="11" text-anchor="start" style="fill: #767676; font-family: 'Segoe UI', 'Helvetica Neue', 'Trebuchet MS', Verdana; font-weight: 400; font-size: 12px; cursor: default;"><tspan x="19" dy="0">Pageviews</tspan></text></g><g class="dxc-item" transform="translate(0,23)"><rect x="0" y="0" width="12" height="12" rx="0" ry="0" fill="#eeeeee"></rect><text x="19" y="11" text-anchor="start" style="fill: #767676; font-family: 'Segoe UI', 'Helvetica Neue', 'Trebuchet MS', Verdana; font-weight: 400; font-size: 12px; cursor: default;"><tspan x="19" dy="0">Visitors</tspan></text></g></g><g class="dxc-legend-trackers" stroke="none" fill="grey" opacity="0.0001" transform="translate(350,26)"><rect x="-10" y="-5" width="94" height="23" rx="0" ry="0"></rect><rect x="-10" y="18" width="94" height="23" rx="0" ry="0"></rect></g></g><g class="dxc-tooltip"><path d="M 0 0 Z" filter="url(#DevExpress_42)" stroke-width="1" stroke="#d3d3d3" visibility="hidden"></path><g text-anchor="middle" visibility="hidden" style="font-family: 'Segoe UI', 'Helvetica Neue', 'Trebuchet MS', Verdana; font-weight: 400; font-size: 12px; fill: #232323; cursor: default;"><text x="0" y="0" style="font-size: 12px;"></text></g></g></svg></div>
+			</div>
+		</div>
+    <!-- 替换相对应区域为表格结束 -->
+	
+    <!-- 浮动导航class名 z-subnav -->
+   <div class="m-subnav" id="nav">
+	<div class="wrap">
+		<div class="subnav-left Js-cata">
+			{foreach from=$cate_list item=cate_item}
+ 			<a href="{url r="deals" p="id=$cate_item.id"}" title="{$cate_item.name}">{$cate_item.name}</a>
+ 			{/foreach}
+		</div>
+		<div class="subnav-right Js-cata">			
+			<a href="{url r="index"}">推荐项目</a>
+			<a href="{url r="deals" p="r=new"}">最新上线</a>
+			<a href="{url r="deals" p="r=nend"}">即将结束</a>	
+		</div>
+	</div>      
+</div>
+    <!--浮动subnav end-->
+    
+    <!--热门项目wrap-->
+<div class="wrap m-box">
+	<div class="m-headline clearfix">
+	<div class="project-title">
+	<span>热门项目</span>
+	</div>
+	<a href="index?ctl=deals" class="z-browse">浏览全部</a>
+	</div>
+	
+	<!--focus static-->
+	<div class="focus-box">
+		<ul class="focus-con clearfix">
+			{foreach from=$deal_list item=deal_item key=key}
+			<li>
+				<div class="list-item" style="background: #FFF">
+					<a href="{url r="deal#show" p="id=$deal_item.id"}" title="{$deal_item.name}">
+					<img src="{if $deal_item.image eq ''}{$TMPL}/images/empty_thumb.gif{else}{function name="get_spec_image" v=$deal_item.image w="205" h="160" g="1"}{/if}" alt="{$deal_item.name}" />
+					</a>
+					<div class="z-lump ">	
+					<h2><a href="{url r="deal#show" p="id=$deal_item.id"}" title="{$deal_item.name}" class="deal_title">{function name="msubstr" v=$deal_item.name b=0 e=25}</a></h2>
+					
+					<div style="margin-top:-20px;margin-bottom:10px;">
+					{if $deal_item.user_name eq ''}{else}
+					<a href="{url r="home" p="id=$deal_item.user_id"}">{$deal_item.user_name}</a>&nbsp;&nbsp;
+					{/if}
+					{if $deal_item.province neq '' or $deal_item.city neq ''}
+					(
+					{if $deal_item.province neq ''}
+					<span><a href="{url r="deals" p="loc=$deal_item.province"}" title="{$deal_item.province}">{$deal_item.province}</a></span>
+					{/if}
+					{if $deal_item.city neq ''}
+					<span><a href="{url r="deals" p="loc=$deal_item.city"}" title="{$deal_item.city}">{$deal_item.city}</a></span>
+					{/if}
+					)
+					{/if}
+					</div>
+			
+					<!-- 众筹中 -->
+					<p class="z-raising">已获支持：<i>{function name="round" v=$deal_item.support_amount e=2}</i><em>元</em></p>
+					<div class="progress-bar">
+					<span class="progress bg-yellow" style="width:{$deal_item.percent}%;"></span>
+					</div>
+					<div class="item-rate clearfix">
+					<span class="rate1">达到：<font color="#f00;">{$deal_item.percent}%</font></span>
+					<span class="rate2">
+					剩余时间：<font color="#f00;">
+					{if $deal_item.begin_time > $now}
+					<span class="num">未上线</span>
+					{elseif $deal_item.end_time < $now and $deal_item.end_time neq 0}
+					<span class="num">已过期</span>
+					{else}
+					<span class="num">
+						{if $deal_item.end_time eq 0}
+						长期项目
+						{else}
+						<font>{$deal_item.remain_days}</font>天
+						{/if}
+					</span>					
+					{/if}
+					</span>	</font>						
+					</div>       
+					<!-- 已成功 -->
+					</div>
+					<p class="z-assist clearfix">
+					<div class="deal_brief" title="{$deal_item.brief}">{function name="msubstr" v=$deal_item.brief b=0 e=45}</div>
+					</p>
+				</div>
+			</li>
+			{/foreach}	
+		</ul>
+	</div>
+</div>
+    <!--热门项目wrap结束-->
+
+    
+    <!--众筹网是什么-->
+    <div class="mong">
+        <div wx-lz="http://zcs3.ncfstatic.com/v3/static/images/index/pio_42.png?v=" class="m-video" style="display: block; background-image: url(&quot;http://zcs3.ncfstatic.com/v3/static/images/index/pio_42.png?v=&quot;);">
+            <div class="wrap m-what-par">
+                <div class="m-what">
+                   <h6>众筹网是什么？</h6>
+                   在这里发起你的梦想、创意和创业计划，便可面对<br>公众集资，让有创造力的你获得所需要的资金，帮助你的梦想实现。
+               </div>
+               <div class="z-flash">
+               <!--a id="Js-flash" href="###" class="flash-botton"></a-->
+               <!-- 可替换图片 start -->
+               <p class=" flash-img">
+                    <img width="671" height="329" wx-lz="http://zcs3.ncfstatic.com/v3/static/images/index/pio_09.jpg?=20140918?v=" style="display: inline;" src="http://127.0.0.1/zc/app/Tpl/zong/images/pio_09.jpg">
+               </p>
+               <!-- 可替换图片 end -->
+               </div>
+            </div>
+        </div>
+    </div>
+    <!--众筹网是什么结束-->
+	
+    <!--统计-->
+    <div class="wrap m-box06">
+        <!-- 数字class名 number 0-9
+           number,number1,number2,number3n,umber4,number5,number6,number7,number8,number9
+           逗号 comma
+         -->
+       	<div id="Js-scrollNum" class="mm">
+		<dl>
+			<dt class="odometer odometer-auto-theme" data-num="6163">
+			<div class="odometer-inside">
+			<span class="odometer-digit">
+				<span class="odometer-digit-spacer">1000,00</span>
+				<span class="odometer-digit-inner">
+					<span class="odometer-ribbon">
+						<span class="odometer-ribbon-inner">
+							<span class="odometer-value">1000,00</span>
+						</span>
+					</span>
+				</span>
+			</span>
+			</div>
+			</dt>
+			<dd><i class="s-01"></i>项目总数</dd>
+		</dl>
+		<dl>
+			<dt class="odometer odometer-auto-theme" data-num="192274">
+			<div class="odometer-inside">
+			<span class="odometer-digit">
+				<span class="odometer-digit-spacer">1000,00</span>
+				<span class="odometer-digit-inner">
+					<span class="odometer-ribbon">
+						<span class="odometer-ribbon-inner">
+							<span class="odometer-value">1000,00</span>
+						</span>
+					</span>
+				</span>
+			</span>
+			</div>
+			</dt>
+			<dd><i class="s-02"></i>累计支持人</dd>
+		</dl>
+		<dl>
+			<dt class="odometer odometer-auto-theme" data-num="74922959">
+			<div class="odometer-inside">
+			<span class="odometer-digit">
+				<span class="odometer-digit-spacer">1000,00</span>
+				<span class="odometer-digit-inner">
+					<span class="odometer-ribbon">
+						<span class="odometer-ribbon-inner">
+							<span class="odometer-value">1000,00</span>
+						</span>
+					</span>
+				</span>
+			</span>
+			</div>
+			</dt>
+			<dd><i class="s-03"></i>累计筹资金额</dd>
+		</dl>
+	</div>
+    </div> 
+    <!--统计结束-->
+	<style>
+	.active-all{ width:1300px; margin:0 auto;}
+	.protect-pers{ float:left; padding-left:20px;}
+	.cont-pr{ float:left; margin-left:22px; display:inline }
+	.tips-pr-02{ background:url(/s/images/home/tips-pr.gif) no-repeat -206px 20px; padding-left:22px;}
+	.tips-pr-03{ background:url(/s/images/home/tips-pr.gif) no-repeat -438px 20px; padding-left:22px;}
+	.odometer.odometer-auto-theme,.odometer.odometer-theme-minimal{display:-moz-inline-box;-moz-box-orient:vertical;display:inline-block;vertical-align:middle;*vertical-align:auto;position:relative;}.odometer.odometer-auto-theme,.odometer.odometer-theme-minimal{*display:inline;}.odometer.odometer-auto-theme .odometer-digit,.odometer.odometer-theme-minimal .odometer-digit{display:-moz-inline-box;-moz-box-orient:vertical;display:inline-block;vertical-align:middle;*vertical-align:auto;position:relative;}.odometer.odometer-auto-theme .odometer-digit,.odometer.odometer-theme-minimal .odometer-digit{*display:inline;}.odometer.odometer-auto-theme .odometer-digit .odometer-digit-spacer,.odometer.odometer-theme-minimal .odometer-digit .odometer-digit-spacer{display:-moz-inline-box;-moz-box-orient:vertical;display:inline-block;vertical-align:middle;*vertical-align:auto;visibility:hidden;}.odometer.odometer-auto-theme .odometer-digit .odometer-digit-spacer,.odometer.odometer-theme-minimal .odometer-digit .odometer-digit-spacer{*display:inline;}.odometer.odometer-auto-theme .odometer-digit .odometer-digit-inner,.odometer.odometer-theme-minimal .odometer-digit .odometer-digit-inner{text-align:center;display:block;position:absolute;top:0;left:0;right:0;bottom:0;overflow:hidden;}.odometer.odometer-auto-theme .odometer-digit .odometer-ribbon,.odometer.odometer-theme-minimal .odometer-digit .odometer-ribbon{display:block;}.odometer.odometer-auto-theme .odometer-digit .odometer-ribbon-inner,.odometer.odometer-theme-minimal .odometer-digit .odometer-ribbon-inner{display:block;-webkit-backface-visibility:hidden;}.odometer.odometer-auto-theme .odometer-digit .odometer-value,.odometer.odometer-theme-minimal .odometer-digit .odometer-value{display:block;-webkit-transform:translateZ(0);}.odometer.odometer-auto-theme .odometer-digit .odometer-value.odometer-last-value,.odometer.odometer-theme-minimal .odometer-digit .odometer-value.odometer-last-value{position:absolute;}.odometer.odometer-auto-theme.odometer-animating-up .odometer-ribbon-inner,.odometer.odometer-theme-minimal.odometer-animating-up .odometer-ribbon-inner{-webkit-transition:-webkit-transform 2s;-moz-transition:-moz-transform 2s;-ms-transition:-ms-transform 2s;-o-transition:-o-transform 2s;transition:transform 2s;}.odometer.odometer-auto-theme.odometer-animating-up.odometer-animating .odometer-ribbon-inner,.odometer.odometer-theme-minimal.odometer-animating-up.odometer-animating .odometer-ribbon-inner{-webkit-transform:translateY(-100%);-moz-transform:translateY(-100%);-ms-transform:translateY(-100%);-o-transform:translateY(-100%);transform:translateY(-100%);}.odometer.odometer-auto-theme.odometer-animating-down .odometer-ribbon-inner,.odometer.odometer-theme-minimal.odometer-animating-down .odometer-ribbon-inner{-webkit-transform:translateY(-100%);-moz-transform:translateY(-100%);-ms-transform:translateY(-100%);-o-transform:translateY(-100%);transform:translateY(-100%);}.odometer-value{margin-top:2px;}.odometer.odometer-auto-theme.odometer-animating-down.odometer-animating .odometer-ribbon-inner,.odometer.odometer-theme-minimal.odometer-animating-down.odometer-animating .odometer-ribbon-inner{-webkit-transition:-webkit-transform 2s;-moz-transition:-moz-transform 2s;-ms-transition:-ms-transform 2s;-o-transition:-o-transform 2s;transition:transform 2s;-webkit-transform:translateY(0);-moz-transform:translateY(0);-ms-transform:translateY(0);-o-transform:translateY(0);transform:translateY(0);}
+	</style>
+	
+	
+    <!--成功案例开始-->
+    <div class="wrap m-box07">
+        <h3>推荐项目</h3>
+         <div class="focus-box">
+<ul class="focus-con clearfix">
+                				<li>
+                    <div class="list-item" style="background: #FFF">
+                    <a href="http://zhong.ronmei.com/index.php?ctl=deal&act=show&id=55" title="原创DIY桌面游戏《功夫》《黄金密码》期待您的支持">
+                           <img src="http://127.0.0.1/zc/app/Tpl/zong/images/021e2f6812298468cfab78cbd07b90ee85.jpg" alt="原创DIY桌面游戏《功夫》《黄金密码》期待您的支持">
+                    </a>
+                    <div class="z-lump ">	
+		<h2> <a href="http://zhong.ronmei.com/index.php?ctl=deal&act=show&id=55" title="原创DIY桌面游戏《功夫》《黄金密码》期待您的支持" class="deal_title">
+        		原创DIY桌面游戏《功夫》《黄金密码》期待您的支持</a>
+        </h2>
+		
+		<!-- 众筹中 -->
+					<p class="z-raising">已筹资<em>￥</em><i>25</i></p>
+			<div class="progress-bar">
+				<span class="progress bg-yellow" style="width:1%;"></span>
+			</div>
+			<div class="item-rate clearfix">
+				<span class="rate1">1%</span>
+				<span class="rate2">剩余
+                213天</span>							
+			</div>       
+		<!-- 已成功 -->
+    </div>
+    <p class="z-assist clearfix">
+    	<a class="assist1" target="_blank" title="喜欢数" href="./融美众筹系统 - 中国众筹系统开发的创新者和颠覆者_files/融美众筹系统 - 中国众筹系统开发的创新者和颠覆者.htm">130</a>
+    	<a class="assist2" target="_blank" title="评论数" href="./融美众筹系统 - 中国众筹系统开发的创新者和颠覆者_files/融美众筹系统 - 中国众筹系统开发的创新者和颠覆者.htm">22</a>
+    </p>
+</div>
+</li>
+				<li>
+                    <div class="list-item" style="background: #FFF">
+                    <a href="http://zhong.ronmei.com/index.php?ctl=deal&act=show&id=56" title="拥有自己的咖啡馆">
+                           <img src="http://127.0.0.1/zc/app/Tpl/zong/images/40e44eb97b0ca5aed5148e59c2cc8dcb95.jpg" alt="拥有自己的咖啡馆">
+                    </a>
+                    <div class="z-lump ">	
+		<h2> <a href="http://zhong.ronmei.com/index.php?ctl=deal&act=show&id=56" title="拥有自己的咖啡馆" class="deal_title">
+        		拥有自己的咖啡馆</a>
+        </h2>
+		
+		<!-- 众筹中 -->
+					<p class="z-raising">已筹资<em>￥</em><i>5050</i></p>
+			<div class="progress-bar">
+				<span class="progress bg-yellow" style="width:101%;"></span>
+			</div>
+			<div class="item-rate clearfix">
+				<span class="rate1">101%</span>
+				<span class="rate2">剩余
+                215天</span>							
+			</div>       
+		<!-- 已成功 -->
+    </div>
+    <p class="z-assist clearfix">
+    	<a class="assist1" target="_blank" title="喜欢数" href="./融美众筹系统 - 中国众筹系统开发的创新者和颠覆者_files/融美众筹系统 - 中国众筹系统开发的创新者和颠覆者.htm">130</a>
+    	<a class="assist2" target="_blank" title="评论数" href="./融美众筹系统 - 中国众筹系统开发的创新者和颠覆者_files/融美众筹系统 - 中国众筹系统开发的创新者和颠覆者.htm">22</a>
+    </p>
+</div>
+</li>
+				<li>
+                    <div class="list-item" style="background: #FFF">
+                    <a href="http://zhong.ronmei.com/index.php?ctl=deal&act=show&id=57" title="短片电影《Blind Love》">
+                           <img src="http://127.0.0.1/zc/app/Tpl/zong/images/0c067c4522bba51595c324028be7070d11.jpg" alt="短片电影《Blind Love》">
+                    </a>
+                    <div class="z-lump ">	
+		<h2> <a href="http://zhong.ronmei.com/index.php?ctl=deal&act=show&id=57" title="短片电影《Blind Love》" class="deal_title">
+        		短片电影《Blind Love》</a>
+        </h2>
+		
+		<!-- 众筹中 -->
+					<p class="z-raising">已筹资<em>￥</em><i>0</i></p>
+			<div class="progress-bar">
+				<span class="progress bg-yellow" style="width:0%;"></span>
+			</div>
+			<div class="item-rate clearfix">
+				<span class="rate1">0%</span>
+				<span class="rate2">剩余
+                201天</span>							
+			</div>       
+		<!-- 已成功 -->
+    </div>
+    <p class="z-assist clearfix">
+    	<a class="assist1" target="_blank" title="喜欢数" href="./融美众筹系统 - 中国众筹系统开发的创新者和颠覆者_files/融美众筹系统 - 中国众筹系统开发的创新者和颠覆者.htm">130</a>
+    	<a class="assist2" target="_blank" title="评论数" href="./融美众筹系统 - 中国众筹系统开发的创新者和颠覆者_files/融美众筹系统 - 中国众筹系统开发的创新者和颠覆者.htm">22</a>
+    </p>
+</div>
+</li>
+				<li>
+                    <div class="list-item" style="background: #FFF">
+                    <a href="http://zhong.ronmei.com/index.php?ctl=deal&act=show&id=58" title="流浪猫的家—爱天使公益咖啡馆的重建需要大家的力量！">
+                           <img src="http://127.0.0.1/zc/app/Tpl/zong/images/438813e6d75cb84c6b0df8ffbad7aa8c31.jpg" alt="流浪猫的家—爱天使公益咖啡馆的重建需要大家的力量！">
+                    </a>
+                    <div class="z-lump ">	
+		<h2> <a href="http://zhong.ronmei.com/index.php?ctl=deal&act=show&id=58" title="流浪猫的家—爱天使公益咖啡馆的重建需要大家的力量！" class="deal_title">
+        		流浪猫的家—爱天使公益咖啡馆的重建需要大家的力量！</a>
+        </h2>
+		
+		<!-- 众筹中 -->
+					<p class="z-raising">已筹资<em>￥</em><i>6000</i></p>
+			<div class="progress-bar">
+				<span class="progress bg-yellow" style="width:200%;"></span>
+			</div>
+			<div class="item-rate clearfix">
+				<span class="rate1">200%</span>
+				<span class="rate2">剩余
+                619天</span>							
+			</div>       
+		<!-- 已成功 -->
+    </div>
+    <p class="z-assist clearfix">
+    	<a class="assist1" target="_blank" title="喜欢数" href="./融美众筹系统 - 中国众筹系统开发的创新者和颠覆者_files/融美众筹系统 - 中国众筹系统开发的创新者和颠覆者.htm">130</a>
+    	<a class="assist2" target="_blank" title="评论数" href="./融美众筹系统 - 中国众筹系统开发的创新者和颠覆者_files/融美众筹系统 - 中国众筹系统开发的创新者和颠覆者.htm">22</a>
+    </p>
+</div>
+</li>
+				<li>
+                    <div class="list-item" style="background: #FFF">
+                    <a href="http://zhong.ronmei.com/index.php?ctl=deal&act=show&id=60" title="融美网贷系统">
+                           <img src="http://127.0.0.1/zc/app/Tpl/zong/images/7bb508121a5fd7381124cd9681fd532053.jpg" alt="融美网贷系统">
+                    </a>
+                    <div class="z-lump ">	
+		<h2> <a href="http://zhong.ronmei.com/index.php?ctl=deal&act=show&id=60" title="融美网贷系统" class="deal_title">
+        		融美网贷系统</a>
+        </h2>
+		
+		<!-- 众筹中 -->
+					<p class="z-raising">已筹资<em>￥</em><i>0</i></p>
+			<div class="progress-bar">
+				<span class="progress bg-yellow" style="width:0%;"></span>
+			</div>
+			<div class="item-rate clearfix">
+				<span class="rate1">0%</span>
+				<span class="rate2">剩余
+                213天</span>							
+			</div>       
+		<!-- 已成功 -->
+    </div>
+    <p class="z-assist clearfix">
+    	<a class="assist1" target="_blank" title="喜欢数" href="./融美众筹系统 - 中国众筹系统开发的创新者和颠覆者_files/融美众筹系统 - 中国众筹系统开发的创新者和颠覆者.htm">130</a>
+    	<a class="assist2" target="_blank" title="评论数" href="./融美众筹系统 - 中国众筹系统开发的创新者和颠覆者_files/融美众筹系统 - 中国众筹系统开发的创新者和颠覆者.htm">22</a>
+    </p>
+</div>
+</li>
+	
+</ul>
+    </div>
+    </div>
+	<!-- 成功案例结束 -->
+	
+    <!--搜索-->
+    <div class="m-box08">
+	<form action="" method="post" id="header_search_form" wx-validator="" autocomplete="off">
+        <div class="m-hank">
+          <input placeholder="搜索项目" name="k" wx-validator-rule="required" type="text" wx-validator-notip="">
+          <!-- <span class="wx-placeholder" style="font-size:16px; color:#ccc;position:absolute;top:-10px;*top:-10px;left:20px;*left:20px;">hjgjhg搜索更多梦想</span> -->
+          <a href="javascript:;" type="submit" class="bh-mhnbo"><i></i></a>
+        </div>
+    </form>
+        <!-- 
+        <div class="m-suoml">
+          <em>热门搜索：</em>
+          <a href="###" target="_blank">爱情，</a>
+          <a href="###" target="_blank">兴趣，</a>
+          <a href="###" target="_blank">甄嬛传，</a>
+          <a href="###" target="_blank">杨坤，</a>
+          <a href="###" target="_blank">众筹，</a>
+          <a href="###" target="_blank">栎阳 , </a>
+          <a href="###" target="_blank"> 甄嬛传，</a>
+          <a href="###" target="_blank">杨坤，</a>
+          <a href="###" target="_blank">众筹 </a>
+        </div>
+         -->
+         <div class="bottom-img"><img src="http://127.0.0.1/zc/app/Tpl/zong/images/pio_49.png"></div>
+    </div>
+    <!--搜索结束-->
+	
+    <!--footer-->
+<style>
+.footer a{display:inline-block; float:none;}
+</style>
+    <div class="footer">
+        <div class="footer-nav">
+            <a target="_blank" rel="nofollow" href="http://zhong.ronmei.com/help-index/id-1">关于我们 <i>｜</i> </a>
+            <a target="_blank" rel="nofollow" href="http://zhong.ronmei.com/help-contact">联系我们 <i>｜</i> </a>
+            <!-- <a href="/help-team" rel="nofollow">团队介绍 <i>｜</i> </a> -->
+            <a target="_blank" rel="nofollow" href="http://zhong.ronmei.com/help-term">服务协议 <i>｜</i> </a>
+            <a target="_blank" rel="nofollow" href="http://zhong.ronmei.com/help-specification">项目发起规范 <i>｜</i> </a>
+            <a target="_blank" href="http://zhong.ronmei.com/special-xinshou">新手帮助 <i>｜</i> </a>
+            <a target="_blank" href="http://zhong.ronmei.com/help-center">帮助中心 <i>｜</i> </a>
+            <a target="_blank" href="http://zhong.ronmei.com/help-tourongzi">投融资服务<i>｜</i></a>
+            <a target="_blank" href="http://news.zhongchou.cn/">众筹资讯</a>
+        </div>
+        <div class="footer-icon">
+            <span>关注我们：</span>
+            <a rel="nofollow" href="http://e.weibo.com/zhongchouwang2013" target="_blank" class="s-05"></a>
+            <a rel="nofollow" href="http://user.qzone.qq.com/2357291729" target="_blank" class="s-06"></a>
+            <a rel="nofollow" href="http://tieba.baidu.com/f?ie=utf-8&kw=%E4%BC%97%E7%AD%B9%E7%BD%91" target="_blank" class="s-07"></a>
+            <a rel="nofollow" href="http://www.douban.com/people/zhongchou_cn/" target="_blank" class="s-08"></a>
+        </div>
+        <div class="footer-copy">
+            <div class="wrap">
+                <div class="m-Links">
+                    <a rel="nofollow" href="http://iof.hexun.com/zhongchou/index.html" target="_blank">和讯网</a>
+                    <a rel="nofollow" href="http://www.leiphone.com/" target="_blank">雷锋网</a>
+                    <a rel="nofollow" href="http://www.36kr.com/" target="_blank">36氪</a>
+                    <a rel="nofollow" href="http://www.hao123.com/" target="_blank">hao123</a>
+                    <a rel="nofollow" href="http://hao.360.cn/" target="_blank">360安全网址</a>
+                    <a rel="nofollow" href="http://www.ynet.com/" target="_blank">北青网</a>
+                    <a rel="nofollow" href="http://finance.ifeng.com/" target="_blank">凤凰网</a>
+                    <a rel="nofollow" href="http://jrj.com.cn/" target="_blank">金融界</a>
+                    <a rel="nofollow" href="http://www.caixin.com/" target="_blank">财新网</a>
+                    <a rel="nofollow" href="http://www.tmtpost.com/" target="_blank">钛媒体</a>
+                    <a rel="nofollow" href="http://www.imgii.com/?zhongchou" target="_blank">IMGII</a>
+                    <a rel="nofollow" href="http://www.m1905.com/film/" target="_blank">电影网</a>
+                    <a rel="nofollow" href="http://www.artron.net/" target="_blank">雅昌艺术网</a>
+                    <a rel="nofollow" href="http://www.vmovier.com/" target="_blank">V电影</a>
+                    <a rel="nofollow" href="http://www.eguan.cn/" target="_blank">易观网</a>
+                    <a rel="nofollow" href="http://www.pedaily.cn/" target="_blank">投资界</a>
+                    <a rel="nofollow" href="http://home.ebrun.com/" target="_blank">亿邦动力社区</a>
+                    <a rel="nofollow" href="http://www.9888.cn/" target="_blank">金融工场</a>
+                    <a rel="nofollow" href="http://www.trchina.org/" target="_blank">投融中国联盟</a>
+                    <a rel="nofollow" href="http://www.youcheng.org/" target="_blank">友成基金会</a>
+                    <a rel="nofollow" href="http://life.renren.com/" target="_blank">人人生活</a>
+                    <a rel="nofollow" href="http://www.meng800.com/" target="_blank">众筹导航</a>
+                    <a rel="nofollow" href="http://www.qidic.com/" target="_blank">奇笛网</a>
+                    <a rel="nofollow" href="http://www.rong360.com/" target="_blank">融360</a>
+                    <a rel="nofollow" href="http://www.diyifangdai.com/" target="_blank">第一房贷</a>
+                    <a rel="nofollow" href="http://finance.ifeng.com/itfinance/index.shtml" target="_blank">凤凰互联网金融</a>
+                    <a href="http://www.huoqiu.cn/" target="_blank">火球网</a>
+                    <a href="http://www.renchoubao.com/" target="_blank">认筹宝</a>
+                    <a href="http://www.kuaidi100.com/" target="_blank">快递查询</a>
+                    <a href="http://www.csai.cn/" target="_blank">希财网</a>         
+                </div>
+                <p>©2014 北京网信众筹网络科技有限公司 zhongchou.cn 版权所有 京ICP备14016844号 | 出版物经营许可证编号新出发（京）批字第直140141号 | 营业性演出许可证 编号：京市演2102 | 食品流通许可证 编号：SP1101051410311599</p>
+            </div>
+        </div>
+    </div>
+    <!--footer结束-->
+    <script src="./app/Tpl/zong/js/main.js" type="text/javascript"></script>
+    <div id="gotop" class="go-top" style="display: none;"></div>
+
+ 
+<script type="text/javascript" src="./app/Tpl/zong/js/b78af.js"></script>
+<div id="fenleiPop" style="display:none;">
+  <div class="Js-pop-close" style="width:1140px;position: relative;">
+    <img wx-lz="http://zcs3.ncfstatic.com/v3/static/images/index/pop.png?v=">
+    <div style="width: 125px; height: 50px; position: absolute; right: 140px; top: 175px; cursor: pointer; z-index: 20;"></div>
+  </div>
+</div><img src="./app/Tpl/zong/js/pv" style="display: none; width: 0px; height: 0px;">
+</body>
+</html>

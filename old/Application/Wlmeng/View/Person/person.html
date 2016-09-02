@@ -1,0 +1,252 @@
+<!doctype html>
+<!--[if lt IE 7 ]> <html class="ie ie6 ie-lt10 ie-lt9 ie-lt8 ie-lt7 no-js" lang="en"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie ie7 ie-lt10 ie-lt9 ie-lt8 no-js" lang="en"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie ie8 ie-lt10 ie-lt9 no-js" lang="en"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie ie9 ie-lt10 no-js" lang="en"> <![endif]-->
+<!--[if gt IE 9]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<!-- the "no-js" class is for Modernizr. -->
+
+<head data-template-set="html5-reset">
+
+    
+<include file="./Application/Wlmeng/View/Public/meta.html" />
+    <title>创业者列表页 | {$system.webname}</title>
+    <link rel="stylesheet" href="__CSS__/style.css" />
+
+
+
+    <script src='__JS__/jquery-1.9.1.min.js'></script>
+                    <script src="__JS__/L_slide.js"></script>
+                    <script src="__JS__/modernizr.custom.97074.js"></script>
+                    <script type="text/javascript" src="__JS__/jquery.hoverdir.js"></script>
+                    <script type="text/javascript">
+                     $(function() {          
+                             $(' #da-thumbs > li ').each( function() { $(this).hoverdir(); } );
+                                            });
+                     </script>
+    </head>
+
+<body >
+<include file="./Application/Wlmeng/View/Public/menu.html" />
+<div class="wrapper">
+<include file="./Application/Wlmeng/View/Public/header.html" />
+
+
+  <div class="page-wrapper" style="padding-top:170px;">
+  
+    <section id="page-content">
+      
+      <article class="two-col-big-left">
+        <div class="normal-box-no-pad">
+
+          <div class="media-list clearfix filter">
+            <div class="media">
+                    
+              <h4 class="pull-left">创业者领域</h4>
+              <ul class="clearfix media-body">
+              	<if condition="$domain_select == 0">
+              		<li class='active' ><a href="{:U('Wlmeng/Person/goPerson',array('keyword'=>$keyword))}">所有</a></li> 
+              	<else/>
+              		<li><a href="{:U('Wlmeng/Person/goPerson')}">所有</a></li> 
+              	</if>
+              	
+              	<volist name="domain" id="vo">
+              		<if condition="$domain_select == $vo['id']">
+              			<li class='active'><a href="{:U('Wlmeng/Person/goPerson',array('domain_s'=>$vo['id'],'keyword'=>$keyword))}">{$vo.dname}</a></li> 
+              		<else/>
+              			<li ><a href="{:U('Wlmeng/Person/goPerson',array('domain_s'=>$vo['id'],'keyword'=>$keyword))}">{$vo.dname}</a></li> 
+              		</if>
+              	</volist>
+                                                
+              </ul>
+             </div>
+
+           </div>
+          
+          <div class="person-list clearfix childen-hover">
+          
+          <ul id="da-thumbs" class="da-thumbs">
+          		<volist name="person" id="vo">
+                    <li>
+                        <strong>
+                            <if condition="$vo['face'] == null">
+          						<img alt="" src="__IMG__/default_user.png" alt="{$vo.username}" title="{$vo.username}"/>
+          					<else/>
+          						<img alt="" src="__ROOT__/{$vo.face}" alt="{$vo.username}" title="{$vo.username}"/>
+          					</if>
+                            <div>
+                            	<span>
+                            		<a href="{:U('Wlmeng/Person/getOnePerson',array('personid'=>$vo['id']))}">{$vo.username}</a>
+                            		<a href="{:U('Company/getOneCompany',array('id'=>$vo['cid']))}">{$vo.name}</a>
+                            		{$vo.member_role}
+                            	</span></div>
+                        </strong>
+                    </li>
+                 </volist>
+            </ul>
+            <!--  
+          	<div id="vertical" class="brand vertical">
+          		<volist name="person" id="vo">
+          			<div class="imgdiv">
+          				<if condition="$vo['face'] == null">
+          					<img alt="" src="__IMG__/default_user.png" alt="{$vo.username}" title="{$vo.username}"/>
+          				<else/>
+          					<img alt="" src="__ROOT__/{$vo.face}" alt="{$vo.username}" title="{$vo.username}"/>
+          				</if>
+                        
+                        <div  class="info">
+                             <div style="width:100%;height:50px;"></div>
+                             <a href="{:U('Wlmeng/Person/getOnePerson',array('personid'=>$vo['id']))}">{$vo.username}</a>
+                             <br/>
+                             <a href="{:U('Company/getOneCompany',array('id'=>$vo['cid']))}">{$vo.name}</a>
+                             <br/>
+                             {$vo.member_role}
+                         </div>
+                    </div>
+          		
+          		</volist>
+          		
+          	</div>
+          	 -->
+         
+          </div>  
+
+          <div class="pagination pagination-right">
+          	<ul>
+          		<volist name="page_show" id="vo">
+          			<if condition="$page_this == $vo['page']">
+          				<li class="active">
+          					<a href="{:U('Person/goPerson',array('page'=>$vo['page'],'domain_s'=>$domain_select,'keyword'=>$keyword))}">
+          						{$vo.page}
+          					</a>
+          				</li>
+          			<else/>
+          				<li  class="page">
+          					<a href="{:U('Person/goPerson',array('page'=>$vo['page'],'domain_s'=>$domain_select,'keyword'=>$keyword))}" class="follow_link">
+          						{$vo.page}
+          					</a>
+          				</li>
+          			</if>
+          		</volist>
+          		<li class="next page"><a class="follow_link" href="{:U('Person/goPerson',array('page'=>$page_next,'domain_s'=>$domain_select,'keyword'=>$keyword))}">下一页 &rarr;</a></li>
+          		<li class="next page"><a class="follow_link" href="{:U('Person/goPerson',array('page'=>$page_last,'domain_s'=>$domain_select,'keyword'=>$keyword))}">尾页 &raquo;</a></li>
+          	</ul>
+          </div><!--pagination-->
+        </div>  
+      
+      </article>
+  </section>  
+    <include file="./Application/Wlmeng/View/Public/footer.html" />
+
+  </div>  
+
+</div>
+<!-- Prompt IE 6 users to install Chrome Frame. Remove this if you support IE 6.
+     http://chromium.org/developers/how-tos/chrome-frame-getting-started -->
+<!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
+
+
+
+<script type="text/javascript">
+  $(function () {
+
+    $('body').on('click','#top_login,.login',function (evt) {
+      open_dialog('login', evt);
+    });
+    
+    $('body').on('click','#top_register',function (evt) {
+      open_dialog('register', evt);
+    });
+
+    $('.btn').each(function () {
+      if($(this).attr('target') == '_blank'){
+        return true;
+      }
+      var href = $(this).attr('href');
+      if(href && /\/(add|claim|login)\/?/g.test(href)){
+        $(this).click(function (evt) {
+          if(!$.cookie('front_identity')){
+            open_dialog('login', evt);
+            return false;
+          }
+        });
+      }
+    });
+
+  });
+</script>
+
+
+<script type="text/javascript" src="__JS__/login.js"></script>
+
+
+
+<script src="__JS__/jquery.uploadify.min.js"></script>
+<script src="__JS__/jquery.Jcrop.min.js"></script>
+<script src="__JS__/jquery-scrollto.js"></script>
+<script src="__JS__/jquery.cookie.js"></script>
+<script src="__JS__/functions.js"></script>
+
+                    <script type="text/javascript">
+//翻转
+var turn = function(target,time,opts){
+    target.find('.imgdiv').hover(function(){
+        $(this).find('img').stop().animate(opts[0],time,function(){
+            $(this).hide().next().show();
+            $(this).next().animate(opts[1],time);
+        });
+    },function(){
+        $(this).find('.info').animate(opts[0],time,function(){
+            $(this).hide().prev().show();
+            $(this).prev().animate(opts[1],time);
+        });
+    });
+}
+var verticalOpts = [{'width':0},{'width':'168px'}];
+turn($('#vertical'),100,verticalOpts);
+</script>
+
+
+<!-- for affix -->
+<script>
+
+  
+  function show_new_affix(){
+    $('#old-affix').hide();
+    $('#new-affix').show();
+  }
+
+  function hide_new_affix(){
+    $('#old-affix').show();
+    $('#new-affix').hide();
+  }
+
+  function check_show_new () {
+    var s = $(window).scrollTop();
+     if (s>1) {
+      show_new_affix();
+     } else {
+      hide_new_affix();
+     }
+  }
+  
+  $(window).scroll(function(){
+    check_show_new();
+  });
+
+  $(window).resize(function(){
+    check_show_new();
+  });
+
+  check_show_new();
+
+  $('body').on('mouseover','#dropdownMenu',function(){
+    $('.dropdown-menu').show();
+  });
+  $('body').on('mouseout','#dropdownMenu',function(){
+   $('.dropdown-menu').hide();
+  });
+</script>
+
+</body>
+</html>

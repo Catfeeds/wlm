@@ -1,0 +1,85 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0024)http://z.jd.com/new.html -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="description" content=""/>
+    <meta name="Keywords" content=""/>
+    <title>未来门精英-登录</title>
+	<link rel="stylesheet" href="__PUBLIC__/css/style.css"/>
+	<link rel="stylesheet" href="__PUBLIC__/css/pintuer.css"/>
+	<link rel="stylesheet" type="text/css" href="__PUBLIC__/css/css.css"/>
+	<link rel="stylesheet" href="__PUBLIC__/css/style4.css" />
+	<script type="text/javascript" src="__PUBLIC__/js/jquery.js"></script>
+	<script type="text/javascript" src="__PUBLIC__/js/pintuer.js"></script>
+	
+</head>
+<body style="background-image: url('__PUBLIC__/images/hero-bg.jpg'); ">
+<!--header-->
+
+<style>
+.user-right {
+    border-left: 3px solid #ddd;
+    border-top: 0 none;
+    margin-top: 0;
+    padding: 120px 0;
+}
+.user-right {
+    
+    margin-top: 50px;
+    padding: 50px 0;
+}
+</style>
+
+
+	<!-- header start -->
+     <!--导航-->
+    <include file="Public/header" /> 
+
+    <!--header end-->
+   
+<!-- start -->
+
+		<div class="app-cam" style="height:400px;margin-top:120px;margin-bottom:20px;">
+			<div style="margin:0 0 0 10em;"><img src="__PUBLIC__/images/wlm_logo.png" class="img-responsive" alt="" style="height:90px;"></div>
+			<form method="post" action="{:U('User/do_login')}">
+				<input type="text" name="user_name" class="text" style="border:2px #f3f3f3 solid;width:100%;" value="请输入您的帐号" onfocus="this.value = &#39;&#39;;" onblur="if (this.value == &#39;&#39;) {this.value = &#39;您的帐号&#39;;}"/>
+				<input type="password" name="user_pwd" style="border:2px #f3f3f3 solid;width:100%;" value="请输入您的密码" onfocus="this.value = &#39;&#39;;" onblur="if (this.value == &#39;&#39;) {this.value = &#39;您的密码&#39;;}"/>
+				<input type="submit" id="sub" value="登陆" style="display:none" />
+				<!-- 新按钮start -->
+				<div style="margin:10px 0 10px  130px;">
+				<a href="#" onclick="$('#sub').click()" class="a-btn">
+						<span class="a-btn-text">快来登录</span> 
+						<span class="a-btn-slide-text">嗨起来!</span>
+						<span class="a-btn-icon-right"><span></span></span>
+				</a>
+				</div>
+				<!-- 新按钮end -->
+				<!-- 新按钮start -->
+				<div style="margin:10px 0 50px  130px;">
+				<a href="{:U('User/register')}" class="a-btn">
+						<span class="a-btn-text">快来加入</span> 
+						<span class="a-btn-slide-text">动起来!</span>
+						<span class="a-btn-icon-right"><span></span></span>
+				</a>
+				</div>
+				<!-- 新按钮end -->
+				<br/>
+				<br/>
+			</form>
+		</div>
+<!-- end -->
+
+
+<!-- 页尾信息start -->
+
+<!--footer-->
+<include file="Public/footer" /> 
+<!--footer end-->
+<!-- 页尾信息end -->
+
+
+</body>
+</html>

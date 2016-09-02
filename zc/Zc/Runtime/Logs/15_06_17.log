@@ -1,0 +1,50 @@
+[ 2015-06-17T15:47:13+08:00 ] 123.121.39.30 /zc/
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000773s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000903s ]
+
+[ 2015-06-17T15:47:20+08:00 ] 123.121.39.30 /zc/
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000596s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000806s ]
+
+[ 2015-06-17T15:49:24+08:00 ] 123.121.39.30 /zc/
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000517s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000647s ]
+
+[ 2015-06-17T15:53:59+08:00 ] 123.121.39.30 /zc/
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000553s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000687s ]
+
+[ 2015-06-17T15:54:41+08:00 ] 123.121.39.30 /zc/
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.013099s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.013251s ]
+
+[ 2015-06-17T16:04:29+08:00 ] 123.121.39.30 /zc/
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000517s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000651s ]
+
+[ 2015-06-17T16:08:01+08:00 ] 123.121.39.30 /zc/
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001162s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001338s ]
+
+[ 2015-06-17T16:29:29+08:00 ] 1.27.120.160 /zc/
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000616s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000800s ]
+
+[ 2015-06-17T16:29:44+08:00 ] 218.202.130.170 /zc/
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000916s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001049s ]
+
+[ 2015-06-17T16:29:55+08:00 ] 1.27.120.160 /zc/
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000520s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000670s ]
+

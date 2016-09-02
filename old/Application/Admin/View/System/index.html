@@ -1,0 +1,88 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>{:C('WEB_NAME')}-{$page_name}</title>
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/css/common.css"/>
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/css/main.css"/>
+<script type="text/javascript" src="__PUBLIC__/js/jquery.min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/layer/layer.min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/js/system.js"></script>
+</head>
+<body>
+<!-- Head -->
+<include file="Public:head" />
+<!-- Head -->
+
+<div class="container clearfix">
+    <!-- sidebar -->
+    <include file="Public:sidebar" />
+    <!--/sidebar-->
+    
+    <div class="main-wrap">
+        <div class="crumb-wrap">
+            <div class="crumb-list"><i class="icon-font"></i><a href="{:C('ADMIN_URL')}">首页</a><span class="crumb-step">&gt;</span><span class="crumb-name">{$page_name}</span></div>
+        </div>
+        <div class="result-wrap">
+            <form action="{:U('System/edit')}" method="post" id="myform" name="myform" onsubmit="return system_check()">
+                <div class="config-items">
+                    <div class="config-title">
+                        <h1><i class="icon-font">&#xe00a;</i>网站信息设置</h1>
+                    </div>
+                    <div class="result-content">
+                        <table width="100%" class="insert-tab">
+                            <tbody>
+                            	<tr>
+                                    <th><i class="require-red">*</i>站点标题：</th>
+                                    <td><input type="text" id="webname" value="{$vo.webname}" size="85" name="webname" class="common-text"></td>
+                                </tr>
+                            	<tr>
+                                	<th width="15%"><i class="require-red">*</i>域名：</th>
+                                	<td><input type="text" id="home" value="{$vo.home}" size="85" name="home" class="common-text"></td>
+                            	</tr>                                
+                                <tr>
+                                    <th><i class="require-red">*</i>关键字：</th>
+                                    <td><input type="text" id="keywords" value="{$vo.keywords}" size="85" name="keywords" class="common-text"></td>
+                                </tr>
+                                <tr>
+                                    <th><i class="require-red">*</i>描述：</th>
+                                    <td><input type="text" id="intro" value="{$vo.intro}" size="85" name="intro" class="common-text"></td>
+                                </tr>
+                                <tr>
+	                                <th width="15%"><i class="require-red">*</i>网站联系邮箱：</th>
+	                                <td><input type="text" id="email" value="{$vo.email}" size="85" name="email" class="common-text"></td>
+	                            </tr>
+                                <tr>
+                                    <th><i class="require-red">*</i>联系人：</th>
+                                    <td><input type="text" id="contact" value="{$vo.contact}" size="85" name="contact" class="common-text"></td>
+                                </tr>
+                                <tr>
+                                    <th><i class="require-red">*</i>联系电话：</th>
+                                    <td><input type="text" id="tel" value="{$vo.tel}" size="85" name="tel" class="common-text"></td>
+                                </tr>
+                                <tr>
+                                    <th><i class="require-red">*</i>备案ICP：</th>
+                                    <td><input type="text" id="icp" value="{$vo.icp}" size="85" name="icp" class="common-text"></td>
+                                </tr>
+                                <tr>
+                                    <th><i class="require-red">*</i>地址：</th>
+                                    <td><input type="text" id="address" value="{$vo.address}" size="85" name="address" class="common-text"></td>
+                                </tr>
+                                <tr>
+                                    <th></th>
+                                    <td>
+                                        <input type="hidden" value="{$vo.id}" name="id">
+                                        <input type="submit" value="提交" class="btn btn-primary btn6 mr10">
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!--/main-->
+</div>
+</body>
+</html>

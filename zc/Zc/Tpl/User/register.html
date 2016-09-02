@@ -1,0 +1,133 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0024)http://z.jd.com/new.html -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=utf8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="Keywords" content="">
+    <title>未来门精英-注册</title>
+        
+</head>
+<body style="background-color:#f3f3f3">
+<!--header-->
+<!-- <link rel="stylesheet" type="text/css" href="./css/style_12_common.css"> -->
+
+	<link rel="stylesheet" href="__PUBLIC__/css/pintuer.css"/>
+	<link rel="stylesheet" href="__PUBLIC__/css/index.css"/>
+	<link rel="stylesheet" href="__PUBLIC__/css/base.css"/>
+	<link rel="stylesheet" type="text/css" href="__PUBLIC__/css/css.css"/>
+	<link rel="stylesheet" href="__PUBLIC__/css/style4.css" />
+	
+	<script src="__PUBLIC__/umeditor/third-party/jquery.min.js"></script>
+	<script type="text/javascript" src="__PUBLIC__/js/pintuer.js"></script>
+	<script type="text/javascript" src="__PUBLIC__/js/register.js"></script>
+	<script type="text/javascript" src="__PUBLIC__/layer/layer.js"></script>
+
+<style>
+.user-right {
+    border-left: 3px solid #ddd;
+    border-top: 0 none;
+    margin-top: 0;
+    padding: 120px 0;
+}
+.user-right {
+    
+    margin-top: 50px;
+    padding: 50px 0;
+}
+</style>
+
+
+	<!-- header start -->
+     <!--导航-->
+    <include file="Public/header" />
+
+    <!--header end-->
+   
+<!-- start -->
+<div class="container" id="container" style="background-color:#fff;height:500px;margin-top:120px">
+
+	<div class="line">
+		<div class="x5 x1-move">
+		</div>
+	</div>
+	<br><br>
+	
+	<!-- 左侧部分start -->
+	<div class="space xs5 xs1-move">
+		<h3 class="padding-bottom border-bottom icon-caret-right"> 会员登录</h3>
+		<br>
+		<div id="notes"></div>
+		<br>
+		<form class="form-x" id="register">
+			<input type="hidden" value="{:U('User/insert')}" id="insURL"/>
+			<input type="hidden" value="{:U('Index/index')}" id="indexURL"/>
+              <div class="form-group">
+                <div class="label"><label for="username">手机号码</label></div>
+                <div class="field">
+                  <input class="input" id="user_name" name="user_name" onblur="sendCode()" size="30" placeholder="您的手机号码" data-validate="required:手机号不可为空" type="text">
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="label"><label for="code">验证码</label></div>
+                <div class="field">
+                  <input class="input" id="code" name="code" size="30" placeholder="您收到的验证码" data-validate="required:验证码不可为空" type="text">
+                  <button class="button margin-top" id="button_code" onclick="sendCode()" >重新获取验证码</button>
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="label"><label for="password">登陆密码</label></div>
+                <div class="field">
+                  <input class="input" id="user_pwd" name="user_pwd" size="30" placeholder="请输入密码" data-validate="required:密码不能为空" type="password">
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="label"><label for="password">重复密码</label></div>
+                <div class="field">
+                  <input class="input" id="user_repwd" name="user_repwd" size="30" placeholder="请重复密码" data-validate="repeat#user_pwd:两次密码输入不一致" type="password">
+                </div>
+              </div>
+            
+			  <!-- 按钮start -->
+			 <div style="margin:10px 0 50px  130px;">
+				<a href="#" onclick="register()" class="a-btn">
+						<span class="a-btn-text">赶快注册</span> 
+						<span class="a-btn-slide-text">点起来!</span>
+						<span class="a-btn-icon-right"><span></span></span>
+				</a>
+			 </div>
+			  <!-- 按钮end -->
+            </form>
+	</div>
+		<!-- 左侧部分end -->
+		
+		<!-- 右侧部分start -->
+		 <div class="space xs5 xs1-move text-center user-right">
+          <h3>已是会员</h3>
+            <br>
+            <a href="{:U('User/login')}" class="text-main">点这里登录</a>，登录网站会员，享会员服务。
+            <br><br><br>
+            <h3>未收到注册确认邮件?</h3>
+            <br>
+            <a class="text-main" href="{:U('User/register')}">点击这里</a> 重发送邮件或修改确认邮箱
+            <br>
+        </div>
+		<!-- 右侧部分end -->
+		<input type="hidden" value="{:U('User/sendCode')}" id="codeURL" />
+			<input type="hidden" value="{:U('User/insert')}" id="insURL" />
+			<input type="hidden" value="{:U('Index/index')}" id="indexURL" />
+
+</div>
+<!-- end -->
+
+
+<!-- 页尾信息start -->
+
+<!--footer-->
+<include file="Public/footer" />
+<!--footer end-->
+<!-- 页尾信息end -->
+
+
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<include file="Public:meta" />
+<title>首页</title>
+<link rel="stylesheet" href="__CSS__/pintuer.css" />
+<link rel="stylesheet" href="__CSS__/wlmjy.css" />
+<link rel="stylesheet" type="text/css" href="__CSS__/component.css" />
+<script type="text/javascript" src="__JS__/jquery-1.7.min.js"></script>
+<script type="text/javascript" src="__JS__/pintuer.js"></script>
+<script type="text/javascript" src="__JS__/wlmjy.js"></script>
+<script src="__JS__/modernizr.custom.js"></script>
+<script type="text/javascript" src="__JS__/idangerous.swiper-2.0.min.js"></script>
+<script type="text/javascript" src="__JS__/ichart.1.2.js"></script> 
+<script type="text/javascript">
+$(function(){
+	function setContentSize() {
+		$('.swiper-content').css({
+			height: $(window).height()-$('.swiper-nav').height()
+		})
+	}
+
+
+
+	//Nav
+	var navSwiper = $('.swiper-nav').swiper({
+		visibilityFullFit: true,
+		slidesPerView:'auto',
+		//Thumbnails Clicks
+		onSlideClick: function(){
+			contentSwiper.swipeTo( navSwiper.clickedSlideIndex )
+		}
+	})
+
+	
+})
+
+$(function(){
+	var width = $('#leftmunt_item').width();
+	var height = width;
+	$(".leftmunt_item_h").height(height);
+	$(".leftmunt_item_h").css('line-height',5);
+});
+
+</script>
+</head>
+
+<body class="cbp-spmenu-push" style="background: linear-gradient(to bottom, #ece4d9 0%,#e9dfd1 100%);">
+
+<include file="Public:menu" />
+
+<script src="__JS__/classie.js"></script>
+<script>
+	var show_top = 0;
+	var show_left = 0;
+	function showLeftMenu(){
+		if(show_top%2 == 0){
+			var menuLeft = document.getElementById('menu_left'),
+				bodys = document.body;
+			classie.toggle( bodys, 'cbp-spmenu-push-toright' );
+			classie.toggle( menuLeft, 'cbp-spmenu-open' );
+			show_left ++;
+		}
+		
+	}
+	
+	function showTopMenu(){
+		if(show_left%2 == 0){
+			var menuTop = document.getElementById('menu_top');
+			classie.toggle( menuTop, 'cbp-spmenu-open' );
+			show_top ++;
+		}
+	}
+</script>
+	<div class="milky">暂无信息</div>
+</body>
+</html>

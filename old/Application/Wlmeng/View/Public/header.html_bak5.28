@@ -1,0 +1,82 @@
+<script>
+    $(function(){
+        $("#ernav li").last().css("width","110px");
+    });
+</script>
+<div id="old-affix" data-spy="affix" data-offset-top="0" style="position:fixed; z-index:9999; width:100%">
+    <header id="page-header" >
+
+        <div class="page-wrapper clearfix">
+
+            <h1 id="logo" style="z-index:999"><a href="{:U('Wlmeng/Index/index')}">未来门</a></h1>
+
+            <div id="top-search" class=" top-search hide pull-left" style="z-index:99999">
+                <form action="{:U('Wlmeng/Search/search')}" method="post" class="clearfix">
+                    <input type="text" name="keyword" id="top-search-word" style="width:170px; z-index:5"/>
+                    <select id="standard-dropdown" name="cat" class="pretty" style="width: 50px;">
+                        <!-- <option  value="company">公司</option> -->
+                        <option selected="selected" value="person">创业者</option>
+                        <option  value="investfirm">投资机构</option>
+                        <option  value="investor">投资人</option>
+                        <option  value="article">文章</option>
+                    </select>
+                    <input id="top-search-submit" type="submit" value="搜索" />
+                </form>
+            </div>
+        </div>
+        <div class="line"></div>
+        <div class="page-wrapper" style="overflow: hidden;padding-top:100px;">
+            <div id="new-header">
+                <ul id="new-nav" class="clearfix">
+                    <li ><a href="{$nav[0]['url']}"> <img src="__CSS__/img/icon_hd.png" class="navImg" alt=""> <span>{$nav[0]['name']}</span></a></li>
+                    <li style="width:150px;"><a href="{$nav[1]['url']}"> <img src="__CSS__/img/icon_wsd.png" class="navImg" alt=""><span>{$nav[1]['name']}</span> </a></li>
+                    <li ><a href="{$nav[2]['url']}"> <img src="__CSS__/img/icon_kmjs.png" class="navImg" alt=""><span>{$nav[2]['name']}</span> </a></li>
+                    <li ><a href="{$nav[3]['url']}"><img src="__CSS__/img/icon_zxrw.png" class="navImg" alt=""> <span>{$nav[3]['name']}</span> </a></li>
+                    <li ><a href="{$nav[4]['url']}"> <img src="__CSS__/img/icon_yysg.png" class="navImg" alt=""><span>{$nav[4]['name']}</span> </a></li>
+                    <li ><a href="{$nav[5]['url']}"> <img src="__CSS__/img/icon_wldt.png" class="navImg" alt=""><span>{$nav[5]['name']}</span></a></li>
+                </ul>
+            </div>
+        </div>	
+    </header>
+</div>
+
+<div id="new-affix" data-spy="affix" data-offset-top="0" style="position:fixed; z-index:9999; width:100%;height:90px;display: none; ">
+    
+    <div class="page-wrapper">
+        
+        <h1 id="logo" style="margin-right:0;"><a href="{:U('Wlmeng/Index/index')}">未来门</a></h1>
+
+        <ul id="new-nav" class="clearfix" style="float:left;margin-top:25px;">
+                    <li style="width:150px; padding-left:15px;"><a target="_blank" href="http://today.itjuzi.com"> <img src="__CSS__/img/icon_wsd.png" class="navImg" alt=""><span>{$nav[1]['name']}</span> </a></li>
+            <li style="width:77px; padding-left:15px;" id="dropdownMenu" ><a  class="" data-toggle="dropdown" aria-expanded="true">更多 <span class="caret"></span></a>
+            
+             <ul class="dropdown-menu childen-hover" role="menu" aria-labelledby="dropdownMenu" style="display:none;">
+             <li ><a target="_blank" href=""> <img src="__CSS__/img/icon_hd.png" class="navImg" alt=""><span>{$nav[0]['name']}</span> </a></li>
+             <li ><a target="_blank" href=""> <img src="__CSS__/img/icon_kmjs.png" class="navImg" alt=""><span>{$nav[2]['name']}</span> </a></li>
+               <li ><a target="_blank" href=""><img src="__CSS__/img/icon_zxrw.png" class="navImg" alt=""> <span>{$nav[3]['name']}</span> </a></li>
+                    <li ><a target="_blank" href=""> <img src="__CSS__/img/icon_yysg.png" class="navImg" alt=""><span>{$nav[4]['name']}</span> </a></li>
+                    <li ><a target="_blank" href=""> <img src="__CSS__/img/icon_wldt.png" class="navImg" alt=""><span>{$nav[5]['name']}</span></a></li>
+              </ul>
+
+            </li>  
+        </ul>
+
+            <div id="top-search" class=" top-search hide pull-left" style="left:20px;margin-top:5px;">
+                <form action="{:U('Wlmeng/Search/search')}" method="post" class="clearfix">
+                    <input type="text" name="keyword" id="top-search-word" style="width:170px; z-index:5"/>
+                    <select id="standard-dropdown" name="cat" class="pretty" style="width: 50px;">
+                        <!-- <option  value="company">公司</option> -->
+                        <option  value="person">创业者</option>
+                        <option  value="investfirm">投资机构</option>
+                        <option  value="investor">投资人</option>
+                        <option  value="article">文章</option>
+                    </select>
+                    <input id="top-search-submit" type="submit" value="搜索" />
+                </form>
+            </div>
+
+                            <!-- <p id="user-top-login" class="pull-right top-has-login"><a href="http://itjuzi.com/user/login">  登录</a> <strong>/</strong> <a href="http://itjuzi.com/user/register">  注册</a></p> -->
+            
+
+    </div>
+</div>

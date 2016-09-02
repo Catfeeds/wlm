@@ -1,0 +1,56 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>最新资讯</title>
+<link rel="stylesheet" href="__CSS__/pintuer.css" />
+<link rel="stylesheet" href="__CSS__/wlmjy.css" />
+<link rel="stylesheet" type="text/css" href="__CSS__/component.css" />
+<script type="text/javascript" src="__JS__/jquery-1.7.min.js"></script>
+<script type="text/javascript" src="__JS__/pintuer.js"></script>
+<script type="text/javascript" src="__JS__/wlmjy.js"></script>
+<script src="__JS__/modernizr.custom.js"></script>
+<script type="text/javascript" src="__JS__/idangerous.swiper-2.0.min.js"></script>
+<script type="text/javascript">
+$(function(){
+	function setContentSize() {
+		$('.swiper-content').css({
+			height: $(window).height()-$('.swiper-nav').height()
+		})
+	}
+
+
+
+	//Nav
+	var navSwiper = $('.swiper-nav').swiper({
+		visibilityFullFit: true,
+		slidesPerView:'auto',
+		//Thumbnails Clicks
+		onSlideClick: function(){
+			contentSwiper.swipeTo( navSwiper.clickedSlideIndex )
+		}
+	})
+
+	
+})
+
+</script>
+</head>
+<body class="cbp-spmenu-push">
+<include file="Public:menu" />
+<div class="main">
+	<div class="me">
+		<div class="me_content myinfo_list">
+			<img src="images/u=3135582527,842621827&fm=23&gp=0.jpg" class="img-border radius-small" />
+			<span>{$_SESSION['uname']}</span>
+		</div>
+		<hr />
+	</div>
+	<div class="me_list myinfo_list" style=" margin-top:20px" onclick="window.location.href='{:U('User/email')}'">邮箱<left><span style="margin-right:20px">{$my.email}</span>></left></div><hr />
+	<div class="me_list myinfo_list">所在地区<left><span style="margin-right:20px">{$my.province}-{$my.city}</span>></left></div><hr />
+	<div class="me_list myinfo_list">性别<left><span style="margin-right:20px"><if condition="$my['sex'] == 0">女</if><if condition="$my['sex'] == 1">男</if><if condition="$my['sex'] == -1">未知</if></span>></left></div><hr />
+	<div class="me_list myinfo_list">真实姓名<left><span style="margin-right:20px">{$my.ex_real_name}</span>></left></div><hr />
+	<div class="me_list myinfo_list">个人简介<left>></left></div><hr />
+</div>
+</body>
+</html>

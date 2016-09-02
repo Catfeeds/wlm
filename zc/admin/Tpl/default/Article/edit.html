@@ -1,0 +1,124 @@
+{// 引入标签库 }
+<tagLib name="html" />
+<include file="Public:header" />
+<script type="text/javascript" src="__ROOT__/system/region.js"></script>	
+<load href='__TMPL__Common/js/deal_edit.js' />
+<script type="text/javascript" src="__TMPL__Common/js/calendar/calendar.php?lang=zh-cn" ></script>
+<load href='__TMPL__Common/js/calendar/calendar.css' />
+<load href='__TMPL__Common/js/calendar/calendar.js' />
+<div class="main">
+<div class="main_title">添加新闻&nbsp;<a href="{:u("Article/index")}" class="back_list">返还列表</a></div>
+<div class="blank5"></div>
+<form name="insert" action="{:U('Article/modify')}" method="post" enctype="multipart/form-data">
+<table class="form conf_tab" cellpadding=0 cellspacing=0 >
+	<tr>
+		<td colspan=2 class="topTd"></td>
+	</tr>
+	<tr>
+		<td class="item_title">新闻标题:</td>
+		<td class="item_input"><input type="text" class="textbox" value="{$vo.title}" name="title" /></td>
+	</tr>
+		<!-- <tr>
+		<td class="item_title">关键字:</td>
+		<td class="item_input"><input type="text" class="textbox" name="keywords" style="width:500px;" value="{$vo.keywords}" /> <span class='tip_span'>用‘、’分隔</span></td>	
+	</tr> -->
+	<tr>
+		<td class="item_title">作者:</td>
+		<td class="item_input"><input type="text" class="textbox" name="author" value="{$vo.author}" style="width:30px;" /></td>
+	</tr>
+	<tr>
+		<td class="item_title">点击量:</td>
+		<td class="item_input"><input type="text" class="textbox" name="hits" value="{$vo.hits}" style="width:30px;" /></td>
+	</tr>
+	<tr>
+		<td class="item_title">链接:</td>
+		<td class="item_input"><input type="text" class="textbox" name="urls" value="{$vo.urls}" style="width:50%;" /></td>
+	</tr>
+	<tr>
+		<td class="item_title">图片:</td>
+		<td class="item_input">
+			<html:imgUpload name ='image' id='image' value='$vo.image' />
+		</td>
+	</tr>
+	<tr>
+		<td class="item_title">添加时间:</td>
+		<td class="item_input">
+			<input type="text" class="textbox" name="addtime" id="begin_time" value="{$vo.addtime|date='Y-m-d H:i:s',###}" onfocus="this.blur(); return showCalendar('begin_time', '%Y-%m-%d %H:%M:%S', false, false, 'btn_begin_time');" />
+			<input type="button" class="button" id="btn_begin_time" value="选择时间" onclick="return showCalendar('begin_time', '%Y-%m-%d %H:%M:%S', false, false, 'btn_begin_time');" />	
+			<input type="button" class="button" value="清空时间" onclick="$('#begin_time').val('');" />	
+
+		</td>
+	</tr>	
+		
+	<tr>
+		<td class="item_title">描述:</td>
+		<td class="item_input">
+			<textarea name="intro" style="width:600px;">{$vo.intro}</textarea>
+		</td>
+	</tr>
+	
+	<!-- <tr>
+		<td class="item_title">详情:</td>
+		<td class="item_input">
+			 <html:editor id="description" name="content" type="KINDEDITOR" content="{$vo.content}" />
+		</td>
+	</tr>
+	 -->
+	<tr>
+		<td class="item_title">详情</td>
+		<td class="item_input">
+			<script id="container" name="content" type="text/plain">
+        	{$vo.content}
+    		</script>
+    		<!-- 配置文件 -->
+    		<script type="text/javascript" src="__ROOT__/admin/public/ueditor/ueditor.config.js"></script>
+    		<!-- 编辑器源码文件 -->
+    		<script type="text/javascript" src="__ROOT__/admin/public/ueditor/ueditor.all.js"></script>
+    		<!-- 实例化编辑器 -->
+    		<script type="text/javascript">
+	    	    //var ue = UE.getEditor('container');
+	    	    var ue = UE.getEditor('container', {initialFrameWidth:900});
+		    </script>
+		</td>
+	</tr>
+	
+	<tr>
+		<td class="item_title">发布:</td>
+		<td class="item_input">
+			<lable>是<input type="radio" name="enable" value="1" <if condition="$vo.enable eq 1"> checked="checked"</if>  /></lable>
+			<lable>否<input type="radio" name="enable" value="0" <if condition="$vo.enable eq 0"> checked="checked"</if> /></lable>
+		</td>
+	</tr>
+	
+	<tr>
+		<td class="item_title">推荐:</td>
+		<td class="item_input">
+			<lable>是<input type="radio" name="rec" value="1" <if condition="$vo.rec eq 1"> checked="checked"</if> /></lable>
+			<lable>否<input type="radio" name="rec" value="0" <if condition="$vo.rec eq 0"> checked="checked"</if> /></lable>
+		</td>
+	</tr>
+	
+	<tr>
+		<td colspan=2 class="bottomTd"></td>
+	</tr>
+</table>
+
+<div class="blank5"></div>
+	<table class="form" cellpadding=0 cellspacing=0>
+		<tr>
+			<td colspan=2 class="topTd"></td>
+		</tr>
+		<tr>
+			<td class="item_title"></td>
+			<td class="item_input">
+			<input type="hidden" value="{$vo.id}" name="id" />
+			<input type="submit" class="button" value="保存" />
+			</td>
+		</tr>
+		<tr>
+			<td colspan=2 class="bottomTd"></td>
+		</tr>
+	</table> 		 
+</form>
+</div>
+<include file="Public:footer" />

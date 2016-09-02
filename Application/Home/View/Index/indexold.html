@@ -1,0 +1,229 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<meta name="keywords" content="未来门,未来门资本"/>
+<title>未来门资本</title>
+<link href="__PUBLIC__/Home/css/ui.css" rel="stylesheet" type="text/css"/>
+<link href="__PUBLIC__/Home/css/slides.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div class="header" style="border-bottom:6px #0066CC solid;">
+<div class="logo_menu">
+    	<div class="logo"><a href="{:U('Index/index')}">
+		<img src="__PUBLIC__/Home/images/logo2.png" height="91" width="210"></a></div>
+        <!-- <div class="stock"><p>IAT:ASX <font id="finance_info_x">0.02</font> (<font id="finance_info_y">0.00</font>)</p></div> -->
+		<!-- <script src="js/ga.js" async="" type="text/javascript"></script><script>
+		function finance_info() {
+			$.ajax({
+				url: "/index.php/gu",
+				dataType: "json",
+				type: "POST",
+				success: function(s) {
+					if (typeof s.data.x != 'undefined')
+					{
+						$("#finance_info_x").html(s.data.x);
+						$("#finance_info_y").html(s.data.y);
+					}
+				}
+			});
+			setTimeout(function() {
+				finance_info();
+			}, 30000);
+			//设置30秒读取一次.. 读取频繁,会被k的.. 同步修改index.php/gu 
+		};
+		setTimeout(function() {
+			finance_info();
+		}, 1000);
+
+		</script> -->
+        <div class="menu" style="padding-left:10%;">
+        	<ul>
+				<li>
+					<a href="" class="s1">微股权交易中心</a>
+				</li>
+               
+             <li><a href="{:U('Article/show',array('type'=>1))}" class="s4">集团业务</a>
+                </li>
+               <li><a href="{:U('Article/show',array('type'=>2))}" class="s5">集团框架</a>
+                </li>
+            	<li><a href="{:U('Article/show',array('type'=>3))}" class="s7">联系我们</a></li>
+            </ul>
+        </div>
+    
+    </div>
+
+</div>
+
+<div class="main_ad">
+	<div class="banner" style="border-bottom:2px rgba(0, 102, 204, 0.74) solid;">
+    <img src="__PUBLIC__/Home/images/index_banner.jpg" height="393" width="974"/>
+	<!--<div id="slides">
+          <div class="slides_container">
+                <div class="slide"></div>
+             </div>
+       </div>-->
+</div>
+
+<!-- 集团新闻+集团概述START -->
+<div class="content" style="border-bottom:2px rgba(0, 102, 204, 0.74) solid; padding-bottom: 10px;">
+		<!-- 集团新闻START -->
+    	<div class="news_column">
+        	<div class="news_title">
+            	<h2 style="padding-top:10px;">
+					<font style="font-size:14px;color:#006699;">集团新闻</font>
+					<font style="font-size:12px;margin-left:300px"><a href="{:U('News/newslist')}">更多</a></font>
+				</h2>
+            </div>
+            <div class="news_con">
+            	<ul>
+            		<volist name="news" id="vo" offset="0" length='7'>
+            			<li style="width:400px;"><p><a href="{$vo.url}" title="{$vo.title}">{$vo.title}</a></p><span>{$vo.create_time}</span></li>
+            		</volist>
+				</ul>
+            </div>
+		</div>
+		<!-- 集团新闻END -->
+		<!-- 集团概述START -->
+        <div class="company_column">
+        	<div class="company_title">
+        		<h2 style="padding-top:10px;">
+					<font style="font-size:14px;color:#006699;">集团概述</font>
+					<font style="font-size:12px;margin-left:440px"><a href="{:U('Article/show',array('type'=>4))}">更多</a></font>
+				</h2>
+            </div>
+         <div class="company_con">
+            	<div class="left_pic">
+                		<div style="visibility: visible; overflow: hidden; position: relative; z-index: 2; left: 0px; width: 150px;" class="index_conmany"><!--width: 246px;-->
+                				<ul style="margin: 0px; padding: 0px; position: relative; list-style-type: none; z-index: 1; width: 1968px; left: -1230px;">
+									<volist name="img" id="vo">
+										<li style="overflow: hidden; float: left; width: 246px; height: 190px;"><img style="width: 246px; height: 190px;" src="{$vo.img}"></li>
+									</volist>
+                              </ul>
+                              </div>
+                	</div>
+                <div class="right_text">{$com.content|htmlspecialchars_decode}</div>
+            	<div class="clear"></div>
+            </div>
+      </div>
+	  <!-- 集团概述END -->
+    <div class="clear"></div>
+</div>
+    <!-- 集团新闻+集团概述END -->
+	
+	<!-- 合作企业+视频展示START -->
+		<div class="content" style="border-bottom:6px #0066CC solid;">
+		<!-- 合作企业START -->
+    	<div class="news_column">
+        	<div class="news_title">
+            	<h2 style="padding-top:10px;">
+					<font style="font-size:14px;color:#006699;">合作企业</font>
+				</h2>
+            </div>
+            <div style="width:400px; text-align:center; padding-top:20px;">
+            	<volist name="pic" id="vo">
+            		<div style="display:inline-block; width:60x;height:60px;  margin-right:25px; margin-bottom:20px;">
+            			<span><img src="{$vo.img}" style="width:60px;height:60px;"/></span>
+            		</div>
+            	</volist>
+            	<!-- <ul>
+					<li style="width:100px;height:100px;"><img src="images/WEINXIN_logo.jpg" style="width:100px;height:100px;"/></li>
+					<li style="width:100px;height:100px;"><img src="images/WEINXIN_logo.jpg" style="width:100px;height:100px;"/></li>
+				</ul> -->
+            </div>
+		</div>
+		<!-- 合作企业END -->
+		<!-- 视频展示START -->
+        <div class="company_column">
+        	<div class="company_title">
+        		<h2 style="padding-top:10px;">
+					<font style="font-size:14px;color:#006699;">视频展示</font>
+				</h2>
+            </div>
+         <div class="company_con" style="padding-top:0px">
+            	<div class="left_pic" style="width:520px;height:270px;">
+					<!-- <embed src="./Vedio/00008.swf"  autostart="true" loop="true" width="400" height="250"></embed> -->
+                	<script type="text/javascript" src="__PUBLIC__/Home/js/swfobject.js"></script>
+					<div class="video" id="CuPlayer" style="950px;margin:0 auto;">
+						<strong>我爱播放器(52player.com) 提示：您的Flash Player版本过低，请<a href="http://www.52player.com/">点此进行网页播放器升级</a>！</strong></div>
+						<script type="text/javascript">
+							var so = new SWFObject("./Vedio/52playerVM2.swf","CuPlayerVM2","540","260","9","#000000");
+							so.addParam("allowfullscreen","true");
+							so.addParam("allowscriptaccess","always");
+							so.addParam("wmode","opaque");
+							so.addParam("quality","high");
+							so.addParam("salign","lt");
+							so.addVariable("video_file","./00008.flv"); //视频文件地址
+							so.addVariable("playbtn_scale","1"); //播放按钮缩放
+							so.addVariable("auto_play","yes"); //是否自动播放
+							so.addVariable("clock_display","yes"); 
+							so.addVariable("fullscreen_display","y");  //是否允许全屏
+							so.write("CuPlayer");
+						</script>
+                </div>
+                <div class="clear"></div>
+                <div style="position: relative; top: -5px; text-align: center; font-size:13px;">
+                	中国极客协会创始人罗力良,曾就职世界500强企业力宝集团30年,力潮投控董事总经理.
+                </div>
+               </div>
+        </div>
+	  <!-- 视频展示END -->
+    <div class="clear"></div>
+</div>
+	<!-- 合作企业+视频展示END -->
+	
+	<div>
+	</div>
+	
+</div>
+<div class="footer">
+	<div class="footer_line">
+    	<ul>
+        	<li><a href="/">首页</a></li>
+        	<script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1256323701'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s4.cnzz.com/z_stat.php%3Fid%3D1256323701%26show%3Dpic1' type='text/javascript'%3E%3C/script%3E"));</script>
+
+        </ul>
+    </div>
+    <div class="copyright">客户服务热线 : 4000911222 <span>|</span>京ICP备 <span>15043006号-1</span></div>
+</div>
+ <!-- <div class="announcement">本网站假设IAT成功收购和润集团。</div> -->
+
+<script src="__PUBLIC__/Home/js/jquery.js" language="javascript"></script>
+<script src="__PUBLIC__/Home/js/common.js" language="javascript"></script>
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-35089061-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script> 
+
+<script src="__PUBLIC__/Home/js/slides.js" language="javascript"></script>
+<script src="__PUBLIC__/Home/js/jc.js" language="javascript"></script>
+<script>
+$('.news_con').find('li:last').css({'border':'none'});
+/*$('#slides').slides({
+	effect: 'fade, fade',
+	fadeSpeed: 600
+	
+});*/
+
+$(".index_conmany").jCarouselLite({
+	speed:500,
+	auto:3000,
+	start: 0,
+	visible:1,
+	circular: true,
+	mouseWheel :true
+});
+
+
+</script>
+
+ </body></html>

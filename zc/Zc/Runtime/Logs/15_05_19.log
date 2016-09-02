@@ -1,0 +1,431 @@
+[ 2015-05-19T00:12:44+08:00 ] 127.0.0.1 /zcw/
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `fanwe_deal` [ RunTime:0.008001s ]
+SQL: SELECT id,name,image,end_time,limit_price,brief,support_amount,user_name,user_id,province,city FROM `fanwe_deal` WHERE ( `is_effect` = 1 ) AND ( `is_recommend` = 1 ) ORDER BY sort desc,id desc LIMIT 0,5   [ RunTime:0.001000s ]
+SQL: SELECT id,name,image,end_time,limit_price,brief,support_amount,user_name,user_id,province,city FROM `fanwe_deal` WHERE ( `is_effect` = 1 ) AND ( `is_classic` = 1 ) ORDER BY sort desc,id desc LIMIT 0,5   [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+SQL: SHOW COLUMNS FROM `fanwe_conf` [ RunTime:0.093006s ]
+SQL: SELECT `value` FROM `fanwe_conf` WHERE ( `name` = 'SEO_TITLE' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT `value` FROM `fanwe_conf` WHERE ( `name` = 'SEO_KEYWORD' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT `value` FROM `fanwe_conf` WHERE ( `name` = 'SEO_DESCRIPTION' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fanwe_nav` [ RunTime:0.111006s ]
+SQL: SELECT * FROM `fanwe_nav` ORDER BY sort  [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `fanwe_deal_cate` [ RunTime:0.192011s ]
+SQL: SELECT * FROM `fanwe_deal_cate` ORDER BY id  [ RunTime:0.002001s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' E:\workspaceszend\zcw\App\Runtime\Cache\f331a3f0d874c4248458495ef2c2c2d1.php 第 242 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' E:\workspaceszend\zcw\App\Runtime\Cache\f331a3f0d874c4248458495ef2c2c2d1.php 第 246 行.
+NOTIC: [8] Use of undefined constant support_amount - assumed 'support_amount' E:\workspaceszend\zcw\App\Runtime\Cache\f331a3f0d874c4248458495ef2c2c2d1.php 第 253 行.
+NOTIC: [8] Use of undefined constant limit_price - assumed 'limit_price' E:\workspaceszend\zcw\App\Runtime\Cache\f331a3f0d874c4248458495ef2c2c2d1.php 第 253 行.
+NOTIC: [8] Use of undefined constant support_amount - assumed 'support_amount' E:\workspaceszend\zcw\App\Runtime\Cache\f331a3f0d874c4248458495ef2c2c2d1.php 第 255 行.
+NOTIC: [8] Use of undefined constant limit_price - assumed 'limit_price' E:\workspaceszend\zcw\App\Runtime\Cache\f331a3f0d874c4248458495ef2c2c2d1.php 第 255 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' E:\workspaceszend\zcw\App\Runtime\Cache\f331a3f0d874c4248458495ef2c2c2d1.php 第 242 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' E:\workspaceszend\zcw\App\Runtime\Cache\f331a3f0d874c4248458495ef2c2c2d1.php 第 246 行.
+NOTIC: [8] Use of undefined constant support_amount - assumed 'support_amount' E:\workspaceszend\zcw\App\Runtime\Cache\f331a3f0d874c4248458495ef2c2c2d1.php 第 253 行.
+NOTIC: [8] Use of undefined constant limit_price - assumed 'limit_price' E:\workspaceszend\zcw\App\Runtime\Cache\f331a3f0d874c4248458495ef2c2c2d1.php 第 253 行.
+NOTIC: [8] Use of undefined constant support_amount - assumed 'support_amount' E:\workspaceszend\zcw\App\Runtime\Cache\f331a3f0d874c4248458495ef2c2c2d1.php 第 255 行.
+NOTIC: [8] Use of undefined constant limit_price - assumed 'limit_price' E:\workspaceszend\zcw\App\Runtime\Cache\f331a3f0d874c4248458495ef2c2c2d1.php 第 255 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' E:\workspaceszend\zcw\App\Runtime\Cache\f331a3f0d874c4248458495ef2c2c2d1.php 第 242 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' E:\workspaceszend\zcw\App\Runtime\Cache\f331a3f0d874c4248458495ef2c2c2d1.php 第 246 行.
+NOTIC: [8] Use of undefined constant support_amount - assumed 'support_amount' E:\workspaceszend\zcw\App\Runtime\Cache\f331a3f0d874c4248458495ef2c2c2d1.php 第 253 行.
+NOTIC: [8] Use of undefined constant limit_price - assumed 'limit_price' E:\workspaceszend\zcw\App\Runtime\Cache\f331a3f0d874c4248458495ef2c2c2d1.php 第 253 行.
+NOTIC: [8] Use of undefined constant support_amount - assumed 'support_amount' E:\workspaceszend\zcw\App\Runtime\Cache\f331a3f0d874c4248458495ef2c2c2d1.php 第 255 行.
+NOTIC: [8] Use of undefined constant limit_price - assumed 'limit_price' E:\workspaceszend\zcw\App\Runtime\Cache\f331a3f0d874c4248458495ef2c2c2d1.php 第 255 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' E:\workspaceszend\zcw\App\Runtime\Cache\f331a3f0d874c4248458495ef2c2c2d1.php 第 242 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' E:\workspaceszend\zcw\App\Runtime\Cache\f331a3f0d874c4248458495ef2c2c2d1.php 第 246 行.
+NOTIC: [8] Use of undefined constant support_amount - assumed 'support_amount' E:\workspaceszend\zcw\App\Runtime\Cache\f331a3f0d874c4248458495ef2c2c2d1.php 第 253 行.
+NOTIC: [8] Use of undefined constant limit_price - assumed 'limit_price' E:\workspaceszend\zcw\App\Runtime\Cache\f331a3f0d874c4248458495ef2c2c2d1.php 第 253 行.
+NOTIC: [8] Use of undefined constant support_amount - assumed 'support_amount' E:\workspaceszend\zcw\App\Runtime\Cache\f331a3f0d874c4248458495ef2c2c2d1.php 第 255 行.
+NOTIC: [8] Use of undefined constant limit_price - assumed 'limit_price' E:\workspaceszend\zcw\App\Runtime\Cache\f331a3f0d874c4248458495ef2c2c2d1.php 第 255 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `fanwe_deal` LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT SUM(support_count) AS tp_sum FROM `fanwe_deal` LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT SUM(support_amount) AS tp_sum FROM `fanwe_deal` LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' E:\workspaceszend\zcw\App\Runtime\Cache\f331a3f0d874c4248458495ef2c2c2d1.php 第 352 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' E:\workspaceszend\zcw\App\Runtime\Cache\f331a3f0d874c4248458495ef2c2c2d1.php 第 356 行.
+NOTIC: [8] Use of undefined constant support_amount - assumed 'support_amount' E:\workspaceszend\zcw\App\Runtime\Cache\f331a3f0d874c4248458495ef2c2c2d1.php 第 363 行.
+NOTIC: [8] Use of undefined constant limit_price - assumed 'limit_price' E:\workspaceszend\zcw\App\Runtime\Cache\f331a3f0d874c4248458495ef2c2c2d1.php 第 363 行.
+NOTIC: [8] Use of undefined constant support_amount - assumed 'support_amount' E:\workspaceszend\zcw\App\Runtime\Cache\f331a3f0d874c4248458495ef2c2c2d1.php 第 365 行.
+NOTIC: [8] Use of undefined constant limit_price - assumed 'limit_price' E:\workspaceszend\zcw\App\Runtime\Cache\f331a3f0d874c4248458495ef2c2c2d1.php 第 365 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' E:\workspaceszend\zcw\App\Runtime\Cache\f331a3f0d874c4248458495ef2c2c2d1.php 第 352 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' E:\workspaceszend\zcw\App\Runtime\Cache\f331a3f0d874c4248458495ef2c2c2d1.php 第 356 行.
+NOTIC: [8] Use of undefined constant support_amount - assumed 'support_amount' E:\workspaceszend\zcw\App\Runtime\Cache\f331a3f0d874c4248458495ef2c2c2d1.php 第 363 行.
+NOTIC: [8] Use of undefined constant limit_price - assumed 'limit_price' E:\workspaceszend\zcw\App\Runtime\Cache\f331a3f0d874c4248458495ef2c2c2d1.php 第 363 行.
+NOTIC: [8] Use of undefined constant support_amount - assumed 'support_amount' E:\workspaceszend\zcw\App\Runtime\Cache\f331a3f0d874c4248458495ef2c2c2d1.php 第 365 行.
+NOTIC: [8] Use of undefined constant limit_price - assumed 'limit_price' E:\workspaceszend\zcw\App\Runtime\Cache\f331a3f0d874c4248458495ef2c2c2d1.php 第 365 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' E:\workspaceszend\zcw\App\Runtime\Cache\f331a3f0d874c4248458495ef2c2c2d1.php 第 352 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' E:\workspaceszend\zcw\App\Runtime\Cache\f331a3f0d874c4248458495ef2c2c2d1.php 第 356 行.
+NOTIC: [8] Use of undefined constant support_amount - assumed 'support_amount' E:\workspaceszend\zcw\App\Runtime\Cache\f331a3f0d874c4248458495ef2c2c2d1.php 第 363 行.
+NOTIC: [8] Use of undefined constant limit_price - assumed 'limit_price' E:\workspaceszend\zcw\App\Runtime\Cache\f331a3f0d874c4248458495ef2c2c2d1.php 第 363 行.
+NOTIC: [8] Use of undefined constant support_amount - assumed 'support_amount' E:\workspaceszend\zcw\App\Runtime\Cache\f331a3f0d874c4248458495ef2c2c2d1.php 第 365 行.
+NOTIC: [8] Use of undefined constant limit_price - assumed 'limit_price' E:\workspaceszend\zcw\App\Runtime\Cache\f331a3f0d874c4248458495ef2c2c2d1.php 第 365 行.
+SQL: SHOW COLUMNS FROM `fanwe_help` [ RunTime:0.007001s ]
+SQL: SELECT * FROM `fanwe_help`  [ RunTime:0.002000s ]
+SQL: SELECT `value` FROM `fanwe_conf` WHERE ( `name` = 'BEI_AN' ) LIMIT 1   [ RunTime:0.000000s ]
+INFO: ParseTemplate Behavior ::run [ RunTime:0.470027s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.470027s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.006000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2015-05-19T20:34:36+08:00 ] 127.0.0.1 /zcw/
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+NOTIC: [2] mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: [2002] ����Ŀ�����������ܾ����޷����ӡ�
+ (trying to connect via tcp://localhost:3306) E:\workspaceszend\zcw\Core\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+NOTIC: [2] mysql_connect() [<a href='function.mysql-connect'>function.mysql-connect</a>]: ����Ŀ�����������ܾ����޷����ӡ�
+ E:\workspaceszend\zcw\Core\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+ERR: ����Ŀ�����������ܾ����޷����ӡ�
+
+
+[ 2015-05-19T20:35:21+08:00 ] 127.0.0.1 /zcw/
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fanwe_deal` [ RunTime:0.101006s ]
+SQL: SELECT id,name,image,end_time,limit_price,brief,support_amount,user_name,user_id,province,city FROM `fanwe_deal` WHERE ( `is_effect` = 1 ) AND ( `is_recommend` = 1 ) ORDER BY sort desc,id desc LIMIT 0,5   [ RunTime:0.019001s ]
+SQL: SELECT id,name,image,end_time,limit_price,brief,support_amount,user_name,user_id,province,city FROM `fanwe_deal` WHERE ( `is_effect` = 1 ) AND ( `is_classic` = 1 ) ORDER BY sort desc,id desc LIMIT 0,5   [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+SQL: SHOW COLUMNS FROM `fanwe_conf` [ RunTime:0.049003s ]
+SQL: SELECT `value` FROM `fanwe_conf` WHERE ( `name` = 'SEO_TITLE' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT `value` FROM `fanwe_conf` WHERE ( `name` = 'SEO_KEYWORD' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `value` FROM `fanwe_conf` WHERE ( `name` = 'SEO_DESCRIPTION' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fanwe_nav` [ RunTime:0.054003s ]
+SQL: SELECT * FROM `fanwe_nav` ORDER BY sort  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fanwe_deal_cate` [ RunTime:0.051003s ]
+SQL: SELECT * FROM `fanwe_deal_cate` ORDER BY id  [ RunTime:0.001000s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' E:\workspaceszend\zcw\App\Runtime\Cache\f331a3f0d874c4248458495ef2c2c2d1.php 第 242 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' E:\workspaceszend\zcw\App\Runtime\Cache\f331a3f0d874c4248458495ef2c2c2d1.php 第 246 行.
+NOTIC: [8] Use of undefined constant support_amount - assumed 'support_amount' E:\workspaceszend\zcw\App\Runtime\Cache\f331a3f0d874c4248458495ef2c2c2d1.php 第 253 行.
+NOTIC: [8] Use of undefined constant limit_price - assumed 'limit_price' E:\workspaceszend\zcw\App\Runtime\Cache\f331a3f0d874c4248458495ef2c2c2d1.php 第 253 行.
+NOTIC: [8] Use of undefined constant support_amount - assumed 'support_amount' E:\workspaceszend\zcw\App\Runtime\Cache\f331a3f0d874c4248458495ef2c2c2d1.php 第 255 行.
+NOTIC: [8] Use of undefined constant limit_price - assumed 'limit_price' E:\workspaceszend\zcw\App\Runtime\Cache\f331a3f0d874c4248458495ef2c2c2d1.php 第 255 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' E:\workspaceszend\zcw\App\Runtime\Cache\f331a3f0d874c4248458495ef2c2c2d1.php 第 242 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' E:\workspaceszend\zcw\App\Runtime\Cache\f331a3f0d874c4248458495ef2c2c2d1.php 第 246 行.
+NOTIC: [8] Use of undefined constant support_amount - assumed 'support_amount' E:\workspaceszend\zcw\App\Runtime\Cache\f331a3f0d874c4248458495ef2c2c2d1.php 第 253 行.
+NOTIC: [8] Use of undefined constant limit_price - assumed 'limit_price' E:\workspaceszend\zcw\App\Runtime\Cache\f331a3f0d874c4248458495ef2c2c2d1.php 第 253 行.
+NOTIC: [8] Use of undefined constant support_amount - assumed 'support_amount' E:\workspaceszend\zcw\App\Runtime\Cache\f331a3f0d874c4248458495ef2c2c2d1.php 第 255 行.
+NOTIC: [8] Use of undefined constant limit_price - assumed 'limit_price' E:\workspaceszend\zcw\App\Runtime\Cache\f331a3f0d874c4248458495ef2c2c2d1.php 第 255 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' E:\workspaceszend\zcw\App\Runtime\Cache\f331a3f0d874c4248458495ef2c2c2d1.php 第 242 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' E:\workspaceszend\zcw\App\Runtime\Cache\f331a3f0d874c4248458495ef2c2c2d1.php 第 246 行.
+NOTIC: [8] Use of undefined constant support_amount - assumed 'support_amount' E:\workspaceszend\zcw\App\Runtime\Cache\f331a3f0d874c4248458495ef2c2c2d1.php 第 253 行.
+NOTIC: [8] Use of undefined constant limit_price - assumed 'limit_price' E:\workspaceszend\zcw\App\Runtime\Cache\f331a3f0d874c4248458495ef2c2c2d1.php 第 253 行.
+NOTIC: [8] Use of undefined constant support_amount - assumed 'support_amount' E:\workspaceszend\zcw\App\Runtime\Cache\f331a3f0d874c4248458495ef2c2c2d1.php 第 255 行.
+NOTIC: [8] Use of undefined constant limit_price - assumed 'limit_price' E:\workspaceszend\zcw\App\Runtime\Cache\f331a3f0d874c4248458495ef2c2c2d1.php 第 255 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' E:\workspaceszend\zcw\App\Runtime\Cache\f331a3f0d874c4248458495ef2c2c2d1.php 第 242 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' E:\workspaceszend\zcw\App\Runtime\Cache\f331a3f0d874c4248458495ef2c2c2d1.php 第 246 行.
+NOTIC: [8] Use of undefined constant support_amount - assumed 'support_amount' E:\workspaceszend\zcw\App\Runtime\Cache\f331a3f0d874c4248458495ef2c2c2d1.php 第 253 行.
+NOTIC: [8] Use of undefined constant limit_price - assumed 'limit_price' E:\workspaceszend\zcw\App\Runtime\Cache\f331a3f0d874c4248458495ef2c2c2d1.php 第 253 行.
+NOTIC: [8] Use of undefined constant support_amount - assumed 'support_amount' E:\workspaceszend\zcw\App\Runtime\Cache\f331a3f0d874c4248458495ef2c2c2d1.php 第 255 行.
+NOTIC: [8] Use of undefined constant limit_price - assumed 'limit_price' E:\workspaceszend\zcw\App\Runtime\Cache\f331a3f0d874c4248458495ef2c2c2d1.php 第 255 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `fanwe_deal` LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT SUM(support_count) AS tp_sum FROM `fanwe_deal` LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT SUM(support_amount) AS tp_sum FROM `fanwe_deal` LIMIT 1   [ RunTime:0.001000s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' E:\workspaceszend\zcw\App\Runtime\Cache\f331a3f0d874c4248458495ef2c2c2d1.php 第 352 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' E:\workspaceszend\zcw\App\Runtime\Cache\f331a3f0d874c4248458495ef2c2c2d1.php 第 356 行.
+NOTIC: [8] Use of undefined constant support_amount - assumed 'support_amount' E:\workspaceszend\zcw\App\Runtime\Cache\f331a3f0d874c4248458495ef2c2c2d1.php 第 363 行.
+NOTIC: [8] Use of undefined constant limit_price - assumed 'limit_price' E:\workspaceszend\zcw\App\Runtime\Cache\f331a3f0d874c4248458495ef2c2c2d1.php 第 363 行.
+NOTIC: [8] Use of undefined constant support_amount - assumed 'support_amount' E:\workspaceszend\zcw\App\Runtime\Cache\f331a3f0d874c4248458495ef2c2c2d1.php 第 365 行.
+NOTIC: [8] Use of undefined constant limit_price - assumed 'limit_price' E:\workspaceszend\zcw\App\Runtime\Cache\f331a3f0d874c4248458495ef2c2c2d1.php 第 365 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' E:\workspaceszend\zcw\App\Runtime\Cache\f331a3f0d874c4248458495ef2c2c2d1.php 第 352 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' E:\workspaceszend\zcw\App\Runtime\Cache\f331a3f0d874c4248458495ef2c2c2d1.php 第 356 行.
+NOTIC: [8] Use of undefined constant support_amount - assumed 'support_amount' E:\workspaceszend\zcw\App\Runtime\Cache\f331a3f0d874c4248458495ef2c2c2d1.php 第 363 行.
+NOTIC: [8] Use of undefined constant limit_price - assumed 'limit_price' E:\workspaceszend\zcw\App\Runtime\Cache\f331a3f0d874c4248458495ef2c2c2d1.php 第 363 行.
+NOTIC: [8] Use of undefined constant support_amount - assumed 'support_amount' E:\workspaceszend\zcw\App\Runtime\Cache\f331a3f0d874c4248458495ef2c2c2d1.php 第 365 行.
+NOTIC: [8] Use of undefined constant limit_price - assumed 'limit_price' E:\workspaceszend\zcw\App\Runtime\Cache\f331a3f0d874c4248458495ef2c2c2d1.php 第 365 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' E:\workspaceszend\zcw\App\Runtime\Cache\f331a3f0d874c4248458495ef2c2c2d1.php 第 352 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' E:\workspaceszend\zcw\App\Runtime\Cache\f331a3f0d874c4248458495ef2c2c2d1.php 第 356 行.
+NOTIC: [8] Use of undefined constant support_amount - assumed 'support_amount' E:\workspaceszend\zcw\App\Runtime\Cache\f331a3f0d874c4248458495ef2c2c2d1.php 第 363 行.
+NOTIC: [8] Use of undefined constant limit_price - assumed 'limit_price' E:\workspaceszend\zcw\App\Runtime\Cache\f331a3f0d874c4248458495ef2c2c2d1.php 第 363 行.
+NOTIC: [8] Use of undefined constant support_amount - assumed 'support_amount' E:\workspaceszend\zcw\App\Runtime\Cache\f331a3f0d874c4248458495ef2c2c2d1.php 第 365 行.
+NOTIC: [8] Use of undefined constant limit_price - assumed 'limit_price' E:\workspaceszend\zcw\App\Runtime\Cache\f331a3f0d874c4248458495ef2c2c2d1.php 第 365 行.
+SQL: SHOW COLUMNS FROM `fanwe_help` [ RunTime:0.053003s ]
+SQL: SELECT * FROM `fanwe_help`  [ RunTime:0.010000s ]
+SQL: SELECT `value` FROM `fanwe_conf` WHERE ( `name` = 'BEI_AN' ) LIMIT 1   [ RunTime:0.001000s ]
+INFO: ParseTemplate Behavior ::run [ RunTime:0.309018s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.309018s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001001s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2015-05-19T20:44:52+08:00 ] 127.0.0.1 /zcw/
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `fanwe_deal` [ RunTime:0.006000s ]
+SQL: SELECT id,name,image,end_time,limit_price,brief,support_amount,user_name,user_id,province,city FROM `fanwe_deal` WHERE ( `is_effect` = 1 ) AND ( `is_recommend` = 1 ) ORDER BY sort desc,id desc LIMIT 0,5   [ RunTime:0.001001s ]
+SQL: SELECT id,name,image,end_time,limit_price,brief,support_amount,user_name,user_id,province,city FROM `fanwe_deal` WHERE ( `is_effect` = 1 ) AND ( `is_classic` = 1 ) ORDER BY sort desc,id desc LIMIT 0,5   [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+SQL: SHOW COLUMNS FROM `fanwe_conf` [ RunTime:0.004001s ]
+SQL: SELECT `value` FROM `fanwe_conf` WHERE ( `name` = 'SEO_TITLE' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT `value` FROM `fanwe_conf` WHERE ( `name` = 'SEO_KEYWORD' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `value` FROM `fanwe_conf` WHERE ( `name` = 'SEO_DESCRIPTION' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `fanwe_nav` [ RunTime:0.004000s ]
+SQL: SELECT * FROM `fanwe_nav` ORDER BY sort  [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `fanwe_deal_cate` [ RunTime:0.004000s ]
+SQL: SELECT * FROM `fanwe_deal_cate` ORDER BY id  [ RunTime:0.001000s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' E:\workspaceszend\zcw\App\Runtime\Cache\f331a3f0d874c4248458495ef2c2c2d1.php 第 242 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' E:\workspaceszend\zcw\App\Runtime\Cache\f331a3f0d874c4248458495ef2c2c2d1.php 第 246 行.
+NOTIC: [8] Use of undefined constant support_amount - assumed 'support_amount' E:\workspaceszend\zcw\App\Runtime\Cache\f331a3f0d874c4248458495ef2c2c2d1.php 第 253 行.
+NOTIC: [8] Use of undefined constant limit_price - assumed 'limit_price' E:\workspaceszend\zcw\App\Runtime\Cache\f331a3f0d874c4248458495ef2c2c2d1.php 第 253 行.
+NOTIC: [8] Use of undefined constant support_amount - assumed 'support_amount' E:\workspaceszend\zcw\App\Runtime\Cache\f331a3f0d874c4248458495ef2c2c2d1.php 第 255 行.
+NOTIC: [8] Use of undefined constant limit_price - assumed 'limit_price' E:\workspaceszend\zcw\App\Runtime\Cache\f331a3f0d874c4248458495ef2c2c2d1.php 第 255 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' E:\workspaceszend\zcw\App\Runtime\Cache\f331a3f0d874c4248458495ef2c2c2d1.php 第 242 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' E:\workspaceszend\zcw\App\Runtime\Cache\f331a3f0d874c4248458495ef2c2c2d1.php 第 246 行.
+NOTIC: [8] Use of undefined constant support_amount - assumed 'support_amount' E:\workspaceszend\zcw\App\Runtime\Cache\f331a3f0d874c4248458495ef2c2c2d1.php 第 253 行.
+NOTIC: [8] Use of undefined constant limit_price - assumed 'limit_price' E:\workspaceszend\zcw\App\Runtime\Cache\f331a3f0d874c4248458495ef2c2c2d1.php 第 253 行.
+NOTIC: [8] Use of undefined constant support_amount - assumed 'support_amount' E:\workspaceszend\zcw\App\Runtime\Cache\f331a3f0d874c4248458495ef2c2c2d1.php 第 255 行.
+NOTIC: [8] Use of undefined constant limit_price - assumed 'limit_price' E:\workspaceszend\zcw\App\Runtime\Cache\f331a3f0d874c4248458495ef2c2c2d1.php 第 255 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' E:\workspaceszend\zcw\App\Runtime\Cache\f331a3f0d874c4248458495ef2c2c2d1.php 第 242 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' E:\workspaceszend\zcw\App\Runtime\Cache\f331a3f0d874c4248458495ef2c2c2d1.php 第 246 行.
+NOTIC: [8] Use of undefined constant support_amount - assumed 'support_amount' E:\workspaceszend\zcw\App\Runtime\Cache\f331a3f0d874c4248458495ef2c2c2d1.php 第 253 行.
+NOTIC: [8] Use of undefined constant limit_price - assumed 'limit_price' E:\workspaceszend\zcw\App\Runtime\Cache\f331a3f0d874c4248458495ef2c2c2d1.php 第 253 行.
+NOTIC: [8] Use of undefined constant support_amount - assumed 'support_amount' E:\workspaceszend\zcw\App\Runtime\Cache\f331a3f0d874c4248458495ef2c2c2d1.php 第 255 行.
+NOTIC: [8] Use of undefined constant limit_price - assumed 'limit_price' E:\workspaceszend\zcw\App\Runtime\Cache\f331a3f0d874c4248458495ef2c2c2d1.php 第 255 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' E:\workspaceszend\zcw\App\Runtime\Cache\f331a3f0d874c4248458495ef2c2c2d1.php 第 242 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' E:\workspaceszend\zcw\App\Runtime\Cache\f331a3f0d874c4248458495ef2c2c2d1.php 第 246 行.
+NOTIC: [8] Use of undefined constant support_amount - assumed 'support_amount' E:\workspaceszend\zcw\App\Runtime\Cache\f331a3f0d874c4248458495ef2c2c2d1.php 第 253 行.
+NOTIC: [8] Use of undefined constant limit_price - assumed 'limit_price' E:\workspaceszend\zcw\App\Runtime\Cache\f331a3f0d874c4248458495ef2c2c2d1.php 第 253 行.
+NOTIC: [8] Use of undefined constant support_amount - assumed 'support_amount' E:\workspaceszend\zcw\App\Runtime\Cache\f331a3f0d874c4248458495ef2c2c2d1.php 第 255 行.
+NOTIC: [8] Use of undefined constant limit_price - assumed 'limit_price' E:\workspaceszend\zcw\App\Runtime\Cache\f331a3f0d874c4248458495ef2c2c2d1.php 第 255 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `fanwe_deal` LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT SUM(support_count) AS tp_sum FROM `fanwe_deal` LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT SUM(support_amount) AS tp_sum FROM `fanwe_deal` LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' E:\workspaceszend\zcw\App\Runtime\Cache\f331a3f0d874c4248458495ef2c2c2d1.php 第 352 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' E:\workspaceszend\zcw\App\Runtime\Cache\f331a3f0d874c4248458495ef2c2c2d1.php 第 356 行.
+NOTIC: [8] Use of undefined constant support_amount - assumed 'support_amount' E:\workspaceszend\zcw\App\Runtime\Cache\f331a3f0d874c4248458495ef2c2c2d1.php 第 363 行.
+NOTIC: [8] Use of undefined constant limit_price - assumed 'limit_price' E:\workspaceszend\zcw\App\Runtime\Cache\f331a3f0d874c4248458495ef2c2c2d1.php 第 363 行.
+NOTIC: [8] Use of undefined constant support_amount - assumed 'support_amount' E:\workspaceszend\zcw\App\Runtime\Cache\f331a3f0d874c4248458495ef2c2c2d1.php 第 365 行.
+NOTIC: [8] Use of undefined constant limit_price - assumed 'limit_price' E:\workspaceszend\zcw\App\Runtime\Cache\f331a3f0d874c4248458495ef2c2c2d1.php 第 365 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' E:\workspaceszend\zcw\App\Runtime\Cache\f331a3f0d874c4248458495ef2c2c2d1.php 第 352 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' E:\workspaceszend\zcw\App\Runtime\Cache\f331a3f0d874c4248458495ef2c2c2d1.php 第 356 行.
+NOTIC: [8] Use of undefined constant support_amount - assumed 'support_amount' E:\workspaceszend\zcw\App\Runtime\Cache\f331a3f0d874c4248458495ef2c2c2d1.php 第 363 行.
+NOTIC: [8] Use of undefined constant limit_price - assumed 'limit_price' E:\workspaceszend\zcw\App\Runtime\Cache\f331a3f0d874c4248458495ef2c2c2d1.php 第 363 行.
+NOTIC: [8] Use of undefined constant support_amount - assumed 'support_amount' E:\workspaceszend\zcw\App\Runtime\Cache\f331a3f0d874c4248458495ef2c2c2d1.php 第 365 行.
+NOTIC: [8] Use of undefined constant limit_price - assumed 'limit_price' E:\workspaceszend\zcw\App\Runtime\Cache\f331a3f0d874c4248458495ef2c2c2d1.php 第 365 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' E:\workspaceszend\zcw\App\Runtime\Cache\f331a3f0d874c4248458495ef2c2c2d1.php 第 352 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' E:\workspaceszend\zcw\App\Runtime\Cache\f331a3f0d874c4248458495ef2c2c2d1.php 第 356 行.
+NOTIC: [8] Use of undefined constant support_amount - assumed 'support_amount' E:\workspaceszend\zcw\App\Runtime\Cache\f331a3f0d874c4248458495ef2c2c2d1.php 第 363 行.
+NOTIC: [8] Use of undefined constant limit_price - assumed 'limit_price' E:\workspaceszend\zcw\App\Runtime\Cache\f331a3f0d874c4248458495ef2c2c2d1.php 第 363 行.
+NOTIC: [8] Use of undefined constant support_amount - assumed 'support_amount' E:\workspaceszend\zcw\App\Runtime\Cache\f331a3f0d874c4248458495ef2c2c2d1.php 第 365 行.
+NOTIC: [8] Use of undefined constant limit_price - assumed 'limit_price' E:\workspaceszend\zcw\App\Runtime\Cache\f331a3f0d874c4248458495ef2c2c2d1.php 第 365 行.
+SQL: SHOW COLUMNS FROM `fanwe_help` [ RunTime:0.004000s ]
+SQL: SELECT * FROM `fanwe_help`  [ RunTime:0.002000s ]
+SQL: SELECT `value` FROM `fanwe_conf` WHERE ( `name` = 'BEI_AN' ) LIMIT 1   [ RunTime:0.001000s ]
+INFO: ParseTemplate Behavior ::run [ RunTime:0.064003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.064003s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.002000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2015-05-19T21:01:47+08:00 ] 127.0.0.1 /zcw/index.php?m=Deals&a=list&province=%E7%A6%8F%E5%BB%BA
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+ERR: 无法加载模块:Deals
+
+[ 2015-05-19T23:11:11+08:00 ] 127.0.0.1 /zcw/
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fanwe_deal` [ RunTime:0.010000s ]
+SQL: SELECT id,name,image,end_time,limit_price,brief,support_amount,user_name,user_id,province,city FROM `fanwe_deal` WHERE ( `is_effect` = 1 ) AND ( `is_recommend` = 1 ) ORDER BY sort desc,id desc LIMIT 0,5   [ RunTime:0.000000s ]
+SQL: SELECT id,name,image,end_time,limit_price,brief,support_amount,user_name,user_id,province,city FROM `fanwe_deal` WHERE ( `is_effect` = 1 ) AND ( `is_classic` = 1 ) ORDER BY sort desc,id desc LIMIT 0,5   [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+SQL: SHOW COLUMNS FROM `fanwe_conf` [ RunTime:0.000000s ]
+SQL: SELECT `value` FROM `fanwe_conf` WHERE ( `name` = 'SEO_TITLE' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `value` FROM `fanwe_conf` WHERE ( `name` = 'SEO_KEYWORD' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `value` FROM `fanwe_conf` WHERE ( `name` = 'SEO_DESCRIPTION' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `fanwe_nav` [ RunTime:0.010000s ]
+SQL: SELECT * FROM `fanwe_nav` ORDER BY sort  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `fanwe_deal_cate` [ RunTime:0.000000s ]
+SQL: SELECT * FROM `fanwe_deal_cate` ORDER BY id  [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' E:\workspaceszend\zcw\App\Runtime\Cache\f331a3f0d874c4248458495ef2c2c2d1.php 第 242 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' E:\workspaceszend\zcw\App\Runtime\Cache\f331a3f0d874c4248458495ef2c2c2d1.php 第 246 行.
+NOTIC: [8] Use of undefined constant support_amount - assumed 'support_amount' E:\workspaceszend\zcw\App\Runtime\Cache\f331a3f0d874c4248458495ef2c2c2d1.php 第 253 行.
+NOTIC: [8] Use of undefined constant limit_price - assumed 'limit_price' E:\workspaceszend\zcw\App\Runtime\Cache\f331a3f0d874c4248458495ef2c2c2d1.php 第 253 行.
+NOTIC: [8] Use of undefined constant support_amount - assumed 'support_amount' E:\workspaceszend\zcw\App\Runtime\Cache\f331a3f0d874c4248458495ef2c2c2d1.php 第 255 行.
+NOTIC: [8] Use of undefined constant limit_price - assumed 'limit_price' E:\workspaceszend\zcw\App\Runtime\Cache\f331a3f0d874c4248458495ef2c2c2d1.php 第 255 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' E:\workspaceszend\zcw\App\Runtime\Cache\f331a3f0d874c4248458495ef2c2c2d1.php 第 242 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' E:\workspaceszend\zcw\App\Runtime\Cache\f331a3f0d874c4248458495ef2c2c2d1.php 第 246 行.
+NOTIC: [8] Use of undefined constant support_amount - assumed 'support_amount' E:\workspaceszend\zcw\App\Runtime\Cache\f331a3f0d874c4248458495ef2c2c2d1.php 第 253 行.
+NOTIC: [8] Use of undefined constant limit_price - assumed 'limit_price' E:\workspaceszend\zcw\App\Runtime\Cache\f331a3f0d874c4248458495ef2c2c2d1.php 第 253 行.
+NOTIC: [8] Use of undefined constant support_amount - assumed 'support_amount' E:\workspaceszend\zcw\App\Runtime\Cache\f331a3f0d874c4248458495ef2c2c2d1.php 第 255 行.
+NOTIC: [8] Use of undefined constant limit_price - assumed 'limit_price' E:\workspaceszend\zcw\App\Runtime\Cache\f331a3f0d874c4248458495ef2c2c2d1.php 第 255 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' E:\workspaceszend\zcw\App\Runtime\Cache\f331a3f0d874c4248458495ef2c2c2d1.php 第 242 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' E:\workspaceszend\zcw\App\Runtime\Cache\f331a3f0d874c4248458495ef2c2c2d1.php 第 246 行.
+NOTIC: [8] Use of undefined constant support_amount - assumed 'support_amount' E:\workspaceszend\zcw\App\Runtime\Cache\f331a3f0d874c4248458495ef2c2c2d1.php 第 253 行.
+NOTIC: [8] Use of undefined constant limit_price - assumed 'limit_price' E:\workspaceszend\zcw\App\Runtime\Cache\f331a3f0d874c4248458495ef2c2c2d1.php 第 253 行.
+NOTIC: [8] Use of undefined constant support_amount - assumed 'support_amount' E:\workspaceszend\zcw\App\Runtime\Cache\f331a3f0d874c4248458495ef2c2c2d1.php 第 255 行.
+NOTIC: [8] Use of undefined constant limit_price - assumed 'limit_price' E:\workspaceszend\zcw\App\Runtime\Cache\f331a3f0d874c4248458495ef2c2c2d1.php 第 255 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' E:\workspaceszend\zcw\App\Runtime\Cache\f331a3f0d874c4248458495ef2c2c2d1.php 第 242 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' E:\workspaceszend\zcw\App\Runtime\Cache\f331a3f0d874c4248458495ef2c2c2d1.php 第 246 行.
+NOTIC: [8] Use of undefined constant support_amount - assumed 'support_amount' E:\workspaceszend\zcw\App\Runtime\Cache\f331a3f0d874c4248458495ef2c2c2d1.php 第 253 行.
+NOTIC: [8] Use of undefined constant limit_price - assumed 'limit_price' E:\workspaceszend\zcw\App\Runtime\Cache\f331a3f0d874c4248458495ef2c2c2d1.php 第 253 行.
+NOTIC: [8] Use of undefined constant support_amount - assumed 'support_amount' E:\workspaceszend\zcw\App\Runtime\Cache\f331a3f0d874c4248458495ef2c2c2d1.php 第 255 行.
+NOTIC: [8] Use of undefined constant limit_price - assumed 'limit_price' E:\workspaceszend\zcw\App\Runtime\Cache\f331a3f0d874c4248458495ef2c2c2d1.php 第 255 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `fanwe_deal` LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT SUM(support_count) AS tp_sum FROM `fanwe_deal` LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT SUM(support_amount) AS tp_sum FROM `fanwe_deal` LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' E:\workspaceszend\zcw\App\Runtime\Cache\f331a3f0d874c4248458495ef2c2c2d1.php 第 352 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' E:\workspaceszend\zcw\App\Runtime\Cache\f331a3f0d874c4248458495ef2c2c2d1.php 第 356 行.
+NOTIC: [8] Use of undefined constant support_amount - assumed 'support_amount' E:\workspaceszend\zcw\App\Runtime\Cache\f331a3f0d874c4248458495ef2c2c2d1.php 第 363 行.
+NOTIC: [8] Use of undefined constant limit_price - assumed 'limit_price' E:\workspaceszend\zcw\App\Runtime\Cache\f331a3f0d874c4248458495ef2c2c2d1.php 第 363 行.
+NOTIC: [8] Use of undefined constant support_amount - assumed 'support_amount' E:\workspaceszend\zcw\App\Runtime\Cache\f331a3f0d874c4248458495ef2c2c2d1.php 第 365 行.
+NOTIC: [8] Use of undefined constant limit_price - assumed 'limit_price' E:\workspaceszend\zcw\App\Runtime\Cache\f331a3f0d874c4248458495ef2c2c2d1.php 第 365 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' E:\workspaceszend\zcw\App\Runtime\Cache\f331a3f0d874c4248458495ef2c2c2d1.php 第 352 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' E:\workspaceszend\zcw\App\Runtime\Cache\f331a3f0d874c4248458495ef2c2c2d1.php 第 356 行.
+NOTIC: [8] Use of undefined constant support_amount - assumed 'support_amount' E:\workspaceszend\zcw\App\Runtime\Cache\f331a3f0d874c4248458495ef2c2c2d1.php 第 363 行.
+NOTIC: [8] Use of undefined constant limit_price - assumed 'limit_price' E:\workspaceszend\zcw\App\Runtime\Cache\f331a3f0d874c4248458495ef2c2c2d1.php 第 363 行.
+NOTIC: [8] Use of undefined constant support_amount - assumed 'support_amount' E:\workspaceszend\zcw\App\Runtime\Cache\f331a3f0d874c4248458495ef2c2c2d1.php 第 365 行.
+NOTIC: [8] Use of undefined constant limit_price - assumed 'limit_price' E:\workspaceszend\zcw\App\Runtime\Cache\f331a3f0d874c4248458495ef2c2c2d1.php 第 365 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' E:\workspaceszend\zcw\App\Runtime\Cache\f331a3f0d874c4248458495ef2c2c2d1.php 第 352 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' E:\workspaceszend\zcw\App\Runtime\Cache\f331a3f0d874c4248458495ef2c2c2d1.php 第 356 行.
+NOTIC: [8] Use of undefined constant support_amount - assumed 'support_amount' E:\workspaceszend\zcw\App\Runtime\Cache\f331a3f0d874c4248458495ef2c2c2d1.php 第 363 行.
+NOTIC: [8] Use of undefined constant limit_price - assumed 'limit_price' E:\workspaceszend\zcw\App\Runtime\Cache\f331a3f0d874c4248458495ef2c2c2d1.php 第 363 行.
+NOTIC: [8] Use of undefined constant support_amount - assumed 'support_amount' E:\workspaceszend\zcw\App\Runtime\Cache\f331a3f0d874c4248458495ef2c2c2d1.php 第 365 行.
+NOTIC: [8] Use of undefined constant limit_price - assumed 'limit_price' E:\workspaceszend\zcw\App\Runtime\Cache\f331a3f0d874c4248458495ef2c2c2d1.php 第 365 行.
+SQL: SHOW COLUMNS FROM `fanwe_help` [ RunTime:0.011000s ]
+SQL: SELECT * FROM `fanwe_help`  [ RunTime:0.000000s ]
+SQL: SELECT `value` FROM `fanwe_conf` WHERE ( `name` = 'BEI_AN' ) LIMIT 1   [ RunTime:0.000000s ]
+INFO: ParseTemplate Behavior ::run [ RunTime:0.065000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.065000s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2015-05-19T23:14:29+08:00 ] 127.0.0.1 /zcw/
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `fanwe_deal` [ RunTime:0.006000s ]
+SQL: SELECT id,name,image,end_time,limit_price,brief,support_amount,user_name,user_id,province,city FROM `fanwe_deal` WHERE ( `is_effect` = 1 ) AND ( `is_recommend` = 1 ) ORDER BY sort desc,id desc LIMIT 0,5   [ RunTime:0.001000s ]
+SQL: SELECT id,name,image,end_time,limit_price,brief,support_amount,user_name,user_id,province,city FROM `fanwe_deal` WHERE ( `is_effect` = 1 ) AND ( `is_classic` = 1 ) ORDER BY sort desc,id desc LIMIT 0,5   [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+SQL: SHOW COLUMNS FROM `fanwe_conf` [ RunTime:0.004000s ]
+SQL: SELECT `value` FROM `fanwe_conf` WHERE ( `name` = 'SEO_TITLE' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT `value` FROM `fanwe_conf` WHERE ( `name` = 'SEO_KEYWORD' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `value` FROM `fanwe_conf` WHERE ( `name` = 'SEO_DESCRIPTION' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fanwe_nav` [ RunTime:0.004001s ]
+SQL: SELECT * FROM `fanwe_nav` ORDER BY sort  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `fanwe_deal_cate` [ RunTime:0.004000s ]
+SQL: SELECT * FROM `fanwe_deal_cate` ORDER BY id  [ RunTime:0.001000s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' E:\workspaceszend\zcw\App\Runtime\Cache\f331a3f0d874c4248458495ef2c2c2d1.php 第 242 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' E:\workspaceszend\zcw\App\Runtime\Cache\f331a3f0d874c4248458495ef2c2c2d1.php 第 246 行.
+NOTIC: [8] Use of undefined constant support_amount - assumed 'support_amount' E:\workspaceszend\zcw\App\Runtime\Cache\f331a3f0d874c4248458495ef2c2c2d1.php 第 253 行.
+NOTIC: [8] Use of undefined constant limit_price - assumed 'limit_price' E:\workspaceszend\zcw\App\Runtime\Cache\f331a3f0d874c4248458495ef2c2c2d1.php 第 253 行.
+NOTIC: [8] Use of undefined constant support_amount - assumed 'support_amount' E:\workspaceszend\zcw\App\Runtime\Cache\f331a3f0d874c4248458495ef2c2c2d1.php 第 255 行.
+NOTIC: [8] Use of undefined constant limit_price - assumed 'limit_price' E:\workspaceszend\zcw\App\Runtime\Cache\f331a3f0d874c4248458495ef2c2c2d1.php 第 255 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' E:\workspaceszend\zcw\App\Runtime\Cache\f331a3f0d874c4248458495ef2c2c2d1.php 第 242 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' E:\workspaceszend\zcw\App\Runtime\Cache\f331a3f0d874c4248458495ef2c2c2d1.php 第 246 行.
+NOTIC: [8] Use of undefined constant support_amount - assumed 'support_amount' E:\workspaceszend\zcw\App\Runtime\Cache\f331a3f0d874c4248458495ef2c2c2d1.php 第 253 行.
+NOTIC: [8] Use of undefined constant limit_price - assumed 'limit_price' E:\workspaceszend\zcw\App\Runtime\Cache\f331a3f0d874c4248458495ef2c2c2d1.php 第 253 行.
+NOTIC: [8] Use of undefined constant support_amount - assumed 'support_amount' E:\workspaceszend\zcw\App\Runtime\Cache\f331a3f0d874c4248458495ef2c2c2d1.php 第 255 行.
+NOTIC: [8] Use of undefined constant limit_price - assumed 'limit_price' E:\workspaceszend\zcw\App\Runtime\Cache\f331a3f0d874c4248458495ef2c2c2d1.php 第 255 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' E:\workspaceszend\zcw\App\Runtime\Cache\f331a3f0d874c4248458495ef2c2c2d1.php 第 242 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' E:\workspaceszend\zcw\App\Runtime\Cache\f331a3f0d874c4248458495ef2c2c2d1.php 第 246 行.
+NOTIC: [8] Use of undefined constant support_amount - assumed 'support_amount' E:\workspaceszend\zcw\App\Runtime\Cache\f331a3f0d874c4248458495ef2c2c2d1.php 第 253 行.
+NOTIC: [8] Use of undefined constant limit_price - assumed 'limit_price' E:\workspaceszend\zcw\App\Runtime\Cache\f331a3f0d874c4248458495ef2c2c2d1.php 第 253 行.
+NOTIC: [8] Use of undefined constant support_amount - assumed 'support_amount' E:\workspaceszend\zcw\App\Runtime\Cache\f331a3f0d874c4248458495ef2c2c2d1.php 第 255 行.
+NOTIC: [8] Use of undefined constant limit_price - assumed 'limit_price' E:\workspaceszend\zcw\App\Runtime\Cache\f331a3f0d874c4248458495ef2c2c2d1.php 第 255 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' E:\workspaceszend\zcw\App\Runtime\Cache\f331a3f0d874c4248458495ef2c2c2d1.php 第 242 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' E:\workspaceszend\zcw\App\Runtime\Cache\f331a3f0d874c4248458495ef2c2c2d1.php 第 246 行.
+NOTIC: [8] Use of undefined constant support_amount - assumed 'support_amount' E:\workspaceszend\zcw\App\Runtime\Cache\f331a3f0d874c4248458495ef2c2c2d1.php 第 253 行.
+NOTIC: [8] Use of undefined constant limit_price - assumed 'limit_price' E:\workspaceszend\zcw\App\Runtime\Cache\f331a3f0d874c4248458495ef2c2c2d1.php 第 253 行.
+NOTIC: [8] Use of undefined constant support_amount - assumed 'support_amount' E:\workspaceszend\zcw\App\Runtime\Cache\f331a3f0d874c4248458495ef2c2c2d1.php 第 255 行.
+NOTIC: [8] Use of undefined constant limit_price - assumed 'limit_price' E:\workspaceszend\zcw\App\Runtime\Cache\f331a3f0d874c4248458495ef2c2c2d1.php 第 255 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `fanwe_deal` LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT SUM(support_count) AS tp_sum FROM `fanwe_deal` LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT SUM(support_amount) AS tp_sum FROM `fanwe_deal` LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' E:\workspaceszend\zcw\App\Runtime\Cache\f331a3f0d874c4248458495ef2c2c2d1.php 第 352 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' E:\workspaceszend\zcw\App\Runtime\Cache\f331a3f0d874c4248458495ef2c2c2d1.php 第 356 行.
+NOTIC: [8] Use of undefined constant support_amount - assumed 'support_amount' E:\workspaceszend\zcw\App\Runtime\Cache\f331a3f0d874c4248458495ef2c2c2d1.php 第 363 行.
+NOTIC: [8] Use of undefined constant limit_price - assumed 'limit_price' E:\workspaceszend\zcw\App\Runtime\Cache\f331a3f0d874c4248458495ef2c2c2d1.php 第 363 行.
+NOTIC: [8] Use of undefined constant support_amount - assumed 'support_amount' E:\workspaceszend\zcw\App\Runtime\Cache\f331a3f0d874c4248458495ef2c2c2d1.php 第 365 行.
+NOTIC: [8] Use of undefined constant limit_price - assumed 'limit_price' E:\workspaceszend\zcw\App\Runtime\Cache\f331a3f0d874c4248458495ef2c2c2d1.php 第 365 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' E:\workspaceszend\zcw\App\Runtime\Cache\f331a3f0d874c4248458495ef2c2c2d1.php 第 352 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' E:\workspaceszend\zcw\App\Runtime\Cache\f331a3f0d874c4248458495ef2c2c2d1.php 第 356 行.
+NOTIC: [8] Use of undefined constant support_amount - assumed 'support_amount' E:\workspaceszend\zcw\App\Runtime\Cache\f331a3f0d874c4248458495ef2c2c2d1.php 第 363 行.
+NOTIC: [8] Use of undefined constant limit_price - assumed 'limit_price' E:\workspaceszend\zcw\App\Runtime\Cache\f331a3f0d874c4248458495ef2c2c2d1.php 第 363 行.
+NOTIC: [8] Use of undefined constant support_amount - assumed 'support_amount' E:\workspaceszend\zcw\App\Runtime\Cache\f331a3f0d874c4248458495ef2c2c2d1.php 第 365 行.
+NOTIC: [8] Use of undefined constant limit_price - assumed 'limit_price' E:\workspaceszend\zcw\App\Runtime\Cache\f331a3f0d874c4248458495ef2c2c2d1.php 第 365 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' E:\workspaceszend\zcw\App\Runtime\Cache\f331a3f0d874c4248458495ef2c2c2d1.php 第 352 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' E:\workspaceszend\zcw\App\Runtime\Cache\f331a3f0d874c4248458495ef2c2c2d1.php 第 356 行.
+NOTIC: [8] Use of undefined constant support_amount - assumed 'support_amount' E:\workspaceszend\zcw\App\Runtime\Cache\f331a3f0d874c4248458495ef2c2c2d1.php 第 363 行.
+NOTIC: [8] Use of undefined constant limit_price - assumed 'limit_price' E:\workspaceszend\zcw\App\Runtime\Cache\f331a3f0d874c4248458495ef2c2c2d1.php 第 363 行.
+NOTIC: [8] Use of undefined constant support_amount - assumed 'support_amount' E:\workspaceszend\zcw\App\Runtime\Cache\f331a3f0d874c4248458495ef2c2c2d1.php 第 365 行.
+NOTIC: [8] Use of undefined constant limit_price - assumed 'limit_price' E:\workspaceszend\zcw\App\Runtime\Cache\f331a3f0d874c4248458495ef2c2c2d1.php 第 365 行.
+SQL: SHOW COLUMNS FROM `fanwe_help` [ RunTime:0.005001s ]
+SQL: SELECT * FROM `fanwe_help`  [ RunTime:0.002000s ]
+SQL: SELECT `value` FROM `fanwe_conf` WHERE ( `name` = 'BEI_AN' ) LIMIT 1   [ RunTime:0.001000s ]
+INFO: ParseTemplate Behavior ::run [ RunTime:0.066004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.066004s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001000s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.004000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002000s ]
+INFO: [ view_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2015-05-19T23:27:38+08:00 ] 127.0.0.1 /zcw/index.php?m=deals&a=index&tid=1
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.010000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.012001s ]
+SQL: SHOW COLUMNS FROM `fanwe_deal` [ RunTime:0.023001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fanwe_deal` WHERE ( `is_effect` = 1 ) AND ( `cate_id` = 1 ) LIMIT 1   [ RunTime:0.003000s ]
+SQL: SELECT * FROM `fanwe_deal` WHERE ( `is_effect` = 1 ) AND ( `cate_id` = 1 ) ORDER BY sort desc,id desc LIMIT 0,20   [ RunTime:0.008000s ]
+INFO: [ view_parse ] --START--
+SQL: SHOW COLUMNS FROM `fanwe_nav` [ RunTime:0.016001s ]
+SQL: SELECT * FROM `fanwe_nav` ORDER BY sort  [ RunTime:0.004000s ]
+SQL: SHOW COLUMNS FROM `fanwe_deal_cate` [ RunTime:0.018001s ]
+SQL: SELECT * FROM `fanwe_deal_cate` ORDER BY id  [ RunTime:0.006001s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' E:\workspaceszend\zcw\App\Runtime\Cache\0de306cebdd033a70d97c984790b889c.php 第 140 行.
+NOTIC: [8] Use of undefined constant id - assumed 'id' E:\workspaceszend\zcw\App\Runtime\Cache\0de306cebdd033a70d97c984790b889c.php 第 144 行.
+NOTIC: [8] Use of undefined constant support_amount - assumed 'support_amount' E:\workspaceszend\zcw\App\Runtime\Cache\0de306cebdd033a70d97c984790b889c.php 第 151 行.
+NOTIC: [8] Use of undefined constant limit_price - assumed 'limit_price' E:\workspaceszend\zcw\App\Runtime\Cache\0de306cebdd033a70d97c984790b889c.php 第 151 行.
+NOTIC: [8] Use of undefined constant support_amount - assumed 'support_amount' E:\workspaceszend\zcw\App\Runtime\Cache\0de306cebdd033a70d97c984790b889c.php 第 153 行.
+NOTIC: [8] Use of undefined constant limit_price - assumed 'limit_price' E:\workspaceszend\zcw\App\Runtime\Cache\0de306cebdd033a70d97c984790b889c.php 第 153 行.
+SQL: SHOW COLUMNS FROM `fanwe_help` [ RunTime:0.018001s ]
+SQL: SELECT * FROM `fanwe_help`  [ RunTime:0.009001s ]
+SQL: SHOW COLUMNS FROM `fanwe_conf` [ RunTime:0.015001s ]
+SQL: SELECT `value` FROM `fanwe_conf` WHERE ( `name` = 'BEI_AN' ) LIMIT 1   [ RunTime:0.003000s ]
+INFO: ParseTemplate Behavior ::run [ RunTime:0.193011s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.193011s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.003000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.003001s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.003000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.005000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.015001s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.009001s ]
+INFO: [ view_end ] --END-- [ RunTime:0.009001s ]
+

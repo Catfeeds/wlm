@@ -1,0 +1,24 @@
+    <aside class="two-col-little-left" style="width:250px">
+
+  
+  <div class="normal-box clearfix" >
+    <div class="pull-left">
+      <p> <a href="{:U('Wlmeng/Member/getOneMember',array('memberid'=>session(memberid)))}">{$Think.session.membercode}</a>,欢迎您 </p>
+      <p class="dark" >
+        <a href="{:U('Wlmeng/Member/outLogin')}">退出</a>，<a href="{:U('Wlmeng/Member/goEdit')}">修改个人信息</a></p>
+    </div>
+  </div>
+
+    <div class="normal-box-no-pad">
+
+    <ul class="top-list dot-list childen-hover">
+      <li class="clearfix">
+        <i class="pull-left"> •　</i>
+        <a href="{:U('Member/goAddShow')}">个人展示</a>
+      </li>
+      
+    </ul>
+
+  </div>
+
+</aside>

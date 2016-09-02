@@ -1,0 +1,65 @@
+<!doctype html>
+<!--[if lt IE 7 ]> <html class="ie ie6 ie-lt10 ie-lt9 ie-lt8 ie-lt7 no-js" lang="en"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie ie7 ie-lt10 ie-lt9 ie-lt8 no-js" lang="en"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie ie8 ie-lt10 ie-lt9 no-js" lang="en"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie ie9 ie-lt10 no-js" lang="en"> <![endif]-->
+<!--[if gt IE 9]><!-->
+<html class="no-js" lang="en"><!--<![endif]-->
+
+<!--新闻详情页-->
+
+<head data-template-set="html5-reset">
+
+	<title>{$art_a.title}: | {$system.webname}</title>
+	
+	<link rel="stylesheet" href="__CSS__/style.css" />
+
+	<link rel="stylesheet" href="__CSS__/jquery.Jcrop.min.css" type="text/css" />
+<link href="__CSS__/all_2014120104.css" rel="stylesheet" type="text/css">
+
+  <link href="__CSS__/txt_20141201.css" rel="stylesheet" type="text/css">
+	<!-- Uploadify -->
+    <link rel='stylesheet' type='text/css' href='__CSS__/uploadify.css'>
+<script src='__JS__/jquery-1.9.1.min.js'></script>
+	<script src="__JS__/modernizr-2.6.2.dev.js"></script>
+	</head>
+
+<body >
+
+<include file="./Application/Wlmeng/View/Public/menu.html" />
+<div class="wrapper">
+ 
+ <include file="./Application/Wlmeng/View/Public/header.html" />
+ 
+<div class="page-wrapper" style="padding-top:170px;">
+	
+    <!--640W-->
+	    <div class="chief">
+      <div class="l_txt">
+        <div class="hd">
+          <h1>{$art_a.title}</h1>
+          
+        </div>
+        <div class="bd">
+			
+          {$art_a.content|htmlspecialchars_decode}
+    </div>
+  </div>
+</div>
+
+
+	 <include file="./Application/Wlmeng/View/Public/footer.html" />
+	</div>
+	
+</div>
+</div>
+</div>
+
+<script src="__JS__/jquery.cookie.js"></script>
+<script src="__JS__/functions.js"></script>
+
+
+</body>
+</html>
+
+

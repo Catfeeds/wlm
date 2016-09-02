@@ -1,0 +1,179 @@
+<!doctype html>
+<!--[if lt IE 7 ]> <html class="ie ie6 ie-lt10 ie-lt9 ie-lt8 ie-lt7 no-js" lang="en"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie ie7 ie-lt10 ie-lt9 ie-lt8 no-js" lang="en"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie ie8 ie-lt10 ie-lt9 no-js" lang="en"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie ie9 ie-lt10 no-js" lang="en"> <![endif]-->
+<!--[if gt IE 9]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<!-- the "no-js" class is for Modernizr. -->
+
+<head id="www-itjuzi-com" data-template-set="html5-reset">
+
+	<title>忠心人物| {$system.webname}</title>
+
+	<include file="./Application/Wlmeng/View/Public/meta.html" />
+	<link rel="stylesheet" href="__CSS__/style.css" />
+
+	<link rel="stylesheet" href="__CSS__/jquery.Jcrop.min.css" type="text/css" />
+
+	<!-- Uploadify -->
+	<link rel='stylesheet' type='text/css' href='__CSS__/uploadify.css'>
+
+	<script type="text/javascript" src="__JS__/m.js"></script>
+</head>
+
+<body >
+<script>window.jQuery || document.write("<script src='__JS__/jquery-1.9.1.min.js'>\x3C/script>")</script>
+<include file="./Application/Wlmeng/View/Public/menu.html" />
+	<div class="wrapper">
+	<include file="./Application/Wlmeng/View/Public/header.html" />
+
+		<div class="page-wrapper" style="padding-top:170px;">
+			<section id="page-content">
+
+				<article class="two-col-big-left">
+					<div class="normal-box-no-pad follow-area">
+
+						<!-- list all album -->
+
+						<div class="clearfix album">
+							<ul>
+								<volist name="zxrw" id="vo">
+								<li class="clearfix album-item" >
+									<if condition="$vo['alt'] == 0">
+										<h2><a href="{:U('Wlmeng/Zxrw/getOneZxrw',array('id'=>$vo['id']))}">{$vo.title}</a></h2>
+									<else/>
+										<h2><a target="_blank" href="{$vo.from_url}">{$vo.title}</a></h2>
+									</if>
+									
+									<p class="album-item-summary">创建于{$vo.year}-{$vo.month}-{$vo.day}</p>
+									<p class="album-item-summary">阅读人数：{$vo.num}</p>
+
+								</li>
+								</volist>
+								
+								
+							</ul>
+						</div>  
+
+						<div class="pagination pagination-right">
+          				<ul>
+          					<volist name="page_show" id="vo">
+          					<if condition="$page_this == $vo['page']">
+          						<li class="active">
+          							<a href="{:U('Zxrw/goZxrw',array('page'=>$vo['page']))}">
+          								{$vo.page}
+          							</a>
+          						</li>
+          					<else/>
+          				<li  class="page">
+          					<a href="{:U('Zxrw/goZxrw',array('page'=>$vo['page']))}" class="follow_link">
+          						{$vo.page}
+          					</a>
+          				</li>
+          			</if>
+          		</volist>
+          		<li class="next page"><a class="follow_link" href="{:U('Zxrw/goZxrw',array('page'=>$page_next))}">下一页 &rarr;</a></li>
+          		<li class="next page"><a class="follow_link" href="{:U('Zxrw/goZxrw',array('page'=>$page_last))}">尾页 &raquo;</a></li>
+          	</ul>
+          </div><!--pagination-->
+					</div>  
+
+				</article>
+
+			</section>  
+
+
+			<include file="./Application/Wlmeng/View/Public/footer.html" />
+
+		</div>  
+
+	</div>
+
+	
+
+	<script type="text/javascript">
+	$(function () {
+
+		$('body').on('click','#top_login,.login',function (evt) {
+			open_dialog('login', evt);
+		});
+
+		$('body').on('click','#top_register',function (evt) {
+			open_dialog('register', evt);
+		});
+
+		$('.btn').each(function () {
+			if($(this).attr('target') == '_blank'){
+				return true;
+			}
+			var href = $(this).attr('href');
+			if(href && /\/(add|claim|login)\/?/g.test(href)){
+				$(this).click(function (evt) {
+					if(!$.cookie('front_identity')){
+						open_dialog('login', evt);
+						return false;
+					}
+				});
+			}
+		});
+
+	});
+	</script>
+	<script src="__JS__/jquery.cookie.js"></script>
+	<script src="__JS__/functions.js"></script>
+
+	<script>
+  // add activity
+  $('.check-article-detail-des .check-more').show().each(function(){
+  	$(this).appendTo($(this).siblings('p'));
+  });
+
+  $('.summary-article-detail-des .check-more').show().each(function(){
+  	$(this).appendTo($(this).siblings('p'));
+  });
+
+  </script>
+
+
+  <!-- for affix -->
+  <script>
+  
+  function show_new_affix(){
+  	$('#old-affix').hide();
+  	$('#new-affix').show();
+  }
+
+  function hide_new_affix(){
+  	$('#old-affix').show();
+  	$('#new-affix').hide();
+  }
+
+  function check_show_new () {
+  	var s = $(window).scrollTop();
+  	if (s>1) {
+  		show_new_affix();
+  	} else {
+  		hide_new_affix();
+  	}
+  }
+  
+  $(window).scroll(function(){
+  	check_show_new();
+  });
+
+  $(window).resize(function(){
+  	check_show_new();
+  });
+
+  check_show_new();
+
+  $('body').on('mouseover','#dropdownMenu',function(){
+  	$('.dropdown-menu').show();
+  });
+  $('body').on('mouseout','#dropdownMenu',function(){
+  	$('.dropdown-menu').hide();
+  });
+  </script>
+</div>
+</body>
+</html>

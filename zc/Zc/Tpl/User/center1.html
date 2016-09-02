@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<!-- saved from url=(0052)http://zhong.ronmei.com/index.php?ctl=user&act=login -->
+<html>
+<!-- head开始 -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<title>{:getConf('SEO_TITLE')} - 个人信息页面</title>
+<!-- 关键字部分 -->
+<meta name="keywords" content="">
+<!-- 网页描述部分 -->
+<meta name="description" content="">
+<!-- CSS样式部分 -->
+	<link rel="stylesheet" href="__PUBLIC__/css/pintuer.css"/>
+	<link rel="stylesheet" href="__PUBLIC__/css/index.css"/>
+	<link rel="stylesheet" href="__PUBLIC__/css/base.css"/>
+	<link rel="stylesheet" type="text/css" href="__PUBLIC__/css/css.css"/>
+
+<link media="screen" rel="stylesheet" href="__PUBLIC__/css/others.css"/> 
+<link media="screen" rel="stylesheet" href="__PUBLIC__/css/common.css"/> 
+<link media="screen" rel="stylesheet" href="__PUBLIC__/css/demo.css"/> 
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/css/style.css">
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/css/14c4c0d24fba6ed25d8b6758064ef7b8.css">
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/css/4f524199e137c62e16dddd92b3d1cb95.css">
+<!-- 引用js部分 -->
+<script type="text/javascript" src="__PUBLIC__/js/jquery-1.8.3.min.js" ></script>
+<script type="text/javascript"  src="__PUBLIC__/js/dc.js"></script>
+<script type="text/javascript"  src="__PUBLIC__/js/ag.js"></script>
+<script type="text/javascript" src="__PUBLIC__/js/index.js"></script>
+<script type="text/javascript" src="__PUBLIC__/js/42d9a46911d50cafdc667075f2cff7ec.js"></script>
+<script async="" src="__PUBLIC__/js/ncfpb.1.1.min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/js/2cc0475e1160ea574d0a9b5ebea60136.js"></script>
+
+<script type="text/javascript">
+jQuery(document).ready(function(){
+	var qcloud={};
+	$('[_t_nav]').hover(function(){
+		var _nav = $(this).attr('_t_nav');
+		clearTimeout( qcloud[ _nav + '_timer' ] );
+		qcloud[ _nav + '_timer' ] = setTimeout(function(){
+		$('[_t_nav]').each(function(){
+		$(this)[ _nav == $(this).attr('_t_nav') ? 'addClass':'removeClass' ]('nav-up-selected');
+		});
+		$('#'+_nav).stop(true,true).slideDown(200);
+		}, 150);
+	},function(){
+		var _nav = $(this).attr('_t_nav');
+		clearTimeout( qcloud[ _nav + '_timer' ] );
+		qcloud[ _nav + '_timer' ] = setTimeout(function(){
+		$('[_t_nav]').removeClass('nav-up-selected');
+		$('#'+_nav).stop(true,true).slideUp(200);
+		}, 150);
+	});
+});
+</script>
+</head>
+<!-- head结束 -->
+
+<!-- body体 -->
+<body>
+    <include file="Public/header" />
+	
+	
+	<!-- 个人信息部分开始 -->
+	
+<div id="commain" style=" background:#f9f9f9;">
+	<div class="comwrap">
+    	<!-- 个人主页公共头部 -->
+    	 <style>
+.head_mask {
+    background-position: -150px 0;
+    height: 166px;
+    left: -1px;
+    position: absolute;
+    top: 0;
+    width: 190px;
+}
+
+.others_item ul li p, .others_item ul li b {
+    line-height: 14px;
+}
+.others_item ul li p, .others_item ul li b {
+    line-height: 14px;
+}
+.position_a{position:absolute;}
+</style>
+		 <div class="zoe_location clearfix" style="margin-top:120px;">
+        </div>
+        <div class="others_info bordccc clearfix">
+        	<div class="others_head fleft">
+            	<img src="{:C('IMG_URL')}/public/avatar/000/00/00/{$info.id}virtual_avatar_middle.jpg" width="120" height="120">
+                <span class="tip_icon head_mask"></span>
+            </div>
+            <div class="others_item fleft">
+            	<p class="clearfix"><b class="f20 fwnone fleft">{$info.user_name}</b></p>
+                <p class="margtop15" style="width: 500px;">
+	                <b class="f14"></b>
+	                <span class="f12 fgrey margleft10">{$info.intro}</span>
+                </p>
+            </div>
+            <div class="myinfo_plan position_a">
+            	<span class="dinblock fleft f12 txtcenter" style="line-height:20px;">资金：</span>
+            	<span class="dinblock fleft tip_icon icon_planbg margtop3" style="overflow:visible;">
+            	<s style="overflow:visible;width:87.5px;" class="tip_icon dinblock icon_plango"><s class="tip_icon triangle"></s></s></span>
+                <span class="tip_icon dinblock fleft txt_grey40 f12 txtcenter">{$info.money}元</span>
+            </div>
+        </div>
+		
+
+<script>
+    function closeBox(flag){
+        if($('.'+flag).is(':visible')) $('.'+flag).hide();
+        $(".video").css("visibility","");
+        return false;
+    }
+</script>   
+	<!-- 个人主页公共头部   结束-->
+        <div class="others_main margtop20 clearfix">
+            <!-- 我的主页左侧 公用菜单-->
+               <ul class="others_left bordccc bgwhite fleft">
+               	<li>
+                	<a href="./王昊昱_店铺投资人_人人投_files/王昊昱_店铺投资人_人人投.htm" class="active"><s class="tip_icon lnavc"></s>个人设置 <i class="tip_icon arrow_down"></i></a>
+                	<dl style="display:block;">
+                    	<dd><a href="./王昊昱_店铺投资人_人人投_files/王昊昱_店铺投资人_人人投.htm">个人资料<i class="tip_icon arrow_right"></i></a></dd>
+                    	<dd><a href="http://www.renrentou.com/user/index/uid/436458/menu/7" class="">修改密码<i class="tip_icon arrow_right"></i></a></dd>
+                    	<dd><a href="http://www.renrentou.com/user/index/uid/436458/menu/7" class="">银行账户<i class="tip_icon arrow_right"></i></a></dd>
+                    </dl>
+                </li>
+            	<li>
+                	<a href="./王昊昱_店铺投资人_人人投_files/王昊昱_店铺投资人_人人投.htm" class="active"><s class="tip_icon lnavc"></s>支持的项目 <i class="tip_icon arrow_down"></i></a>
+                	<dl style="display:block;">
+                    	<dd><a href="./王昊昱_店铺投资人_人人投_files/王昊昱_店铺投资人_人人投.htm">支持的项目 <i class="tip_icon arrow_right"></i></a></dd>
+                    	<dd><a href="http://www.renrentou.com/user/index/uid/436458/menu/7" class="">帐户余额<i class="tip_icon arrow_right"></i></a></dd>
+                    	<dd><a href="http://www.renrentou.com/user/index/uid/436458/menu/7" class="">收支明细<i class="tip_icon arrow_right"></i></a></dd>
+                    </dl>
+                </li>
+            </ul>
+            <style>
+            	dl dd{padding:10px 0;}
+            	dl dd span{display:inline-block;height:34px;line-height:34px;width:100px;text-align:right;}
+            	dl dd input{height:34px;border:1px solid #ccc;width:300px;}
+            	dl dd select{border:1px solid #ccc;height:34px;width:150px;}
+            </style>
+            <div class="others_right bgwhite bordccc fright review_list">
+            	<dl>
+            		<dd><span>会员账号：</span><input type="text" value=" {$info.user_name}" disabled="disabled"></dd>
+            		<dd><span>电子邮箱：</span><input type="text" value=" {$info.email}" disabled="disabled"></dd>
+            		<dd><span>性　　别：</span>
+            			<select name="sex">
+            				<option value="-1" <if condition="$info.sex eq '-1'">selected</if>>未知</option>
+            				<option value="1" <if condition="$info.sex eq '1'">selected</if>>男</option>
+            				<option value="0" <if condition="$info.sex eq '0'">selected</if>>女</option>
+            			</select>
+            		</dd>
+            		<dd><span>所在地：</span>
+            			<select name="">
+            				<option value="-1" <if condition="$info.sex eq '-1'">selected</if>>未知</option>
+            			</select>
+            			<select>
+            				<option>未知</option>
+            				<option>男</option>
+            				<option>女</option>
+            			</select>
+           			<dd><span>自我介绍：</span><textarea name="intro" rows="3" cols="45">{$info.intro}</textarea>&nbsp;这里可以输入大约300字的自我介绍，让大家多了解你</dd>
+            		<dd><span>博客或微博：</span><input type="text" value="{:getWeibo($info['id'])}"></dd>
+            	</dl>
+            </div>            
+        </div>
+    </div>
+</div>
+<div class="blank"></div>
+<style>
+.footer a{display:inline-block; float:none;}
+</style>
+
+<include file="Public/footer" />
+</body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<include file="Public:meta" />
+<title>首页</title>
+<link rel="stylesheet" href="__CSS__/pintuer.css" />
+<link rel="stylesheet" href="__CSS__/wlmjy.css" />
+<link rel="stylesheet" type="text/css" href="__CSS__/component.css" />
+<script type="text/javascript" src="__JS__/jquery-1.7.min.js"></script>
+<script type="text/javascript" src="__JS__/pintuer.js"></script>
+<script type="text/javascript" src="__JS__/wlmjy.js"></script>
+<script src="__JS__/modernizr.custom.js"></script>
+<script type="text/javascript" src="__JS__/idangerous.swiper-2.0.min.js"></script>
+<script type="text/javascript" src="__JS__/ichart.1.2.js"></script> 
+<script type="text/javascript">
+$(function(){
+	function setContentSize() {
+		$('.swiper-content').css({
+			height: $(window).height()-$('.swiper-nav').height()
+		})
+	}
+
+
+
+	//Nav
+	var navSwiper = $('.swiper-nav').swiper({
+		visibilityFullFit: true,
+		slidesPerView:'auto',
+		//Thumbnails Clicks
+		onSlideClick: function(){
+			contentSwiper.swipeTo( navSwiper.clickedSlideIndex )
+		}
+	})
+
+	
+})
+
+$(function(){
+	var width = $('#leftmunt_item').width();
+	var height = width;
+	$(".leftmunt_item_h").height(height);
+	$(".leftmunt_item_h").css('line-height',5);
+});
+
+</script>
+</head>
+
+<body class="cbp-spmenu-push">
+
+<include file="Public:menu" />
+
+<script src="__JS__/classie.js"></script>
+<script>
+	var show_top = 0;
+	var show_left = 0;
+	function showLeftMenu(){
+		if(show_top%2 == 0){
+			var menuLeft = document.getElementById('menu_left'),
+				bodys = document.body;
+			classie.toggle( bodys, 'cbp-spmenu-push-toright' );
+			classie.toggle( menuLeft, 'cbp-spmenu-open' );
+			show_left ++;
+		}
+		
+	}
+	
+	function showTopMenu(){
+		if(show_left%2 == 0){
+			var menuTop = document.getElementById('menu_top');
+			classie.toggle( menuTop, 'cbp-spmenu-open' );
+			show_top ++;
+		}
+	}
+</script>
+<div class="main">
+<!--资讯 end-->
+<div class="container hot">
+	<div class="">
+		<volist name="pro" id="vo">
+				<div class="media" >
+					<div class="detail">
+						<p align="center"><a href="{:U('Deal/show',array('id'=>$vo['id']))}"><img src="__AIMG__/zc{$vo.image}" style="width:100%" class="img-responsive"/></a></p>
+						
+					</div>
+					
+					<div class="media-body">
+						<a href="{:U('Deal/show',array('id'=>$vo['id']))}">{$vo.name}</a>
+						<p><strong>{$vo.mark}</strong></p>
+						<div class="progress progress-small inv_progress">
+  							<div class="progress-bar bg-blue" style="width:{$vo.jindu};"></div>
+						</div>
+						<!-- <p class="center">{$vo.user_name}({$vo.province},{$vo.city})</p> -->
+						
+					</div>
+				</div>
+				<hr/>
+		</volist>
+		
+	</div>
+</div>
+<!--推荐项目 end-->
+<!-- <div class="banner">
+  <div class="carousel">
+    <div class="item"><img src="__IMG__/12bOOOPIC8f.jpg" /></div>
+    <div class="item"><img src="__IMG__/psds27988.jpg" /></div>
+    <div class="item"><img src="__IMG__/55U58PICrdX.jpg" /></div>
+  </div>
+</div> -->
+<!--推荐项目 end-->
+</div>
+</body>
+</html>

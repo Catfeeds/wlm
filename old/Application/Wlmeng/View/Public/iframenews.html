@@ -1,0 +1,63 @@
+<!doctype html>
+<!--[if lt IE 7 ]> <html class="ie ie6 ie-lt10 ie-lt9 ie-lt8 ie-lt7 no-js" lang="en"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie ie7 ie-lt10 ie-lt9 ie-lt8 no-js" lang="en"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie ie8 ie-lt10 ie-lt9 no-js" lang="en"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie ie9 ie-lt10 no-js" lang="en"> <![endif]-->
+<!--[if gt IE 9]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<!-- the "no-js" class is for Modernizr. -->
+
+<head id="www-itjuzi-com" data-template-set="html5-reset">
+
+	<meta charset="utf-8">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+	<title>{$title} | {$system.webname}</title>
+
+	<include file="./Application/Wlmeng/View/Public/meta.html" />
+	                    <link rel="stylesheet" href="__CSS__/style.css" />
+                    <script src='__JS__/jquery-1.9.1.min.js'></script>
+                    <script src="__JS__/L_slide.js"></script>
+	
+	</head>
+
+<body >
+                <!--广告位-->
+<include file="./Application/Wlmeng/View/Public/menu.html" />
+ <!--广告位end-->
+<div class="wrapper">
+                        
+<include file="./Application/Wlmeng/View/Public/header.html" />
+                        
+ <iframe style="width:100%;background-color:#fff; margin-top:150px;" id="preview-frame" src="{$url}" name="preview-frame" frameborder="0" noresize="noresize">
+</iframe>
+</div>
+
+
+<script>
+      //function to fix height of iframe!
+      var calcHeight = function() {
+        // var headerDimensions = $('#header-bar').height();
+        var headerDimensions = 87;
+        $('#preview-frame').height($(window).height() - headerDimensions);
+      }
+
+      $(document).ready(function() {
+        calcHeight();
+        $('#header-bar a.close').mouseover(function() {
+          $('#header-bar a.close').addClass('activated');
+        }).mouseout(function() {
+          $('#header-bar a.close').removeClass('activated');
+        });
+      });
+
+      $(window).resize(function() {
+        calcHeight();
+      }).load(function() {
+        calcHeight();
+      });
+    </script>
+</body>
+</html>
+
+

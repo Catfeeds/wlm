@@ -1,0 +1,86 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<include file="Public:meta" />
+<title>首页</title>
+<link rel="stylesheet" href="__CSS__/pintuer.css" />
+<link rel="stylesheet" href="__CSS__/wlmjy.css" />
+<link rel="stylesheet" type="text/css" href="__CSS__/component.css" />
+<script type="text/javascript" src="__JS__/jquery-1.7.min.js"></script>
+<script type="text/javascript" src="__JS__/pintuer.js"></script>
+<script type="text/javascript" src="__JS__/wlmjy.js"></script>
+<script src="__JS__/modernizr.custom.js"></script>
+<script type="text/javascript" src="__JS__/idangerous.swiper-2.0.min.js"></script>
+<script type="text/javascript" src="__JS__/ichart.1.2.js"></script> 
+<script type="text/javascript">
+$(function(){
+	function setContentSize() {
+		$('.swiper-content').css({
+			height: $(window).height()-$('.swiper-nav').height()
+		})
+	}
+
+
+
+	//Nav
+	var navSwiper = $('.swiper-nav').swiper({
+		visibilityFullFit: true,
+		slidesPerView:'auto',
+		//Thumbnails Clicks
+		onSlideClick: function(){
+			contentSwiper.swipeTo( navSwiper.clickedSlideIndex )
+		}
+	})
+
+	
+})
+
+$(function(){
+	var width = $('#leftmunt_item').width();
+	var height = width;
+	$(".leftmunt_item_h").height(height);
+	$(".leftmunt_item_h").css('line-height',5);
+});
+
+</script>
+</head>
+
+<body class="cbp-spmenu-push">
+
+<include file="Public:menu" />
+
+<div class="main">
+<!--资讯 end-->
+<div class="container hot">
+	<div class="">
+		<volist name="pro" id="vo">
+				<div class="media media-x" id="{$vo.id}_pro">
+					<div class="bg-gray" style="color:#fff; margin-top:5px; height:30px; padding-top:7px; padding-left:5px; padding-right:5px;">
+						<span class="tag bg-main float-left ">众筹中</span>
+						<span class="float-right icon-trash-o" onclick="delcar({$vo.id})"></span>
+					</div>
+					<div class="detail float-left" style="width:23%; ">
+						<p align="center"><a href="{:U('Deal/show',array('id'=>$vo['id']))}"><img src="__AIMG__/zc{$vo.image}" style="width:100%" class="img-responsive"/></a></p>	
+					</div>
+					
+					<div class="media-body float-left" style="width:70%; padding-bottom:5px;">
+						<a href="{:U('Deal/show',array('id'=>$vo['id']))}">{$vo.name}</a>
+						<p><strong>{$vo.brief}</strong></p>
+						<!-- <p class="center">{$vo.user_name}({$vo.province},{$vo.city})</p> -->
+						<div class="num float-right">X<input type="text" value="1" class="input" style="display:inline-block; width:50px; margin-left:5px;"/></div>
+					</div>
+					<hr/>
+				</div>
+		</volist>
+		<input type="hidden" id="delURL" value="{:U('Car/delCar')}"/>
+		<input type="hidden" id="loginURL" value="{:U('User/login')}"/>
+	</div>
+</div>
+
+<div class="at_bottom">
+	<button class="button bg" onclick="incar({$info.id})" style="width:90%">结算</button>
+</div>
+
+</div>
+</body>
+</html>

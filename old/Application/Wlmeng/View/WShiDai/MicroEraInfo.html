@@ -1,0 +1,180 @@
+<!doctype html>
+<!--[if lt IE 7 ]> <html class="ie ie6 ie-lt10 ie-lt9 ie-lt8 ie-lt7 no-js" lang="en"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie ie7 ie-lt10 ie-lt9 ie-lt8 no-js" lang="en"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie ie8 ie-lt10 ie-lt9 no-js" lang="en"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie ie9 ie-lt10 no-js" lang="en"> <![endif]-->
+<!--[if gt IE 9]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<!-- the "no-js" class is for Modernizr. -->
+<!-- 微时代列表页-->
+
+<head id="www-itjuzi-com" data-template-set="html5-reset">
+
+	<title>微时代内容页 | {$system.webname}</title>
+	<include file="./Application/Wlmeng/View/Public/meta.html" />
+	
+	<link rel="stylesheet" href="__CSS__/style.css" />
+
+	<link rel="stylesheet" href="__CSS__/jquery.Jcrop.min.css" type="text/css" />
+
+	<!-- Uploadify -->
+	<link rel='stylesheet' type='text/css' href='__CSS__/uploadify.css'>
+
+
+
+	<script src="__JS__/modernizr-2.6.2.dev.js"></script>
+
+	<script type="text/javascript" src="__JS__/m.js"></script>
+
+</head>
+
+<body >
+<script>window.jQuery || document.write("<script src='__JS__/jquery-1.9.1.min.js'>\x3C/script>")</script>
+<include file="./Application/Wlmeng/View/Public/menu.html" />
+	<div class="wrapper">
+		<include file="./Application/Wlmeng/View/Public/header.html" />
+
+		<style type="text/css">
+		#company-member-list-tbl .relation_list {padding:3px 6px;}
+		#company-member-list-tbl .relation_list img {float: left;padding: 10px;border-radius: 50px;width: 40px;height: 40px;}
+		</style>
+
+		<div class="page-wrapper" style="padding-top:170px;">
+
+			<section id="page-content">
+
+				<article class="two-col-big-left">
+
+					<div class="normal-box">
+						<img id="company_big_show" src="{$wsd.pic}"  /> 
+					</div>
+
+					{$wsd.content|htmlspecialchars_decode}
+
+				</article>
+
+				
+				</section>  
+
+				<include file="./Application/Wlmeng/View/Public/footer.html" />
+
+			</div>  
+
+		</div>
+
+		
+
+		<script type="text/javascript">
+		$(function () {
+
+			$('body').on('click','#top_login,.login',function (evt) {
+				open_dialog('login', evt);
+			});
+
+			$('body').on('click','#top_register',function (evt) {
+				open_dialog('register', evt);
+			});
+
+			$('.btn').each(function () {
+				if($(this).attr('target') == '_blank'){
+					return true;
+				}
+				var href = $(this).attr('href');
+				if(href && /\/(add|claim|login)\/?/g.test(href)){
+					$(this).click(function (evt) {
+						if(!$.cookie('front_identity')){
+							open_dialog('login', evt);
+							return false;
+						}
+					});
+				}
+			});
+
+		});
+		</script>
+		<script src="__JS__/jquery.cookie.js"></script>
+		<script src="__JS__/functions.js"></script>
+
+		<script>
+  // add activity
+  $('.check-article-detail-des .check-more').show().each(function(){
+  	$(this).appendTo($(this).siblings('p'));
+  });
+
+  $('.summary-article-detail-des .check-more').show().each(function(){
+  	$(this).appendTo($(this).siblings('p'));
+  });
+
+  </script>
+
+
+  <!-- for affix -->
+  <script>
+  
+  function show_new_affix(){
+  	$('#old-affix').hide();
+  	$('#new-affix').show();
+  }
+
+  function hide_new_affix(){
+  	$('#old-affix').show();
+  	$('#new-affix').hide();
+  }
+
+  function check_show_new () {
+  	var s = $(window).scrollTop();
+  	if (s>1) {
+  		show_new_affix();
+  	} else {
+  		hide_new_affix();
+  	}
+  }
+  
+  $(window).scroll(function(){
+  	check_show_new();
+  });
+
+  $(window).resize(function(){
+  	check_show_new();
+  });
+
+  check_show_new();
+
+  $('body').on('mouseover','#dropdownMenu',function(){
+  	$('.dropdown-menu').show();
+  });
+  $('body').on('mouseout','#dropdownMenu',function(){
+  	$('.dropdown-menu').hide();
+  });
+  </script>
+</div>
+
+</body>
+</html>
+
+<script type="text/javascript">
+
+$(function () {
+	$('#com_news_more').click(function () {
+		var show = $(this).attr('show') || 'less';
+		if(show == 'less'){
+			$(this).parent().parent().find('.hide').removeClass('hide');
+			$(this).text('收起').attr('show', 'more');
+		}else{
+			$(this).parent().parent().find('.company-new-list :gt(2)').addClass('hide');
+			$(this).text('展开更多...').attr('show', 'less');
+		}
+		return false;
+	});
+
+	$('#comment_content').click(function () {
+		$(this).animate({height:100});
+	}).blur(function () {
+		if($(this).val() == ''){
+			$(this).animate({height:50});
+		}
+	});
+});
+</script>
+
+
+

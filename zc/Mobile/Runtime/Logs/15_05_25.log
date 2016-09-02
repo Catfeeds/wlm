@@ -1,0 +1,23 @@
+[ 2015-05-25T22:25:41+08:00 ] 127.0.0.1 /zcw/mobile.php?m=News&a=index
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002500s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002500s ]
+SQL: SHOW COLUMNS FROM `fanwe_deal_cate` [ RunTime:0.090002s ]
+SQL: SELECT * FROM `fanwe_deal_cate` ORDER BY id  [ RunTime:0.075001s ]
+SQL: SHOW COLUMNS FROM `fanwe_news` [ RunTime:0.072501s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `fanwe_news` WHERE ( `enable` = 1 ) LIMIT 1   [ RunTime:0.045000s ]
+SQL: SELECT * FROM `fanwe_news` ORDER BY addtime desc,rec desc  [ RunTime:0.002500s ]
+INFO: [ view_parse ] --START--
+NOTIC: [8] Undefined index: uid E:\workspaceszend\zcw\Mobile\Runtime\Cache\d7779ec8767fe4ff263181c169db09da.php 第 78 行.
+INFO: ParseTemplate Behavior ::run [ RunTime:0.042501s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.042501s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000000s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.002500s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000000s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.002500s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.005000s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002500s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002500s ]
+

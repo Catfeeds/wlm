@@ -1,0 +1,108 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>{:C('WEB_NAME')}-{$page_name}</title>
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/css/common.css"/>
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/css/main.css"/>
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/css/page.css"/>
+<script type="text/javascript" src="__PUBLIC__/js/jquery.min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/layer/layer.min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/js/member.js"></script>
+<script type="text/javascript">
+var url = "{:U('Member/info')}";
+</script>
+<script>
+function getDomain(id){
+	var url = "{:U('Member/domain')}";
+	url = url +'&id='+id;
+	$.layer({
+	    type: 2,
+	    shadeClose: false,
+	    maxmin: true,
+	    title: ['修改会员所属领域', 'background:#ddd;'] ,
+	    closeBtn: [0, true],
+	    shade: [0.5, '#000'],
+	    border: [0],
+	    offset: ['20px',''],
+	    area: ['1000px', ($(window).height() - 600) +'px'],
+	    iframe: {src:url}
+	}); 
+}
+</script>
+</head>
+<body>
+<!-- Head -->
+<include file="Public:head" />
+<!-- Head -->
+<div class="container clearfix">
+    <!-- sidebar -->
+    <include file="Public:sidebar" />
+    <!--/sidebar-->
+    <div class="main-wrap">
+
+        <div class="crumb-wrap">
+            <div class="crumb-list">
+            <i class="icon-font"></i>
+            <a href="{:C('ADMIN_URL')}">首页</a>
+            <span class="crumb-step">&gt;</span>
+            <span class="crumb-name">{$page_name}</span></div>
+        </div>
+        
+        <div class="result-wrap">
+            <div class="result-title">
+            	<form name="search" action="{:U('Member/search')}" method="post">
+                <div class="result-list">
+                    <a href="{:U('Member/add')}"><i class="icon-font"></i>添加会员</a>
+                    <a id="updateOrd" href="{:U('Member/index')}"><i class="icon-font"></i>刷新页面</a>
+                    	会员名：<input class="myinput" type="text" name="username">
+                    	注册时间：<input class="myinput" type="text" name="regtime">
+                    	状态：<select class="myinput myselect" name="lock">
+                     		<option value="1">正常</option>
+                     		<option value="0">锁定</option>
+			   </select>
+                    	<input class="mybutton" type="submit" value="查找">
+                </div>
+                </form>
+            </div>
+            <div class="result-content">
+                <table class="result-tab" width="100%">
+                    <tr>
+                        <!-- <th class="tc" width="5%"><input class="allChoose" name="" type="checkbox"></th> -->
+                        <th>账号</th>                        
+                        <th>E-mail</th>
+                        <th>QQ</th>
+                        <th>电话</th>
+                        <th>领域</th>
+                        <th>注册时间</th>
+                        <th>状态</th>
+                        <th>操作</th>
+                    </tr>
+                    <foreach name="list" item="vo">
+                    <tr>
+                        <!-- <td class="tc"><input name="id[]" value="{$vo.id}" type="checkbox"></td> -->
+                        <td><a href="javascript:void(0);" onclick="get_more({$vo.id})" title="点击查看会员详细信息">{$vo.username}</a></td>                        
+                        <td>{$vo.email}</td>
+                        <td>{$vo.qq}</td>
+                        <td>{$vo.tel}</td>
+                        <td>{$vo.domain_id|getDomainName=###}</td>
+                        <td>{$vo.regtime|date='Y-m-d',###}</td>
+                        <td>{$vo.lock|admin_status=###}</td>
+                        <td>	                               
+                           	<a class="link-update" href="{:U('Member/lock',array('id'=>$vo[id],'lock'=>$vo[lock]))}">{$vo.lock|admin_action=###}</a>
+                           	<a class="link-update del" href="{:U('Member/del',array('id'=>$vo[id]))}">删除</a>
+                           	<a class="link-update" href="javascript:void(0);" onclick="getDomain({$vo.id})">领域</a>
+                        </td>
+                    </tr>
+                    </foreach>
+                    <tr>
+                    	<td colspan="8" align="right">{$page}</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <!--/main-->
+</div>
+</body>
+</html>

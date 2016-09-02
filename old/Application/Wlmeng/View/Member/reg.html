@@ -1,0 +1,145 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf8" />
+<title>未来门</title>
+<meta name="keywords" content="xxx" />
+<meta name="description" content="xxx" />
+<meta name="MSSmartTagsPreventParsing" content="True" />
+<meta http-equiv="MSThemeCompatible" content="Yes" />
+<link rel="stylesheet" type="text/css" href="__CSS__/style_2_common.css" />
+<script src="__JS__/common.js" type="text/javascript"></script>
+<script type="text/javascript" src="__JS__/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="__LAYER__/layer.min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/js/wlm.js"></script>
+<meta name="application-name" content="未来门" />
+<meta name="msapplication-tooltip" content="未来门" />
+    <link href="__CSS__/base.css" rel="stylesheet" type="text/css" media="all" />
+
+<link href="__CSS__/passport.css" rel="stylesheet" type="text/css" media="all" />
+   
+</head>
+
+<script type="text/javascript">
+    window.onload=function(){
+        
+        var _body=document.getElementsByTagName("body");
+        if(screen.width==1920){
+            _body[0].style.background="url(__IMG__/img/Deep-Light-1920x1080.png) no-repeat center fixed";
+        }
+        if(screen.width>=2560){
+            _body[0].style.background="url(__IMG__/img/Deep-Light-2560x1440.png) no-repeat center fixed";
+        }
+        if(screen.width==1680){
+            _body[0].style.background="url(__IMG__/img/Deep-Light-1680x1050.png) no-repeat center fixed";
+        }
+        if(screen.width<=1440){
+            _body[0].style.background="url(__IMG__/img/Deep-Light-1440x900.png) no-repeat center fixed";
+        }
+
+    }
+</script>
+<body class="w1440">
+
+<div id="page" class="panel_register">
+<div class="inputarea">
+            <p id="returnmessage4"></p>
+                        <form method="post" autocomplete="off" name="register" id="registerform" enctype="multipart/form-data" onsubmit="checksubmit();return false;">
+                <div id="layer_reg" class="bm_c">
+                    <div class="lgtitle">
+                        <p><a class="home" href="{:U('/Wlmeng/Index/index')}"></a></p>
+                        <h1 class="f30px">注册
+                            <span class="f24px identity">未来门</span></h1>
+                    </div>
+                    <div class="mtw">
+                        <div id="reginfo_a">
+                                                        <div class="rfm">
+                                <table>
+                                    <tr>
+                                        <th><span class="rq">*</span><label for="d3JndY">用户名:</label></th>
+                                        <td><input type="text" id="username" name="username" class="px" onblur="checkUsername(this.value)" tabindex="1" autocomplete="off" size="25" maxlength="15" /></td>
+                                        <td></td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div class="rfm">
+                                <table>
+                                    <tr>
+                                        <th><span class="rq">*</span><label for="R4M7Rp">密码:</label></th>
+                                        <td><input type="password" id="password" name="password" onblur="checkPassword()" size="25" tabindex="1" class="px" /></td>
+                                    </tr>
+                                </table>
+                            </div>
+
+                            <div class="rfm">
+                                <table>
+                                    <tr>
+                                        <th><span class="rq">*</span><label for="S27z7L">确认密码:</label></th>
+                                        <td><input type="password" id="repassword" name="repassword" onblur="checkRepassword()" size="25" tabindex="1" value="" class="px" /></td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div class="rfm">
+                                <table>
+                                    <tr>
+                                        <th><span class="rq">*</span><label for="00O2Ua">手机号:</label></th>
+                                        <td><input type="text" id="telphone" name="telphone" autocomplete="off" size="25" tabindex="1" class="px" /><br /><em id="emailmore">&nbsp;</em></td>
+                                    </tr>
+                                </table>
+                            </div>
+<div class="rfm">
+<table>
+<tr>
+<th><span class="rq">*</span><label for="">验证码:</label></th>
+<td><input name="verify" id="verify" type="text" autocomplete="off" style="width:100px" class="txt px vm" onblur="" tabindex="1" />
+<img src="{:U('Common/Verify')}" ch="{:U('Wlmeng/Common/Verify')}" id="image_verify" alt="看不清，请刷新验证码" style="width:120px; margin-top:5px" />
+<input type="hidden" id="verifyURL" name="verifyURL" value="{:U('Wlmeng/Member/checkVerify')}"/>
+<input type="hidden" id="indexURL" name="indexURL" value="{:U('Wlmeng/Index/index')}"/>
+<a href="javascript:void(0);" onclick="replaceVerify()" class="xi2">换一个</a>
+</td>
+</tr>
+</table>
+</div>
+</div>
+
+                    </div>
+
+                </div>
+
+                <div id="layer_reginfo_b">
+                    <div class="rfm mbw bw0">
+                        <table width="100%">
+                            <tr>
+                                <th>&nbsp;</th>
+                                <td>
+                                    <p>无法注册请联系客服：</p>
+                                    <p>QQ：800033559</p>
+                                </td>
+                                <td>
+<span id="reginfo_a_btn">
+<input type="hidden" id="regURL" value="{:U('Wlmeng/Member/register')}"/>
+<em>&nbsp;</em><button class="shadow btn" id="registerformsubmit" type="button" name="regsubmit" value="true" tabindex="1" onclick="checkVerify()"><strong>提交</strong></button>
+</span>
+                                </td>
+                                <td></td>
+                            </tr>
+                        </table>
+                    </div>
+                                    </div>
+            </form>
+                                </div>
+</div>
+    <div id="layer_regmessage"class="f_c blr nfl" style="display: none">
+        <div class="c"><div class="alert_right">
+            <div id="messageleft1"></div>
+            <p class="alert_btnleft" id="messageright1"></p>
+        </div>
+        </div>
+
+        <div id="layer_bbrule" style="display: none">
+            <div class="c" style="width:700px;height:350px;overflow:auto"><br />
+<br />
+<br />
+</div>
+    </body>
+</html>

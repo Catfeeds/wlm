@@ -1,0 +1,93 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>{:C('WEB_NAME')}-{$page_name}</title>
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/css/common.css"/>
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/css/main.css"/>
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/css/page.css"/>
+<script type="text/javascript" src="__PUBLIC__/js/jquery.min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/layer/layer.min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/js/company.js"></script>
+<script type="text/javascript">
+var url = "{:U('Company/info')}";
+</script>
+</head>
+<body>
+<!-- Head -->
+<include file="Public:head" />
+<!-- Head -->
+<div class="container clearfix">
+    <!-- sidebar -->
+    <include file="Public:sidebar" />
+    <!--/sidebar-->
+    <div class="main-wrap">
+
+        <div class="crumb-wrap">
+            <div class="crumb-list">
+            <i class="icon-font"></i>
+            <a href="{:C('ADMIN_URL')}">首页</a>
+            <span class="crumb-step">&gt;</span>
+            <span class="crumb-name">{$page_name}</span></div>
+        </div>
+        
+        <div class="result-wrap">
+            <div class="result-title">
+                <div class="result-list">               
+                    <a id="updateOrd" href="{:U('Article/index')}"><i class="icon-font"></i>刷新页面</a>
+            </div>
+            <div class="result-content">
+                <table class="result-tab" width="100%">
+                    <tr>
+                        <!-- <th class="tc" width="5%"><input class="allChoose" name="" type="checkbox"></th> -->
+                        <th>文章标题</th>                       
+                        <th>前台显示</th>
+                        <th>操作</th>
+                    </tr>
+                    <foreach name="list" item="vo">
+                    <tr>
+                        <!-- <td class="tc"><input name="id[]" value="{$vo.id}" type="checkbox"></td> -->
+                        <td>
+                        	&nbsp;&nbsp;{$vo.title}<br />
+                        	<if condition="!empty($vo['child'])">
+                        		<foreach name="vo['child']" item="v">
+                        			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{$v['title']}<br />
+                        		</foreach>
+                        	</if>
+                        </td>                        
+                        <td>
+                        	{$vo.isshow|is_show=###}<br />
+                        	<if condition="!empty($vo['child'])">
+                        		<foreach name="vo['child']" item="v">
+                        			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{$v.isshow|is_show=###}<br />
+                        		</foreach>
+                        	</if>
+                        </td>
+                        <td width="20%">	
+                        	<a class="link-update" href="{:U('Article/edit',array('id'=>$vo[id]))}">编辑</a>                               
+                           	<a class="link-update" href="{:U('Article/lock',array('id'=>$vo[id],'isshow'=>$vo[isshow]))}">{$vo.isshow|nav_action=###}</a>
+                           	<a class="link-update del" href="{:U('Article/del',array('id'=>$vo[id]))}">删除</a>
+                           	<br />
+                           	<if condition="!empty($vo['child'])">
+                        		<foreach name="vo['child']" item="v">
+                        			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        			<a class="link-update" href="{:U('Article/edit',array('id'=>$v[id]))}">编辑</a>                               
+		                           	<a class="link-update" href="{:U('Article/lock',array('id'=>$v[id],'isshow'=>$v[isshow]))}">{$v.isshow|nav_action=###}</a>
+		                           	<a class="link-update del" href="{:U('Article/del',array('id'=>$v[id]))}">删除</a>
+		                           	<br />
+                        		</foreach>
+                        	</if>
+                        </td>
+                    </tr>
+                    </foreach>
+                    <tr>
+                    	<td colspan="9" align="right">{$page}</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <!--/main-->
+</div>
+</body>
+</html>

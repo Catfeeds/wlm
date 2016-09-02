@@ -1,0 +1,71 @@
+
+<div class="container-layout padding-top padding-bottoms fixed">
+    
+      <div class="line">
+        <div class="xl12 xs3 xm3 xb2">
+			<button class="button icon-navicon float-right" data-target="#header-demo"></button>
+			<img onclick="window.location.href='http://www.weilaimen.org'" src="__PUBLIC__/images/wlm_logo.png" style=" margin-left:30px;" />
+		</div>
+        <div class=" xl12 xs9 xm9 xb10 nav-navicon" id="header-demo">
+    
+          <div class="xs8 xm6 xb5 padding-small" style="margin-top:23px;">
+            <ul class="nav nav-menu nav-inline nav-big" id="menu">
+            	<volist name="nav" id="vo">
+            		<if condition="$vo['next'] == ''">
+            			<li>
+            				<if condition="$vo['url'] != '/zc/index.php?'">
+            					<a href="{$vo.url}">{$vo.name}</a>
+            				<else/>
+            					<a href="#" onclick="$('#baidu_submit').click()">{$vo.name}</a>
+            				</if>
+            			</li>
+            		<else/>
+            			<li>
+            				<a href="{$vo.url}">{$vo.name}<span class="arrow"></span></a>
+            				<ul class="drop-menu">
+            					<volist name="vo['next']" id="nvo">
+            						<li><a href="{$nvo.url}">{$nvo.name}</a></li>
+            					</volist>
+            				</ul>
+            			</li>
+            		</if>
+            		
+            	</volist>
+            </ul>
+          </div>
+          <div class="xs4 xm3 xb4" style="margin-top:23px;">
+            <form>
+              <div class="input-group padding-little-top">
+                <input type="text" class="input border-main" id="keywords" name="keywords" size="30" placeholder="关键词" />
+                <span class="addbtn">
+					<button type="button" class="button bg-main" onclick="search()" style="height:35px; ">搜！</button>
+				</span>
+              </div>
+            </form>
+          </div>
+          <div class="navbar-text navbar-right hidden-s header_msg" style="padding-top:8px; margin-top:23px; margin-right:20px">
+		  <if condition="$_SESSION['uid'] == ''">
+		  	<a href="{:U('User/login')}">登录</a>
+		  	<font>|</font>
+		  	<a href="{:U('User/register')}">注册</a>
+		  <else/>
+		  	<img style="height:30px; width:30px" src="{:C('IMG_URL')}/public/avatar/000/00/00/{$_SESSION['id']}virtual_avatar_middle.jpg"/>
+		  	<a href="{:U('User/center')}">{$_SESSION['uname']}</a>
+		  	|<a href="{:U('User/out')}">退出</a>
+		  </if>
+		  
+		  </div>
+  </div>
+    
+        </div>
+<div style="display:none">
+<form action="http://www.baidu.com/baidu" target="_blank">
+<table bgcolor="#FFFFFF"><tr><td>
+<input name=tn type=hidden value=baidu>
+<input type="text" name="word" id="baidu_word" value="{$keyword}" size=30>
+<input type="submit" id="baidu_submit" value="百度搜索">
+</td></tr></table>
+</form>
+</div>
+</div>
+

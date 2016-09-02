@@ -1,0 +1,84 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>{:C('WEB_NAME')}-{$page_name}</title>
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/css/common.css"/>
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/css/main.css"/>
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/css/page.css"/>
+<script type="text/javascript" src="__PUBLIC__/js/jquery.min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/layer/layer.min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/js/company.js"></script>
+<script type="text/javascript">
+var url = "{:U('Company/info')}";
+</script>
+</head>
+<body>
+<!-- Head -->
+<include file="Public:head" />
+<!-- Head -->
+<div class="container clearfix">
+    <!-- sidebar -->
+    <include file="Public:sidebar" />
+    <!--/sidebar-->
+    <div class="main-wrap">
+
+        <div class="crumb-wrap">
+            <div class="crumb-list">
+            <i class="icon-font"></i>
+            <a href="{:C('ADMIN_URL')}">首页</a>
+            <span class="crumb-step">&gt;</span>
+            <span class="crumb-name">{$page_name}</span></div>
+        </div>
+        
+        <div class="result-wrap">
+            <div class="result-title">
+            	<form name="search" action="{:U('Anli/search')}" method="post">
+	            <div class="result-list">  
+	            	<a href="{:U('Anli/add')}"><i class="icon-font"></i>新增案例</a>             
+	                <a id="updateOrd" href="{:U('Anli/index')}"><i class="icon-font"></i>刷新页面</a>
+	                                               案例名称：<input class="myinput" type="text" name="title">
+	                <input class="mybutton" type="submit" value="查找"> 支持模糊查询
+	        	</div>
+	        	</form>
+	            <div class="result-content">
+	                <table class="result-tab" width="100%">
+	                    <tr>
+	                        <!-- <th class="tc" width="5%"><input class="allChoose" name="" type="checkbox"></th> -->
+	                        <th>案例标题</th>
+	                        <th>网址</th>
+	                        <th>案例简介</th>                       
+	                        <th>案例图片</th>
+	                        <th>前台显示</th>
+	                        <th>真实点击量</th>
+                        	<th>虚拟点击量</th>
+	                        <th>操作</th>
+	                    </tr>
+	                    <foreach name="list" item="vo">
+	                    <tr>
+	                        <!-- <td class="tc"><input name="id[]" value="{$vo.id}" type="checkbox"></td> -->
+	                        <td>{$vo.title}</td>
+	                        <td>{$vo.from_url}</td>
+	                        <td>{$vo.intro}</td>                        
+	                        <td><img src="{$vo.pic}" alt="案例图片" width="180" height="111" /></td>                     
+	                        <td>{$vo.isshow|is_show=###}</td>
+	                        <td>{$vo.num_true}</td>
+                        	<td>{$vo.num_edit}</td>
+	                        <td width="20%">	
+	                        	<a class="link-update" href="{:U('Anli/edit',array('id'=>$vo[id]))}">编辑</a>                               
+	                           	<a class="link-update" href="{:U('Anli/lock',array('id'=>$vo[id],'isshow'=>$vo[isshow]))}">{$vo.isshow|nav_action=###}</a>
+	                           	<a class="link-update del" href="{:U('Anli/del',array('id'=>$vo[id]))}">删除</a>
+	                        </td>
+	                    </tr>
+	                    </foreach>
+	                    <tr>
+	                    	<td colspan="9" align="right">{$page}</td>
+	                    </tr>
+	                </table>
+	            </div>
+		       </div>
+		   </div>
+		   <!--/main-->
+</div>
+</body>
+</html>

@@ -1,0 +1,177 @@
+ <!doctype html>
+<!--[if lt IE 7 ]> <html class="ie ie6 ie-lt10 ie-lt9 ie-lt8 ie-lt7 no-js" lang="en"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie ie7 ie-lt10 ie-lt9 ie-lt8 no-js" lang="en"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie ie8 ie-lt10 ie-lt9 no-js" lang="en"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie ie9 ie-lt10 no-js" lang="en"> <![endif]-->
+<!--[if gt IE 9]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<!-- the "no-js" class is for Modernizr. -->
+
+<head id="www-itjuzi-com" data-template-set="html5-reset">
+
+	<title>投资数据详情 | {$system.webname}</title>
+<include file="./Application/Wlmeng/View/Public/meta.html" />
+
+	<link rel="stylesheet" href="__CSS__/style.css" />
+
+	<link rel="stylesheet" href="__CSS__/jquery.Jcrop.min.css" type="text/css" />
+
+	<!-- Uploadify -->
+    <link rel='stylesheet' type='text/css' href='__CSS__/uploadify.css'>
+
+
+
+	<script src="__JS__/modernizr-2.6.2.dev.js"></script>
+	<script type="text/javascript" src="__JS__/m.js"></script>
+	</head>
+
+<body >
+<script>window.jQuery || document.write("<script src='__JS__/jquery-1.9.1.min.js'>\x3C/script>")</script>
+<include file="./Application/Wlmeng/View/Public/menu.html" />
+<div class="wrapper">
+
+<include file="./Application/Wlmeng/View/Public/header.html" />
+
+
+  <div class="page-wrapper" style="margin-top:170px">
+  
+    <section id="page-content">
+      
+      <article class="two-col-big-left">
+        
+        <div class="normal-box person-info">
+          <div class="media">
+              <a class="pull-left" >
+                                    <img class="media-object" width="180" height="180" src="{$invest.pic}">
+                              </a>
+
+              <div class="media-body">
+                 <ul class="detail-info">
+                  <li>公司:  <a href="">{$invest.company}</a> </li>
+                  <li>阶段:  <a href="">{$invest.round}</a> </li>
+                  <li>领域:  {$invest.dname}</li>  
+                  <li>金额:	{$invest.money}</li>
+                  <li>介绍:  <em>{$invest.intro}</em></li>
+                 </ul>
+               </div>  
+            </div>
+        </div>
+      
+        
+          
+              
+      </article>
+      
+      <aside class="two-col-little-right">         
+               
+                
+      </aside>
+
+    </section>  
+
+    <include file="./Application/Wlmeng/View/Public/footer.html" />
+
+  </div>  
+
+</div>
+
+<!-- Prompt IE 6 users to install Chrome Frame. Remove this if you support IE 6.
+     http://chromium.org/developers/how-tos/chrome-frame-getting-started -->
+<!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
+
+
+<script type="text/javascript">
+  $(function () {
+    
+    $('body').on('click','#top_login,.login',function (evt) {
+      open_dialog('login', evt);
+    });
+    
+    $('body').on('click','#top_register',function (evt) {
+      open_dialog('register', evt);
+    });
+
+    $('.btn').each(function () {
+      if($(this).attr('target') == '_blank'){
+        return true;
+      }
+      var href = $(this).attr('href');
+      if(href && /\/(add|claim|login)\/?/g.test(href)){
+        $(this).click(function (evt) {
+          if(!$.cookie('front_identity')){
+            open_dialog('login', evt);
+            return false;
+          }
+        });
+      }
+    });
+
+  });
+</script>
+
+
+<script type="text/javascript" src="__JS__/login.js"></script>
+
+<script src="__JS__/jquery.uploadify.min.js"></script>
+<script src="__JS__/jquery.Jcrop.min.js"></script>
+<script src="__JS__/jquery-scrollto.js"></script>
+<script src="__JS__/jquery.cookie.js"></script>
+<script src="__JS__/functions.js"></script>
+
+<script>
+  // add activity
+  $('.check-article-detail-des .check-more').show().each(function(){
+    $(this).appendTo($(this).siblings('p'));
+  });
+
+  $('.summary-article-detail-des .check-more').show().each(function(){
+    $(this).appendTo($(this).siblings('p'));
+  });
+
+</script>
+
+
+<!-- for affix -->
+<script>
+  
+  function show_new_affix(){
+    $('#old-affix').hide();
+    $('#new-affix').show();
+  }
+
+  function hide_new_affix(){
+    $('#old-affix').show();
+    $('#new-affix').hide();
+  }
+
+  function check_show_new () {
+    var s = $(window).scrollTop();
+     if (s>1) {
+      show_new_affix();
+     } else {
+      hide_new_affix();
+     }
+  }
+  
+  $(window).scroll(function(){
+    check_show_new();
+  });
+
+  $(window).resize(function(){
+    check_show_new();
+  });
+
+  check_show_new();
+
+  $('body').on('mouseover','#dropdownMenu',function(){
+    $('.dropdown-menu').show();
+  });
+  $('body').on('mouseout','#dropdownMenu',function(){
+   $('.dropdown-menu').hide();
+  });
+</script>
+<script src="__JS__/jquery-ui-1.9.2.datapicker.min.js"></script>
+<script src="__JS__/jquery-ui-1.9.2.datepicker-zh-CN.js"></script>
+
+</div>
+</body>
+</html>

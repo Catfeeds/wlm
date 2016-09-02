@@ -1,0 +1,20 @@
+[ 2015-06-13T08:27:13+08:00 ] 223.104.13.17 /zc/
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000447s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000613s ]
+
+[ 2015-06-13T08:27:44+08:00 ] 223.104.13.17 /zc/
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.003679s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003814s ]
+
+[ 2015-06-13T09:06:59+08:00 ] 113.31.46.161 /zc/
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.008343s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.008607s ]
+
+[ 2015-06-13T09:06:59+08:00 ] 101.226.68.217 /zc/
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000453s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000627s ]
+

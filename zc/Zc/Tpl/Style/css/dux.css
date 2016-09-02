@@ -1,0 +1,110 @@
+html, body {
+    font-family: "微软雅黑", "Open Sans", Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    padding: 0px;
+    margin: 0px;
+}
+
+a {
+    color: #26ADE4;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #555555;
+}
+
+p {
+    color: #666;
+}
+
+em {
+    font-style: italic;
+}
+
+strong {
+    font-weight: bold;
+}
+
+h1 {
+    margin-bottom: 15px;
+}
+
+h2 {
+    margin-bottom: 12px;
+}
+
+pre {
+    font-family: "Courier New", "Courier", serif, "微软雅黑";
+    font-size: 12px;
+    padding: 10px;
+    margin: 20px 0px;
+    border: 1px solid #DDD;
+    border-radius: 5px;
+    background: #fff;
+}
+
+code {
+    color: #333;
+}
+
+ul {
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background-color: #EEE;
+}
+
+#header {
+    background: #F3F3F3;
+    border-bottom: 1px solid #eee;
+}
+
+#title {
+    font-family: "Mr Dafoe", Times, serif;
+    font-size: 50px;
+}
+#title .sub {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#subtitle {
+    font-size: 14px;
+    color: #888888;
+}
+
+#nav {
+    padding-top: 40px;
+}
+
+.container {
+    width: 960px;
+    margin: 0px auto;
+}
+
+#footer {
+    color: #999;
+    text-align: center;
+    padding: 20px 0px 40px;
+}
+
+.fixed-top {
+    background: #26ADE4;
+    padding: 10px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, .175);
+    z-index: 1000;
+    margin-left: 30px;
+}
+.fixed-top a,.fixed-top a:hover {
+    color: #f5f1f1;
+}
+.fixed-top .active a {
+    color: #fff;
+}
+

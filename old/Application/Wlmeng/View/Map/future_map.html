@@ -1,0 +1,216 @@
+<!doctype html>
+<!--[if lt IE 7 ]>
+<html class="ie ie6 ie-lt10 ie-lt9 ie-lt8 ie-lt7 no-js" lang="en">
+    <![endif]-->
+    <!--[if IE 7 ]>
+    <html class="ie ie7 ie-lt10 ie-lt9 ie-lt8 no-js" lang="en">
+        <![endif]-->
+        <!--[if IE 8 ]>
+        <html class="ie ie8 ie-lt10 ie-lt9 no-js" lang="en">
+            <![endif]-->
+            <!--[if IE 9 ]>
+            <html class="ie ie9 ie-lt10 no-js" lang="en">
+                <![endif]-->
+                <!--[if gt IE 9]>
+                <!-->
+                <html class="no-js" lang="en">
+                    <!--<![endif]-->
+                    <!-- the "no-js" class is for Modernizr. -->
+
+<head data-template-set="html5-reset">
+
+
+                    <title>未来地图 | {$system.webname}</title>
+<include file="./Application/Wlmeng/View/Public/meta.html" />
+                    <link rel="stylesheet" href="__CSS__/style.css" />
+
+                    <link rel="stylesheet" href="__CSS__/jquery.Jcrop.min.css" type="text/css" />
+
+                    <!-- Uploadify -->
+                    <link rel='stylesheet' type='text/css' href='__CSS__/uploadify.css'>
+                    <script src='__JS__/jquery-1.9.1.min.js'></script>
+                    <script src="__JS__/modernizr-2.6.2.dev.js"></script>
+
+                    
+</head>
+
+<body >
+
+<include file="./Application/Wlmeng/View/Public/menu.html" />
+                    <div class="wrapper">
+                        
+                        <include file="./Application/Wlmeng/View/Public/header.html" />
+                    <div class="page-wrapper" style="padding-top:170px;">
+                    
+                    <div class="ConDiv">
+    <img border="0" usemap="#Map" src="__IMG__/map.png" />
+    <map name="Map" id="Map">
+        <area id="beijing" alt="北京市" href="#" coords="354,140,380,153" shape="rect">
+        <area id="shanghai" alt="上海市" href="#" coords="434,246,462,259" shape="rect">
+        <area id="tianjin" alt="天津市" href="#" coords="382,168,408,180" shape="rect">
+        <area id="chongqing" alt="重庆市" href="#" coords="294,264,320,276" shape="rect">
+        <area id="hebei" alt="河北省" href="#" coords="347,174,374,186" shape="rect">
+        <area id="shanxi" alt="山西省"  href="#" coords="322,186,348,198" shape="rect">
+        <area id="neimenggu" alt="内蒙古" href="#" coords="349,110,388,124" shape="rect">
+        <area id="liaoning" alt="辽宁省" href="#" coords="406,128,432,140" shape="rect">
+        <area id="jilin" alt="吉林省" href="#" coords="427,101,454,115" shape="rect">
+        <area id="heilongjiang" alt="黑龙江" href="#" coords="424,58,464,73" shape="rect">
+        <area id="jiangsu" alt="江苏省" href="#" coords="404,224,417,250" shape="rect">
+        <area id="zhejiang" alt="浙江省" href="#" coords="413,265,427,291" shape="rect">
+        <area id="anhui" alt="安徽省" href="#" coords="382,236,395,263" shape="rect">
+        <area id="fujian" alt="福建省" href="#" coords="399,300,413,327" shape="rect">
+        <area id="jiangxi" alt="江西省" href="#" coords="371,286,385,313" shape="rect">
+        <area id="shandong" alt="山东省" href="#" coords="373,196,399,208" shape="rect">
+        <area id="henan" alt="河南省" href="#" coords="337,228,364,239" shape="rect">
+        <area id="hubei" alt="湖北省" href="#" coords="329,258,356,271" shape="rect">
+        <area id="hunan" alt="湖南省" href="#" coords="325,294,352,306" shape="rect">
+        <area id="guangdong" alt="广东省" href="#" coords="356,343,382,355" shape="rect">
+        <area id="guangxi" alt="广西" href="#" coords="302,343,328,355" shape="rect">
+        <area id="hainan" alt="海南省" href="#" coords="313,398,340,411" shape="rect">
+        <area id="sichuan" alt="四川省" href="#" coords="239,265,265,277" shape="rect">
+        <area id="guizhou" alt="贵州省" href="#" coords="283,311,308,324" shape="rect">
+        <area id="yunnan" alt="云南省" href="#" coords="225,337,251,349" shape="rect">
+        <area id="shaanxi" alt="陕西省" href="#" coords="303,224,316,251" shape="rect">
+        <area id="gansu" alt="甘肃省" href="#" coords="179,156,205,168" shape="rect">
+        <area id="qinghai" alt="青海省" href="#" coords="174,206,200,218" shape="rect">
+        <area id="ningxia" alt="宁夏" href="#" coords="277,188,290,212" shape="rect">
+        <area id="xinjiang" alt="新疆" href="#" coords="85,140,111,152" shape="rect">
+        <area id="xizang" alt="西藏" href="#" coords="87,249,113,261" shape="rect">
+        <area id="xianggang" alt="香港" href="#" coords="379,358,406,370" shape="rect">
+        <area id="aomen" alt="澳门" href="#" coords="349,371,375,383" shape="rect">
+        <area id="taiwan" alt="台湾省" href="#" coords="434,322,448,348" shape="rect">
+    </map>
+</div>
+
+<script type="text/javascript">
+$(function(){
+    $("area").each(function(){
+        var $x=-95;
+        var $y=-80; 
+        var name=$(this).attr("alt"); 
+        $(this).mouseover(function(e){
+        	var prov = {$prov};
+            var index_num=$(this).index();
+            var dom="<div class='mapDiv'><p><span class='name'></span></p></div>";
+            prov = eval(prov);
+            var j = 0;
+            for(var o in prov){
+            	if(prov[o].name == name){
+            		j = o;
+            	}
+            }
+            $("body").append(dom);
+            $(".name").text(prov[j].intro);
+            $(".mapDiv").css({
+                    top: (e.pageY + $y)+"px",
+                    left: (e.pageX + $x)+"px"
+                }).show("fast");
+        }).mouseout(function(){             
+                $(".mapDiv").remove();
+        }).mousemove(function(e){
+                $(".mapDiv").css({
+                    top: (e.pageY + $y)+"px",
+                    left: (e.pageX + $x)+"px"
+            })
+        });
+    });        
+});
+</script>
+
+                        <include file="./Application/Wlmeng/View/Public/footer.html" />
+
+                    </div>
+
+                </div>
+
+                <script type="text/javascript">
+  $(function () {
+    
+    $('body').on('click','#top_login,.login',function (evt) {
+      open_dialog('login', evt);
+    });
+    
+    $('body').on('click','#top_register',function (evt) {
+      open_dialog('register', evt);
+    });
+
+    $('.btn').each(function () {
+      if($(this).attr('target') == '_blank'){
+        return true;
+      }
+      var href = $(this).attr('href');
+      if(href && /\/(add|claim|login)\/?/g.test(href)){
+        $(this).click(function (evt) {
+          if(!$.cookie('front_identity')){
+            open_dialog('login', evt);
+            return false;
+          }
+        });
+      }
+    });
+
+  });
+</script>
+
+                <script type="text/javascript" src="__JS__/login.js"></script>
+
+                <script src="__JS__/jquery.uploadify.min.js"></script>
+                <script src="__JS__/jquery.Jcrop.min.js"></script>
+                <script src="__JS__/jquery-scrollto.js"></script>
+                <script src="__JS__/jquery.cookie.js"></script>
+                <script src="__JS__/functions.js"></script>
+
+                <script>
+  // add activity
+  $('.check-article-detail-des .check-more').show().each(function(){
+    $(this).appendTo($(this).siblings('p'));
+  });
+
+  $('.summary-article-detail-des .check-more').show().each(function(){
+    $(this).appendTo($(this).siblings('p'));
+  });
+
+</script>
+
+                <!-- for affix -->
+                <script>
+  
+  function show_new_affix(){
+    $('#old-affix').hide();
+    $('#new-affix').show();
+  }
+
+  function hide_new_affix(){
+    $('#old-affix').show();
+    $('#new-affix').hide();
+  }
+
+  function check_show_new () {
+    var s = $(window).scrollTop();
+     if (s>1) {
+      show_new_affix();
+     } else {
+      hide_new_affix();
+     }
+  }
+  
+  $(window).scroll(function(){
+    check_show_new();
+  });
+
+  $(window).resize(function(){
+    check_show_new();
+  });
+
+  check_show_new();
+
+  $('body').on('mouseover','#dropdownMenu',function(){
+    $('.dropdown-menu').show();
+  });
+  $('body').on('mouseout','#dropdownMenu',function(){
+   $('.dropdown-menu').hide();
+  });
+</script>
+
+</body>
+            </html>

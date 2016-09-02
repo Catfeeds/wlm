@@ -1,0 +1,100 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>{:C('WEB_NAME')}-{$page_name}</title>
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/css/common.css"/>
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/css/main.css"/>
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/css/page.css"/>
+<script type="text/javascript" src="__PUBLIC__/js/jquery.min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/layer/layer.min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/js/company.js"></script>
+<script type="text/javascript">
+var url = "{:U('Company/info')}";
+</script>
+</head>
+<body>
+<!-- Head -->
+<include file="Public:head" />
+<!-- Head -->
+<div class="container clearfix">
+    <!-- sidebar -->
+    <include file="Public:sidebar" />
+    <!--/sidebar-->
+    <div class="main-wrap">
+
+        <div class="crumb-wrap">
+            <div class="crumb-list">
+            <i class="icon-font"></i>
+            <a href="{:C('ADMIN_URL')}">首页</a>
+            <span class="crumb-step">&gt;</span>
+            <span class="crumb-name">{$page_name}</span></div>
+        </div>
+        
+        <div class="result-wrap">
+            <div class="result-title">
+            	<form name="search" action="{:U('Company/search')}" method="post">
+                <div class="result-list">  
+                	<a href="{:U('Company/add')}"><i class="icon-font"></i>添加机构</a>                 
+                    <a id="updateOrd" href="{:U('Company/index')}"><i class="icon-font"></i>刷新页面</a>
+                    	机构名称：<input class="myinput" type="text" name="name">
+                    	机构状态：<select class="myinput myselect" name="status">                     		
+                    		<option value="1">运营中</option>
+                    		<option value="2">未上线</option>
+                    		<option value="3">已关闭</option>
+                    		<option value="4">已转型</option>
+			   				</select>
+                   	 	运营阶段：<select class="myinput myselect" name="phase">                     		
+                    		<option value="1">初创期</option>
+                    		<option value="2">成长发展期</option>
+                    		<option value="3">上市公司</option>
+			   				</select>
+                    	前台显示：<select class="myinput myselect" name="isshow">
+                     		<option value="1">显示</option>
+                     		<option value="0">不显示</option>
+			   </select>
+                    	<input class="mybutton" type="submit" value="查找">
+                </div>
+                </form>
+            </div>
+            <div class="result-content">
+                <table class="result-tab" width="100%">
+                    <tr>
+                        <!-- <th class="tc" width="5%"><input class="allChoose" name="" type="checkbox"></th> -->
+                        <th>发布者</th>
+                        <th>机构名称</th>
+                        <th>所属类型</th>
+                        <th>机构官网</th>
+                        <th>机构状态</th>
+                        <th>运营阶段</th>
+                        <th>前台显示</th>
+                        <th>操作</th>
+                    </tr>
+                    <foreach name="list" item="vo">
+                    <tr>
+                        <!-- <td class="tc"><input name="id[]" value="{$vo.id}" type="checkbox"></td> -->
+                        <td>{$vo.member_id|getMemberName=###}</td>
+                        <td><a href="javascript:void(0);" onclick="get_more({$vo.id})" title="点击查看机构详细信息">{$vo.name}</a></td>
+                        <td>{$vo.type|getTypes=###}</td>
+                        <td><a target="_blank" href="{$vo.company_url}" title="点击查看官网">{$vo.company_url}</a></td>
+                        <td>{$vo.status|company_status=###}</td>
+                        <td>{$vo.phase|phase_status=###}</td>
+                        <td>{$vo.isshow|is_show=###}</td>
+                        <td>	
+                        	<a class="link-update" href="{:U('Company/edit',array('id'=>$vo[id]))}">修改</a>                               
+                           	<a class="link-update" href="{:U('Company/lock',array('id'=>$vo[id],'isshow'=>$vo[isshow]))}">{$vo.isshow|nav_action=###}</a>
+                           	<a class="link-update del" href="{:U('Company/del',array('id'=>$vo[id]))}">删除</a>
+                        </td>
+                    </tr>
+                    </foreach>
+                    <tr>
+                    	<td colspan="9" align="right">{$page}</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <!--/main-->
+</div>
+</body>
+</html>

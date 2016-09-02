@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>{:C('WEB_NAME')}-{$page_name}</title>
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/css/common.css"/>
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/css/main.css"/>
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/css/page.css"/>
+<script type="text/javascript" src="__PUBLIC__/js/jquery.min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/layer/layer.min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/js/company.js"></script>
+<script type="text/javascript">
+var url = "{:U('Company/info')}";
+</script>
+</head>
+<body>
+<!-- Head -->
+<include file="Public:head" />
+<!-- Head -->
+<div class="container clearfix">
+    <!-- sidebar -->
+    <include file="Public:sidebar" />
+    <!--/sidebar-->
+    <div class="main-wrap">
+
+        <div class="crumb-wrap">
+            <div class="crumb-list">
+            <i class="icon-font"></i>
+            <a href="{:C('ADMIN_URL')}">首页</a>
+            <span class="crumb-step">&gt;</span>
+            <span class="crumb-name">{$page_name}</span></div>
+        </div>
+        
+        <div class="result-wrap">
+            <div class="result-title">
+            	<form name="search" action="{:U('News/search')}" method="post">
+                <div class="result-list">  
+                	<a href="{:U('News/add')}"><i class="icon-font"></i>添加资讯</a>                  
+                    <a id="updateOrd" href="{:U('News/index')}"><i class="icon-font"></i>刷新页面</a>
+                </div>
+                </form>
+            </div>
+            <div class="result-content">
+                <table class="result-tab" width="100%">
+                    <tr>
+                        <!-- <th class="tc" width="5%"><input class="allChoose" name="" type="checkbox"></th> -->
+                        <th>新闻标题</th>
+                        <th>来源</th>
+                        <th>所属公司</th>
+                        <!-- <th>所属领域</th>
+                        <th>所属类型</th> -->
+                        <th>添加时间</th>
+                        <th>是否显示</th>
+                        <th>真实点击量</th>
+                        <th>虚拟点击量</th>
+                        <th>操作</th>
+                    </tr>
+                    <foreach name="list" item="vo">
+                    <tr>
+                        <!-- <td class="tc"><input name="id[]" value="{$vo.id}" type="checkbox"></td> -->
+                        <td><a href="{$vo.from_url}" target="_blank">{$vo.title}</a></td>
+                        <td>{$vo.url}</td>
+                        <td>{$vo.company_id|getCompany=###}</td>
+                        <!-- <td>{$vo.domain_id|getDomainName=###}</td> -->                        
+                        <!-- <td>{$vo.news_type_id|getNewsType=###}</td> -->
+                        <td>{$vo.addtime|date='Y-m-d H:i:s',###}</td>
+                        <td>{$vo.isshow|is_show=###}</td>
+                        <td>{$vo.num_true}</td>
+                        <td>{$vo.num_edit}</td>
+                        <td>	 
+                        	<a class="link-update" href="{:U('News/edit',array('id'=>$vo[id]))}">修改</a>                              
+                           	<a class="link-update" href="{:U('News/lock',array('id'=>$vo[id],'isshow'=>$vo[isshow]))}">{$vo.isshow|nav_action=###}</a>
+                           	<a class="link-update del" href="{:U('News/del',array('id'=>$vo[id]))}">删除</a>
+                        </td>
+                    </tr>
+                    </foreach>
+                    <tr>
+                    	<td colspan="9" align="right">{$page}</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <!--/main-->
+</div>
+</body>
+</html>

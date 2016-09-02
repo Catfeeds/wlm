@@ -1,0 +1,218 @@
+<!doctype html>
+<!--[if lt IE 7 ]> <html class="ie ie6 ie-lt10 ie-lt9 ie-lt8 ie-lt7 no-js" lang="en"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie ie7 ie-lt10 ie-lt9 ie-lt8 no-js" lang="en"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie ie8 ie-lt10 ie-lt9 no-js" lang="en"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie ie9 ie-lt10 no-js" lang="en"> <![endif]-->
+<!--[if gt IE 9]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<!-- the "no-js" class is for Modernizr. -->
+
+<head id="www-itjuzi-com" data-template-set="html5-reset">
+
+	<title>{$company.name} | {$system.webname}</title>
+
+	<include file="./Application/Wlmeng/View/Public/meta.html" />
+
+	<link rel="stylesheet" href="__CSS__/style.css" />
+
+	<link rel="stylesheet" href="__CSS__/jquery.Jcrop.min.css" type="text/css" />
+
+	<!-- Uploadify -->
+    <link rel='stylesheet' type='text/css' href='__CSS__/uploadify.css'>
+
+
+
+	<script src="__JS__/modernizr-2.6.2.dev.js"></script>
+
+	<script type="text/javascript" src="__JS__/m.js"></script>
+	
+	<script type="text/javascript" src="__PUBLIC__/js/wlm.js"></script>
+	<script type="text/javascript" src="__LAYER__/layer.min.js"></script>
+	
+	</head>
+
+<body >
+<script>window.jQuery || document.write("<script src='__JS__/jquery-1.9.1.min.js'>\x3C/script>")</script>
+<include file="./Application/Wlmeng/View/Public/menu.html" />
+<div class="wrapper">
+
+<include file="./Application/Wlmeng/View/Public/header.html" />
+
+<style type="text/css">
+  #company-member-list-tbl .relation_list {padding:3px 6px;}
+  #company-member-list-tbl .relation_list img {float: left;padding: 10px;border-radius: 50px;width: 40px;height: 40px;}
+</style>
+
+  <div class="page-wrapper" style="padding-top:170px;">
+  
+    <section id="page-content">
+      
+      <article class="two-col-big-left">
+        
+        <div class="normal-box">
+                        <img id="company_big_show" src="{$company.company_pic}" alt="{$company.name}" title="{$company.name}" /> 
+                  </div>
+
+        <div class="normal-box">
+          <h2>基础信息</h2>
+          <ul class="detail-info">
+            <li>网址:  <a target="_blank" href="{$company.company_url}">{$company.company_url}</a></li>
+            <li>公司:  <em>{$company.name}</em></li>
+            <li>时间:  <em>{$company.year}年{$company.month}月</em></li>
+            <li>地点:  <em>{$company.pname}</em>,<em>{$company.cname}</em></li>
+            <li>状态:  <a href="">{$company.status}</a></li>
+            <li>阶段:  <a href="">{$company.phase}</a> </li>
+            <li>领域:  <a id="scope_id_value" scope_id="5" href="">{$company.domain}</a></li>
+            <li>简介： <em>{$company.intro}</em></li>
+          </ul>
+        </div>
+        
+        
+        <div class="normal-box-no-pad">
+          <h2><!-- <a data-target="#myModal" data-toggle="modal" class="btn btn-green pull-right" href=""> <i class="icon_plus"></i> 添加成员</a> -->投资经历</h2>
+          <table id="company-member-list-tbl">
+
+                             
+           <tbody>
+           <volist>
+           		<tr>
+           		
+           			<volist name="inv" id="vo">
+             			<td style="width:70px;"><a href="">{$vo.company}</a></td>
+             			<td style="width:50px;"><img src="{$vo.pic}"/></td>
+             			<td style="width:50px;">{$vo.addtime}</td>
+             			<td style="width:50px;">{$vo.round}</td>
+             			<td style="width:50px;">{$vo.money}</td>
+             			<td style="width:70px;">{$vo.dname}</td>
+             			<td>{$vo.intro}</td>
+            			
+           			</volist>
+             		
+           		</tr>
+           </volist>
+           
+         
+        </tbody></table>
+        </div>
+          
+        <!-- comment -->
+        <!-- <div class="normal-box">
+          <h2>添加评论</h2>
+          <div class="clearfix">
+          	<input type="hidden" id="commentURL" value="{:U('Comment/addComment')}">
+          	<form id="comment_form">
+          		<textarea id="comment_content" style="width:580px;height:50px;" name="comment" placeholder="分享您的观点..."></textarea>
+            	<if condition="$Think.session.memberid == ''">
+            		<span class="pull-left"> 请 <a href="{:U('Member/goLogin')}" class="login">登录</a> 后参与评论</span>
+            	</if>    
+            	<input type="hidden" name="company" value="{$company.id}">
+                <a href="javascript:void(0);" onclick="addComment()" class="btn btn-orange comment_btn pull-right">发布</a>
+          	</form>
+          </div>
+          <div class="comment-list" style="margin-top:20px;">
+
+            
+          </div>
+
+        </div>
+		-->
+      </article>
+
+    </section>  
+
+     <include file="./Application/Wlmeng/View/Public/footer.html" />
+
+  </div>  
+
+</div>
+
+
+<script type="text/javascript">
+  $(function () {
+    
+    $('body').on('click','#top_login,.login',function (evt) {
+      open_dialog('login', evt);
+    });
+    
+    $('body').on('click','#top_register',function (evt) {
+      open_dialog('register', evt);
+    });
+
+    $('.btn').each(function () {
+      if($(this).attr('target') == '_blank'){
+        return true;
+      }
+      var href = $(this).attr('href');
+      if(href && /\/(add|claim|login)\/?/g.test(href)){
+        $(this).click(function (evt) {
+          if(!$.cookie('front_identity')){
+            open_dialog('login', evt);
+            return false;
+          }
+        });
+      }
+    });
+
+  });
+</script>
+
+
+<script src="__JS__/jquery.cookie.js"></script>
+<script src="__JS__/functions.js"></script>
+
+<script>
+  // add activity
+  $('.check-article-detail-des .check-more').show().each(function(){
+    $(this).appendTo($(this).siblings('p'));
+  });
+
+  $('.summary-article-detail-des .check-more').show().each(function(){
+    $(this).appendTo($(this).siblings('p'));
+  });
+
+</script>
+
+
+<!-- for affix -->
+<script>
+  
+  function show_new_affix(){
+    $('#old-affix').hide();
+    $('#new-affix').show();
+  }
+
+  function hide_new_affix(){
+    $('#old-affix').show();
+    $('#new-affix').hide();
+  }
+
+  function check_show_new () {
+    var s = $(window).scrollTop();
+     if (s>1) {
+      show_new_affix();
+     } else {
+      hide_new_affix();
+     }
+  }
+  
+  $(window).scroll(function(){
+    check_show_new();
+  });
+
+  $(window).resize(function(){
+    check_show_new();
+  });
+
+  check_show_new();
+
+  $('body').on('mouseover','#dropdownMenu',function(){
+    $('.dropdown-menu').show();
+  });
+  $('body').on('mouseout','#dropdownMenu',function(){
+   $('.dropdown-menu').hide();
+  });
+</script>
+
+
+
+
+           

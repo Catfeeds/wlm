@@ -1,0 +1,296 @@
+[ 2016-01-19T10:23:11+08:00 ] 124.127.214.224 /admin.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000065s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000442s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001326s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001598s ]
+NOTIC: [8] Undefined index: hrfd_adminid /webHome/LFWZ000390/www/Application/Admin/Controller/ParentController.class.php 第 17 行.
+
+[ 2016-01-19T10:23:11+08:00 ] 124.127.214.224 /admin.php?s=/Login/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000478s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000389s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000518s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000104s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000259s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007065s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007186s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000397s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000628s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001212s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000508s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000608s ]
+
+[ 2016-01-19T10:23:27+08:00 ] 124.127.214.224 /admin.php?s=/Login/doLogin.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000435s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000346s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000466s ]
+SQL: SHOW COLUMNS FROM `wlm_admin` [ RunTime:0.0022s ]
+SQL: SELECT `password`,`id` FROM `wlm_admin` WHERE `adminname` = 'weilaimen2014@126.com' LIMIT 1   [ RunTime:0.0017s ]
+
+[ 2016-01-19T10:23:27+08:00 ] 124.127.214.224 /admin.php?s=/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000424s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000354s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000500s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000109s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000231s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009922s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010034s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000417s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000526s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001139s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000444s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000661s ]
+
+[ 2016-01-19T10:23:33+08:00 ] 124.127.214.224 /admin.php?s=/News/newslist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000075s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000504s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000438s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000684s ]
+SQL: SHOW COLUMNS FROM `wlm_news` [ RunTime:0.0016s ]
+SQL: SELECT * FROM `wlm_news` ORDER BY create_time desc  [ RunTime:0.0048s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000108s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000234s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017083s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017283s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000397s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000647s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001232s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000445s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000565s ]
+
+[ 2016-01-19T10:23:38+08:00 ] 124.127.214.224 /admin.php?s=/News/add.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000379s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000337s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000439s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000119s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000235s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010652s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010772s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000334s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000550s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001029s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000335s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000427s ]
+
+[ 2016-01-19T10:40:13+08:00 ] 124.127.214.224 /admin.php?s=/News/insert.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000484s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000404s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000518s ]
+SQL: SHOW COLUMNS FROM `wlm_news` [ RunTime:0.0015s ]
+SQL: INSERT INTO `wlm_news` (`title`,`content`,`create_time`) VALUES ('秦皇岛启明教育学校开班啦','&lt;section class=&quot;article135&quot; label=&quot;powered by 135editor.com&quot; style=&quot;font-family: 微软雅黑;&quot;&gt;&lt;section class=&quot;135editor&quot; style=&quot;position: static; box-sizing: border-box; border: 0px none; padding: 0px; margin: 0px;&quot; data-id=&quot;84261&quot;&gt;&lt;section class=&quot;layout&quot; style=&quot;border: 0px; margin: 5px auto; box-sizing: border-box; padding: 0px;&quot;&gt;&lt;section style=&quot;height: 25px; box-sizing: border-box; color: inherit; padding: 0px; margin: 0px;&quot;&gt;&lt;section style=&quot;height: 100%; width: 50px; float: left; border-top-width: 2px; border-top-style: solid; border-color: rgb(172, 29, 16); border-left-width: 2px; border-left-style: solid; box-sizing: border-box; color: inherit; padding: 0px; margin: 0px;&quot;&gt;&lt;/section&gt;&lt;section style=&quot;display: inline-block; color: rgb(172, 29, 16); clear: both; box-sizing: border-box; border-color: rgb(172, 29, 16); padding: 0px; margin: 0px;&quot;&gt;&lt;/section&gt;&lt;/section&gt;&lt;section class=&quot;135brush&quot; data-style=&quot;color: rgb(51, 51, 51); font-size: 1em; line-height: 1.75em; word-break: break-all; word-wrap: break-word; text-align: justify;&quot; style=&quot;margin: -0.8em 0.3em; padding: 0.8em; box-sizing: border-box; color: inherit;&quot;&gt;&lt;p style=&quot;margin-top: 10px; margin-bottom: 10px; text-indent: 32px; white-space: normal;&quot;&gt;&lt;span style=&quot;font-family: 宋体;&quot;&gt;经过近两个月的紧张筹备，由未来门资本领投的秦皇岛启明教育股权投资项目所属四个新校区已经进入招生开学阶段。其中，秦皇岛开发区三小校区更是在&lt;/span&gt;&lt;span style=&quot;font-family: 宋体;&quot;&gt;2016年1月14日率先开班上课啦！&lt;/span&gt;&lt;/p&gt;&lt;/section&gt;&lt;section style=&quot;height: 25px; box-sizing: border-box; color: inherit; padding: 0px; margin: 0px;&quot;&gt;&lt;section style=&quot;height: 100%; width: 50px; float: right; border-bottom-width: 2px; border-bottom-style: solid; border-color: rgb(172, 29, 16); border-right-width: 2px; border-right-style: solid; box-sizing: border-box; color: inherit; padding: 0px; margin: 0px;&quot;&gt;&lt;/section&gt;&lt;/section&gt;&lt;/section&gt;&lt;section style=&quot;width: 0px; height: 0px; clear: both; box-sizing: border-box; padding: 0px; margin: 0px;&quot;&gt;&lt;/section&gt;&lt;/section&gt;&lt;p style=&quot;white-space: normal; text-align: center;&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;p style=&quot;white-space: normal; text-align: center;&quot;&gt;&lt;img src=&quot;/ueditor/php/upload/image/20160119/1453170324552909.png&quot; title=&quot;1453170324552909.png&quot; alt=&quot;blob.png&quot; width=&quot;516&quot; height=&quot;432&quot; style=&quot;width: 516px; height: 432px;&quot;/&gt;&lt;/p&gt;&lt;p style=&quot;margin-top:10px;margin-bottom:10px;text-indent:32px&quot;&gt;&lt;span style=&quot;;font-family:宋体;font-size:16px&quot;&gt;干净、整洁、舒适的教室里，整齐有序地坐满了两个班的小学生。启明教育的老师正在为同学们讲授《诸葛数学》。《诸葛数学》是启明教育的拳头课程，经过3年的潜心研究而成，具有完全自主知识产权。这套课程不但压缩了学习时间，让同学们在一两年内就能学完小学六年的数学课程，而且抓住了数学的本质规律，激发了同学们的求知欲，提高了教学质量。在多次校内外测试中，学习过《诸葛数学》的同学都取得了比高年级学生更好的分数，真正做到了又好又快！&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;;font-family:宋体;font-size:16px&quot;&gt;新鲜的课程，深入浅出的教学，令学生们脑洞大开，旁听的学生家长也颇受启发。课后的反馈表明，无论是学生还是家长都对《诸葛数学》称赞不已。有的家长表示，要是能早点知道启明教育，早点学习《诸葛数学》就更好了。还有的家长表示，肯定会介绍自己的同事、朋友的孩子过来一起学习《诸葛数学》。这&lt;/span&gt;&lt;span style=&quot;font-family: 宋体; text-indent: 32px;&quot;&gt;么好的教学效果当然会在报名人数上体现出来。这不，两个班刚上了两天课，第三个班1月18日就又开班了！&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin-top:10px;margin-bottom:10px;text-indent:32px&quot;&gt;&lt;span style=&quot;;font-family:宋体;font-size:16px&quot;&gt;《诸葛数学》只是启明教育的多个拳头课程之一，还有像《&lt;/span&gt;&lt;span style=&quot;;font-family:宋体;font-size:16px&quot;&gt;唯易英语&lt;/span&gt;&lt;span style=&quot;;font-family:宋体;font-size:16px&quot;&gt;》&lt;/span&gt;&lt;span style=&quot;;font-family:宋体;font-size:16px&quot;&gt;、&lt;/span&gt;&lt;span style=&quot;;font-family:宋体;font-size:16px&quot;&gt;《&lt;/span&gt;&lt;span style=&quot;;font-family:宋体;font-size:16px&quot;&gt;极速文学&lt;/span&gt;&lt;span style=&quot;;font-family:宋体;font-size:16px&quot;&gt;》&lt;/span&gt;&lt;span style=&quot;;font-family:宋体;font-size:16px&quot;&gt;、&lt;/span&gt;&lt;span style=&quot;;font-family:宋体;font-size:16px&quot;&gt;《&lt;/span&gt;&lt;span style=&quot;;font-family:宋体;font-size:16px&quot;&gt;中学段考试天王&lt;/span&gt;&lt;span style=&quot;;font-family:宋体;font-size:16px&quot;&gt;》、《&lt;/span&gt;&lt;span style=&quot;;font-family:宋体;font-size:16px&quot;&gt;清北高材&lt;/span&gt;&lt;span style=&quot;;font-family:宋体;font-size:16px&quot;&gt;》&lt;/span&gt;&lt;span style=&quot;;font-family:宋体;font-size:16px&quot;&gt;等&lt;/span&gt;&lt;span style=&quot;;font-family:宋体;font-size:16px&quot;&gt;课程和&lt;/span&gt;&lt;span style=&quot;;font-family:宋体;font-size:16px&quot;&gt;教学产品，&lt;/span&gt;&lt;span style=&quot;;font-family:宋体;font-size:16px&quot;&gt;具有的竞争力和带给学生的震撼性同样无可匹敌。厚积薄发，志存高远，启明教育可不是带着一件兵器打天下的。启明教育集团董事长李英超表示，在托辅行业，启明教育的目标是成为行业第一家上市企业。为此，启明教育培育了四个核心竞争力：完全自主的核心课程；整洁、舒适的学习成长环境；卫生营养的学生用餐；独步行业的超高性价比。&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin-top:10px;margin-bottom:10px;text-indent:32px&quot;&gt;&lt;span style=&quot;;font-family:宋体;font-size:16px&quot;&gt;看过了课程，我们再看看启明教育的校区环境和学生用餐。&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;;font-family:宋体;font-size:16px&quot;&gt;&amp;nbsp; &amp;nbsp; 以下这些是启明教育学校的实景图片，读者和各位家长以为如何呢？&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;;font-family:宋体;font-size:16px&quot;&gt;&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin-top: 10px; margin-bottom: 10px; text-indent: 32px; text-align: center;&quot;&gt;&lt;img src=&quot;/ueditor/php/upload/image/20160119/1453170476906345.png&quot; title=&quot;1453170476906345.png&quot; alt=&quot;blob.png&quot; width=&quot;536&quot; height=&quot;355&quot; style=&quot;width: 536px; height: 355px;&quot;/&gt;&lt;/p&gt;&lt;p style=&quot;margin-top: 10px; margin-bottom: 10px; text-indent: 32px; text-align: center;&quot;&gt;&lt;img src=&quot;/ueditor/php/upload/image/20160119/1453170526740966.png&quot; title=&quot;1453170526740966.png&quot; alt=&quot;blob.png&quot; width=&quot;540&quot; height=&quot;472&quot; style=&quot;width: 540px; height: 472px;&quot;/&gt;&lt;/p&gt;&lt;p style=&quot;margin-top: 10px; margin-bottom: 10px; text-indent: 32px; text-align: center;&quot;&gt;&lt;img src=&quot;/ueditor/php/upload/image/20160119/1453170599566817.png&quot; title=&quot;1453170599566817.png&quot; alt=&quot;blob.png&quot; width=&quot;539&quot; height=&quot;413&quot; style=&quot;width: 539px; height: 413px;&quot;/&gt;&lt;/p&gt;&lt;p style=&quot;margin-top: 10px; margin-bottom: 10px; text-indent: 32px; text-align: center;&quot;&gt;&lt;img src=&quot;/ueditor/php/upload/image/20160119/1453170533715013.png&quot; title=&quot;1453170533715013.png&quot; alt=&quot;blob.png&quot; width=&quot;1&quot; height=&quot;1&quot; style=&quot;width: 1px; height: 1px;&quot;/&gt;&lt;/p&gt;&lt;/section&gt;&lt;p style=&quot;margin-top: 10px; margin-bottom: 10px; text-indent: 32px;&quot;&gt;&lt;span style=&quot;;font-family:宋体;font-size:16px&quot;&gt;目前，开发区三小给同学们的就餐标准是两菜（一荤一素）一汤，以下为真实的饭菜图片&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin-top: 10px; margin-bottom: 10px; text-indent: 32px;&quot;&gt;&lt;img src=&quot;/ueditor/php/upload/image/20160119/1453170885286856.png&quot; title=&quot;1453170885286856.png&quot; alt=&quot;图片1.png&quot; width=&quot;693&quot; height=&quot;371&quot; style=&quot;width: 693px; height: 371px;&quot;/&gt;&lt;/p&gt;&lt;p style=&quot;margin-top: 10px; margin-bottom: 10px; text-indent: 32px; text-align: center;&quot;&gt;&lt;img src=&quot;/ueditor/php/upload/image/20160119/1453171009934493.png&quot; title=&quot;1453171009934493.png&quot; alt=&quot;blob.png&quot; width=&quot;550&quot; height=&quot;323&quot; style=&quot;width: 550px; height: 323px;&quot;/&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;;font-family:宋体;font-size:16px&quot;&gt;有的学校图省事，直接从饭馆订餐，启明教育没有这么做，而是亲自组建营养食堂。启明教育只用纯正的品牌食用油，坚决杜绝其他油品。坚持使用新鲜食材，让家长放心。到&lt;/span&gt;&lt;span style=&quot;;font-family:宋体;font-size:16px&quot;&gt;2016年3月份，启明教育独立的营养食堂将落成。届时，&lt;/span&gt;&lt;span style=&quot;font-family: 宋体; text-indent: 32px;&quot;&gt;不仅能集中为4个新校区提供可口的饭菜，而且用餐标准也将由两菜一汤，提高到四菜一汤，成为行业的标杆。到时，欢迎学生家长和读者来参观品尝！&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin-top:10px;margin-bottom:10px;text-indent:32px&quot;&gt;&lt;span style=&quot;;font-family:宋体;font-size:16px&quot;&gt;这么棒的课程，这么好的环境，这么美味的饭菜，启明教育一定很贵吧。具体价钱您可以拨打启明教育招生热线&amp;nbsp;0335-3027999、3223678进行咨询。但我想要告诉您的是，超高的性价比是启明教育的核心竞争力之一，学生的踊跃报名已经充分说明了这一点。学生和家长都说好，才是好的托辅教育！&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin-top:10px;margin-bottom:10px;text-indent:32px&quot;&gt;&lt;span style=&quot;;font-family:宋体;font-size:16px&quot;&gt;在开发区三小校区开班的同时，秦皇岛启明教育其他新校区也在开班准备中。道南校区，教学老师和招生老师已经到位，目前学生报名人数已经超过2个班，近日将开班上课。开发区一中校区，教学老师和招生老师已经到位，目前正在火热招生中，近期将开班上课。泛亚大厦新校区，装修已经进入收尾阶段，2周内教学老师和招生老师将到位。因为错过了招生期，泛亚大厦新校区会在春节后正式运营。&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin-top: 10px; margin-bottom: 10px; text-indent: 32px; text-align: center;&quot;&gt;&lt;img src=&quot;/ueditor/php/upload/image/20160119/1453171081582597.png&quot; title=&quot;1453171081582597.png&quot; alt=&quot;blob.png&quot; width=&quot;512&quot; height=&quot;328&quot; style=&quot;width: 512px; height: 328px;&quot;/&gt;&lt;span style=&quot;font-family: 宋体;&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin-top:0;margin-right:0;margin-bottom:0;margin-left:0;text-indent:28px;text-autospace:ideograph-numeric;text-align:center&quot;&gt;&lt;span style=&quot;;font-family:宋体;font-size:14px&quot;&gt;启明教育通辽学校青岛花园校区LOGO墙&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;;font-family:宋体;font-size:16px&quot;&gt;&amp;nbsp; &amp;nbsp; 启明教育通辽学校目前正在紧张装修中。教师团队的招聘组建已经结束，从1月16日开始，将进行为期一个月的新员工训练营。通过训练营，将打造一批专业、负责、具有启明教育核心价值观的好老师。实验小学校区1月25号教学老师和招生老师将到位，青岛花园校区教学老师和招生老师近日将到位。还有两&lt;/span&gt;&lt;span style=&quot;font-family: 宋体; text-indent: 32px;&quot;&gt;个校区，正在装修中。目前，启明教育通辽学校的招生工作，已经采用多点化的方式展开。到3月份，通辽学校将全面进入正式运营。&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin-top: 10px; margin-bottom: 10px; text-indent: 32px;&quot;&gt;&lt;span style=&quot;;font-family:宋体;font-size:16px&quot;&gt;启明教育这么好的项目，自然对投资人回报多多。随着秦皇岛和通辽两个学校建设的稳步推进，以李英超为首的运营团队信心满满，并表示，达到甚至超额实现预期收益，是完全有可能的。目前启明教育股权投资项目-通辽学校，还有少许投资额度。有意向的投资人请抓紧时间。&lt;/span&gt;&lt;span style=&quot;font-family: 宋体; text-align: right;&quot;&gt;投资热线：15904757311。&lt;/span&gt;&lt;/p&gt;','1453172400') [ RunTime:0.0162s ]
+
+[ 2016-01-19T10:40:13+08:00 ] 124.127.214.224 /admin.php?s=/News/newsList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000472s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000364s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000478s ]
+SQL: SHOW COLUMNS FROM `wlm_news` [ RunTime:0.0039s ]
+SQL: SELECT * FROM `wlm_news` ORDER BY create_time desc  [ RunTime:0.0063s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000134s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000301s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016433s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016584s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000478s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000780s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001460s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000379s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000540s ]
+
+[ 2016-01-19T10:41:10+08:00 ] 124.127.214.224 /admin.php?s=/News/save/id/20.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000419s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000380s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000591s ]
+SQL: SHOW COLUMNS FROM `wlm_news` [ RunTime:0.0018s ]
+SQL: SELECT * FROM `wlm_news` WHERE ( id=20 ) LIMIT 1   [ RunTime:0.0011s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000116s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000273s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.014492s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014673s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000365s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000736s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001351s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000447s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000670s ]
+
+[ 2016-01-19T10:41:19+08:00 ] 124.127.214.224 /admin.php?s=/News/newslist.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000410s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000370s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000486s ]
+SQL: SHOW COLUMNS FROM `wlm_news` [ RunTime:0.0017s ]
+SQL: SELECT * FROM `wlm_news` ORDER BY create_time desc  [ RunTime:0.0062s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000154s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000460s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016383s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.016529s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000464s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000606s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001257s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000393s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000494s ]
+
+[ 2016-01-19T10:41:21+08:00 ] 124.127.214.224 /admin.php?s=/News/save/id/21.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000336s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000285s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000392s ]
+SQL: SHOW COLUMNS FROM `wlm_news` [ RunTime:0.0015s ]
+SQL: SELECT * FROM `wlm_news` WHERE ( id=21 ) LIMIT 1   [ RunTime:0.0029s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000103s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000236s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012124s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012254s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000362s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000650s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001164s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000330s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000416s ]
+
+[ 2016-01-19T10:42:21+08:00 ] 124.127.214.224 /admin.php?s=/News/update.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000375s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000322s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000458s ]
+SQL: SHOW COLUMNS FROM `wlm_news` [ RunTime:0.0016s ]
+SQL: UPDATE `wlm_news` SET `title`='秦皇岛启明教育学校开班啦',`content`='&lt;p&gt;													&lt;/p&gt;&lt;section class=&quot;article135&quot; label=&quot;powered by 135editor.com&quot; style=&quot;font-family: 微软雅黑;&quot;&gt;&lt;section class=&quot;135editor&quot; style=&quot;position: static; box-sizing: border-box; border: 0px none; padding: 0px; margin: 0px;&quot; data-id=&quot;84261&quot;&gt;&lt;section class=&quot;layout&quot; style=&quot;border: 0px; margin: 5px auto; box-sizing: border-box; padding: 0px;&quot;&gt;&lt;section style=&quot;height: 25px; box-sizing: border-box; color: inherit; padding: 0px; margin: 0px;&quot;&gt;&lt;section style=&quot;height: 100%; width: 50px; float: left; border-top-width: 2px; border-top-style: solid; border-color: rgb(172, 29, 16); border-left-width: 2px; border-left-style: solid; box-sizing: border-box; color: inherit; padding: 0px; margin: 0px;&quot;&gt;&lt;/section&gt;&lt;section style=&quot;display: inline-block; color: rgb(172, 29, 16); clear: both; box-sizing: border-box; border-color: rgb(172, 29, 16); padding: 0px; margin: 0px;&quot;&gt;&lt;/section&gt;&lt;/section&gt;&lt;section class=&quot;135brush&quot; data-style=&quot;color: rgb(51, 51, 51); font-size: 1em; line-height: 1.75em; word-break: break-all; word-wrap: break-word; text-align: justify;&quot; style=&quot;margin: -0.8em 0.3em; padding: 0.8em; box-sizing: border-box; color: inherit;&quot;&gt;&lt;p style=&quot;margin-top: 10px; margin-bottom: 10px; text-indent: 32px; white-space: normal;&quot;&gt;&lt;span style=&quot;font-family: 宋体;&quot;&gt;经过近两个月的紧张筹备，由未来门资本领投的秦皇岛启明教育股权投资项目所属四个新校区已经进入招生开学阶段。其中，秦皇岛开发区三小校区更是在&lt;/span&gt;&lt;span style=&quot;font-family: 宋体;&quot;&gt;2016年1月14日率先开班上课啦！&lt;/span&gt;&lt;/p&gt;&lt;/section&gt;&lt;section style=&quot;height: 25px; box-sizing: border-box; color: inherit; padding: 0px; margin: 0px;&quot;&gt;&lt;section style=&quot;height: 100%; width: 50px; float: right; border-bottom-width: 2px; border-bottom-style: solid; border-color: rgb(172, 29, 16); border-right-width: 2px; border-right-style: solid; box-sizing: border-box; color: inherit; padding: 0px; margin: 0px;&quot;&gt;&lt;/section&gt;&lt;/section&gt;&lt;/section&gt;&lt;section style=&quot;width: 0px; height: 0px; clear: both; box-sizing: border-box; padding: 0px; margin: 0px;&quot;&gt;&lt;/section&gt;&lt;/section&gt;&lt;p style=&quot;white-space: normal; text-align: center;&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;p style=&quot;white-space: normal; text-align: center;&quot;&gt;&lt;img src=&quot;/ueditor/php/upload/image/20160119/1453170324552909.png&quot; title=&quot;1453170324552909.png&quot; alt=&quot;blob.png&quot; width=&quot;516&quot; height=&quot;432&quot; style=&quot;width: 516px; height: 432px;&quot;/&gt;&lt;/p&gt;&lt;p style=&quot;margin-top:10px;margin-bottom:10px;text-indent:32px&quot;&gt;&lt;span style=&quot;;font-family:宋体;font-size:16px&quot;&gt;干净、整洁、舒适的教室里，整齐有序地坐满了两个班的小学生。启明教育的老师正在为同学们讲授《诸葛数学》。《诸葛数学》是启明教育的拳头课程，经过3年的潜心研究而成，具有完全自主知识产权。这套课程不但压缩了学习时间，让同学们在一两年内就能学完小学六年的数学课程，而且抓住了数学的本质规律，激发了同学们的求知欲，提高了教学质量。在多次校内外测试中，学习过《诸葛数学》的同学都取得了比高年级学生更好的分数，真正做到了又好又快！&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;;font-family:宋体;font-size:16px&quot;&gt;新鲜的课程，深入浅出的教学，令学生们脑洞大开，旁听的学生家长也颇受启发。课后的反馈表明，无论是学生还是家长都对《诸葛数学》称赞不已。有的家长表示，要是能早点知道启明教育，早点学习《诸葛数学》就更好了。还有的家长表示，肯定会介绍自己的同事、朋友的孩子过来一起学习《诸葛数学》。这&lt;/span&gt;&lt;span style=&quot;font-family: 宋体; text-indent: 32px;&quot;&gt;么好的教学效果当然会在报名人数上体现出来。这不，两个班刚上了两天课，第三个班1月18日就又开班了！&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin-top:10px;margin-bottom:10px;text-indent:32px&quot;&gt;&lt;span style=&quot;;font-family:宋体;font-size:16px&quot;&gt;《诸葛数学》只是启明教育的多个拳头课程之一，还有像《&lt;/span&gt;&lt;span style=&quot;;font-family:宋体;font-size:16px&quot;&gt;唯易英语&lt;/span&gt;&lt;span style=&quot;;font-family:宋体;font-size:16px&quot;&gt;》&lt;/span&gt;&lt;span style=&quot;;font-family:宋体;font-size:16px&quot;&gt;、&lt;/span&gt;&lt;span style=&quot;;font-family:宋体;font-size:16px&quot;&gt;《&lt;/span&gt;&lt;span style=&quot;;font-family:宋体;font-size:16px&quot;&gt;极速文学&lt;/span&gt;&lt;span style=&quot;;font-family:宋体;font-size:16px&quot;&gt;》&lt;/span&gt;&lt;span style=&quot;;font-family:宋体;font-size:16px&quot;&gt;、&lt;/span&gt;&lt;span style=&quot;;font-family:宋体;font-size:16px&quot;&gt;《&lt;/span&gt;&lt;span style=&quot;;font-family:宋体;font-size:16px&quot;&gt;中学段考试天王&lt;/span&gt;&lt;span style=&quot;;font-family:宋体;font-size:16px&quot;&gt;》、《&lt;/span&gt;&lt;span style=&quot;;font-family:宋体;font-size:16px&quot;&gt;清北高材&lt;/span&gt;&lt;span style=&quot;;font-family:宋体;font-size:16px&quot;&gt;》&lt;/span&gt;&lt;span style=&quot;;font-family:宋体;font-size:16px&quot;&gt;等&lt;/span&gt;&lt;span style=&quot;;font-family:宋体;font-size:16px&quot;&gt;课程和&lt;/span&gt;&lt;span style=&quot;;font-family:宋体;font-size:16px&quot;&gt;教学产品，&lt;/span&gt;&lt;span style=&quot;;font-family:宋体;font-size:16px&quot;&gt;具有的竞争力和带给学生的震撼性同样无可匹敌。厚积薄发，志存高远，启明教育可不是带着一件兵器打天下的。启明教育集团董事长李英超表示，在托辅行业，启明教育的目标是成为行业第一家上市企业。为此，启明教育培育了四个核心竞争力：完全自主的核心课程；整洁、舒适的学习成长环境；卫生营养的学生用餐；独步行业的超高性价比。&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin-top:10px;margin-bottom:10px;text-indent:32px&quot;&gt;&lt;span style=&quot;;font-family:宋体;font-size:16px&quot;&gt;看过了课程，我们再看看启明教育的校区环境和学生用餐。&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;;font-family:宋体;font-size:16px&quot;&gt;&amp;nbsp; &amp;nbsp; 以下这些是启明教育学校的实景图片，读者和各位家长以为如何呢？&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;;font-family:宋体;font-size:16px&quot;&gt;&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin-top: 10px; margin-bottom: 10px; text-indent: 32px; text-align: center;&quot;&gt;&lt;img src=&quot;/ueditor/php/upload/image/20160119/1453170476906345.png&quot; title=&quot;1453170476906345.png&quot; alt=&quot;blob.png&quot; width=&quot;536&quot; height=&quot;355&quot; style=&quot;width: 536px; height: 355px;&quot;/&gt;&lt;/p&gt;&lt;p style=&quot;margin-top: 10px; margin-bottom: 10px; text-indent: 32px; text-align: center;&quot;&gt;&lt;img src=&quot;/ueditor/php/upload/image/20160119/1453170526740966.png&quot; title=&quot;1453170526740966.png&quot; alt=&quot;blob.png&quot; width=&quot;540&quot; height=&quot;472&quot; style=&quot;width: 540px; height: 472px;&quot;/&gt;&lt;/p&gt;&lt;p style=&quot;margin-top: 10px; margin-bottom: 10px; text-indent: 32px; text-align: center;&quot;&gt;&lt;img src=&quot;/ueditor/php/upload/image/20160119/1453170599566817.png&quot; title=&quot;1453170599566817.png&quot; alt=&quot;blob.png&quot; width=&quot;539&quot; height=&quot;413&quot; style=&quot;width: 539px; height: 413px;&quot;/&gt;&lt;/p&gt;&lt;p style=&quot;margin-top: 10px; margin-bottom: 10px; text-indent: 32px; text-align: center;&quot;&gt;&lt;img src=&quot;/ueditor/php/upload/image/20160119/1453170533715013.png&quot; title=&quot;1453170533715013.png&quot; alt=&quot;blob.png&quot; width=&quot;1&quot; height=&quot;1&quot; style=&quot;width: 1px; height: 1px;&quot;/&gt;&lt;/p&gt;&lt;/section&gt;&lt;p style=&quot;margin-top: 10px; margin-bottom: 10px; text-indent: 32px;&quot;&gt;&lt;span style=&quot;;font-family:宋体;font-size:16px&quot;&gt;目前，开发区三小给同学们的就餐标准是两菜（一荤一素）一汤，以下为真实的饭菜图片&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin-top: 10px; margin-bottom: 10px; text-indent: 32px;&quot;&gt;&lt;img src=&quot;/ueditor/php/upload/image/20160119/1453170885286856.png&quot; title=&quot;1453170885286856.png&quot; alt=&quot;图片1.png&quot; width=&quot;693&quot; height=&quot;371&quot; style=&quot;width: 693px; height: 371px;&quot;/&gt;&lt;/p&gt;&lt;p style=&quot;margin-top: 10px; margin-bottom: 10px; text-indent: 32px; text-align: center;&quot;&gt;&lt;img src=&quot;/ueditor/php/upload/image/20160119/1453171009934493.png&quot; title=&quot;1453171009934493.png&quot; alt=&quot;blob.png&quot; width=&quot;550&quot; height=&quot;323&quot; style=&quot;width: 550px; height: 323px;&quot;/&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;;font-family:宋体;font-size:16px&quot;&gt;有的学校图省事，直接从饭馆订餐，启明教育没有这么做，而是亲自组建营养食堂。启明教育只用纯正的品牌食用油，坚决杜绝其他油品。坚持使用新鲜食材，让家长放心。到&lt;/span&gt;&lt;span style=&quot;;font-family:宋体;font-size:16px&quot;&gt;2016年3月份，启明教育独立的营养食堂将落成。届时，&lt;/span&gt;&lt;span style=&quot;font-family: 宋体; text-indent: 32px;&quot;&gt;不仅能集中为4个新校区提供可口的饭菜，而且用餐标准也将由两菜一汤，提高到四菜一汤，成为行业的标杆。到时，欢迎学生家长和读者来参观品尝！&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin-top:10px;margin-bottom:10px;text-indent:32px&quot;&gt;&lt;span style=&quot;;font-family:宋体;font-size:16px&quot;&gt;这么棒的课程，这么好的环境，这么美味的饭菜，启明教育一定很贵吧。具体价钱您可以拨打启明教育招生热线&amp;nbsp;0335-3027999、3223678进行咨询。但我想要告诉您的是，超高的性价比是启明教育的核心竞争力之一，学生的踊跃报名已经充分说明了这一点。学生和家长都说好，才是好的托辅教育！&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin-top:10px;margin-bottom:10px;text-indent:32px&quot;&gt;&lt;span style=&quot;;font-family:宋体;font-size:16px&quot;&gt;在开发区三小校区开班的同时，秦皇岛启明教育其他新校区也在开班准备中。道南校区，教学老师和招生老师已经到位，目前学生报名人数已经超过2个班，近日将开班上课。开发区一中校区，教学老师和招生老师已经到位，目前正在火热招生中，近期将开班上课。泛亚大厦新校区，装修已经进入收尾阶段，2周内教学老师和招生老师将到位。因为错过了招生期，泛亚大厦新校区会在春节后正式运营。&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin-top: 10px; margin-bottom: 10px; text-indent: 32px; text-align: center;&quot;&gt;&lt;img src=&quot;/ueditor/php/upload/image/20160119/1453171081582597.png&quot; title=&quot;1453171081582597.png&quot; alt=&quot;blob.png&quot; width=&quot;512&quot; height=&quot;328&quot; style=&quot;width: 512px; height: 328px;&quot;/&gt;&lt;span style=&quot;font-family: 宋体;&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin-top:0;margin-right:0;margin-bottom:0;margin-left:0;text-indent:28px;text-autospace:ideograph-numeric;text-align:center&quot;&gt;&lt;span style=&quot;;font-family:宋体;font-size:14px&quot;&gt;启明教育通辽学校青岛花园校区LOGO墙&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;;font-family:宋体;font-size:16px&quot;&gt;&amp;nbsp; &amp;nbsp; 启明教育通辽学校目前正在紧张装修中。教师团队的招聘组建已经结束，从1月16日开始，将进行为期一个月的新员工训练营。通过训练营，将打造一批专业、负责、具有启明教育核心价值观的好老师。实验小学校区1月25号教学老师和招生老师将到位，青岛花园校区教学老师和招生老师近日将到位。还有两&lt;/span&gt;&lt;span style=&quot;font-family: 宋体; text-indent: 32px;&quot;&gt;个校区，正在装修中。目前，启明教育通辽学校的招生工作，已经采用多点化的方式展开。到3月份，通辽学校将全面进入正式运营。&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin-top: 10px; margin-bottom: 10px; text-indent: 32px;&quot;&gt;&lt;span style=&quot;;font-family:宋体;font-size:16px&quot;&gt;启明教育这么好的项目，自然对投资人回报多多。随着秦皇岛和通辽两个学校建设的稳步推进，以李英超为首的运营团队信心满满，并表示，达到甚至超额实现预期收益，是完全有可能的。目前启明教育股权投资项目-通辽学校，还有少许投资额度。有意向的投资人请抓紧时间。&lt;/span&gt;&lt;span style=&quot;font-family: 宋体; text-align: right;&quot;&gt;投资热线：15904757311。&lt;/span&gt;&lt;/p&gt;&lt;p&gt;												&lt;/p&gt;',`create_time`='1453172400' WHERE ( id=21 ) [ RunTime:0.0092s ]
+
+[ 2016-01-19T10:42:21+08:00 ] 124.127.214.224 /admin.php?s=/News/newsList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000521s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000394s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000540s ]
+SQL: SHOW COLUMNS FROM `wlm_news` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `wlm_news` ORDER BY create_time desc  [ RunTime:0.0042s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000151s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000322s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.016880s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017037s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000433s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000541s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001134s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000381s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000478s ]
+
+[ 2016-01-19T10:43:03+08:00 ] 124.127.214.224 /admin.php?s=/News/save/id/21.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000397s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000341s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000493s ]
+SQL: SHOW COLUMNS FROM `wlm_news` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `wlm_news` WHERE ( id=21 ) LIMIT 1   [ RunTime:0.0019s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000172s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000498s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017198s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017358s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000402s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000785s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001447s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000402s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000528s ]
+
+[ 2016-01-19T10:43:13+08:00 ] 124.127.214.224 /admin.php?s=/News/update.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000428s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000384s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000497s ]
+SQL: SHOW COLUMNS FROM `wlm_news` [ RunTime:0.0018s ]
+SQL: UPDATE `wlm_news` SET `title`='秦皇岛启明教育学校开班啦',`content`='&lt;p&gt;													&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;section class=&quot;article135&quot; label=&quot;powered by 135editor.com&quot; style=&quot;font-family: 微软雅黑;&quot;&gt;&lt;section class=&quot;135editor&quot; style=&quot;position: static; box-sizing: border-box; border: 0px none; padding: 0px; margin: 0px;&quot; data-id=&quot;84261&quot;&gt;&lt;section class=&quot;layout&quot; style=&quot;border: 0px; margin: 5px auto; box-sizing: border-box; padding: 0px;&quot;&gt;&lt;section style=&quot;height: 25px; box-sizing: border-box; color: inherit; padding: 0px; margin: 0px;&quot;&gt;&lt;section style=&quot;height: 100%; width: 50px; float: left; border-top-width: 2px; border-top-style: solid; border-color: rgb(172, 29, 16); border-left-width: 2px; border-left-style: solid; box-sizing: border-box; color: inherit; padding: 0px; margin: 0px;&quot;&gt;&lt;/section&gt;&lt;section style=&quot;display: inline-block; color: rgb(172, 29, 16); clear: both; box-sizing: border-box; border-color: rgb(172, 29, 16); padding: 0px; margin: 0px;&quot;&gt;&lt;/section&gt;&lt;/section&gt;&lt;section class=&quot;135brush&quot; data-style=&quot;color: rgb(51, 51, 51); font-size: 1em; line-height: 1.75em; word-break: break-all; word-wrap: break-word; text-align: justify;&quot; style=&quot;margin: -0.8em 0.3em; padding: 0.8em; box-sizing: border-box; color: inherit;&quot;&gt;&lt;p style=&quot;margin-top: 10px; margin-bottom: 10px; text-indent: 32px; white-space: normal;&quot;&gt;&lt;span style=&quot;font-family: 宋体;&quot;&gt;经过近两个月的紧张筹备，由未来门资本领投的秦皇岛启明教育股权投资项目所属四个新校区已经进入招生开学阶段。其中，秦皇岛开发区三小校区更是在&lt;/span&gt;&lt;span style=&quot;font-family: 宋体;&quot;&gt;2016年1月14日率先开班上课啦！&lt;/span&gt;&lt;/p&gt;&lt;/section&gt;&lt;section style=&quot;height: 25px; box-sizing: border-box; color: inherit; padding: 0px; margin: 0px;&quot;&gt;&lt;section style=&quot;height: 100%; width: 50px; float: right; border-bottom-width: 2px; border-bottom-style: solid; border-color: rgb(172, 29, 16); border-right-width: 2px; border-right-style: solid; box-sizing: border-box; color: inherit; padding: 0px; margin: 0px;&quot;&gt;&lt;/section&gt;&lt;/section&gt;&lt;/section&gt;&lt;section style=&quot;width: 0px; height: 0px; clear: both; box-sizing: border-box; padding: 0px; margin: 0px;&quot;&gt;&lt;/section&gt;&lt;/section&gt;&lt;p style=&quot;white-space: normal; text-align: center;&quot;&gt;&lt;br/&gt;&lt;/p&gt;&lt;p style=&quot;white-space: normal; text-align: center;&quot;&gt;&lt;img src=&quot;/ueditor/php/upload/image/20160119/1453170324552909.png&quot; title=&quot;1453170324552909.png&quot; alt=&quot;blob.png&quot; width=&quot;516&quot; height=&quot;432&quot; style=&quot;width: 516px; height: 432px;&quot;/&gt;&lt;/p&gt;&lt;p style=&quot;margin-top:10px;margin-bottom:10px;text-indent:32px&quot;&gt;&lt;span style=&quot;;font-family:宋体;font-size:16px&quot;&gt;干净、整洁、舒适的教室里，整齐有序地坐满了两个班的小学生。启明教育的老师正在为同学们讲授《诸葛数学》。《诸葛数学》是启明教育的拳头课程，经过3年的潜心研究而成，具有完全自主知识产权。这套课程不但压缩了学习时间，让同学们在一两年内就能学完小学六年的数学课程，而且抓住了数学的本质规律，激发了同学们的求知欲，提高了教学质量。在多次校内外测试中，学习过《诸葛数学》的同学都取得了比高年级学生更好的分数，真正做到了又好又快！&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;;font-family:宋体;font-size:16px&quot;&gt;新鲜的课程，深入浅出的教学，令学生们脑洞大开，旁听的学生家长也颇受启发。课后的反馈表明，无论是学生还是家长都对《诸葛数学》称赞不已。有的家长表示，要是能早点知道启明教育，早点学习《诸葛数学》就更好了。还有的家长表示，肯定会介绍自己的同事、朋友的孩子过来一起学习《诸葛数学》。这&lt;/span&gt;&lt;span style=&quot;font-family: 宋体; text-indent: 32px;&quot;&gt;么好的教学效果当然会在报名人数上体现出来。这不，两个班刚上了两天课，第三个班1月18日就又开班了！&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin-top:10px;margin-bottom:10px;text-indent:32px&quot;&gt;&lt;span style=&quot;;font-family:宋体;font-size:16px&quot;&gt;《诸葛数学》只是启明教育的多个拳头课程之一，还有像《&lt;/span&gt;&lt;span style=&quot;;font-family:宋体;font-size:16px&quot;&gt;唯易英语&lt;/span&gt;&lt;span style=&quot;;font-family:宋体;font-size:16px&quot;&gt;》&lt;/span&gt;&lt;span style=&quot;;font-family:宋体;font-size:16px&quot;&gt;、&lt;/span&gt;&lt;span style=&quot;;font-family:宋体;font-size:16px&quot;&gt;《&lt;/span&gt;&lt;span style=&quot;;font-family:宋体;font-size:16px&quot;&gt;极速文学&lt;/span&gt;&lt;span style=&quot;;font-family:宋体;font-size:16px&quot;&gt;》&lt;/span&gt;&lt;span style=&quot;;font-family:宋体;font-size:16px&quot;&gt;、&lt;/span&gt;&lt;span style=&quot;;font-family:宋体;font-size:16px&quot;&gt;《&lt;/span&gt;&lt;span style=&quot;;font-family:宋体;font-size:16px&quot;&gt;中学段考试天王&lt;/span&gt;&lt;span style=&quot;;font-family:宋体;font-size:16px&quot;&gt;》、《&lt;/span&gt;&lt;span style=&quot;;font-family:宋体;font-size:16px&quot;&gt;清北高材&lt;/span&gt;&lt;span style=&quot;;font-family:宋体;font-size:16px&quot;&gt;》&lt;/span&gt;&lt;span style=&quot;;font-family:宋体;font-size:16px&quot;&gt;等&lt;/span&gt;&lt;span style=&quot;;font-family:宋体;font-size:16px&quot;&gt;课程和&lt;/span&gt;&lt;span style=&quot;;font-family:宋体;font-size:16px&quot;&gt;教学产品，&lt;/span&gt;&lt;span style=&quot;;font-family:宋体;font-size:16px&quot;&gt;具有的竞争力和带给学生的震撼性同样无可匹敌。厚积薄发，志存高远，启明教育可不是带着一件兵器打天下的。启明教育集团董事长李英超表示，在托辅行业，启明教育的目标是成为行业第一家上市企业。为此，启明教育培育了四个核心竞争力：完全自主的核心课程；整洁、舒适的学习成长环境；卫生营养的学生用餐；独步行业的超高性价比。&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin-top:10px;margin-bottom:10px;text-indent:32px&quot;&gt;&lt;span style=&quot;;font-family:宋体;font-size:16px&quot;&gt;&amp;nbsp; &amp;nbsp;看过了课程，我们再看看启明教育的校区环境和学生用餐。&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;;font-family:宋体;font-size:16px&quot;&gt;&amp;nbsp; &amp;nbsp; 以下这些是启明教育学校的实景图片，读者和各位家长以为如何呢？&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;;font-family:宋体;font-size:16px&quot;&gt;&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin-top: 10px; margin-bottom: 10px; text-indent: 32px; text-align: center;&quot;&gt;&lt;img src=&quot;/ueditor/php/upload/image/20160119/1453170476906345.png&quot; title=&quot;1453170476906345.png&quot; alt=&quot;blob.png&quot; width=&quot;536&quot; height=&quot;355&quot; style=&quot;width: 536px; height: 355px;&quot;/&gt;&lt;/p&gt;&lt;p style=&quot;margin-top: 10px; margin-bottom: 10px; text-indent: 32px; text-align: center;&quot;&gt;&lt;img src=&quot;/ueditor/php/upload/image/20160119/1453170526740966.png&quot; title=&quot;1453170526740966.png&quot; alt=&quot;blob.png&quot; width=&quot;540&quot; height=&quot;472&quot; style=&quot;width: 540px; height: 472px;&quot;/&gt;&lt;/p&gt;&lt;p style=&quot;margin-top: 10px; margin-bottom: 10px; text-indent: 32px; text-align: center;&quot;&gt;&lt;img src=&quot;/ueditor/php/upload/image/20160119/1453170599566817.png&quot; title=&quot;1453170599566817.png&quot; alt=&quot;blob.png&quot; width=&quot;539&quot; height=&quot;413&quot; style=&quot;width: 539px; height: 413px;&quot;/&gt;&lt;/p&gt;&lt;p style=&quot;margin-top: 10px; margin-bottom: 10px; text-indent: 32px; text-align: center;&quot;&gt;&lt;img src=&quot;/ueditor/php/upload/image/20160119/1453170533715013.png&quot; title=&quot;1453170533715013.png&quot; alt=&quot;blob.png&quot; width=&quot;1&quot; height=&quot;1&quot; style=&quot;width: 1px; height: 1px;&quot;/&gt;&lt;/p&gt;&lt;/section&gt;&lt;p style=&quot;margin-top: 10px; margin-bottom: 10px; text-indent: 32px;&quot;&gt;&lt;span style=&quot;;font-family:宋体;font-size:16px&quot;&gt;目前，开发区三小给同学们的就餐标准是两菜（一荤一素）一汤，以下为真实的饭菜图片&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin-top: 10px; margin-bottom: 10px; text-indent: 32px;&quot;&gt;&lt;img src=&quot;/ueditor/php/upload/image/20160119/1453170885286856.png&quot; title=&quot;1453170885286856.png&quot; alt=&quot;图片1.png&quot; width=&quot;693&quot; height=&quot;371&quot; style=&quot;width: 693px; height: 371px;&quot;/&gt;&lt;/p&gt;&lt;p style=&quot;margin-top: 10px; margin-bottom: 10px; text-indent: 32px; text-align: center;&quot;&gt;&lt;img src=&quot;/ueditor/php/upload/image/20160119/1453171009934493.png&quot; title=&quot;1453171009934493.png&quot; alt=&quot;blob.png&quot; width=&quot;550&quot; height=&quot;323&quot; style=&quot;width: 550px; height: 323px;&quot;/&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;;font-family:宋体;font-size:16px&quot;&gt;有的学校图省事，直接从饭馆订餐，启明教育没有这么做，而是亲自组建营养食堂。启明教育只用纯正的品牌食用油，坚决杜绝其他油品。坚持使用新鲜食材，让家长放心。到&lt;/span&gt;&lt;span style=&quot;;font-family:宋体;font-size:16px&quot;&gt;2016年3月份，启明教育独立的营养食堂将落成。届时，&lt;/span&gt;&lt;span style=&quot;font-family: 宋体; text-indent: 32px;&quot;&gt;不仅能集中为4个新校区提供可口的饭菜，而且用餐标准也将由两菜一汤，提高到四菜一汤，成为行业的标杆。到时，欢迎学生家长和读者来参观品尝！&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin-top:10px;margin-bottom:10px;text-indent:32px&quot;&gt;&lt;span style=&quot;;font-family:宋体;font-size:16px&quot;&gt;这么棒的课程，这么好的环境，这么美味的饭菜，启明教育一定很贵吧。具体价钱您可以拨打启明教育招生热线&amp;nbsp;0335-3027999、3223678进行咨询。但我想要告诉您的是，超高的性价比是启明教育的核心竞争力之一，学生的踊跃报名已经充分说明了这一点。学生和家长都说好，才是好的托辅教育！&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin-top:10px;margin-bottom:10px;text-indent:32px&quot;&gt;&lt;span style=&quot;;font-family:宋体;font-size:16px&quot;&gt;在开发区三小校区开班的同时，秦皇岛启明教育其他新校区也在开班准备中。道南校区，教学老师和招生老师已经到位，目前学生报名人数已经超过2个班，近日将开班上课。开发区一中校区，教学老师和招生老师已经到位，目前正在火热招生中，近期将开班上课。泛亚大厦新校区，装修已经进入收尾阶段，2周内教学老师和招生老师将到位。因为错过了招生期，泛亚大厦新校区会在春节后正式运营。&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin-top: 10px; margin-bottom: 10px; text-indent: 32px; text-align: center;&quot;&gt;&lt;img src=&quot;/ueditor/php/upload/image/20160119/1453171081582597.png&quot; title=&quot;1453171081582597.png&quot; alt=&quot;blob.png&quot; width=&quot;512&quot; height=&quot;328&quot; style=&quot;width: 512px; height: 328px;&quot;/&gt;&lt;span style=&quot;font-family: 宋体;&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin-top:0;margin-right:0;margin-bottom:0;margin-left:0;text-indent:28px;text-autospace:ideograph-numeric;text-align:center&quot;&gt;&lt;span style=&quot;;font-family:宋体;font-size:14px&quot;&gt;启明教育通辽学校青岛花园校区LOGO墙&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;;font-family:宋体;font-size:16px&quot;&gt;&amp;nbsp; &amp;nbsp; 启明教育通辽学校目前正在紧张装修中。教师团队的招聘组建已经结束，从1月16日开始，将进行为期一个月的新员工训练营。通过训练营，将打造一批专业、负责、具有启明教育核心价值观的好老师。实验小学校区1月25号教学老师和招生老师将到位，青岛花园校区教学老师和招生老师近日将到位。还有两&lt;/span&gt;&lt;span style=&quot;font-family: 宋体; text-indent: 32px;&quot;&gt;个校区，正在装修中。目前，启明教育通辽学校的招生工作，已经采用多点化的方式展开。到3月份，通辽学校将全面进入正式运营。&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin-top: 10px; margin-bottom: 10px; text-indent: 32px;&quot;&gt;&lt;span style=&quot;;font-family:宋体;font-size:16px&quot;&gt;启明教育这么好的项目，自然对投资人回报多多。随着秦皇岛和通辽两个学校建设的稳步推进，以李英超为首的运营团队信心满满，并表示，达到甚至超额实现预期收益，是完全有可能的。目前启明教育股权投资项目-通辽学校，还有少许投资额度。有意向的投资人请抓紧时间。&lt;/span&gt;&lt;span style=&quot;font-family: 宋体; text-align: right;&quot;&gt;投资热线：15904757311。&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;												&lt;/p&gt;',`create_time`='1453172400' WHERE ( id=21 ) [ RunTime:0.0177s ]
+
+[ 2016-01-19T10:43:13+08:00 ] 124.127.214.224 /admin.php?s=/News/newsList.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000421s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000399s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000530s ]
+SQL: SHOW COLUMNS FROM `wlm_news` [ RunTime:0.0033s ]
+SQL: SELECT * FROM `wlm_news` ORDER BY create_time desc  [ RunTime:0.0054s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000114s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000236s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015357s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015504s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000358s ]
+INFO: Run Behavior\TokenBuildBehavior [ RunTime:0.000557s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001074s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000380s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000476s ]
+

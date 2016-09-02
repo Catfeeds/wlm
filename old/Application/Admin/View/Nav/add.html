@@ -1,0 +1,84 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>{:C('WEB_NAME')}-{$page_name}</title>
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/css/common.css"/>
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/css/main.css"/>
+<script type="text/javascript" src="__PUBLIC__/js/jquery.min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/layer/layer.min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/js/nav.js"></script>
+</head>
+<body>
+<!-- Head -->
+<include file="Public:head" />
+<!-- Head -->
+<div class="container clearfix">
+    <!-- sidebar -->
+    <include file="Public:sidebar" />
+    <!--/sidebar-->
+    <div class="main-wrap">
+
+        <div class="crumb-wrap">
+            <div class="crumb-list">
+	            <i class="icon-font"></i>
+	            <a href="{:C('ADMIN_URL')}">首页</a>
+	            <span class="crumb-step">&gt;</span>
+	            <a class="crumb-name" href="{:U('Nav/index')}">{$page_name}</a>
+	            <span class="crumb-step">&gt;</span>
+	            <span>新增导航</span>
+            </div>
+        </div>
+        <div class="result-wrap">
+            <div class="result-content">
+                <form action="{:U('Nav/insert')}" method="post" id="myform" name="myform" onsubmit="return nav_check()" enctype="multipart/form-data">
+                    <table class="insert-tab" width="100%">
+                        <tbody>
+	                        <tr>
+	                            <th width="120"><i class="require-red">*</i>导航名称：</th>
+	                            <td>
+	                                <input class="common-text" name="name" id="name" size="50" value="" type="text">
+	                            </td>
+	                        </tr>
+                            <tr>
+                                <th><i class="require-red">*</i>导航地址：</th>
+                                <td>
+                                    <input class="common-text required" name="url" id="url" size="50" value="" type="text">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th><i class="require-red">*</i>导航排序：</th>
+                                <td>
+                                    <input class="common-text required" name="sort" id="sort" size="50" value="100" type="text">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>导航图片：</th>
+                                <td>
+                                    <input type="file" id="" name="pic">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th><i class="require-red">*</i>导航前台显示：</th>
+                                <td>
+                                    <input type="radio" name="isshow" value="1" checked="checked" />&nbsp;是&nbsp;&nbsp;
+                                    <input type="radio" name="isshow" value="0" />&nbsp;否
+                                </td>
+                            </tr>                           
+                            <tr>
+                                <th></th>
+                                <td>
+                                    <input class="btn btn-primary btn6 mr10" value="提交" type="submit">
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </form>
+            </div>
+        </div>
+
+    </div>
+    <!--/main-->
+</div>
+</body>
+</html>

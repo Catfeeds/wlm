@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+body{
+	background:#f1f1f1;
+	width:1000px;
+	margin:0 auto;
+	}
+.box{
+	width:480px;
+	float:left;
+	margin:0px 0 0 10px;
+	}
+table td{
+	padding:20px 10px;
+	border-bottom: 1px dashed #f60;
+	font-size:12px;
+	color:#666;
+	}
+table tr:hover{
+	background:#fff;
+	cursor:pointer;
+	}
+h3{
+	border-bottom:1px solid #ddd;
+	padding:5px 100px;
+	}
+img{
+	width:90px;
+	height:90px;
+	}
+</style>
+</head>
+<body>
+<div class="box">
+<h3>基本信息</h3>
+<table cellspacing="0" width="100%">
+	<volist name="list" id="vo" key="k"> 
+		<tr>
+			<td align="right" width="40%">&nbsp;{$vo.k}</td>
+			<td>&nbsp;{$vo.v}</td>
+		</tr>
+	</volist>
+</table>
+</div>
+<div class="box">
+<h3>其他信息</h3>
+<table cellspacing="0" width="100%">
+	<volist name="pre" id="vo" key="k"> 
+		<tr>
+			<td align="right" width="40%">&nbsp;{$vo.k}</td>
+			<td>&nbsp;{$vo.v}</td>
+		</tr>
+	</volist>
+</table>
+</div>
+</body>
+</html>

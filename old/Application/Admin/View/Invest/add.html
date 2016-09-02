@@ -1,0 +1,138 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>{:C('WEB_NAME')}-{$page_name}</title>
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/css/common.css"/>
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/css/main.css"/>
+<script type="text/javascript" src="__PUBLIC__/js/jquery.min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/layer/layer.min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/js/Invest.js"></script>
+<script type="text/javascript" src="__PUBLIC__/js/uploadPreview.min.js"></script>
+<script>
+window.onload = function () { 
+	new uploadPreview({ UpBtn: "pic", DivShow: "imgdiv", ImgShow: "imgShow" });
+}
+</script>
+</head>
+<body>
+<!-- Head -->
+<include file="Public:head" />
+<!-- Head -->
+<div class="container clearfix">
+    <!-- sidebar -->
+    <include file="Public:sidebar" />
+    <!--/sidebar-->
+    <div class="main-wrap">
+
+        <div class="crumb-wrap">
+            <div class="crumb-list">
+	            <i class="icon-font"></i>
+	            <a href="{:C('ADMIN_URL')}">首页</a>
+	            <span class="crumb-step">&gt;</span>
+	            <a class="crumb-name" href="{:U('Invest/index')}">{$page_name}</a>
+	            <span class="crumb-step">&gt;</span>
+	            <span>新增数据</span>
+            </div>
+        </div>
+        <div class="result-wrap">
+            <div class="result-content">
+                <form action="{:U('Invest/insert')}" method="post" id="myform" name="myform" onsubmit="return add_check()" enctype="multipart/form-data">
+                    <table class="insert-tab" width="100%">
+                        <tbody>
+	                        <tr>
+	                            <th width="120"><i class="require-red">*</i>投资者：</th>
+	                            <td>
+	                            	<textarea rows="" cols="63" name="investor" id="investor"></textarea>
+	                            	<br />如果有多个投资结构，请使用半角状态下的&nbsp;|&nbsp;隔开。
+	                            	<br />内容格式如下：&lt;a href="http://www.baidu.com" target="_blank"&gt;百度&lt;/a&gt;
+	                            </td>
+	                        </tr>
+                            <tr>
+                                <th><i class="require-red">*</i>投资对象：</th>
+                                <td>
+                                	<textarea rows="" cols="63" name="company" id="company"></textarea>
+	                            	<br />只能填写一个机构名称
+	                            	<br />内容格式如下：&lt;a href="http://www.baidu.com" target="_blank"&gt;百度&lt;/a&gt;
+                                </td>
+                            </tr>
+                            <tr>
+                                <th><i class="require-red">*</i>展示图片：</th>
+                                <td>
+									<div id="imgdiv"><img id="imgShow" width="100" height="100" /></div>
+                                    <input class="common-text required" name="pic" id="pic" size="50" value="" type="file">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th><i class="require-red">*</i>轮　　次：</th>
+                                <td>
+                                    <input class="common-text required" name="round" id="round" size="50" value="" type="text">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th><i class="require-red">*</i>时　　间：</th>
+                                <td>
+                                    <input class="common-text required" name="addtime" id="addtime" size="50" value="" type="text">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th><i class="require-red">*</i>金　　额：</th>
+                                <td>
+                                    <input class="common-text required" name="money" id="money" size="50" value="" type="text">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th><i class="require-red"></i>领　　域：</th>
+                                <td>
+                                    <select name="domain_id">
+			                     		<foreach name="dlist" item="dvo">
+			                     			<option value="{$dvo.id}">{$dvo.dname}</option>
+			                     		</foreach>
+						   			</select>
+                                </td>
+                            </tr> 
+                            <tr>
+                                <th><i class="require-red"></i>国　　家：</th>
+                                <td>
+                                    <select name="country">
+                                    	<option value="1">国内</option>
+                                    	<option value="2">国外</option>
+                                    </select>
+                                </td>
+                            </tr> 
+                            <tr>
+                                <th><i class="require-red"></i>描述信息：</th>
+                                <td>
+                                	<textarea rows="" cols="63" name="intro" id="intro"></textarea>
+                                </td>
+                            </tr>  
+                            <tr>
+                                <th><i class="require-red"></i>前台显示：</th>
+                                <td>
+                                    <input type="radio" name="isshow" value="1" checked>&nbsp;投资数据
+                                    <input type="radio" name="isshow" value="0">&nbsp;投资经历
+                                </td>
+                            </tr>
+                            <tr>
+                                <th><i class="require-red"></i>所属机构：</th>
+                                <td>
+                                    <input type="text" name="ssinvest" >
+                                </td>
+                            </tr>                          
+                            <tr>
+                                <th></th>
+                                <td>
+                                    <input class="btn btn-primary btn6 mr10" value="提交" type="submit">
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </form>
+            </div>
+        </div>
+
+    </div>
+    <!--/main-->
+</div>
+</body>
+</html>

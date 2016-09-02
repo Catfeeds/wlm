@@ -1,0 +1,257 @@
+<!doctype html>
+<!--[if lt IE 7 ]> <html class="ie ie6 ie-lt10 ie-lt9 ie-lt8 ie-lt7 no-js" lang="en"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie ie7 ie-lt10 ie-lt9 ie-lt8 no-js" lang="en"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie ie8 ie-lt10 ie-lt9 no-js" lang="en"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie ie9 ie-lt10 no-js" lang="en"> <![endif]-->
+<!--[if gt IE 9]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<!-- the "no-js" class is for Modernizr. -->
+
+<head id="www-itjuzi-com" data-template-set="html5-reset">
+
+	<title>投资者 | {$system.webname}</title>
+	
+	<include file="./Application/Wlmeng/View/Public/meta.html" />
+	<link rel="stylesheet" href="__CSS__/style.css" />
+
+	<link rel="stylesheet" href="__CSS__/jquery.Jcrop.min.css" type="text/css" />
+
+	<!-- Uploadify -->
+    <link rel='stylesheet' type='text/css' href='__CSS__/uploadify.css'>
+
+
+
+	<script src="__JS__/modernizr-2.6.2.dev.js"></script>
+
+	
+
+	<script type="text/javascript" src="__JS__/m.js"></script>
+	</head>
+
+<body >
+<script>window.jQuery || document.write("<script src='__JS__/jquery-1.9.1.min.js'>\x3C/script>")</script>
+<script >
+/* UEFA Players Slider */
+$(document).ready(function(){
+    var movetime=500;   
+    var maxw=310;
+    var avgw= parseInt((1819-maxw-2)/11);   
+    var index;
+    var t=false; //延时执行
+    var _this;
+
+    //标记当前
+    function cur(ele){      
+        ele=$(ele)? $(ele):ele;
+        ele.addClass("cur").siblings().removeClass("cur");  
+    };
+    
+    $("#picon li:eq(0)").addClass("cur").animate({"width":maxw+"px"});
+    
+    $("#picon").find("li").click(function(){                                      
+        _this=$(this);      
+        index=$( "#picon li" ).index( $(this)[0] );
+        var act=function (){
+            _this.siblings("li").removeClass("cur");
+            _this.animate({"width":maxw+"px"},{duration:movetime,easing:"easeOutQuart",complete:function(){cur(_this)}}).siblings("li").animate({"width":avgw+"px"},{duration:movetime})
+        }
+        t=setTimeout(act,200);          
+        return false;           
+    }).mouseout(function(){
+        if(t){
+            clearTimeout(t);
+        }
+    });
+
+})
+    </script>
+<include file="./Application/Wlmeng/View/Public/menu.html" />
+<div class="wrapper">
+<include file="./Application/Wlmeng/View/Public/header.html" />
+  <div class="page-wrapper" style="padding-top:170px;">
+ <section id="page-content">
+      
+      <article class="two-col-big-left">
+        
+        <div class="normal-box person-info">
+          <div class="picon" id="picon">
+            <ul>
+                <li>
+                    <img width="auto" height="80" alt="..." src="{$person.face}" />
+                    <div style="left:130px;top:10px;height:85px;">
+                        <h3><a href="#">{$person.username}</a></h3>
+                        <p >职位: <a href="{$person.company_url}">{$person.name}</a>{$person.member_role}</p>
+                        <p>微博: <a href="{$person.blogurl}" title="{$person.blogurl}">{$person.blogurl}</a></p>
+                    </div>
+                    <div>
+                        <section >
+                       {$person.intro}
+                        </section>
+                    </div>
+                </li>
+                <!-- begin -->
+                <volist name="show" id="vo">
+                <li>
+                    <img width="110" height="80" alt="" src="{$vo.pic}" />
+                    <div style="left:130px;top:10px;height:85px;">
+                        <h3><a href="#">{$vo.content}</a></h3>
+                        
+                    </div>                   
+                </li>
+                </volist>
+                <!-- end -->
+            </ul>
+        </div>
+        </div>
+
+        <div class="normal-box">
+          <h2>详细信息</h2>
+          <ul class="detail-info">
+
+            <li>地点:  <a href="">{$person.pname}</a>,<em>{$person.ciname}</em> </li>
+            <li>角色:  <a href="">{$person.aname}</a></li>
+            <li>工作:  {$person.work}</li>
+            <li>教育:  <a href="">{$person.education}</a></li>
+
+          </ul>
+        </div>
+        <div class="normal-box">
+            <h2>投资公司</h2>
+            
+            <volist name="company" id="vo">
+            <div id="company-similar">
+            
+                          
+              <div class="media">
+                <a class="pull-left" href="">
+                                        <img class="media-object" width="120" height="auto" src="{$vo.company_pic}" >
+                                  </a>
+                <div class="media-body">
+                  <h4 class="media-heading"> 担任  <a href="{$vo.company_url}">{$person.name}</a>  公司  {$vo.member_role} </h4>
+                  <p>{$vo.intro}</p>
+                 </div>
+              </div>    
+
+            </div>
+			</volist>
+
+          </div>  
+      </article>
+      
+      <aside class="two-col-little-right">
+
+                
+      </aside>
+
+    </section>  
+    
+
+   <include file="./Application/Wlmeng/View/Public/footer.html" />
+
+  </div>  
+
+</div>
+
+
+
+<!-- Prompt IE 6 users to install Chrome Frame. Remove this if you support IE 6.
+     http://chromium.org/developers/how-tos/chrome-frame-getting-started -->
+<!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
+
+
+
+<script type="text/javascript">
+  $(function () {
+    
+    $('body').on('click','#top_login,.login',function (evt) {
+      open_dialog('login', evt);
+    });
+    
+    $('body').on('click','#top_register',function (evt) {
+      open_dialog('register', evt);
+    });
+
+    $('.btn').each(function () {
+      if($(this).attr('target') == '_blank'){
+        return true;
+      }
+      var href = $(this).attr('href');
+      if(href && /\/(add|claim|login)\/?/g.test(href)){
+        $(this).click(function (evt) {
+          if(!$.cookie('front_identity')){
+            open_dialog('login', evt);
+            return false;
+          }
+        });
+      }
+    });
+
+  });
+</script>
+
+
+<script type="text/javascript" src="__JS__/login.js"></script>
+
+<script src="__JS__/jquery.uploadify.min.js"></script>
+<script src="__JS__/jquery.Jcrop.min.js"></script>
+<script src="__JS__/jquery-scrollto.js"></script>
+<script src="__JS__/jquery.cookie.js"></script>
+<script src="__JS__/functions.js"></script>
+
+<script>
+  // add activity
+  $('.check-article-detail-des .check-more').show().each(function(){
+    $(this).appendTo($(this).siblings('p'));
+  });
+
+  $('.summary-article-detail-des .check-more').show().each(function(){
+    $(this).appendTo($(this).siblings('p'));
+  });
+
+</script>
+
+
+<!-- for affix -->
+<script>
+  
+  function show_new_affix(){
+    $('#old-affix').hide();
+    $('#new-affix').show();
+  }
+
+  function hide_new_affix(){
+    $('#old-affix').show();
+    $('#new-affix').hide();
+  }
+
+  function check_show_new () {
+    var s = $(window).scrollTop();
+     if (s>1) {
+      show_new_affix();
+     } else {
+      hide_new_affix();
+     }
+  }
+  
+  $(window).scroll(function(){
+    check_show_new();
+  });
+
+  $(window).resize(function(){
+    check_show_new();
+  });
+
+  check_show_new();
+
+  $('body').on('mouseover','#dropdownMenu',function(){
+    $('.dropdown-menu').show();
+  });
+  $('body').on('mouseout','#dropdownMenu',function(){
+   $('.dropdown-menu').hide();
+  });
+</script>
+<script src="__JS__/jquery-ui-1.9.2.datapicker.min.js"></script>
+<script src="__JS__/jquery-ui-1.9.2.datepicker-zh-CN.js"></script>
+
+</div>
+</body>
+</html>

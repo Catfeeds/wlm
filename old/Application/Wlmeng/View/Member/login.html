@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf8" />
+<title>未来门</title>
+
+
+<meta name="description" content="xxx" />
+<meta name="keywords" content="xxxx" />
+<link rel="stylesheet" type="text/css" href="__CSS__/style_2_common.css" />
+<script src="__JS__/common.js" type="text/javascript"></script>
+<meta name="application-name" content="未来门" />
+<meta name="msapplication-tooltip" content="未来门" />
+
+<script src="__JS__/jquery-1.9.1.min.js" type="text/javascript"></script>
+<script src="__PUBLIC__/js/wlm.js" type="text/javascript"></script>
+<script type="text/javascript" src="__LAYER__/layer.min.js"></script>
+
+<link charset="utf8" href="__CSS__/base.css" rel="stylesheet" type="text/css" media="all" />
+<!--[if gte IE 9]>
+<style type="text/css">
+.gradient {
+filter: none;
+ }
+</style>
+<![endif]--><link charset="gb2312" href="__CSS__/passport.css" rel="stylesheet" type="text/css" media="all" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf8">
+<script type="text/javascript">
+window.onload=function(){
+var _body=document.getElementsByTagName("body");
+if(screen.width==1920){
+document.body.className="w1920";
+}
+if(screen.width>=2560){
+document.body.className="w2560";
+}
+if(screen.width==1680){
+document.body.className="w1680";
+}
+if(screen.width<=1440){
+document.body.className="w1440";
+}
+}          
+</script>
+
+</head>
+<body class="w1440">
+    <div id="page" class="panel_login">
+<div class="inputarea">
+<form class="window" id="loginform" method="post" action="">
+<div class="lgtitle">
+<p><a class="home" href="/"></a></p>
+<h1 class="f30px">登录<span class="f24px identity">未来门</span></h1>
+</div>
+<div class="first">
+ <div id="reginfo_a">
+                            
+                            
+                            
+                                                        <div class="rfm">
+                                <table>
+                                    <tr>
+                                        <th><span class="rq">*</span><label for="d3JndY">用户名:</label></th>
+                                        <td><input type="text" id="d3JndY" name="d3JndY" class="px" tabindex="1" autocomplete="off" size="25" maxlength="15" required /></td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div class="rfm">
+                                <table>
+                                    <tr>
+                                        <th><span class="rq">*</span><label for="R4M7Rp">密码:</label></th>
+                                        <td><input type="password" id="R4M7Rp" name="R4M7Rp" size="25" tabindex="1" class="px" required /></td>
+                                    </tr>
+                                </table>
+                            </div>
+                            
+</div>
+</div> 
+<div style="height:60px;">
+<input id="indexURL" type="hidden" value="{:U('Wlmeng/Index/index')}"/>
+<input id="loginURL" type="hidden" value="{:U('Wlmeng/Member/doLogin')}"/>
+<input id="personURL" type="hidden" value="{:U('Wlmeng/Person/goPerson')}"/>
+<input id="hold" name="keep" type="checkbox" value="1" checked />
+<div style="display:none"><a target="_blank" id="person" href="{:U('Wlmeng/Person/goPerson')}">跳转</a></div>
+<label for="hold" style="float:left;">保持登录状态两周</label>
+<button id="login" class="shadow btn" type="button" onclick="doLogin()">确定</button>
+</div>
+</form>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,294 @@
+[ 2015-08-20T11:33:18+08:00 ] ::1 /wlm/Public/Index/js/slides.js
+ERR: 无法加载控制器:Public
+
+[ 2015-08-20T15:02:10+08:00 ] 103.30.148.109 /old/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001053s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000408s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000608s ]
+SQL: SHOW COLUMNS FROM `th_nav` [ RunTime:0.0022s ]
+SQL: SELECT `name`,`pic`,`url` FROM `th_nav` WHERE ( isshow=1 ) ORDER BY sort  [ RunTime:0.0032s ]
+SQL: SHOW COLUMNS FROM `th_category` [ RunTime:0.0049s ]
+SQL: SELECT `id`,`cname`,`rec_url`,`url`,`pic`,`mark` FROM `th_category` WHERE ( isshow=1 )  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `th_company` [ RunTime:0.0030s ]
+SQL: SELECT count(distinct member_id) as num FROM `th_company` WHERE ( isshow=1 and type=2 ) LIMIT 1   [ RunTime:0.0102s ]
+SQL: SELECT count(distinct member_id) as num FROM `th_company` WHERE ( isshow=1 and type=1 ) LIMIT 1   [ RunTime:0.0029s ]
+SQL: SELECT count(id) as num FROM `th_company` WHERE ( isshow=1 and type=1 ) LIMIT 1   [ RunTime:0.0039s ]
+SQL: SHOW COLUMNS FROM `th_invest` [ RunTime:0.0048s ]
+SQL: SELECT count(id) as num FROM `th_invest` LIMIT 1   [ RunTime:0.0097s ]
+SQL: SHOW COLUMNS FROM `th_anli` [ RunTime:0.0026s ]
+SQL: SELECT count(id) as num FROM `th_anli` WHERE ( isshow = 1 ) LIMIT 1   [ RunTime:0.0075s ]
+SQL: SHOW COLUMNS FROM `th_nav_article` [ RunTime:0.0036s ]
+SQL: SELECT count(id) as num FROM `th_nav_article` WHERE ( isshow=1 and pid = 99 ) LIMIT 1   [ RunTime:0.0113s ]
+SQL: SHOW COLUMNS FROM `th_news` [ RunTime:0.0032s ]
+SQL: SELECT count(id) as num FROM `th_news` WHERE ( isshow=1 ) LIMIT 1   [ RunTime:0.0023s ]
+NOTIC: [8] Undefined offset: 7 /webHome/LFWZ000390/www/old/Application/Wlmeng/Common/function.php 第 18 行.
+SQL: SHOW COLUMNS FROM `th_adv` [ RunTime:0.0047s ]
+SQL: SELECT * FROM `th_adv`  [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `th_system` [ RunTime:0.0024s ]
+SQL: SELECT * FROM `th_system` LIMIT 1   [ RunTime:0.0049s ]
+SQL: SHOW COLUMNS FROM `th_article` [ RunTime:0.0043s ]
+SQL: SELECT * FROM `th_article` WHERE `isshow` = 1 AND `pid` = 1  [ RunTime:0.0065s ]
+SQL: SELECT * FROM `th_article` WHERE `isshow` = 1 AND `pid` = 2  [ RunTime:0.0056s ]
+NOTIC: [8] Undefined index: memberid /webHome/LFWZ000390/www/old/Application/Wlmeng/Controller/ParentController.class.php 第 46 行.
+NOTIC: [8] Undefined index: auto_login /webHome/LFWZ000390/www/old/Application/Wlmeng/Controller/ParentController.class.php 第 47 行.
+SQL: SHOW COLUMNS FROM `th_closeip` [ RunTime:0.0026s ]
+SQL: SELECT * FROM `th_closeip`  [ RunTime:0.0015s ]
+SQL: SELECT `id`,`cname`,`rec_url`,`url`,`pic`,`mark` FROM `th_category` WHERE ( isshow=1 )  [ RunTime:0.0011s ]
+SQL: SELECT count(distinct member_id) as num FROM `th_company` WHERE ( isshow=1 and type=2 ) LIMIT 1   [ RunTime:0.0045s ]
+SQL: SELECT count(distinct member_id) as num FROM `th_company` WHERE ( isshow=1 and type=1 ) LIMIT 1   [ RunTime:0.0023s ]
+SQL: SELECT count(id) as num FROM `th_company` WHERE ( isshow=1 and type=1 ) LIMIT 1   [ RunTime:0.0063s ]
+SQL: SELECT count(id) as num FROM `th_invest` LIMIT 1   [ RunTime:0.0023s ]
+SQL: SELECT count(id) as num FROM `th_anli` WHERE ( isshow = 1 ) LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT count(id) as num FROM `th_nav_article` WHERE ( isshow=1 and pid = 99 ) LIMIT 1   [ RunTime:0.0085s ]
+SQL: SELECT count(id) as num FROM `th_news` WHERE ( isshow=1 ) LIMIT 1   [ RunTime:0.0071s ]
+NOTIC: [8] Undefined offset: 7 /webHome/LFWZ000390/www/old/Application/Wlmeng/Common/function.php 第 18 行.
+SQL: SHOW COLUMNS FROM `th_backimg` [ RunTime:0.0025s ]
+SQL: SELECT * FROM `th_backimg`  [ RunTime:0.0012s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000142s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000293s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.057188s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.057356s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000582s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000669s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001242s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001367s ]
+
+[ 2015-08-20T15:02:10+08:00 ] 103.30.148.109 /old/Public/Index/js/slides.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000476s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000438s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000576s ]
+ERR: 无法加载控制器:Public
+
+[ 2015-08-20T15:02:10+08:00 ] 103.30.148.109 /old/Public/Index/css/images/main_con_bg.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000469s ]
+
+[ 2015-08-20T15:02:11+08:00 ] 103.30.148.109 /old/Public/Index/js/slides.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000368s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000428s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000554s ]
+ERR: 无法加载控制器:Public
+
+[ 2015-08-20T15:03:25+08:00 ] 103.30.148.109 /old/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001003s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001058s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001204s ]
+SQL: SHOW COLUMNS FROM `th_nav` [ RunTime:0.0081s ]
+SQL: SELECT `name`,`pic`,`url` FROM `th_nav` WHERE ( isshow=1 ) ORDER BY sort  [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `th_category` [ RunTime:0.0060s ]
+SQL: SELECT `id`,`cname`,`rec_url`,`url`,`pic`,`mark` FROM `th_category` WHERE ( isshow=1 )  [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `th_company` [ RunTime:0.0085s ]
+SQL: SELECT count(distinct member_id) as num FROM `th_company` WHERE ( isshow=1 and type=2 ) LIMIT 1   [ RunTime:0.0042s ]
+SQL: SELECT count(distinct member_id) as num FROM `th_company` WHERE ( isshow=1 and type=1 ) LIMIT 1   [ RunTime:0.0069s ]
+SQL: SELECT count(id) as num FROM `th_company` WHERE ( isshow=1 and type=1 ) LIMIT 1   [ RunTime:0.0047s ]
+SQL: SHOW COLUMNS FROM `th_invest` [ RunTime:0.0050s ]
+SQL: SELECT count(id) as num FROM `th_invest` LIMIT 1   [ RunTime:0.0044s ]
+SQL: SHOW COLUMNS FROM `th_anli` [ RunTime:0.0057s ]
+SQL: SELECT count(id) as num FROM `th_anli` WHERE ( isshow = 1 ) LIMIT 1   [ RunTime:0.0024s ]
+SQL: SHOW COLUMNS FROM `th_nav_article` [ RunTime:0.0043s ]
+SQL: SELECT count(id) as num FROM `th_nav_article` WHERE ( isshow=1 and pid = 99 ) LIMIT 1   [ RunTime:0.0082s ]
+SQL: SHOW COLUMNS FROM `th_news` [ RunTime:0.0048s ]
+SQL: SELECT count(id) as num FROM `th_news` WHERE ( isshow=1 ) LIMIT 1   [ RunTime:0.0023s ]
+NOTIC: [8] Undefined offset: 7 /webHome/LFWZ000390/www/old/Application/Wlmeng/Common/function.php 第 18 行.
+SQL: SHOW COLUMNS FROM `th_adv` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `th_adv`  [ RunTime:0.0033s ]
+SQL: SHOW COLUMNS FROM `th_system` [ RunTime:0.0027s ]
+SQL: SELECT * FROM `th_system` LIMIT 1   [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `th_article` [ RunTime:0.0034s ]
+SQL: SELECT * FROM `th_article` WHERE `isshow` = 1 AND `pid` = 1  [ RunTime:0.0030s ]
+SQL: SELECT * FROM `th_article` WHERE `isshow` = 1 AND `pid` = 2  [ RunTime:0.0011s ]
+NOTIC: [8] Undefined index: memberid /webHome/LFWZ000390/www/old/Application/Wlmeng/Controller/ParentController.class.php 第 46 行.
+NOTIC: [8] Undefined index: auto_login /webHome/LFWZ000390/www/old/Application/Wlmeng/Controller/ParentController.class.php 第 47 行.
+SQL: SHOW COLUMNS FROM `th_closeip` [ RunTime:0.0028s ]
+SQL: SELECT * FROM `th_closeip`  [ RunTime:0.0017s ]
+SQL: SELECT `id`,`cname`,`rec_url`,`url`,`pic`,`mark` FROM `th_category` WHERE ( isshow=1 )  [ RunTime:0.0014s ]
+SQL: SELECT count(distinct member_id) as num FROM `th_company` WHERE ( isshow=1 and type=2 ) LIMIT 1   [ RunTime:0.0027s ]
+SQL: SELECT count(distinct member_id) as num FROM `th_company` WHERE ( isshow=1 and type=1 ) LIMIT 1   [ RunTime:0.0110s ]
+SQL: SELECT count(id) as num FROM `th_company` WHERE ( isshow=1 and type=1 ) LIMIT 1   [ RunTime:0.0046s ]
+SQL: SELECT count(id) as num FROM `th_invest` LIMIT 1   [ RunTime:0.0108s ]
+SQL: SELECT count(id) as num FROM `th_anli` WHERE ( isshow = 1 ) LIMIT 1   [ RunTime:0.0121s ]
+SQL: SELECT count(id) as num FROM `th_nav_article` WHERE ( isshow=1 and pid = 99 ) LIMIT 1   [ RunTime:0.0230s ]
+SQL: SELECT count(id) as num FROM `th_news` WHERE ( isshow=1 ) LIMIT 1   [ RunTime:0.0026s ]
+NOTIC: [8] Undefined offset: 7 /webHome/LFWZ000390/www/old/Application/Wlmeng/Common/function.php 第 18 行.
+SQL: SHOW COLUMNS FROM `th_backimg` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `th_backimg`  [ RunTime:0.0055s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000189s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000357s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017975s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018105s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.007179s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007347s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003929s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004071s ]
+
+[ 2015-08-20T15:03:25+08:00 ] 103.30.148.109 /old/Public/Index/js/slides.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000034s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000588s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000521s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.010526s ]
+ERR: 无法加载控制器:Public
+
+[ 2015-08-20T15:03:25+08:00 ] 103.30.148.109 /old/Public/Index/css/images/main_con_bg.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000455s ]
+
+[ 2015-08-20T15:03:38+08:00 ] 14.17.18.144 /old/index.php
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000035s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000477s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000439s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000612s ]
+SQL: SHOW COLUMNS FROM `th_nav` [ RunTime:0.0023s ]
+SQL: SELECT `name`,`pic`,`url` FROM `th_nav` WHERE ( isshow=1 ) ORDER BY sort  [ RunTime:0.0023s ]
+SQL: SHOW COLUMNS FROM `th_category` [ RunTime:0.0101s ]
+SQL: SELECT `id`,`cname`,`rec_url`,`url`,`pic`,`mark` FROM `th_category` WHERE ( isshow=1 )  [ RunTime:0.0098s ]
+SQL: SHOW COLUMNS FROM `th_company` [ RunTime:0.0073s ]
+SQL: SELECT count(distinct member_id) as num FROM `th_company` WHERE ( isshow=1 and type=2 ) LIMIT 1   [ RunTime:0.0133s ]
+SQL: SELECT count(distinct member_id) as num FROM `th_company` WHERE ( isshow=1 and type=1 ) LIMIT 1   [ RunTime:0.0049s ]
+SQL: SELECT count(id) as num FROM `th_company` WHERE ( isshow=1 and type=1 ) LIMIT 1   [ RunTime:0.0085s ]
+SQL: SHOW COLUMNS FROM `th_invest` [ RunTime:0.0044s ]
+SQL: SELECT count(id) as num FROM `th_invest` LIMIT 1   [ RunTime:0.0165s ]
+SQL: SHOW COLUMNS FROM `th_anli` [ RunTime:0.0034s ]
+SQL: SELECT count(id) as num FROM `th_anli` WHERE ( isshow = 1 ) LIMIT 1   [ RunTime:0.0032s ]
+SQL: SHOW COLUMNS FROM `th_nav_article` [ RunTime:0.0029s ]
+SQL: SELECT count(id) as num FROM `th_nav_article` WHERE ( isshow=1 and pid = 99 ) LIMIT 1   [ RunTime:0.0029s ]
+SQL: SHOW COLUMNS FROM `th_news` [ RunTime:0.0021s ]
+SQL: SELECT count(id) as num FROM `th_news` WHERE ( isshow=1 ) LIMIT 1   [ RunTime:0.0054s ]
+NOTIC: [8] Undefined offset: 7 /webHome/LFWZ000390/www/old/Application/Wlmeng/Common/function.php 第 18 行.
+SQL: SHOW COLUMNS FROM `th_adv` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `th_adv`  [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `th_system` [ RunTime:0.0029s ]
+SQL: SELECT * FROM `th_system` LIMIT 1   [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `th_article` [ RunTime:0.0032s ]
+SQL: SELECT * FROM `th_article` WHERE `isshow` = 1 AND `pid` = 1  [ RunTime:0.0029s ]
+SQL: SELECT * FROM `th_article` WHERE `isshow` = 1 AND `pid` = 2  [ RunTime:0.0018s ]
+NOTIC: [8] Undefined index: memberid /webHome/LFWZ000390/www/old/Application/Wlmeng/Controller/ParentController.class.php 第 46 行.
+NOTIC: [8] Undefined index: auto_login /webHome/LFWZ000390/www/old/Application/Wlmeng/Controller/ParentController.class.php 第 47 行.
+SQL: SHOW COLUMNS FROM `th_closeip` [ RunTime:0.0030s ]
+SQL: SELECT * FROM `th_closeip`  [ RunTime:0.0017s ]
+SQL: SELECT `id`,`cname`,`rec_url`,`url`,`pic`,`mark` FROM `th_category` WHERE ( isshow=1 )  [ RunTime:0.0050s ]
+SQL: SELECT count(distinct member_id) as num FROM `th_company` WHERE ( isshow=1 and type=2 ) LIMIT 1   [ RunTime:0.0031s ]
+SQL: SELECT count(distinct member_id) as num FROM `th_company` WHERE ( isshow=1 and type=1 ) LIMIT 1   [ RunTime:0.0083s ]
+SQL: SELECT count(id) as num FROM `th_company` WHERE ( isshow=1 and type=1 ) LIMIT 1   [ RunTime:0.0083s ]
+SQL: SELECT count(id) as num FROM `th_invest` LIMIT 1   [ RunTime:0.0039s ]
+SQL: SELECT count(id) as num FROM `th_anli` WHERE ( isshow = 1 ) LIMIT 1   [ RunTime:0.0030s ]
+SQL: SELECT count(id) as num FROM `th_nav_article` WHERE ( isshow=1 and pid = 99 ) LIMIT 1   [ RunTime:0.0168s ]
+SQL: SELECT count(id) as num FROM `th_news` WHERE ( isshow=1 ) LIMIT 1   [ RunTime:0.0025s ]
+NOTIC: [8] Undefined offset: 7 /webHome/LFWZ000390/www/old/Application/Wlmeng/Common/function.php 第 18 行.
+SQL: SHOW COLUMNS FROM `th_backimg` [ RunTime:0.0041s ]
+SQL: SELECT * FROM `th_backimg`  [ RunTime:0.0115s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000322s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000472s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023082s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023213s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000442s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000554s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.012962s ]
+INFO: [ app_end ] --END-- [ RunTime:0.013109s ]
+
+[ 2015-08-20T15:03:38+08:00 ] 14.17.18.144 /old/Public/Index/js/slides.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000410s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000362s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000498s ]
+ERR: 无法加载控制器:Public
+
+[ 2015-08-20T15:03:38+08:00 ] 14.17.18.144 /old/index.php?s=/Wlmeng/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000356s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000415s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000545s ]
+SQL: SHOW COLUMNS FROM `th_nav` [ RunTime:0.0062s ]
+SQL: SELECT `name`,`pic`,`url` FROM `th_nav` WHERE ( isshow=1 ) ORDER BY sort  [ RunTime:0.0036s ]
+SQL: SHOW COLUMNS FROM `th_category` [ RunTime:0.0045s ]
+SQL: SELECT `id`,`cname`,`rec_url`,`url`,`pic`,`mark` FROM `th_category` WHERE ( isshow=1 )  [ RunTime:0.0047s ]
+SQL: SHOW COLUMNS FROM `th_company` [ RunTime:0.0022s ]
+SQL: SELECT count(distinct member_id) as num FROM `th_company` WHERE ( isshow=1 and type=2 ) LIMIT 1   [ RunTime:0.0141s ]
+SQL: SELECT count(distinct member_id) as num FROM `th_company` WHERE ( isshow=1 and type=1 ) LIMIT 1   [ RunTime:0.0025s ]
+SQL: SELECT count(id) as num FROM `th_company` WHERE ( isshow=1 and type=1 ) LIMIT 1   [ RunTime:0.0026s ]
+SQL: SHOW COLUMNS FROM `th_invest` [ RunTime:0.0026s ]
+SQL: SELECT count(id) as num FROM `th_invest` LIMIT 1   [ RunTime:0.0024s ]
+SQL: SHOW COLUMNS FROM `th_anli` [ RunTime:0.0198s ]
+SQL: SELECT count(id) as num FROM `th_anli` WHERE ( isshow = 1 ) LIMIT 1   [ RunTime:0.0026s ]
+SQL: SHOW COLUMNS FROM `th_nav_article` [ RunTime:0.0027s ]
+SQL: SELECT count(id) as num FROM `th_nav_article` WHERE ( isshow=1 and pid = 99 ) LIMIT 1   [ RunTime:0.0041s ]
+SQL: SHOW COLUMNS FROM `th_news` [ RunTime:0.0022s ]
+SQL: SELECT count(id) as num FROM `th_news` WHERE ( isshow=1 ) LIMIT 1   [ RunTime:0.0024s ]
+NOTIC: [8] Undefined offset: 7 /webHome/LFWZ000390/www/old/Application/Wlmeng/Common/function.php 第 18 行.
+SQL: SHOW COLUMNS FROM `th_adv` [ RunTime:0.0020s ]
+SQL: SELECT * FROM `th_adv`  [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `th_system` [ RunTime:0.0026s ]
+SQL: SELECT * FROM `th_system` LIMIT 1   [ RunTime:0.0058s ]
+SQL: SHOW COLUMNS FROM `th_article` [ RunTime:0.0064s ]
+SQL: SELECT * FROM `th_article` WHERE `isshow` = 1 AND `pid` = 1  [ RunTime:0.0020s ]
+SQL: SELECT * FROM `th_article` WHERE `isshow` = 1 AND `pid` = 2  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: memberid /webHome/LFWZ000390/www/old/Application/Wlmeng/Controller/ParentController.class.php 第 46 行.
+NOTIC: [8] Undefined index: auto_login /webHome/LFWZ000390/www/old/Application/Wlmeng/Controller/ParentController.class.php 第 47 行.
+SQL: SHOW COLUMNS FROM `th_closeip` [ RunTime:0.0089s ]
+SQL: SELECT * FROM `th_closeip`  [ RunTime:0.0023s ]
+SQL: SELECT `id`,`cname`,`rec_url`,`url`,`pic`,`mark` FROM `th_category` WHERE ( isshow=1 )  [ RunTime:0.0024s ]
+SQL: SELECT count(distinct member_id) as num FROM `th_company` WHERE ( isshow=1 and type=2 ) LIMIT 1   [ RunTime:0.0065s ]
+SQL: SELECT count(distinct member_id) as num FROM `th_company` WHERE ( isshow=1 and type=1 ) LIMIT 1   [ RunTime:0.0023s ]
+SQL: SELECT count(id) as num FROM `th_company` WHERE ( isshow=1 and type=1 ) LIMIT 1   [ RunTime:0.0064s ]
+SQL: SELECT count(id) as num FROM `th_invest` LIMIT 1   [ RunTime:0.0016s ]
+SQL: SELECT count(id) as num FROM `th_anli` WHERE ( isshow = 1 ) LIMIT 1   [ RunTime:0.0081s ]
+SQL: SELECT count(id) as num FROM `th_nav_article` WHERE ( isshow=1 and pid = 99 ) LIMIT 1   [ RunTime:0.0085s ]
+SQL: SELECT count(id) as num FROM `th_news` WHERE ( isshow=1 ) LIMIT 1   [ RunTime:0.0026s ]
+NOTIC: [8] Undefined offset: 7 /webHome/LFWZ000390/www/old/Application/Wlmeng/Common/function.php 第 18 行.
+SQL: SHOW COLUMNS FROM `th_backimg` [ RunTime:0.0087s ]
+SQL: SELECT * FROM `th_backimg`  [ RunTime:0.0026s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000134s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000329s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.012422s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.012582s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.013901s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.014032s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000389s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000503s ]
+
+[ 2015-08-20T15:03:39+08:00 ] 14.17.18.144 /old/Public/Index/js/slides.js
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000057s ]
+INFO: [ app_init ] --END-- [ RunTime:0.007578s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000469s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000615s ]
+ERR: 无法加载控制器:Public
+

@@ -1,0 +1,84 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>{:C('WEB_NAME')}-{$page_name}</title>
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/css/common.css"/>
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/css/main.css"/>
+<script type="text/javascript" src="__PUBLIC__/js/jquery.min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/layer/layer.min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/js/admin.js"></script>
+</head>
+<body>
+<!-- Head -->
+<include file="Public:head" />
+<!-- Head -->
+<div class="container clearfix">
+    <!-- sidebar -->
+    <include file="Public:sidebar" />
+    <!--/sidebar-->
+    <div class="main-wrap">
+
+        <div class="crumb-wrap">
+            <div class="crumb-list">
+            <i class="icon-font"></i>
+            <a href="{:C('ADMIN_URL')}">首页</a>
+            <span class="crumb-step">&gt;</span>
+            <span class="crumb-name">{$page_name}</span></div>
+        </div>
+        
+        <div class="result-wrap">
+            <form name="myform" id="myform" method="post">
+                <div class="result-title">
+                    <div class="result-list">
+                        <if condition="$_SESSION['user_level'] eq 1">
+                        	<a href="{:U('Admin/add')}"><i class="icon-font"></i>添加管理员</a>
+                        </if>
+                        <a id="updateOrd" href="{:U('Admin/index')}"><i class="icon-font"></i>刷新本页面</a>
+                    </div>
+                </div>
+                <div class="result-content">
+                    <table class="result-tab" width="100%">
+                        <tr>
+                            <th class="tc" width="5%"><input class="allChoose" name="" type="checkbox"></th>
+                            <th>ID</th>
+                            <th>登录账号</th>
+                            <th>账号状态</th>
+                            <th>最近登录时间</th>
+                            <th>最近登录IP</th>
+                            <th>账号等级</th>
+                            <th>操作</th>
+                        </tr>
+                        <foreach name="list" item="vo">
+                        <tr>
+                            <td class="tc"><input name="id[]" value="59" type="checkbox"></td>
+                            <td>{$vo.id}</td>
+                            <td><a href="javascript:void(0);">{$vo.name}</a></td>
+                            <td>{$vo.status|admin_status=###}</td>
+                            <td>{$vo.logintime|date='Y-m-d H:i:s',###}</td>
+                            <td>{$vo.loginip}</td>
+                            <td>{$vo.level|admin_level=###}</td>
+                            <td>
+                            	<if condition="$_SESSION['user_level'] eq 1">
+                                	<a class="link-update" href="{:U('Admin/edit',array('id'=>$vo[id]))}">修改</a>
+                                	<a class="link-del" href="{:U('Admin/lock',array('id'=>$vo[id],'status'=>$vo[status]))}">{$vo.status|admin_action=###}</a>
+                                	<a class="link-update del" href="{:U('Admin/del',array('id'=>$vo[id]))}">删除</a>
+                                <else />
+                                	<if condition="$vo.id eq $_SESSION[C('USER_AUTH_KEY')]">
+                                		<a class="link-update" href="{:U('Admin/edit',array('id'=>$vo[id]))}">修改</a>&nbsp;锁定
+                                	<else />                                	
+                             			修改 锁定
+                             		</if>
+                                </if>
+                            </td>
+                        </tr>
+                        </foreach>
+                    </table>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!--/main-->
+</div>
+</body>
+</html>
